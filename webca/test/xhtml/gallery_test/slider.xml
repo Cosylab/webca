@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl"?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../"/>
+</head>
+<body>
+	
+	<caml:verticalPanel>
+		<caml:row>
+			<caml:slider
+				 readbackPV="ai002"										
+				 controlPV="$(NAME)"
+				 displayFormat="#0.0"			
+				 increment="0.001"										
+				 size="small">										
+			</caml:slider>
+		</caml:row>			
+		<caml:row>
+			<caml:slider							
+				 controlPV="$(NAME)"
+				 displayFormat="#0.0"			
+				 increment="-6"										
+				 size="small">										
+			</caml:slider>	
+		</caml:row>			
+		<caml:row>
+			<caml:slider									
+				 controlPV="$(NAME)"
+				 displayFormat="#0.0"			
+				 increment="4"	
+				 size="medium">										
+			</caml:slider>	
+		</caml:row>			
+		<caml:row>
+			<caml:slider									
+				 controlPV="$(NAME)"
+				 displayFormat="+##0.0"			
+				 increment="0.01"										
+				 minValue="-300"
+				 maxValue="300"
+				 size="large"
+				 alarmSensitive="false">										
+			</caml:slider>	
+		</caml:row>
+	</caml:verticalPanel>
+	
+</body>
+</html>

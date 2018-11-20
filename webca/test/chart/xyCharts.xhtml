@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" ?>
+
+<!-- start html element and define caml namespace -->
+<html xmlns:caml="http://webca.cosylab.com">
+
+<head>
+<title>xyCharts</title>
+<!-- this is required for CAML, some initialization has to be done, e.g. to instantiate plugin -->
+<caml:head webcaPath="../../" pendEvents="30" pendEventsPeriodMs="100" />
+</head>
+<body>
+
+
+<caml:include href="xyChartsFast.xhtml" />
+<!-- 
+<caml:include href="xyChartsFast.xhtml" />
+<caml:include href="xyChartsNormal.xhtml" />
+<caml:include href="xyChartsAdvanced.xhtml" />
+ -->
+
+</body>
+</html>

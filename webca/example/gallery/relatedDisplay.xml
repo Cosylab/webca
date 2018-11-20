@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+
+	<verticalPanel>
+	  <row caption="opens CAML in a new window propagating specified macro definitions">
+
+		<relatedDisplay type="image" src="sns.gif" alt="alt" width="110px" height="70px" >
+			<display src="slider.xml" name="beamline1">
+				<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+				<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+				<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+			</display>		
+		</relatedDisplay>
+
+	  </row>
+	  
+	  <row caption="opens CAML in a new window propagating all current macro definitions">
+		
+		<relatedDisplay type="image" src="sns.gif">
+			<display src="slider.xml"  name="beamline1" macroPropagation="true"/>
+		</relatedDisplay>	
+	
+	  </row>
+	  
+	  <row caption="opens CAML in a new window propagating all current macro definitions and adds some extra">
+
+		<relatedDisplay type="image" src="sns.gif">
+			<display src="slider.xml" name="beamline1" macroPropagation="true" target="_blank">
+				<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+				<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+				<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+			</display>		
+		</relatedDisplay>		
+
+	  </row>
+	  
+	  <row caption="opens CAML in a current window propagating specified macro definitions">
+	
+		<relatedDisplay type="button" >
+			<display src="slider.xml" name="slider replace" target="_self">
+				<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+				<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+				<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+			</display>			
+		</relatedDisplay>
+		
+	  </row>
+	</verticalPanel>
+	
+</caml>

@@ -1,0 +1,11 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://example.org/ord"
+            targetNamespace="http://example.org/ord">
+
+<xs:include schemaLocation="extnode.xsd"></xs:include>
+
+<xs:complexType name="componentType">
+	<xs:attribute name="level1"  type="xs:string" use="required"/>
+</xs:complexType>	
+
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../" pendEvents="30" pendEventsPeriodMs="30"/>
+</head>
+<body>
+    <caml:staticText>This is mainxhtml_inc_xhtml1.xml.</caml:staticText>
+
+    <caml:include href="xhtml1_inc_xhtml2.xml"/>
+																				
+</body>
+</html>

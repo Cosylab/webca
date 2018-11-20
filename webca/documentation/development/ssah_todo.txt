@@ -1,0 +1,121 @@
+-----------------------------------------------------------------------
+1. current development
+
+2. changes when reprogramming old parts
+
+2.2. styles
+ -bugs
+  -include only one css file of a type 
+  -foreground colour specifications override noalarm: bug with button
+
+ -standardization
+  -default style sheet ignores all foreign elements
+  -separate disconnected and invalid alarm states
+  -make all components support dataType with various defaults
+   -staticText: default text
+   -all other(textEntry, textUpdate): default numeric  
+
+ -components with alarm/readonly visibility issues
+  -textEntry/bitControl: readonly not visible
+  -slider: alarm not visible on slider when readonly
+  -menu/message button: readonly state only visible on mouseover
+  -wheelswitch: readonly visible only on arrow buttons
+
+2.3. charts
+ -structure
+  -visualize complete pv information: connection, alarm
+  -interface to chart library: webfx or flotr
+   -merge xycharts together and barcharts together 
+ -bugs
+  -make all charts failproof when the the size of xy data is incompatible
+  -release canvas memory on window resize for flotr charts
+  -persist positions of data series across connections in all charts 
+
+2.4. init/conection/monitor protocols
+ -requires checking all components
+  -preinitalize called synchronously; now causes errors with mad mux usage
+  -on connection set invalid colour if type not valid to avoid blinking
+  
+  -strict dual readback/control connections
+   -check bugs with connection state managment on slider and all buttons
+
+2.5. clipboard format
+ -use table format with no font information for pasting into spreadsheets 
+
+3. User issues and requirements
+
+ -peterm
+  -a component that is a button when pure output and read-only display
+   when pure input; the records to read/write have suffixes _get _set     
+
+4. Macro priorities and propagation
+ -possible bugs
+  -substitution component macros are passed to related displays  
+    
+6. Separable component templates
+ -change webca_xslt, webca_templates.xslt
+  -when matching a component go into separate mode
+  -separate webca templates
+   -mark with separate mode
+   -replace template match "name" with "name | caml:name"
+   -provide param format and prefixid
+   -replace @names with local-name()
+  -add a * matcher at the end for the otherwise option    
+
+8. IE support
+ -svg solution
+  -svg bridge to adobe plugin
+  -IE npca plugin together with adobe plugin   
+ -canvas solution
+  -exporer canvas
+  -matej has library for text rotation routines
+  
+9. Relative paths
+ -should be relative to the document they appear in
+ -this affects: static text, related display, contextmenu link
+ 
+10. Strip chart
+ -xychart is close, but still requires
+  -update rate or adding same values to nonupdated series
+  -support switch between software and hardware time 
+   -requires a solution for virtualpv timestamps with hardware time    
+   -should preserve one value after left time clip and add clipping
+   to graph itself
+
+11. edl -> caml conversion 
+
+ -new gui functionality
+  -related displays with context menu, 139 occurences
+   -ideas
+    -create yahoo menu with display data if more displays than 1
+   
+  -pv switchable includes, 10 occurences
+   -ideas
+    -tabview gets properties displaytabs, controlpv 
+     -when displaytabs false
+      -hide choose tabs
+      -on pv value change select appropriate tab
+      -on pv -1 popup new context menu with javascript tab data 
+
+  -activeButtonClass, 18 occurences
+  -activeExitButtonClass, 7 occurences
+   -if it is possible to request to close the window from javascript
+ 
+ -graphics 
+  -activeLineClass, 778 occurences
+  -activeRectangleClass, 765 occurences
+  -activeCircleClass, 320 occurences
+  -activeArcClass, 126 occurences
+  -activeSymbolClass, 122 occurences
+  -activePngClass, 10 occurences
+  -activeDynSymbolClass, 7 occurences
+
+ -for easier manual html editing
+  -relative group positions
+ 
+12. xml validation
+ -for attribute assist
+  -works
+ -for element assist
+  -requires html schema and connection layer to caml schema 
+------------------------------------------------------------------------

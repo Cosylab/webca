@@ -1,0 +1,5 @@
+
+device(waveform,  VME_IO, devPmacAscWf,	    "WAVEFORM-RAND")
+device(waveform,  VME_IO, devPmacAscWfLabels,	    "WAVEFORM-XLABELS")
+
+

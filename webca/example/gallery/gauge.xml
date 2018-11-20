@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+
+		
+	<verticalPanel width="50%">
+		<row height="300px">
+			<gauge readbackPV="$(NAME)"
+				   displayFormat="#0.0"
+				 />	
+		</row>
+		<row>
+			<slider
+				 controlPV="$(NAME)"
+				 displayFormat="#0.0"			
+				 increment="0.001"										
+				 size="small">										
+			</slider>
+		</row>			
+	</verticalPanel>	
+		
+		
+		
+</caml>

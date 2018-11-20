@@ -1,0 +1,26 @@
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title></title>
+    <caml:head webcaPath="../"/>
+</head>
+<body>
+	<caml:virtualPV name="ai001">
+        <caml:ctrl
+            precision="1"
+            units="Counts"
+		    upperDisplayLimit="600"
+		    lowerDisplayLimit="-300"
+		    upperWarningLimit="200"	
+		    lowerWarningLimit="-400"	
+        />
+	</caml:virtualPV>
+	<caml:virtualPV name="ai002" eval="pvs.ai001" scan="1000"/> 		
+
+	<br/> 		
+	<br/> 		
+	<caml:slider controlPV="ai001" readbackPV="ai002"/> 		
+</body>
+</html>

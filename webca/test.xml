@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="./xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="./" pluginUrl="plugin/npca.xpi"/>
+</head>
+<body atr="pop">
+
+    <caml:wheelSwitch controlPV="record1"/>
+    <!--
+    <caml:include href="test/pelaia/magnets.xhtml"/>
+    <caml:virtualPV name="record3" init="5" eval="val+1" scan="10000"/>
+    <caml:wheelSwitch controlPV="record3"/>
+    <caml:textEntry controlPV="record2"/>
+    <caml:wheelSwitch controlPV="underACL"/>
+    <caml:bitControl controlPV="record2"/>
+    <caml:textEntry controlPV="record2"/>
+    <caml:include href="test/xhtml/include_tests/mainxhtml_inc_xhtml3.xml"/>
+    <caml:wheelSwitch controlPV="record1"/>
+    <caml:include href="test/xhtml/gallery_test/relatedDisplay.xml"/>
+    <caml:include href="test/staticText_visibility.xml"/>
+    <caml:include href="test/alarmcolors.xml"/>
+    <caml:include href="test/xhtml/include_tests/mainxhtml_inc_xhtml3.xml"/>
+    <caml:include href="test/repetition_include.xml"/>
+    <caml:textUpdate readbackPV="emptyEnum" style="color: blue;"/>
+    <caml:include href="test/repetition.xml"/>
+    <caml:include href="test/xhtml/gallery_test/layout.xml"/>
+    <caml:textUpdate readbackPV="record1_alarm"/>
+    <caml:virtualPV name="record1_alarm" init="''" eval="pvs.record1.alarm != MAJOR ? 'STILL OK' : 'UH-OH'" display="true" scan="1000"/>
+    <caml:row>Row!</caml:row>
+    <caml:blueberry>Blueberry!</caml:blueberry>
+    <caml:staticText>This is&lt;br&gt;text.</caml:staticText>
+    <caml:include href="example/gallery/gallery.xml"/>
+    <caml:include href="test/sunil_main.xml"/>
+    <caml:include href="test/peter_adio/microIOC-ADIO_main_white.xml"/>
+    <caml:include href="test/virtualpv_names_tom_magnets.xml"/>
+    <caml:include href="test/ie/html_gallery_import.xml"/>
+    <caml:include href="test/xhtml/include_tests/mainxhtml_inc_xhtml1.xml"/>
+    <caml:include href="test/bitControl.xml"/>
+	<caml:textUpdate readbackPV="record1"/>
+    <caml:include href="test/gauge.xml" minValue="0" maxValue="10"/>
+    <caml:include href="test/ie/simple.xml"/>
+    <caml:include href="test/repetition_include.xml"/>
+    <caml:include href="test/include_macros.xml"/>
+    <caml:include href="test/repetition_doc_example.xml"/>
+    <caml:virtualPV name="virtualPV"/>
+    <caml:include href="test/fcharts_pvlabels.xml"/>
+    <caml:include href="test/charts_clipboard.html"/>
+    <caml:include href="test/slider_clipboard.html"/>
+    <caml:include href="test/textUpdate_displaySpec.html"/>
+    <caml:include href="test/wheelSwitch_textFocus.xml"/>
+    <caml:include href="test/writable/writables.html"/>
+    -->
+</body>
+</html>

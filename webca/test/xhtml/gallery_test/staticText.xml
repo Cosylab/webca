@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl"?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../"/>
+</head>
+<body>
+
+	<!-- $(DESC) macro is resolved based on mux component selection in gallery.xml -->
+
+	<caml:verticalPanel>
+		<caml:row>
+			<caml:staticText href="gallery.xml" target="_self" >this is static text with macro $(DESC) and link</caml:staticText>	
+		</caml:row>
+		<caml:row>
+			<caml:staticText>this is static text with macro $(DESC) and no link</caml:staticText>	
+		</caml:row>
+	</caml:verticalPanel>
+	
+</body>
+</html>

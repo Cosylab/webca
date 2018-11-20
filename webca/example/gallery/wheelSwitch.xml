@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+		
+	<verticalPanel>
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="0" size="small"/> 		
+		</row>	
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="#0.0" size="medium"/> 		
+		</row>			
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="##000" size="large"/> 		
+		</row>
+		<row/>
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="0.00" /> 		
+		</row>	
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="##0.00##" /> 		
+		</row>			
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="##00.0000" /> 		
+		</row>		
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="##0.00##" /> 		
+		</row>			
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="##00.0000" /> 		
+		</row>	
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="+0.00E+00" /> 		
+		</row>			
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="00.0E+00" /> 		
+		</row>										
+	</verticalPanel>
+	
+</caml>

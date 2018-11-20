@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" ?>
+<caml title="WebCa Test">
+
+<intensityPlot readbackPV="gizmo:readback" width="320" height="240" maxValue="320" />
+
+</caml>

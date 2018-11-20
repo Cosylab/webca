@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="xyChart">
+	<xs:complexType>
+		<xs:complexContent>			
+			<xs:extension base="component">     
+				<xs:choice minOccurs="1" maxOccurs="unbounded">	
+					<xs:element ref="xySeries"/>
+				</xs:choice>	
+				<xs:attribute name="xAxisLabel" type="xs:string"/>
+				<xs:attribute name="yAxisLabel" type="xs:string"/>
+				<xs:attribute name="xAxisStyle" type="axisStyleType"/>
+				<xs:attribute name="numberOfPoints" type="xs:decimal"/>
+				<xs:attribute name="flavor" type="xs:string"/>
+			</xs:extension>		
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>	
+
+<xs:simpleType name="axisStyleType">
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "index"/>
+      <xs:enumeration value = "time"/>
+    </xs:restriction>
+</xs:simpleType>	
+
+<xs:element name="xySeries">
+	<xs:complexType>
+		<xs:attribute name="Y-PVname" type="xs:string" use="required"/>		
+		<xs:attribute name="X-PVname" type="xs:string"/>
+		<xs:attribute name="name"     type="xs:string"/>		
+		<xs:attribute name="type"     type="xySeriesType"/>
+	</xs:complexType>	
+</xs:element>		
+
+<xs:simpleType name="xySeriesType">
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "scatter"/>
+      <xs:enumeration value = "line"/>
+    </xs:restriction>
+</xs:simpleType>	
+	
+</xs:schema>

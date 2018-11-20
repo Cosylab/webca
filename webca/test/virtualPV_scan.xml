@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../" title="WebCa Test"
+        pendEvents="30" pendEventsPeriodMs="30">
+
+	<horizontalPanel>
+		<column>
+			<mux>
+			    <sequence name="none1">
+					<macroValuePair macroName="$(VARIABLE1)" macroValue="none1"/>			
+					<macroValuePair macroName="$(VAR_DESC1)" macroValue="none1"/>			
+			    </sequence>
+			    <sequence name="virtualval1" selected="true">
+					<macroValuePair macroName="$(VARIABLE1)" macroValue="virtualval1"/>			
+					<macroValuePair macroName="$(VAR_DESC1)" macroValue="virtualval1"/>			
+			    </sequence>
+			</mux>
+		</column>
+		<column>
+			<mux>
+			    <sequence name="none2">
+					<macroValuePair macroName="$(VARIABLE2)" macroValue="none2"/>			
+					<macroValuePair macroName="$(VAR_DESC2)" macroValue="none2"/>			
+			    </sequence>
+			    <sequence name="virtualval2" selected="true">
+					<macroValuePair macroName="$(VARIABLE2)" macroValue="virtualval2"/>			
+					<macroValuePair macroName="$(VAR_DESC2)" macroValue="virtualval2"/>			
+			    </sequence>
+			</mux>
+		</column>
+		<column>
+			<mux>
+			    <sequence name="none3">
+					<macroValuePair macroName="$(VARIABLE3)" macroValue="none3"/>			
+					<macroValuePair macroName="$(VAR_DESC3)" macroValue="none3"/>			
+			    </sequence>
+			    <sequence name="virtualval3" selected="true">
+					<macroValuePair macroName="$(VARIABLE3)" macroValue="virtualval3"/>			
+					<macroValuePair macroName="$(VAR_DESC3)" macroValue="virtualval3"/>			
+			    </sequence>
+			</mux>
+		</column>
+	</horizontalPanel>	
+
+	<virtualPV name="$(VARIABLE1)" init="10"/>
+	<virtualPV name="$(VARIABLE2)" init="5"/>
+
+	<!-- Init parameters set test -->
+
+	<virtualPV name="Constant" init="this = 12.3; alarm = MINOR;"/>
+	<textEntry controlPV="Constant" displayFormat="##0.000"/>
+
+	<!-- Periodic scan test -->
+
+	<virtualPV name="PVfrequency" init=".1"/>
+
+	<virtualPV name="PVname_sin"
+	        init="this = 0;
+	              ctrl.upperWarningLimit =  9;
+	              ctrl.lowerWarningLimit = -9;"
+    	    eval="sin(2*PI * pvs.$(NAME1) * pvs.PVfrequency) * 10"
+	        scan="3000">
+	    <ctrl units="gigaquads" precision="5"/>
+	</virtualPV>
+	<textEntry controlPV="$(NAME1)" displayFormat="##0.000"/>
+	<textEntry controlPV="PVname_sin" displayFormat="##0.000"/>
+</caml>

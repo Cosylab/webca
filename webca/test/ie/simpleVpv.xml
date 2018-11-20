@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../../" title="WebCa Test">
+
+	<mux>
+		<sequence name="record1" selected="true">
+			<macroValuePair macroName="$(NAME)" macroValue="record1"/>
+			<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+		</sequence>
+	    <sequence name="record2">
+			<macroValuePair macroName="$(NAME)" macroValue="record2"/>			
+			<macroValuePair macroName="$(DESC)" macroValue="counter PV"/>			
+	    </sequence>
+	    <sequence name="enum">
+			<macroValuePair macroName="$(NAME)" macroValue="enum"/>
+			<macroValuePair macroName="$(DESC)" macroValue="enumerated PV"/>
+	    </sequence>
+	</mux>
+
+	<staticText>Go IE go!</staticText>
+	<staticText>You are using $(NAME): $(DESC).</staticText>
+	<textUpdate readbackPV="$(NAME)"/>
+    <virtualPV name="record2" init="0" eval="this+1" scan="1000"/>
+
+</caml>

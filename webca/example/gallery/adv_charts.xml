@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+
+		<horizontalPanel caption="barChart">
+				<column height="400px" width="60%">
+					<barChart flavor="advanced"
+					          xAxisLabel="Axis X label "
+							  yAxisLabel="Axis Y label "										
+						      xLabels="['label1','label2','label3','label4','label5','label6','label7']">
+						<series PVname="barWaveform1" name="name"/>
+					</barChart>	 
+				</column>
+		</horizontalPanel>	
+	
+		<horizontalPanel caption="xyChart">
+				<column width="50%">
+					<xyChart flavor="advanced"
+					         xAxisLabel="Axis X label "
+  						     yAxisLabel="Axis Y label ">
+						<xySeries Y-PVname="waveform1" name="line"></xySeries>						
+						<xySeries Y-PVname="waveform2" name="scatter" type="scatter"></xySeries>						
+					</xyChart>	 
+				</column>			
+		</horizontalPanel>	
+</caml>

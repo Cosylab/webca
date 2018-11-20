@@ -1,0 +1,15 @@
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../" pendEvents="30" pendEventsPeriodMs="30"/>
+</head>
+<body>
+    <caml:staticText>This is xhtml1_inc_xhtml2.xml.</caml:staticText>
+	
+	<caml:textUpdate readbackPV="record1" dataType="text"/>
+	
+    <caml:include href="xhtml2_inc_camlgallery.xml"/>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element  name="tabView">	
+	<xs:complexType>
+		<xs:complexContent>			
+			<xs:extension base="container">
+				<xs:choice minOccurs="1" maxOccurs="unbounded">	
+					<xs:element ref="tab"/>
+				</xs:choice>
+				<xs:attribute name="orientation"  type="orientationDefinition" default="top"/>	
+			</xs:extension>				
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>
+
+
+<xs:element name="tab">
+	<xs:complexType>
+		<xs:choice minOccurs="1" maxOccurs="unbounded">	
+			<xs:group ref="components"/>
+		</xs:choice>		
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="selected" type="xs:boolean"/>
+	</xs:complexType>	
+</xs:element>		
+
+<xs:simpleType name="orientationDefinition">
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "top"/>
+      <xs:enumeration value = "left"/>
+      <xs:enumeration value = "right"/>		
+      <xs:enumeration value = "bottom"/>				
+    </xs:restriction>
+</xs:simpleType>	
+	
+</xs:schema>

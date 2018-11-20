@@ -1,0 +1,1218 @@
+# File: /ade/epics/iocTop/R3.14.7/diagnostics/pcbased/Development/opi/BPM.edl
+# MEDM filename = "/home/sns/prod/ADE/R3.13.5/prod2-3/rfq-mebtApp/srcAdl/BPM.adl"
+# MEDM version = 020502
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 449
+y 132
+w 990
+h 679
+font "helvetica-bold-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 112
+bgColor index 55
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 0
+ctlBgColor1 index 1
+ctlBgColor2 index 0
+topShadowColor index 1
+botShadowColor index 11
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 68
+w 975
+h 601
+lineColor index 6
+fillColor index 6
+lineWidth 3
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+# Geometry
+x 16
+y 136
+w 380
+h 230
+# Appearance
+border
+graphTitle "$(S)_$(SS):BPM$(N):hposA"
+xLabel "Point "
+yLabel "Position"
+fgColor index 112
+bgColor index 4
+gridColor index 78
+font "helvetica-bold-r-10.0"
+# Operating Modes
+nPts 1
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 255
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2AxisSrc "fromUser"
+y2Min 0
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(S)_$(SS):BPM$(N):hposA"
+}
+lineThickness {
+  0 2
+}
+plotSymbolType {
+  0 "circle"
+}
+plotColor {
+  0 index 21
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+# Geometry
+x 404
+y 136
+w 380
+h 230
+# Appearance
+border
+graphTitle "$(S)_$(SS):BPM$(N):beamIA"
+xLabel "Point"
+yLabel "Current"
+fgColor index 112
+bgColor index 5
+gridColor index 78
+font "helvetica-bold-r-10.0"
+# Operating Modes
+nPts 1
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 25
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Min 0
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(S)_$(SS):BPM$(N):beamIA"
+}
+lineThickness {
+  0 2
+}
+plotSymbolType {
+  0 "circle"
+}
+plotColor {
+  0 index 21
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x -1
+y -1
+w 655
+h 24
+lineColor index 57
+fill
+fillColor index 57
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x -3
+y 24
+w 757
+h 1
+lineColor index 14
+fillColor index 14
+numPoints 2
+xPoints {
+  0 -3
+  1 749
+}
+yPoints {
+  0 24
+  1 24
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 814
+y 68
+w 168
+h 601
+lineColor index 6
+fillColor index 6
+lineWidth 3
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 843
+y 165
+w 102
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 55
+useDisplayBg
+value {
+  "No. of minipulses"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 837
+y 139
+w 114
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 9
+bgColor index 55
+useDisplayBg
+value {
+  "Input Cluster"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 848
+y 204
+w 93
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 55
+useDisplayBg
+value {
+  "No. of samples/"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 845
+y 279
+w 101
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 55
+useDisplayBg
+value {
+  "in Hz (+/- 10 Hz)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 841
+y 317
+w 106
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 55
+useDisplayBg
+value {
+  "Current Multiplier "
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 835
+y 182
+w 62
+h 20
+controlPv "$(S)_$(SS):BPM$(N):pulNum"
+format "decimal"
+font "courier-bold-r-16.0"
+fgColor index 25
+bgColor index 5
+editable
+motifWidget
+limitsFromDb
+nullColor index 8
+useHexPrefix
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 835
+y 233
+w 62
+h 20
+controlPv "$(S)_$(SS):BPM$(N):pulAv"
+font "courier-bold-r-16.0"
+fgColor index 25
+bgColor index 5
+editable
+motifWidget
+limitsFromDb
+nullColor index 8
+useHexPrefix
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 818
+y 294
+w 79
+h 20
+controlPv "$(S)_$(SS):BPM$(N):chopFreq"
+format "decimal"
+font "courier-bold-r-16.0"
+fgColor index 25
+bgColor index 5
+editable
+motifWidget
+limitsFromDb
+nullColor index 8
+useHexPrefix
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 818
+y 350
+w 79
+h 20
+controlPv "$(S)_$(SS):BPM$(N):Imul"
+format "decimal"
+font "courier-bold-r-16.0"
+fgColor index 25
+bgColor index 5
+editable
+motifWidget
+limitsFromDb
+nullColor index 8
+useHexPrefix
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 294
+y 77
+w 131
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 9
+bgColor index 5
+useDisplayBg
+value {
+  "Output Cluster"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 143
+y 112
+w 100
+h 20
+controlPv "$(S)_$(SS):BPM$(N):xAvg"
+displayMode "decimal"
+precision 2
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 145
+y 43
+w 125
+h 20
+controlPv "$(S)_$(SS):BPM$(N):IntgrlLength"
+format "exponential"
+font "courier-bold-r-16.0"
+fgColor index 25
+bgColor index 5
+editable
+motifWidget
+precision 2
+nullColor index 8
+useHexPrefix
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 31
+w 82
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 110
+bgColor index 5
+useDisplayBg
+value {
+  "TLengthBeam"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 508
+y 27
+w 57
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 110
+bgColor index 5
+useDisplayBg
+value {
+  "TStartCal"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 544
+y 43
+w 100
+h 20
+controlPv "$(S)_$(SS):BPM$(N):TStartCal_Rb"
+displayMode "engineer"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 149
+y 399
+w 100
+h 20
+controlPv "$(S)_$(SS):BPM$(N):yAvg"
+displayMode "decimal"
+precision 2
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 117
+y 96
+w 148
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 9
+useDisplayBg
+value {
+  "Horizontal Position (mm)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 123
+y 381
+w 134
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 9
+useDisplayBg
+value {
+  "Vertical Position (mm)"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 583
+y 112
+w 100
+h 20
+controlPv "$(S)_$(SS):BPM$(N):amplitudeAvg"
+displayMode "decimal"
+precision 1
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 569
+y 399
+w 100
+h 20
+controlPv "$(S)_$(SS):BPM$(N):phaseAvg"
+displayMode "decimal"
+precision 1
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 590
+y 96
+w 73
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 9
+useDisplayBg
+value {
+  "Beam I(mA)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 564
+y 383
+w 111
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 9
+useDisplayBg
+value {
+  "Beam Phase (deg)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 29
+y 116
+w 38
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "Array"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 31
+y 403
+w 38
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "Array"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 461
+y 113
+w 38
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "Array"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 450
+y 403
+w 38
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "Array"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 833
+y 265
+w 121
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "Chopping frequency "
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 846
+y 219
+w 97
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 1
+useDisplayBg
+value {
+  "minipulse to avg"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 846
+y 333
+w 97
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 1
+useDisplayBg
+value {
+  "(mA/ADC count)"
+}
+autoSize
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+# Geometry
+x 18
+y 422
+w 380
+h 230
+# Appearance
+border
+graphTitle "$(S)_$(SS):BPM$(N):vposA"
+xLabel "Point"
+yLabel "Position"
+fgColor index 112
+bgColor index 5
+gridColor index 78
+font "helvetica-bold-r-10.0"
+# Operating Modes
+nPts 1
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 25
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Min 0
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(S)_$(SS):BPM$(N):vposA"
+}
+lineThickness {
+  0 2
+}
+plotSymbolType {
+  0 "circle"
+}
+plotColor {
+  0 index 21
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+# Geometry
+x 404
+y 422
+w 380
+h 230
+# Appearance
+border
+graphTitle "$(S)_$(SS):BPM$(N):beamPA"
+xLabel "Point "
+yLabel "Phase"
+fgColor index 112
+bgColor index 5
+gridColor index 78
+font "helvetica-bold-r-10.0"
+# Operating Modes
+nPts 1
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 0
+xMax 25
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2AxisSrc "fromUser"
+y2Min 0
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(S)_$(SS):BPM$(N):beamPA"
+}
+lineThickness {
+  0 2
+}
+plotSymbolType {
+  0 "circle"
+}
+plotColor {
+  0 index 21
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 307
+y 1
+w 333
+h 20
+font "helvetica-bold-r-18.0"
+fgColor index 0
+bgColor index 6
+useDisplayBg
+value {
+  "$(S)_$(SS):BPM$(N)"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 872
+y 4
+w 108
+h 19
+fgColor index 10
+bgColor index 40
+topShadowColor index 5
+botShadowColor index 10
+font "courier-bold-r-12.0"
+buttonLabel "Power Web Page"
+numCmds 1
+command {
+  0 " mozilla web1/diag/RPC_associations.htm"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 273
+y 43
+w 115
+h 19
+controlPv "$(S)_$(SS):BPM$(N):IntgrlLength_Rb"
+displayMode "engineer"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 899
+y 181
+w 62
+h 19
+controlPv "$(S)_$(SS):BPM$(N):pulNum_Rb"
+displayMode "decimal"
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 899
+y 232
+w 62
+h 19
+controlPv "$(S)_$(SS):BPM$(N):pulAv_Rb"
+displayMode "decimal"
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 899
+y 292
+w 80
+h 19
+controlPv "$(S)_$(SS):BPM$(N):chopFreq_Rb"
+displayMode "decimal"
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 899
+y 347
+w 80
+h 19
+controlPv "$(S)_$(SS):BPM$(N):Imul_Rb"
+displayMode "decimal"
+precision 4
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 416
+y 43
+w 125
+h 20
+controlPv "$(S)_$(SS):BPM$(N):TStartCal"
+format "exponential"
+font "courier-bold-r-16.0"
+fgColor index 25
+bgColor index 5
+editable
+motifWidget
+precision 2
+nullColor index 8
+useHexPrefix
+newPos
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 857
+y 33
+w 111
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-14.0"
+buttonLabel "Timing"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "DiagTimeMap.edl"
+}
+menuLabel {
+  0 "Timing"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 1
+w 105
+h 21
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 10
+useDisplayBg
+value {
+  "Diagnostics"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 856
+y 402
+w 84
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 55
+useDisplayBg
+value {
+  "Average Start"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 838
+y 420
+w 62
+h 20
+controlPv "$(S)_$(SS):BPM$(N):avgStart"
+format "decimal"
+font "courier-bold-r-16.0"
+fgColor index 25
+bgColor index 5
+editable
+motifWidget
+limitsFromDb
+nullColor index 8
+useHexPrefix
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 838
+y 471
+w 62
+h 20
+controlPv "$(S)_$(SS):BPM$(N):avgStop"
+font "courier-bold-r-16.0"
+fgColor index 25
+bgColor index 5
+editable
+motifWidget
+limitsFromDb
+nullColor index 8
+useHexPrefix
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 859
+y 456
+w 81
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 112
+bgColor index 1
+useDisplayBg
+value {
+  "Average Stop"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 902
+y 419
+w 62
+h 19
+controlPv "$(S)_$(SS):BPM$(N):avgStart_Rb"
+displayMode "decimal"
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 902
+y 470
+w 62
+h 19
+controlPv "$(S)_$(SS):BPM$(N):avgStop_Rb"
+displayMode "decimal"
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+endObjectProperties
+

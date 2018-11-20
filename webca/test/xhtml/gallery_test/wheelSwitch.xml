@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl"?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../"/>
+</head>
+<body>
+		
+	<caml:verticalPanel>
+		<caml:row>
+			<caml:wheelSwitch controlPV="$(NAME)" displayFormat="0" size="small"/> 		
+		</caml:row>	
+		<caml:row>
+			<caml:wheelSwitch controlPV="$(NAME)" displayFormat="#0.0" size="medium"/> 		
+		</caml:row>			
+		<caml:row>
+			<caml:wheelSwitch controlPV="$(NAME)" displayFormat="##000" size="large"/> 		
+		</caml:row>
+		<caml:row/>
+		<caml:row>
+			<caml:wheelSwitch controlPV="$(NAME)" displayFormat="0.00" /> 		
+		</caml:row>	
+		<caml:row>
+			<caml:wheelSwitch controlPV="$(NAME)" displayFormat="##0.00##" /> 		
+		</caml:row>			
+		<caml:row>
+			<caml:wheelSwitch controlPV="$(NAME)" displayFormat="##00.0000" /> 		
+		</caml:row>		
+		<caml:row>
+			<caml:wheelSwitch controlPV="$(NAME)" displayFormat="##0.00##" /> 		
+		</caml:row>			
+		<caml:row>
+			<caml:wheelSwitch controlPV="$(NAME)" displayFormat="##00.0000" /> 		
+		</caml:row>	
+		<caml:row>
+			<caml:wheelSwitch controlPV="$(NAME)" displayFormat="+0.00E+00" /> 		
+		</caml:row>			
+		<caml:row>
+			<caml:wheelSwitch controlPV="$(NAME)" displayFormat="00.0E+00" /> 		
+		</caml:row>										
+	</caml:verticalPanel>
+	
+</body>
+</html>

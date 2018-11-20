@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+  
+    <em:id>npca@cosylab.com</em:id>
+    <em:name>EPICS Channel Access Plug-in</em:name>
+    <em:version>1.2.0.0</em:version>
+    <em:description>The plug-in that provides an EPICS Channel Access implementation to JavaScript code.</em:description>
+    <em:creator>Matej Sekoranja</em:creator>
+
+    <em:homepageURL>http://webca.cosylab.com</em:homepageURL>
+
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>3.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Mozilla -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
+        <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>1.8+</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+  </Description>
+
+</RDF>

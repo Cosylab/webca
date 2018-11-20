@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../" title="WebCa Test"
+        pendEvents="30" pendEventsPeriodMs="30">
+
+	<verticalPanel>
+        <!-- Sinus transformation example, using a linearly growing record -->
+		
+		<row><verticalPanel caption="VirtualPV example 1: sinus function (scan: 2.5s)">
+	        <row><virtualPV name="amplitude" init="10"/></row>
+	        <row><virtualPV name="frequency" init=".02"/></row>
+	        <row><virtualPV name="sin_record" init="0" eval="sin(2*PI*pvs.record2*pvs.frequency)*pvs.amplitude" scan="2500" display="true"/></row>
+	        <row><virtualPV name="ref_record" init="0" eval="pvs.record2;this+=1;" display="true"/></row>
+	        <row><horizontalPanel>
+    		    <column width="33%"><panel>
+   		            <row>
+    		            <column>amplitude:</column>
+                     	<column><textEntry controlPV="amplitude" dataType="numeric" displayFormat="##0.000" alarmSensitive="false"/></column>
+    		        </row>
+   		            <row>
+    		            <column>frequency:</column>
+                     	<column><textEntry controlPV="frequency" dataType="numeric" displayFormat="##0.000" alarmSensitive="false"/></column>
+    		        </row>
+   		            <row>
+    		            <column>record2:</column>
+                     	<column><textUpdate readbackPV="record2" dataType="numeric" displayFormat="##0.000" alarmSensitive="false"/></column>
+    		        </row>
+   		            <row>
+    		            <column>sin_record:</column>
+                    	<column><textUpdate readbackPV="sin_record" dataType="numeric" displayFormat="##0.000" alarmSensitive="false"/></column>
+    		        </row>
+   		            <row>
+    		            <column>record2 updates count:</column>
+                    	<column><textUpdate readbackPV="ref_record" dataType="numeric" alarmSensitive="false"/></column>
+    		        </row>
+	            </panel></column>
+			    <column width="3%"></column>
+			    <column width="64%" height="200px">
+                    <xyChart flavor="advanced" xAxisLabel="Time" xAxisStyle="time(MM:ss)" yAxisLabel="Value" numberOfPoints="25">
+        		        <xySeries Y-PVname="sin_record" name="sin_record"/>
+                    </xyChart>	 
+		        </column>
+	        </horizontalPanel></row>
+		</verticalPanel></row>
+		
+       <!-- Waveform sum example-->
+
+		<row><verticalPanel caption="VirtualPV example 2: waveform sum">
+	        <row><virtualPV init="0" name="sum_barWaveform1" eval="this = 0; for (var i = pvs.barWaveform1.length - 1; i >= 0; i--) this += pvs.barWaveform1[i];"/></row>
+	        
+		    <row><panel>
+   		        <row>
+    		        <column width="25%">barWaveform1:</column>
+    		        <column width="75%"><textUpdate readbackPV="barWaveform1" dataType="numeric" alarmSensitive="false" displayFormat="##0.00"/></column>
+    		    </row>
+   		        <row>
+    		        <column width="25%">sum_barWaveform1:</column>
+	    	        <column width="75%"><textUpdate readbackPV="sum_barWaveform1" dataType="numeric" displayFormat="##0.000" alarmSensitive="false"/></column>
+    		    </row>
+	        </panel></row>
+		</verticalPanel></row>
+	</verticalPanel>
+</caml>

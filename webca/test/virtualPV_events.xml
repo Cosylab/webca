@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../" title="WebCa Test"
+        pendEvents="30" pendEventsPeriodMs="30">
+
+	<!-- Connection priority test -->
+	<!--
+	<virtualPV name="record1" init="1"/>
+	<virtualPV name="record2" init="1"/>			
+	<virtualPV name="scalar1" init="1"/>		
+	<virtualPV name="scalar2" init="1"/>			
+	<virtualPV name="scalar3" init="1"/>		
+	<virtualPV name="enum" init="1"/>		
+	<virtualPV name="ai001" init="1"/>			
+	<virtualPV name="string" init="1"/>			
+	<virtualPV name="waveformX" init="1"/>			
+	<virtualPV name="waveformY" init="1"/>			
+	<virtualPV name="barWaveform" init="1"/>			
+	<virtualPV name="xLabelsWaveform" init="1"/>			
+	<virtualPV name="waveform1" init="1"/>			
+	<virtualPV name="waveform2" init="1"/>			
+	<virtualPV name="waveform3" init="1"/>			
+	<virtualPV name="waveform" init="1"/>			
+	<virtualPV name="virtualval1" init="1"/>			
+	<virtualPV name="virtualval2" init="1"/>			
+	<virtualPV name="virtualval3" init="1"/>			
+	<virtualPV name="barWaveform1" init="1"/>			
+	<virtualPV name="barWaveform2" init="1"/>			
+	<virtualPV name="barWaveform3" init="1"/>			
+	<virtualPV name="nonexisting" init="1"/>		
+	<panel>
+		<row>
+			<column><textEntry controlPV="record1" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="record2" displayFormat="##0.000"/></column>
+		</row>
+		<row>
+			<column><textEntry controlPV="scalar1" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="scalar2" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="scalar3" displayFormat="##0.000"/></column>
+		</row>
+		<row>
+			<column><textEntry controlPV="enum" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="ai001" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="string" displayFormat="##0.000"/></column>
+		</row>
+		<row>
+			<column><textEntry controlPV="waveformX" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="waveformY" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="barWaveform" displayFormat="##0.000"/></column>
+		</row>
+		<row>
+			<column><textEntry controlPV="xLabelsWaveform" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="waveform" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="nonexisting" displayFormat="##0.000"/></column>
+		</row>
+		<row>
+			<column><textEntry controlPV="virtualval1" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="virtualval2" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="virtualval3" displayFormat="##0.000"/></column>
+		</row>
+		<row>
+			<column><textEntry controlPV="barWaveform1" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="barWaveform2" displayFormat="##0.000"/></column>
+			<column><textEntry controlPV="barWaveform3" displayFormat="##0.000"/></column>
+		</row>
+	</panel>
+    -->
+
+	<!-- Cycling dependency test -->
+    <!--
+	<virtualPV name="virtualval1" init="0" eval="pvs.virtualval2 + 1"/>
+	<virtualPV name="virtualval2" init="0" eval="pvs.virtualval1 + 1"/>			
+
+	<textEntry controlPV="virtualval1" displayFormat="##0.000"/>
+	<textEntry controlPV="virtualval2" displayFormat="##0.000"/>
+    -->
+    
+	<!-- Exponent growth cycling dependency test -->
+    <!--
+	<virtualPV name="virtualval1" init="1" eval="pvs.virtualval2 + pvs.virtualval3"/>
+	<virtualPV name="virtualval2" init="1" eval="pvs.virtualval1 + pvs.virtualval3"/>			
+	<virtualPV name="virtualval3" init="1" eval="pvs.virtualval1 + pvs.virtualval2"/>			
+
+	<textEntry controlPV="virtualval1" displayFormat="##0.000"/>
+	<textEntry controlPV="virtualval2" displayFormat="##0.000"/>
+	<textEntry controlPV="virtualval3" displayFormat="##0.000"/>
+    -->
+
+</caml>

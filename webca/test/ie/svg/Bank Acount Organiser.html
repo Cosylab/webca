@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<TITLE>Bank Acount Organiser</TITLE>
+<STYLE TYPE="text/css">
+P { font-size : 16; }
+</STYLE>
+<SCRIPT>
+
+function makeGauge()
+{  
+    var embed = document.createElement("embed");
+    embed.setAttribute("id", "blup");
+    embed.setAttribute("src", "accounts.svg");
+    embed.setAttribute("name", "svg1");
+    embed.setAttribute("height", "100%");
+    embed.setAttribute("width", "100%");
+    embed.setAttribute("type", "image/svg-xml");
+    embed.setAttribute("pluginspage", "http://www.adobe.com/svg/viewer/install/");
+    document.getElementById("gauge").appendChild(embed);
+
+    setTimeout(function() { alert(window.document.getElementById("blup").getSVGDocument()); }, 1 );
+}
+
+function enlargeRect(event)
+{  
+   var svgDocument = window.document.getElementById("blup").getSVGDocument();
+   var rect = svgDocument.getElementById("rect");
+   rect.setAttributeNS(null, "x", event.clientX - 25);
+   rect.setAttributeNS(null, "y", event.clientY - 5);
+}
+
+function extract_svg_input()
+{
+   alert(window.document.getElementById("blup").getSVGDocument());
+
+   var svgdoc
+   var svgobj;
+   var output = "";
+
+   // For IE 4+ and NS 4.x, not NS 6.x or Mozilla 0.x
+
+   svgdoc = window.document.getElementById("blup").getSVGDocument();
+   alert(svgdoc);
+   //svgdoc = window.document.svg1.getSVGDocument();
+
+   if (!svgdoc.getElementById("myg")) {
+       var svg = svgdoc.createElementNS(null, "svg");
+       svg.setAttributeNS(null, "id", "myg");   
+       svgdoc.appendChild(svg);
+   }
+   
+
+   //svgdoc.getElementById("border").setAttribute("fill", "red");
+
+   //var rect = svgdoc.getElementById("rect");
+   var rect = svgdoc.createElementNS("http://www.w3.org/2000/svg", "rect");
+   //alert(document.createElementNS);
+   
+   //var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+   rect.setAttributeNS(null, "fill", "blue");   
+   rect.setAttributeNS(null, "stroke", "red");   
+   rect.setAttributeNS(null, "x", "25");   
+   rect.setAttributeNS(null, "y", "25");   
+   rect.setAttributeNS(null, "width", "150");   
+   rect.setAttributeNS(null, "height", "25");
+   rect.setAttributeNS(null, "onmousemove", "enlargeRect(evt);"); 
+   rect.setAttributeNS(null, "id", "rect"); 
+   rect.setAttributeNS(null, "class", "box"); 
+   svgdoc.getElementById("myg").appendChild(rect);
+
+   //output += "cheque --> " + svgobj.firstChild.nodeValue + "\n";
+}
+
+</SCRIPT>
+</HEAD>
+<BODY onload="makeGauge();">
+
+<H2>Organise your accounts with the mouse</H2>
+<div>
+Click on a bank service at the right and drag
+to an account on the left to connect them.
+</div>
+<div id="gauge">
+
+</div>
+<div>
+Click on the submit button to inform the bank of your choices.
+</div>
+<FORM>
+  <INPUT TYPE="button" value="Submit" ONCLICK="extract_svg_input()">
+</FORM>
+
+</BODY>
+</HTML>

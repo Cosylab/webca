@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" ?>
+
+<!-- start html element and define caml namespace -->
+<html xmlns:caml="http://webca.cosylab.com">
+
+<head>
+<title>mux macros for charts</title>
+<!-- this is required for CAML, some initialization has to be done, e.g. to instantiate plugin -->
+<caml:head webcaPath="../../" pendEvents="30" pendEventsPeriodMs="100" />
+</head>
+<body>
+
+<table>
+	<tr>
+		<td>SCALAR1:</td>
+		<td><caml:mux>
+			<caml:sequence name="none">
+				<caml:macroValuePair macroName="$(SCALAR1)" macroValue="none" />
+			</caml:sequence>
+			<caml:sequence name="scalar1" selected="true">
+				<caml:macroValuePair macroName="$(SCALAR1)" macroValue="scalar1" />
+			</caml:sequence>
+			<caml:sequence name="scalar2">
+				<caml:macroValuePair macroName="$(SCALAR1)" macroValue="scalar2" />
+			</caml:sequence>
+			<caml:sequence name="scalar3">
+				<caml:macroValuePair macroName="$(SCALAR1)" macroValue="scalar3" />
+			</caml:sequence>
+		</caml:mux></td>
+	</tr>
+	<tr>
+		<td>SCALAR2:</td>
+		<td><caml:mux>
+			<caml:sequence name="none">
+				<caml:macroValuePair macroName="$(SCALAR2)" macroValue="none" />
+			</caml:sequence>
+			<caml:sequence name="scalar1" selected="true">
+				<caml:macroValuePair macroName="$(SCALAR2)" macroValue="scalar1" />
+			</caml:sequence>
+			<caml:sequence name="scalar2" selected="true">
+				<caml:macroValuePair macroName="$(SCALAR2)" macroValue="scalar2" />
+			</caml:sequence>
+			<caml:sequence name="scalar3">
+				<caml:macroValuePair macroName="$(SCALAR2)" macroValue="scalar3" />
+			</caml:sequence>
+		</caml:mux></td>
+	</tr>
+	<tr>
+		<td>SCALAR3:</td>
+		<td><caml:mux>
+			<caml:sequence name="none" selected="true">
+				<caml:macroValuePair macroName="$(SCALAR3)" macroValue="none" />
+			</caml:sequence>
+			<caml:sequence name="scalar1">
+				<caml:macroValuePair macroName="$(SCALAR3)" macroValue="scalar1" />
+			</caml:sequence>
+			<caml:sequence name="scalar2">
+				<caml:macroValuePair macroName="$(SCALAR3)" macroValue="scalar2" />
+			</caml:sequence>
+			<caml:sequence name="scalar3">
+				<caml:macroValuePair macroName="$(SCALAR3)" macroValue="scalar3" />
+			</caml:sequence>
+		</caml:mux></td>
+	</tr>
+	<tr>
+		<td>VECTOR1:</td>
+		<td><caml:mux>
+			<caml:sequence name="none">
+				<caml:macroValuePair macroName="$(VECTOR1)" macroValue="none" />
+			</caml:sequence>
+			<caml:sequence name="vector1" selected="true">
+				<caml:macroValuePair macroName="$(VECTOR1)" macroValue="vector1" />
+			</caml:sequence>
+			<caml:sequence name="vector2">
+				<caml:macroValuePair macroName="$(VECTOR1)" macroValue="vector2" />
+			</caml:sequence>
+			<caml:sequence name="vector3">
+				<caml:macroValuePair macroName="$(VECTOR1)" macroValue="vector3" />
+			</caml:sequence>
+		</caml:mux></td>
+	</tr>
+	<tr>
+		<td>VECTOR2:</td>
+		<td><caml:mux>
+			<caml:sequence name="none">
+				<caml:macroValuePair macroName="$(VECTOR2)" macroValue="none" />
+			</caml:sequence>
+			<caml:sequence name="vector1" selected="true">
+				<caml:macroValuePair macroName="$(VECTOR2)" macroValue="vector1" />
+			</caml:sequence>
+			<caml:sequence name="vector2" selected="true">
+				<caml:macroValuePair macroName="$(VECTOR2)" macroValue="vector2" />
+			</caml:sequence>
+			<caml:sequence name="vector3">
+				<caml:macroValuePair macroName="$(VECTOR2)" macroValue="vector3" />
+			</caml:sequence>
+		</caml:mux></td>
+	</tr>
+	<tr>
+		<td>VECTOR3:</td>
+		<td><caml:mux>
+			<caml:sequence name="none">
+				<caml:macroValuePair macroName="$(VECTOR3)" macroValue="none" />
+			</caml:sequence>
+			<caml:sequence name="vector1" selected="true">
+				<caml:macroValuePair macroName="$(VECTOR3)" macroValue="vector1" />
+			</caml:sequence>
+			<caml:sequence name="vector2">
+				<caml:macroValuePair macroName="$(VECTOR3)" macroValue="vector2" />
+			</caml:sequence>
+			<caml:sequence name="vector3" selected="true">
+				<caml:macroValuePair macroName="$(VECTOR3)" macroValue="vector3" />
+			</caml:sequence>
+		</caml:mux></td>
+	</tr>
+</table>
+
+<caml:include href="xyCharts.xhtml" />
+
+</body>
+</html>

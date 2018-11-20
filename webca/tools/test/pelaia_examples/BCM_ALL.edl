@@ -1,0 +1,261 @@
+# File: /ade/epics/supTop/operations/opi/BCM_ALL.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1734
+y 1378
+w 499
+h 422
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+ctlFont "courier-bold-r-14.0"
+ctlFontAlign "right"
+btnFont "courier-bold-r-18.0"
+fgColor index 10
+bgColor index 3
+textColor index 10
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 5
+ctlBgColor2 index 10
+topShadowColor index 5
+botShadowColor index 10
+pvType "EPICS"
+disableScroll
+endScreenProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+# Geometry
+x 1
+y 4
+w 494
+h 207
+# Appearance
+border
+plotAreaBorder
+xLabel "Time (usecs)"
+yLabel "Current(A)"
+fgColor index 14
+bgColor index 1
+gridColor index 14
+font "courier-bold-r-14.0"
+# Operating Modes
+nPts 1
+updateTimerMs 500
+# X axis properties
+showXAxis
+xAxisStyle "time"
+xAxisSrc "fromUser"
+xMin 0
+xMax 1100
+xShowMajorGrid
+xLablePrecision 2
+# Y axis properties
+showYAxis
+yAxisSrc "fromUser"
+yMin -0.002
+yMax 0.045
+yShowMajorGrid
+yAxisPrecision 3
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 10
+yPv {
+  0 "MEBT_Diag:BCM02:currentTBT"
+  1 "MEBT_Diag:BCM11:currentTBT"
+  2 "DTL_Diag:BCM200:currentTBT"
+  3 "DTL_Diag:BCM248:currentTBT"
+  4 "DTL_Diag:BCM400:currentTBT"
+  5 "DTL_Diag:BCM428:currentTBT"
+  6 "DTL_Diag:BCM600:currentTBT"
+  7 "DTL_Diag:BCM622:currentTBT"
+  8 "CCL_Diag:BCM102:currentTBT"
+  9 "SCL_Diag:BCM00:currentTBT"
+}
+lineThickness {
+  0 2
+  1 2
+  2 2
+  3 2
+  4 2
+  5 2
+  6 2
+  7 2
+  8 2
+  9 2
+}
+ySigned {
+  0 273
+  1 147117624
+  2 73335397
+  3 1835039
+  4 1
+  5 1
+  6 1
+  7 1
+  8 1
+  9 1
+}
+plotColor {
+  0 index 21
+  1 index 25
+  2 index 114
+  3 index 45
+  4 index 43
+  5 index 35
+  6 index 41
+  7 index 10
+  8 index 32
+  9 index 38
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 13
+y 180
+w 85
+h 63
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Diag Timing"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "DiagTimeMap.edl"
+}
+menuLabel {
+  0 "Diag Timing"
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+# Geometry
+x 1
+y 212
+w 494
+h 207
+# Appearance
+border
+plotAreaBorder
+xLabel "Time (usecs)"
+yLabel "Current(A)"
+fgColor index 14
+bgColor index 1
+gridColor index 14
+font "courier-bold-r-14.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 1
+updateTimerMs 500
+# X axis properties
+showXAxis
+xAxisStyle "time"
+xAxisSrc "fromUser"
+xMin 0
+xMax 1100
+xShowMajorGrid
+xLablePrecision 2
+# Y axis properties
+showYAxis
+yAxisSrc "fromUser"
+yMin -0.002
+yMax 0.045
+yShowMajorGrid
+yAxisPrecision 3
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 12
+yPv {
+  0 "HEBT_Diag:BCM01:currentTBT"
+  1 "HEBT_Diag:BCM09:currentTBT"
+  2 "LDmp_Diag:BCM05:currentTBT"
+  3 "HEBT_Diag:BCM20:currentTBT"
+  4 "HEBT_Diag:BCM32:currentTBT"
+  5 "IDmp_Diag:BCM01:currentTBT"
+  6 "Ring_Diag:BCM_D09:currentTBT"
+  7 "EDmp_Diag:BCM02:currentTBT"
+  8 "RTBT_Diag:BCM02:currentTBT"
+  9 "RTBT_Diag:BCM11:currentTBT"
+  10 "RTBT_Diag:BCM14:currentTBT"
+  11 "RTBT_Diag:BCM25:currentTBT"
+}
+lineThickness {
+  0 2
+  1 2
+  2 2
+  3 2
+  4 2
+  5 2
+  6 2
+  7 2
+  8 2
+}
+xSigned {
+  0 -1826095103
+  1 68419
+  2 194068848
+  3 -1758461951
+  4 68424
+  5 -1269877464
+  6 1369440257
+  7 111695
+  8 -1274031664
+  9 1
+  10 1
+  11 1
+}
+ySigned {
+  0 -1270757968
+  1 94896129
+  2 111681
+  3 -1288438552
+  4 1911554049
+  5 112086
+  6 -1275544432
+  7 1475346433
+  8 111586
+  9 1
+  10 1
+  11 1
+}
+plotColor {
+  0 index 122
+  1 index 68
+  2 index 53
+  3 index 58
+  4 index 24
+  5 index 77
+  6 index 76
+  7 index 75
+  8 index 12
+  9 index 73
+  10 index 30
+  11 index 64
+}
+endObjectProperties
+

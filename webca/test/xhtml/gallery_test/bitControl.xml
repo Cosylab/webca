@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl"?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../"/>
+</head>
+<body>
+		
+	<caml:verticalPanel width="512">
+		<caml:row>
+			<caml:bitControl controlPV="$(NAME)" startBit="0" endBit="31" size="small" href="test/xhtml/gallery_test/slider.xml?NAME=record1" target="_blank"/> 		
+		</caml:row>	
+		<caml:row>
+			<caml:bitControl controlPV="$(NAME)" startBit="0" endBit="31" size="medium" href="bitControl.xml?NAME=record2" target="_self"/> 		
+		</caml:row>			
+		<caml:row>
+			<caml:bitControl controlPV="$(NAME)" startBit="0" endBit="31" size="large" target="_top"/> 		
+		</caml:row>
+	</caml:verticalPanel>
+
+	<caml:verticalPanel width="128">
+		<caml:row>
+			<caml:bitControl controlPV="$(NAME)" startBit="0" endBit="7"/> 		
+		</caml:row>	
+		<caml:row>
+			<caml:bitControl controlPV="$(NAME)" startBit="8" endBit="15"/> 		
+		</caml:row>	
+		<caml:row>
+			<caml:bitControl controlPV="$(NAME)" startBit="16" endBit="23"/> 		
+		</caml:row>	
+		<caml:row>
+			<caml:bitControl controlPV="$(NAME)" startBit="24" endBit="31"/> 		
+		</caml:row>	
+	</caml:verticalPanel>
+
+	<caml:verticalPanel width="512">
+		<caml:row>
+			<caml:bitControl controlPV="$(NAME)" startBit="31" endBit="0" size="small"/> 		
+		</caml:row>	
+	</caml:verticalPanel>
+	
+</body>
+</html>

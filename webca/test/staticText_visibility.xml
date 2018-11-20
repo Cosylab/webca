@@ -1,0 +1,20 @@
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title></title>
+    <caml:head webcaPath="../"/>
+</head>
+<body>
+ 
+    Test.
+
+	<caml:virtualPV name="nowYouSeeMe" init="this = 12.345;" display="true"/>
+	<caml:virtualPV name="nowYouDont" init="this = 12.345;" display="false"/>
+
+	<caml:slider controlPV="record1">With visibilityPV</caml:slider>
+
+	<caml:staticText visibilityPV="record1" visibilityMin="10" visibilityMax="50">10 &lt;= record1 &lt; 50</caml:staticText>
+	<caml:staticText visibilityPV="record1" visibilityInvert="true" visibilityMin="10" visibilityMax="50">record1 &lt; 10 || 50 &lt;= record1</caml:staticText>
+
+</body>
+</html>

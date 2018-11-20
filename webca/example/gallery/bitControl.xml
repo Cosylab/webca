@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+		
+	<verticalPanel width="512">
+		<row>
+			<bitControl controlPV="$(NAME)" startBit="0" endBit="31" size="small"/> 		
+		</row>	
+		<row>
+			<bitControl controlPV="$(NAME)" startBit="0" endBit="31" size="medium"/> 		
+		</row>			
+		<row>
+			<bitControl controlPV="$(NAME)" startBit="0" endBit="31" size="large"/> 		
+		</row>
+	</verticalPanel>
+
+	<verticalPanel width="128">
+		<row>
+			<bitControl controlPV="$(NAME)" startBit="0" endBit="7"/> 		
+		</row>	
+		<row>
+			<bitControl controlPV="$(NAME)" startBit="8" endBit="15"/> 		
+		</row>	
+		<row>
+			<bitControl controlPV="$(NAME)" startBit="16" endBit="23"/> 		
+		</row>	
+		<row>
+			<bitControl controlPV="$(NAME)" startBit="24" endBit="31"/> 		
+		</row>	
+	</verticalPanel>
+
+	<verticalPanel width="512">
+		<row>
+			<bitControl controlPV="$(NAME)" startBit="31" endBit="0" size="small"/> 		
+		</row>	
+	</verticalPanel>
+	
+</caml>

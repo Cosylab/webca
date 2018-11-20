@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" ?>
+<caml
+	title="WebCa Test"
+	extStyle="asp"
+	>		
+			<horizontalPanel>
+				<column>
+					<textUpdate
+						readbackPV="string.NAME"
+						dataType="text"		
+						alarmSensitive="false"
+						size="large"/>
+				</column>		
+			</horizontalPanel>	
+			<horizontalPanel>
+				<column>
+					<mux>
+						<sequence name="wave1" selected="true">
+							<macroValuePair macroName="$(NUMBER1)" macroValue="1"/>
+							<macroValuePair macroName="$(NUMBER2)" macroValue="2"/>
+							<macroValuePair macroName="$(DESC1)" macroValue="record 1"/>
+							<macroValuePair macroName="$(DESC2)" macroValue="record 2"/>							
+						</sequence>
+					    <sequence name="wave2">
+							<macroValuePair macroName="$(NUMBER1)" macroValue="2"/>
+							<macroValuePair macroName="$(NUMBER2)" macroValue="1"/>			
+							<macroValuePair macroName="$(DESC1)" macroValue="record 2"/>
+							<macroValuePair macroName="$(DESC2)" macroValue="record 1"/>														
+					    </sequence>
+					    <sequence name="wave3">
+							<macroValuePair macroName="$(NUMBER1)" macroValue="3"/>
+							<macroValuePair macroName="$(NUMBER2)" macroValue="2"/>
+							<macroValuePair macroName="$(DESC1)" macroValue="record 3"/>
+							<macroValuePair macroName="$(DESC2)" macroValue="record 2"/>														
+					    </sequence>
+					</mux>			
+				</column>
+			</horizontalPanel>	
+	
+			<horizontalPanel>
+				<column height="300px" width="100%">
+					<xyChart xAxisLabel="Axis X label $(DESC1)"
+							 yAxisLabel="Axis Y label $(DESC2)"
+	 						 numberOfPoints="30">
+						<xySeries Y-PVname="record2" name="counter"></xySeries>
+					</xyChart>	 
+				</column>
+			</horizontalPanel>	
+						
+			<horizontalPanel>
+				<column>
+					<barChart xAxisLabel="Axis X label $(DESC1)"
+							  yAxisLabel="Axis Y label $(DESC2)"										
+						      xLabelsPV="xLabelsWaveform">
+						<series PVname="barWaveform$(NUMBER1)" name="$(DESC1)"/>
+						<series PVname="barWaveform$(NUMBER2)" name="$(DESC2)"/>	
+						<series PVname="barWaveform3" name="33"/>		
+					</barChart>	 
+				</column>
+				<column>
+						<textUpdate
+						readbackPV="string.NAME"
+						dataType="text"		
+						alarmSensitive="false"
+						size="large"/>
+				</column>
+			</horizontalPanel>
+	
+	
+			<horizontalPanel>
+				<column height="200px" width="60%">
+					<barChart xAxisLabel="Axis X label $(DESC1)"
+							  yAxisLabel="Axis Y label $(DESC2)"										
+						      xLabelsPV="xLabelsWaveform">
+						<series PVname="barWaveform$(NUMBER1)" name="$(DESC1)"/>
+						<series PVname="barWaveform$(NUMBER2)" name="$(DESC2)"/>		
+					</barChart>	 
+				</column>
+				<column>
+						<textUpdate
+						readbackPV="string.NAME"
+						dataType="text"		
+						alarmSensitive="false"
+						size="large"/>
+				</column>
+			</horizontalPanel>	
+	
+	
+			<horizontalPanel>
+				<column width="30%">
+					<barChart xAxisLabel="Axis X label $(DESC1)"
+							  yAxisLabel="Axis Y label $(DESC2)"										
+						      xLabelsPV="xLabelsWaveform">
+						<series PVname="barWaveform$(NUMBER1)" name="$(DESC1)"/>
+						<series PVname="barWaveform$(NUMBER2)" name="$(DESC2)"/>		
+					</barChart>	 
+				</column>
+				<column>
+						<textUpdate
+						readbackPV="string.NAME"
+						dataType="text"		
+						alarmSensitive="false"
+						size="large"/>
+				</column>
+			</horizontalPanel>		
+	
+	
+			<horizontalPanel>
+				<column width="50%">
+					<xyChart xAxisLabel="Axis X label $(DESC1)"
+  						     yAxisLabel="Axis Y label $(DESC2)">
+						<xySeries Y-PVname="waveform$(NUMBER1)" name="$(DESC1)"></xySeries>
+						<xySeries Y-PVname="waveform$(NUMBER2)" name="$(DESC2)"></xySeries>
+					</xyChart>	 
+				</column>
+				<column  width="50%">
+					<xyChart xAxisLabel="Axis X label $(DESC1)"
+  						     yAxisLabel="Axis Y label $(DESC2)">
+						<xySeries Y-PVname="waveform$(NUMBER1)" name="$(DESC1)"></xySeries>
+						<xySeries Y-PVname="waveform$(NUMBER2)" name="$(DESC2)"></xySeries>
+					</xyChart>	 
+				</column>				
+			</horizontalPanel>	
+			<horizontalPanel>
+				<column height="300px">
+					<xyChart xAxisLabel="Axis X label $(DESC1)"
+							 yAxisLabel="Axis Y label $(DESC2)">
+						<xySeries Y-PVname="waveform$(NUMBER1)" X-PVname="waveform$(NUMBER2)" name="$(DESC1)"></xySeries>
+						<xySeries Y-PVname="waveform3" X-PVname="waveform2" name="$(DESC2)"></xySeries>						
+					</xyChart>	 
+				</column>
+			</horizontalPanel>	
+	
+	
+			<verticalPanel>
+				<row>
+					<xyChart xAxisLabel="blabla"
+  						     yAxisLabel="Axis Y label $(DESC2)">
+						<xySeries Y-PVname="waveform$(NUMBER1)" name="$(DESC1)"></xySeries>
+						<xySeries Y-PVname="waveform$(NUMBER2)" name="$(DESC2)"></xySeries>
+					</xyChart>	 
+				</row>
+				<row>
+					<xyChart xAxisLabel="blabla"
+  						     yAxisLabel="Axis Y label $(DESC2)">
+						<xySeries Y-PVname="waveform$(NUMBER1)" name="$(DESC1)"></xySeries>
+						<xySeries Y-PVname="waveform$(NUMBER2)" name="$(DESC2)"></xySeries>
+					</xyChart>	 
+				</row>				
+			</verticalPanel>	
+	
+			<panel>
+				<row>
+					<column width = "300px">
+						<xyChart xAxisLabel="blabla"
+		  					     yAxisLabel="Axis Y label $(DESC2)">
+							<xySeries Y-PVname="waveform$(NUMBER1)" name="$(DESC1)"></xySeries>
+							<xySeries Y-PVname="waveform$(NUMBER2)" name="$(DESC2)"></xySeries>
+						</xyChart>	 
+					</column>
+					<column>
+						neki
+					</column>	
+				</row>
+				<row>
+					<column width = "300px">
+					<xyChart xAxisLabel="blabla"
+  						     yAxisLabel="Axis Y label $(DESC2)">
+						<xySeries Y-PVname="waveform$(NUMBER1)" name="$(DESC1)"></xySeries>
+						<xySeries Y-PVname="waveform$(NUMBER2)" name="$(DESC2)"></xySeries>
+					</xyChart>	 
+						</column>
+				</row>				
+			</panel>			
+	
+	<verticalPanel>
+		<row>
+			<textUpdate readbackPV="$(NAME)" />			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" dataType="text" alarmSensitive="true" size="small" />			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" dataType="numeric" alarmSensitive="false" size="large" />			
+		</row>
+	</verticalPanel>		
+</caml>

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" ?>
+
+<!-- start html element and define caml namespace -->
+<html xmlns:caml="http://webca.cosylab.com">
+      
+  <head>
+    <title>XHTML example</title>
+    <!-- this is required for CAML, some initializaion has to be done, e.g. to instantiate plugin -->
+    <caml:head webcaPath="../" pendEvents="30" pendEventsPeriodMs="100"/>
+  </head>
+
+  <body>
+  
+	<img src="logo_cosylab.gif" />
+
+	<p>Now this is a simple html... </p>
+
+	<table width="50%">
+	  <tr>
+	  	<td width="20%">
+			<p>record1 value:</p> 
+		</td>
+	  	<td align="left">
+		    <caml:textEntry controlPV="record1" />
+		</td>
+	  </tr>
+	</table>
+	
+	<hr/>
+	
+	<center>
+	 <table width="75%">
+	  <tr>
+	    <td>
+	    	<caml:gauge readbackPV="record1" />
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>
+	    	<caml:slider controlPV="record1" />
+	    </td>
+	  </tr>
+	 </table>
+    </center>
+
+    <hr/>
+
+	<center>
+	 <table width="75%">
+	  <tr>
+	    <td>
+	    	<!-- simple PV, initial value 0 -->
+			<caml:virtualPV name="offset" init="0" />
+			<!-- calc PV, initial value 0, custom eval function, scan every 100ms -->
+			<caml:virtualPV name="noise" init="0" eval="this+Math.random()-0.5" scan="100"/>
+			<!-- calc PV that depends on other PVs and in addition supplies static CTRL data -->
+			<caml:virtualPV name="calculated" eval="pvs.device:record1/2 + pvs.offset + pvs.noise" display="true">
+		        <ctrl
+		        	units="V"
+				    upperDisplayLimit="100"
+				    lowerDisplayLimit="-100"
+		    		upperControlLimit="100"
+				    lowerControlLimit="-100"	
+				    upperAlarmLimit="50"
+				    lowerAlarmLimit="-50"
+				    upperWarningLimit="30"	
+				    lowerWarningLimit="-30"	
+		        />
+			</caml:virtualPV>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>
+			Virtual PV offset : <caml:textEntry controlPV="offset" displayFormat="##0.000"/><br/>
+			Virutal PV counter: <caml:textUpdate readbackPV="noise" displayFormat="##0.000"/>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>
+	    	<caml:gauge readbackPV="calculated" displayFormat="##0.000"/>
+	    </td>
+	  </tr>
+	 </table>
+    </center>
+
+  </body>
+
+</html>

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl"?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../"/>
+</head>
+<body>
+
+	<caml:verticalPanel>
+        <!-- Sinus transformation example, using a linearly growing record -->
+		
+		<caml:row><caml:verticalPanel caption="VirtualPV example 1: sinus function (scan: 2.5s)">
+	        <caml:row><caml:virtualPV name="amplitude" init="10"/></caml:row>
+	        <caml:row><caml:virtualPV name="frequency" init=".02"/></caml:row>
+	        <caml:row><caml:virtualPV name="sin_record" init="0" eval="sin(2*PI*pvs.record2*pvs.frequency)*pvs.amplitude" scan="2500"/></caml:row>
+	        <caml:row><caml:virtualPV name="ref_record" init="0" eval="pvs.record2;this+=1;"/></caml:row>
+	        <caml:row><caml:horizontalPanel>
+    		    <caml:column width="33%"><caml:panel>
+   		            <caml:row>
+    		            <caml:column>amplitude:</caml:column>
+                     	<caml:column><caml:textEntry controlPV="amplitude" dataType="numeric" displayFormat="##0.000" alarmSensitive="false"/></caml:column>
+    		        </caml:row>
+   		            <caml:row>
+    		            <caml:column>frequency:</caml:column>
+                     	<caml:column><caml:textEntry controlPV="frequency" dataType="numeric" displayFormat="##0.000" alarmSensitive="false"/></caml:column>
+    		        </caml:row>
+   		            <caml:row>
+    		            <caml:column>record2:</caml:column>
+                     	<caml:column><caml:textUpdate readbackPV="record2" dataType="numeric" displayFormat="##0.000" alarmSensitive="false"/></caml:column>
+    		        </caml:row>
+   		            <caml:row>
+    		            <caml:column>sin_record:</caml:column>
+                    	<caml:column><caml:textUpdate readbackPV="sin_record" dataType="numeric" displayFormat="##0.000" alarmSensitive="false"/></caml:column>
+    		        </caml:row>
+   		            <caml:row>
+    		            <caml:column>record2 updates count:</caml:column>
+                    	<caml:column><caml:textUpdate readbackPV="ref_record" dataType="numeric" alarmSensitive="false"/></caml:column>
+    		        </caml:row>
+	            </caml:panel></caml:column>
+			    <caml:column width="3%"></caml:column>
+
+
+			    <caml:column width="64%" height="200px">
+    	            <caml:virtualPV name="test" init="10" eval="random() * 10" scan="5000"/>
+
+                    <caml:xyChart flavor="dvanced" xAxisLabel="Time" xAxisStyle="time" yAxisLabel="Value" numberOfPoints="25">
+        		        <caml:xySeries Y-PVname="sin_record" name="sin_record"/>
+        		        <caml:xySeries Y-PVname="record1" name="record1"/>
+        		        <!--  
+        		        <caml:xySeries Y-PVname="test" name="test"/>
+        		        -->
+                    </caml:xyChart>	 
+		        </caml:column>
+
+	        </caml:horizontalPanel></caml:row>
+		</caml:verticalPanel></caml:row>
+		
+			<caml:slider
+				 controlPV="record1"
+				 displayFormat="#0.0"			
+				 increment="0.001"										
+				 size="small">										
+			</caml:slider>
+		
+       <!-- Waveform sum example-->
+
+		<caml:row><caml:verticalPanel caption="VirtualPV example 2: waveform sum">
+	        <caml:row><caml:virtualPV init="0" name="sum_barWaveform1" eval="this=0;for(var i=pvs.barWaveform1.length - 1;i>=0;i--)this+=pvs.barWaveform1[i];"/></caml:row>
+	        
+		    <caml:row><caml:panel>
+   		        <caml:row>
+    		        <caml:column width="25%">barWaveform1:</caml:column>
+    		        <caml:column width="75%"><caml:textUpdate readbackPV="barWaveform1" dataType="numeric" alarmSensitive="false" displayFormat="##0.00"/></caml:column>
+    		    </caml:row>
+   		        <caml:row>
+    		        <caml:column width="25%">sum_barWaveform1:</caml:column>
+	    	        <caml:column width="75%"><caml:textUpdate readbackPV="sum_barWaveform1" dataType="numeric" displayFormat="##0.000" alarmSensitive="false"/></caml:column>
+    		    </caml:row>
+	        </caml:panel></caml:row>
+		</caml:verticalPanel></caml:row>
+	</caml:verticalPanel>
+</body>
+</html>

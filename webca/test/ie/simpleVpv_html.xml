@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../" pendEvents="5" pendEventsPeriodMs="100" extStyle="sns"/>
+</head>
+<body onload="/*alert('loaded!')*/" onresize="/*alert('resize!')*/">
+
+    This is normal html text.
+
+    This is a normal html table.
+    <table>
+        <tr><td>a1</td><td>a2</td></tr>
+        <tr><td>b1</td><td>b2</td></tr>
+        <tr><td>c1</td><td>c2</td></tr>
+    </table>
+    
+	<caml:mux>
+		<caml:sequence name="record1" selected="true">
+			<caml:macroValuePair macroName="$(NAME)" macroValue="record1"/>
+			<caml:macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+		</caml:sequence>
+	    <caml:sequence name="record2">
+			<caml:macroValuePair macroName="$(NAME)" macroValue="record2"/>			
+			<caml:macroValuePair macroName="$(DESC)" macroValue="counter PV"/>			
+	    </caml:sequence>
+	    <caml:sequence name="enum">
+			<caml:macroValuePair macroName="$(NAME)" macroValue="enum"/>
+			<caml:macroValuePair macroName="$(DESC)" macroValue="enumerated PV"/>
+	    </caml:sequence>
+	</caml:mux>
+
+	<caml:staticText>Go IE go!</caml:staticText>
+	<caml:staticText>You are using $(NAME): $(DESC).</caml:staticText>
+	<caml:textUpdate readbackPV="$(NAME)"/>
+    <caml:virtualPV name="record2" init="0" eval="this+1" scan="1000"/>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../../" title="WebCa Test">
+
+	<staticText>Go IE go!</staticText>
+    <virtualPV name="record2" init="val=12.3;ctrl.lowerDisplayLimit=0;ctrl.upperDisplayLimit=10;" />
+    <textEntry controlPV="record2" displayFormat="#0.0"/>
+<!--  
+	<gauge readbackPV="$(NAME)" displayFormat="#0.0"/>	
+    <virtualPV name="record2" init="0" eval="this+1" scan="1000"/>
+	<wheelSwitch controlPV="record2" displayFormat="0"/> 		
+
+	<slider readbackPV="$(NAME1)" controlPV="$(NAME)"/>										
+
+	<slider controlPV="record2"/> 		
+
+	<verticalPanel width="50%">
+		<row height="300px">
+			<gauge readbackPV="record2"
+				   displayFormat="#0.0" minValue="-1" maxValue="10"
+				 />	
+		</row>
+	</verticalPanel>	
+-->
+</caml>

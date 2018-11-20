@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../" title="WebCa Test"
+        pendEvents="30" pendEventsPeriodMs="1">
+	
+	<horizontalPanel>
+		<column>
+			<mux>
+				<sequence name="record1">
+					<macroValuePair macroName="$(NAME1)" macroValue="record1"/>
+					<macroValuePair macroName="$(DESC1)" macroValue="record1 ai"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME1)" macroValue="record2"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="record2 calc"/>			
+			    </sequence>
+			    <sequence name="scalar1" selected="true">
+					<macroValuePair macroName="$(NAME1)" macroValue="scalar1"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="scalar1 ai"/>			
+			    </sequence>
+			    <sequence name="scalar2">
+					<macroValuePair macroName="$(NAME1)" macroValue="scalar2"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="scalar2 ai"/>			
+			    </sequence>
+			    <sequence name="scalar3">
+					<macroValuePair macroName="$(NAME1)" macroValue="scalar3"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="scalar3 ai"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME1)" macroValue="enum"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="enum mbbi"/>			
+			    </sequence>
+			    <sequence name="ai001">
+					<macroValuePair macroName="$(NAME1)" macroValue="ai001"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="ai001 ai"/>			
+			    </sequence>
+			    <sequence name="string">
+					<macroValuePair macroName="$(NAME1)" macroValue="string"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="string stringin"/>			
+			    </sequence>
+			    <sequence name="waveformX">
+					<macroValuePair macroName="$(NAME1)" macroValue="waveformX"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="waveformX wafeform"/>			
+			    </sequence>
+			    <sequence name="waveformY">
+					<macroValuePair macroName="$(NAME1)" macroValue="waveformY"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="waveformY wafeform"/>			
+			    </sequence>
+			    <sequence name="barWaveform">
+					<macroValuePair macroName="$(NAME1)" macroValue="barWaveform"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="barWaveform wafeform"/>			
+			    </sequence>
+			    <sequence name="xLabelsWaveform">
+					<macroValuePair macroName="$(NAME1)" macroValue="xLabelsWaveform"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="xLabelsWaveform wafeform"/>			
+			    </sequence>
+			    <sequence name="waveform1">
+					<macroValuePair macroName="$(NAME1)" macroValue="waveform1"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="waveform1 wafeform"/>			
+			    </sequence>
+			    <sequence name="waveform2">
+					<macroValuePair macroName="$(NAME1)" macroValue="waveform2"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="waveform2 wafeform"/>			
+			    </sequence>
+			    <sequence name="waveform3">
+					<macroValuePair macroName="$(NAME1)" macroValue="waveform3"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="wafeform"/>			
+			    </sequence>
+			    <sequence name="virtualval1">
+					<macroValuePair macroName="$(NAME1)" macroValue="virtualval1"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="virtualval1"/>			
+			    </sequence>
+			    <sequence name="virtualval2">
+					<macroValuePair macroName="$(NAME1)" macroValue="virtualval2"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="virtualval2"/>			
+			    </sequence>
+			    <sequence name="virtualval3">
+					<macroValuePair macroName="$(NAME1)" macroValue="virtualval3"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="virtualval3"/>			
+			    </sequence>
+			    <sequence name="barWaveform1">
+					<macroValuePair macroName="$(NAME1)" macroValue="barWaveform1"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="barWaveform1 wafeform"/>			
+			    </sequence>
+			    <sequence name="barWaveform2">
+					<macroValuePair macroName="$(NAME1)" macroValue="barWaveform2"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="barWaveform2 wafeform"/>			
+			    </sequence>
+			    <sequence name="barWaveform3">
+					<macroValuePair macroName="$(NAME1)" macroValue="barWaveform3"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="barWaveform3 wafeform"/>			
+			    </sequence>
+			    <sequence name="nonexisting">
+					<macroValuePair macroName="$(NAME1)" macroValue="nonexisting"/>			
+					<macroValuePair macroName="$(DESC1)" macroValue="nonexisting none"/>			
+			    </sequence>
+			</mux>
+		</column>
+		<column>
+			<mux>
+				<sequence name="record1">
+					<macroValuePair macroName="$(NAME2)" macroValue="record1"/>
+					<macroValuePair macroName="$(DESC2)" macroValue="record1 ai"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME2)" macroValue="record2"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="record2 calc"/>			
+			    </sequence>
+			    <sequence name="scalar1">
+					<macroValuePair macroName="$(NAME2)" macroValue="scalar1"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="scalar1 ai"/>			
+			    </sequence>
+			    <sequence name="scalar2" selected="true">
+					<macroValuePair macroName="$(NAME2)" macroValue="scalar2"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="scalar2 ai"/>			
+			    </sequence>
+			    <sequence name="scalar3">
+					<macroValuePair macroName="$(NAME2)" macroValue="scalar3"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="scalar3 ai"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME2)" macroValue="enum"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="enum mbbi"/>			
+			    </sequence>
+			    <sequence name="ai001">
+					<macroValuePair macroName="$(NAME2)" macroValue="ai001"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="ai001 ai"/>			
+			    </sequence>
+			    <sequence name="string">
+					<macroValuePair macroName="$(NAME2)" macroValue="string"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="string stringin"/>			
+			    </sequence>
+			    <sequence name="waveformX">
+					<macroValuePair macroName="$(NAME2)" macroValue="waveformX"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="waveformX wafeform"/>			
+			    </sequence>
+			    <sequence name="waveformY">
+					<macroValuePair macroName="$(NAME2)" macroValue="waveformY"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="waveformY wafeform"/>			
+			    </sequence>
+			    <sequence name="barWaveform">
+					<macroValuePair macroName="$(NAME2)" macroValue="barWaveform"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="barWaveform wafeform"/>			
+			    </sequence>
+			    <sequence name="xLabelsWaveform">
+					<macroValuePair macroName="$(NAME2)" macroValue="xLabelsWaveform"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="xLabelsWaveform wafeform"/>			
+			    </sequence>
+			    <sequence name="waveform1">
+					<macroValuePair macroName="$(NAME2)" macroValue="waveform1"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="waveform1 wafeform"/>			
+			    </sequence>
+			    <sequence name="waveform2">
+					<macroValuePair macroName="$(NAME2)" macroValue="waveform2"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="waveform2 wafeform"/>			
+			    </sequence>
+			    <sequence name="waveform3">
+					<macroValuePair macroName="$(NAME2)" macroValue="waveform3"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="wafeform"/>			
+			    </sequence>
+			    <sequence name="virtualval1">
+					<macroValuePair macroName="$(NAME2)" macroValue="virtualval1"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="virtualval1"/>			
+			    </sequence>
+			    <sequence name="virtualval2">
+					<macroValuePair macroName="$(NAME2)" macroValue="virtualval2"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="virtualval2"/>			
+			    </sequence>
+			    <sequence name="virtualval3">
+					<macroValuePair macroName="$(NAME2)" macroValue="virtualval3"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="virtualval3"/>			
+			    </sequence>
+			    <sequence name="barWaveform1">
+					<macroValuePair macroName="$(NAME2)" macroValue="barWaveform1"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="barWaveform1 wafeform"/>			
+			    </sequence>
+			    <sequence name="barWaveform2">
+					<macroValuePair macroName="$(NAME2)" macroValue="barWaveform2"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="barWaveform2 wafeform"/>			
+			    </sequence>
+			    <sequence name="barWaveform3">
+					<macroValuePair macroName="$(NAME2)" macroValue="barWaveform3"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="barWaveform3 wafeform"/>			
+			    </sequence>
+			    <sequence name="nonexisting">
+					<macroValuePair macroName="$(NAME2)" macroValue="nonexisting"/>			
+					<macroValuePair macroName="$(DESC2)" macroValue="nonexisting none"/>			
+			    </sequence>
+			</mux>
+		</column>
+		<column>
+			<mux>
+				<sequence name="record1">
+					<macroValuePair macroName="$(NAME3)" macroValue="record1"/>
+					<macroValuePair macroName="$(DESC3)" macroValue="record1 ai"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME3)" macroValue="record2"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="record2 calc"/>			
+			    </sequence>
+			    <sequence name="scalar1">
+					<macroValuePair macroName="$(NAME3)" macroValue="scalar1"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="scalar1 ai"/>			
+			    </sequence>
+			    <sequence name="scalar2">
+					<macroValuePair macroName="$(NAME3)" macroValue="scalar2"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="scalar2 ai"/>			
+			    </sequence>
+			    <sequence name="scalar3" selected="true">
+					<macroValuePair macroName="$(NAME3)" macroValue="scalar3"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="scalar3 ai"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME3)" macroValue="enum"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="enum mbbi"/>			
+			    </sequence>
+			    <sequence name="ai001">
+					<macroValuePair macroName="$(NAME3)" macroValue="ai001"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="ai001 ai"/>			
+			    </sequence>
+			    <sequence name="string">
+					<macroValuePair macroName="$(NAME3)" macroValue="string"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="string stringin"/>			
+			    </sequence>
+			    <sequence name="waveformX">
+					<macroValuePair macroName="$(NAME3)" macroValue="waveformX"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="waveformX wafeform"/>			
+			    </sequence>
+			    <sequence name="waveformY">
+					<macroValuePair macroName="$(NAME3)" macroValue="waveformY"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="waveformY wafeform"/>			
+			    </sequence>
+			    <sequence name="barWaveform">
+					<macroValuePair macroName="$(NAME3)" macroValue="barWaveform"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="barWaveform wafeform"/>			
+			    </sequence>
+			    <sequence name="xLabelsWaveform">
+					<macroValuePair macroName="$(NAME3)" macroValue="xLabelsWaveform"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="xLabelsWaveform wafeform"/>			
+			    </sequence>
+			    <sequence name="waveform1">
+					<macroValuePair macroName="$(NAME3)" macroValue="waveform1"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="waveform1 wafeform"/>			
+			    </sequence>
+			    <sequence name="waveform2">
+					<macroValuePair macroName="$(NAME3)" macroValue="waveform2"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="waveform2 wafeform"/>			
+			    </sequence>
+			    <sequence name="waveform3">
+					<macroValuePair macroName="$(NAME3)" macroValue="waveform3"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="wafeform"/>			
+			    </sequence>
+			    <sequence name="virtualval1">
+					<macroValuePair macroName="$(NAME3)" macroValue="virtualval1"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="virtualval1"/>			
+			    </sequence>
+			    <sequence name="virtualval2">
+					<macroValuePair macroName="$(NAME3)" macroValue="virtualval2"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="virtualval2"/>			
+			    </sequence>
+			    <sequence name="virtualval3">
+					<macroValuePair macroName="$(NAME3)" macroValue="virtualval3"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="virtualval3"/>			
+			    </sequence>
+			    <sequence name="barWaveform1">
+					<macroValuePair macroName="$(NAME3)" macroValue="barWaveform1"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="barWaveform1 wafeform"/>			
+			    </sequence>
+			    <sequence name="barWaveform2">
+					<macroValuePair macroName="$(NAME3)" macroValue="barWaveform2"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="barWaveform2 wafeform"/>			
+			    </sequence>
+			    <sequence name="barWaveform3">
+					<macroValuePair macroName="$(NAME3)" macroValue="barWaveform3"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="barWaveform3 wafeform"/>			
+			    </sequence>
+			    <sequence name="nonexisting">
+					<macroValuePair macroName="$(NAME3)" macroValue="nonexisting"/>			
+					<macroValuePair macroName="$(DESC3)" macroValue="nonexisting none"/>			
+			    </sequence>
+			</mux>
+		</column>
+	</horizontalPanel>	
+
+	<verticalPanel>
+		<row><slider controlPV="$(NAME1)"/></row>
+		<row><slider controlPV="$(NAME2)"/></row>
+		<row><slider controlPV="$(NAME3)"/></row>
+	</verticalPanel>
+
+	<tabView>
+		<tab name="resize" selected="true"><xi:include href="fcharts_resize.xml"/></tab>
+		<!--
+		<tab name="virtualPV eval" selected="true"><xi:include href="virtualPV_eval.xml"/></tab>
+		<tab name="pvlabels" selected="true"><xi:include href="fcharts_pvlabels.xml"/></tab>
+		<tab name="virtualPV events" selected="true"><xi:include href="virtualPV_events.xml"/></tab>
+		<tab name="virtualPV gallery" selected="true"><xi:include href="virtualPV_gallery.xml"/></tab>
+		<tab name="virtualPV scan" selected="true"><xi:include href="virtualPV_scan.xml"/></tab>
+		<tab name="bitControl" selected="true"><xi:include href="bitControl.xml"/></tab>
+		<tab name="y" selected="true"><xi:include href="fcharts_y.xml"/></tab>
+		<tab name="xy" selected="true"><xi:include href="fcharts_xy.xml"/></tab>
+		<tab name="bar" selected="true"><xi:include href="fcharts_bar.xml"/></tab>
+		<tab name="gallery xy" selected="true"><xi:include href="fcharts_gallery_xy.xml"/></tab>
+		<tab name="gallery bar" selected="true"><xi:include href="fcharts_gallery_bar.xml"/></tab>
+		-->
+	</tabView>
+																					
+</caml>

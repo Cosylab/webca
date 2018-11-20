@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" ?>
+
+<!-- start html element and define caml namespace -->
+<html xmlns:caml="http://webca.cosylab.com">
+
+<head>
+<title>xyCharts fast</title>
+<!-- this is required for CAML, some initialization has to be done, e.g. to instantiate plugin -->
+<caml:head webcaPath="../../" pendEvents="30" pendEventsPeriodMs="100" />
+</head>
+<body>
+
+<caml:tabView>
+	<caml:tab name="time trend" selected="true">
+
+		<caml:xyChart style="width: 100%; height: 256px;" flavor="advanced"
+			xAxisLabel="$(X_AXIS_LABEL)" yAxisLabel="$(Y_AXIS_LABEL)"
+			xAxisStyle="time(HH:MM:ss)" numberOfPoints="30">
+			<caml:xySeries Y-PVname="$(SCALAR1)" name="$(SCALAR1)" />
+			<caml:xySeries Y-PVname="$(SCALAR2)" name="$(SCALAR2)" type="scatter" />
+		</caml:xyChart>
+
+	</caml:tab>
+	<caml:tab name="2d waveform">
+
+		<caml:xyChart style="width: 512px; height: 256px;" flavor="advanced"
+			xAxisLabel="$(X_AXIS_LABEL)" yAxisLabel="$(Y_AXIS_LABEL)">
+			<caml:xySeries X-PVname="$(VECTOR1)" Y-PVname="$(VECTOR2)"
+				name="XY: $(VECTOR1)-$(VECTOR2)" />
+			<caml:xySeries X-PVname="$(VECTOR2)" Y-PVname="$(VECTOR3)"
+				name="XY: $(VECTOR2)-$(VECTOR3)" type="scatter" />
+		</caml:xyChart>
+
+	</caml:tab>
+	<caml:tab name="index scatter plot">
+
+		<caml:xyChart style="width: 75%; height: 512px;" flavor="advanced"
+			xAxisLabel="$(X_AXIS_LABEL)" yAxisLabel="$(Y_AXIS_LABEL)"
+			numberOfPoints="60">
+			<caml:xySeries Y-PVname="$(SCALAR1)" name="$(SCALAR1)" type="scatter" />
+		</caml:xyChart>
+
+	</caml:tab>
+</caml:tabView>
+
+</body>
+</html>

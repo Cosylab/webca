@@ -1,0 +1,228 @@
+# File: /ade/epics/iocTop/R3.14.8.2/Alarms/opi/sevrSymb2.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 312
+y 225
+w 500
+h 600
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+ctlFont "courier-bold-r-14.0"
+ctlFontAlign "right"
+btnFont "EOD"
+fgColor index 10
+bgColor index 3
+textColor index 10
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 5
+ctlBgColor2 index 10
+topShadowColor index 5
+botShadowColor index 10
+pvType "EPICS"
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 14
+y 19
+w 14
+h 14
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 14
+y 19
+w 14
+h 14
+lineColor index 10
+fillColor index 5
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 18
+y 23
+w 6
+h 6
+lineColor index 10
+fill
+fillColor index 112
+closePolygon
+numPoints 4
+xPoints {
+  0 21
+  1 18
+  2 24
+  3 21
+}
+yPoints {
+  0 23
+  1 29
+  2 29
+  3 23
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 64
+y 19
+w 14
+h 14
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 64
+y 19
+w 14
+h 14
+lineColor index 10
+fillColor index 5
+invisible
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 68
+y 23
+w 6
+h 6
+lineColor index 112
+fillColor index 112
+lineWidth 2
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 114
+y 17
+w 14
+h 14
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 114
+y 17
+w 14
+h 14
+lineColor index 10
+fillColor index 5
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 116
+y 19
+w 10
+h 10
+lineColor index 10
+fill
+fillColor index 112
+closePolygon
+numPoints 4
+xPoints {
+  0 121
+  1 116
+  2 121
+  3 126
+}
+yPoints {
+  0 19
+  1 24
+  2 29
+  3 24
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 169
+y 19
+w 14
+h 14
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 169
+y 19
+w 14
+h 14
+lineColor index 10
+fillColor index 5
+invisible
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

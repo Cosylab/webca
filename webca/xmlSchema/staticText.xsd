@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://webca.cosylab.com" xmlns="http://webca.cosylab.com"
+	elementFormDefault="qualified">
+	<xs:include schemaLocation="common.xsd" />
+	<xs:element name="staticText">
+		<xs:complexType mixed="true">
+			<xs:complexContent>
+				<xs:extension base="component">
+					<xs:attribute name="href" type="xs:string" />
+					<xs:attribute name="target" type="xs:string" />
+					<xs:attribute name="align" type="alignDefinition"
+						default="left" />
+					<xs:attribute name="visibilityPV" type="xs:string" />
+					<xs:attribute name="visibilityMin" type="xs:decimal"
+						default="0" />
+					<xs:attribute name="visibilityMax" type="xs:decimal"
+						default="0" />
+					<xs:attribute name="visibilityInvert" type="xs:boolean"
+						default="false" />
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="alignDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="left" />
+			<xs:enumeration value="right" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

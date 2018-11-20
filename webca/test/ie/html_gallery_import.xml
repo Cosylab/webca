@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../" pendEvents="5" pendEventsPeriodMs="100" extStyle="sns"/>
+</head>
+<body onload="/*alert('loaded!')*/" onresize="/*alert('resize!')*/">
+
+    This is normal html text.
+
+    This is a normal html table.
+    <table>
+        <tr><td>a1</td><td>a2</td></tr>
+        <tr><td>b1</td><td>b2</td></tr>
+        <tr><td>c1</td><td>c2</td></tr>
+    </table>
+    
+	<caml:staticText>Go IE go, go!</caml:staticText>
+
+    <caml:virtualPV name="record1" init="12.3" display="true"/>
+    <caml:virtualPV name="record2" init="0" eval="this+1" scan="1000" display="true"/>
+    <caml:virtualPV name="enum" init="\&quot;myString\&quot;" display="true"/>
+
+    <caml:virtualPV name="barWaveform1" init="[]" eval="this = []; for (var i = 0; i &lt; 8; i++) this[i] = -random() * 10;"  scan="2000" display="true"/>
+
+    <caml:virtualPV name="waveform1" init="[]" eval="this = []; for (var i = 0; i &lt; 100; i++) this[i] = random() * 100;" scan="5000" display="true"/>
+    <caml:virtualPV name="waveform2" init="[]" eval="this = []; for (var i = 0; i &lt; 100; i++) this[i] = random() * 100;" scan="5000" display="true"/>
+
+    <caml:textUpdate readbackPV="record1"/>
+    <caml:textUpdate readbackPV="record2"/>
+    <caml:textUpdate readbackPV="enum"/>
+    <caml:textUpdate readbackPV="barWaveform1"/>
+    
+    <caml:include href="gallery_xhtml.xml"/>
+
+</body>
+</html>

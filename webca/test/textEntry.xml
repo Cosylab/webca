@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" ?>
+<caml
+	title="WebCa Test"
+	extStyle="asp"
+	>	
+	<verticalPanel>
+		<row>
+			<mux>
+				<sequence name="record1" selected="true">
+					<macroValuePair macroName="$(NAME)" macroValue="record1"/>
+					<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME)" macroValue="record2"/>			
+					<macroValuePair macroName="$(DESC)" macroValue="counter PV"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME)" macroValue="enum"/>
+					<macroValuePair macroName="$(DESC)" macroValue="enumerated PV"/>
+			    </sequence>
+			</mux>
+		</row>		
+	</verticalPanel>
+	
+	<verticalPanel>
+		<row>
+			<textUpdate readbackPV="$(NAME)" displayFormat="+##00.0"/>			
+		</row>
+	</verticalPanel>	
+	
+	<panel>
+		<row>
+			<column width="50%">
+				<textEntry controlPV="$(NAME)" displayFormat="##0.000"/>	
+			</column>
+		
+		</row>
+	</panel>
+	
+	
+</caml>

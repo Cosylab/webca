@@ -1,0 +1,8598 @@
+# File: /ade/epics/supTop/operations/opi/InjDmp_Line.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 3204
+y 1466
+w 841
+h 779
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+ctlFont "courier-bold-r-14.0"
+ctlFontAlign "right"
+btnFont "courier-medium-r-8.0"
+fgColor index 112
+bgColor index 60
+textColor index 10
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 5
+ctlBgColor2 index 10
+topShadowColor index 5
+botShadowColor index 10
+gridSize 5
+pvType "EPICS"
+disableScroll
+endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 334
+y 382
+w 130
+h 0
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 464
+  1 334
+}
+yPoints {
+  0 382
+  1 382
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 341
+y 418
+w 123
+h 1
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 464
+  1 341
+}
+yPoints {
+  0 419
+  1 418
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 323
+y 398
+w 24
+h 41
+fgColor index 10
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)HEBTInj=i:0"
+pressValue "9"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 302
+y 337
+w 26
+h 16
+fgColor index 10
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)HEBTInj=i:0"
+pressValue "8"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 302
+y 356
+w 26
+h 12
+fgColor index 10
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)HEBTInj=i:0"
+pressValue "7"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 312
+y 375
+w 24
+h 17
+fgColor index 10
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)HEBTInj=i:0"
+pressValue "6"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 329
+y 441
+w 22
+h 41
+fgColor index 10
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)HEBTInj=i:0"
+pressValue "5"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 339
+y 518
+w 51
+h 21
+fgColor index 10
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)HEBTInj=i:0"
+pressValue "4"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 339
+y 578
+w 41
+h 21
+fgColor index 10
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)HEBTInj=i:0"
+pressValue "3"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 338
+y 639
+w 42
+h 21
+fgColor index 10
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)HEBTInj=i:0"
+pressValue "2"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 359
+y 697
+w 21
+h 26
+fgColor index 10
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)HEBTInj=i:0"
+pressValue "1"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 339
+y 707
+w 16
+h 41
+fgColor index 10
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)HEBTInj=i:0"
+pressValue "0"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 340
+y 708
+w 14
+h 39
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+invisible
+buttonLabel "HEBT_Mag:PS_InjSptm"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "power.edl"
+  1 "common-Ramp.edl"
+}
+menuLabel {
+  0 "PS Detail"
+  1 "Ramp-cycling"
+}
+setPosition {
+  0 "button"
+  1 "button"
+}
+symbols {
+  0 "S=HEBT,SS=Mag,DVC=PS,N=_InjSptm,DI='',PSVendor=IEPower"
+  1 "S=HEBT,SS=Mag,DVC=PS,N=InjSptm,DI=''"
+}
+propagateMacros {
+  0 0
+  1 0
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 360
+y 697
+w 20
+h 25
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+invisible
+buttonLabel "Ring_Mag:PS_DH_A10"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "power.edl"
+  1 "common-Ramp.edl"
+}
+menuLabel {
+  0 "PS Detail"
+  1 "Ramp-cycling"
+}
+setPosition {
+  0 "button"
+  1 "button"
+}
+symbols {
+  0 "S=Ring,SS=Mag,DVC=PS,N=_DH,DI=_A10,PSVendor=IEPower"
+  1 "S=Ring,SS=Mag,DVC=PS,N=DH,DI=_A10"
+}
+propagateMacros {
+  0 0
+  1 0
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 339
+y 639
+w 41
+h 21
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+invisible
+buttonLabel "Ring_Mag:PS_DH_A11"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "power.edl"
+  1 "common-Ramp.edl"
+}
+menuLabel {
+  0 "PS Detail"
+  1 "Ramp-cycling"
+}
+setPosition {
+  0 "button"
+  1 "button"
+}
+symbols {
+  0 "S=Ring,SS=Mag,DVC=PS,N=_DH,DI=_A11,PSVendor=IEPower"
+  1 "S=Ring,SS=Mag,DVC=PS,N=DH,DI=_A11"
+}
+propagateMacros {
+  0 0
+  1 0
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 339
+y 578
+w 41
+h 21
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+invisible
+buttonLabel "Ring_Mag:PS_DH_A12"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "power.edl"
+  1 "common-Ramp.edl"
+}
+menuLabel {
+  0 "PS Detail"
+  1 "Ramp-cycling"
+}
+setPosition {
+  0 "button"
+  1 "button"
+}
+symbols {
+  0 "S=Ring,SS=Mag,DVC=PS,N=_DH,DI=_A12,PSVendor=IEPower"
+  1 "S=Ring,SS=Mag,DVC=PS,N=DH,DI=_A12"
+}
+propagateMacros {
+  0 0
+  1 0
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 339
+y 518
+w 52
+h 21
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+invisible
+buttonLabel "Ring_Mag:PS_DH_A13"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "power.edl"
+  1 "common-Ramp.edl"
+}
+menuLabel {
+  0 "PS Detail"
+  1 "Ramp-cycling"
+}
+setPosition {
+  0 "button"
+  1 "button"
+}
+symbols {
+  0 "S=Ring,SS=Mag,DVC=PS,N=_DH,DI=_A13,PSVendor=IEPower"
+  1 "S=Ring,SS=Mag,DVC=PS,N=DH,DI=_A13"
+}
+propagateMacros {
+  0 0
+  1 0
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 330
+y 442
+w 22
+h 40
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+invisible
+buttonLabel "IDmp_Mag:PS_Sptm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=IDmp,SS=Mag,DVC=PS,N=_Sptm,DI='',PSVendor=IEPower"
+}
+propagateMacros {
+  0 0
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 312
+y 374
+w 22
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+invisible
+buttonLabel "IDmp_Mag:PS_QV01"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=IDmp,SS=Mag,DVC=PS,N=_QV,DI=01,PSVendor=IEPower"
+}
+propagateMacros {
+  0 0
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 301
+y 353
+w 28
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+invisible
+buttonLabel "IDmp_Mag:PS_DCD01"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=IDmp,SS=Mag,DVC=PS,N=_DCD,DI=01,PSVendor=Danfysik"
+}
+propagateMacros {
+  0 0
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 301
+y 337
+w 28
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+invisible
+buttonLabel "IDmp_Mag:PS_DCS01"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=IDmp,SS=Mag,DVC=PS,N=_DCS,DI=01,PSVendor=Danfysik"
+}
+propagateMacros {
+  0 0
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 277
+y 302
+w 41
+h 25
+fgColor index 0
+bgColor index 60
+topShadowColor index 60
+botShadowColor index 60
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "SGVring.edl"
+}
+symbols {
+  0 "N=IDmp_Vac:SGV_01"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 252
+y 110
+w 96
+h 604
+lineColor index 112
+fillColor index 5
+lineWidth 3
+numPoints 3
+xPoints {
+  0 252
+  1 348
+  2 348
+}
+yPoints {
+  0 110
+  1 476
+  2 714
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 370
+y 450
+w 0
+h 259
+lineColor index 112
+fillColor index 5
+lineWidth 3
+numPoints 2
+xPoints {
+  0 370
+  1 370
+}
+yPoints {
+  0 709
+  1 450
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 238
+y 126
+w 40
+h 0
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 238
+  1 278
+}
+yPoints {
+  0 126
+  1 126
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 640
+w 40
+h 20
+lineColor index 112
+fill
+fillColor index 149
+lineWidth 2
+alarmPv "Ring_Mag:PS_DH_A11:Err"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 360
+y 698
+w 20
+h 25
+lineColor index 112
+fill
+fillColor index 149
+lineWidth 2
+alarmPv "Ring_Mag:PS_DH_A10:Err"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 579
+w 40
+h 20
+lineColor index 112
+fill
+fillColor index 149
+lineWidth 2
+alarmPv "Ring_Mag:PS_DH_A12:Err"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 519
+w 50
+h 20
+lineColor index 112
+fill
+fillColor index 149
+lineWidth 2
+alarmPv "Ring_Mag:PS_DH_A13:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 413
+y 748
+w 46
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "InjSptm"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 390
+y 703
+w 47
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "DH_A10"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 390
+y 645
+w 47
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "DH_A11"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 390
+y 582
+w 60
+h 15
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "DH_A12"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 395
+y 521
+w 60
+h 15
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "DH_A13"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 391
+y 464
+w 70
+h 15
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "IDmp:Sptm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 428
+y 385
+w 32
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "QV01"
+}
+autoSize
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 371
+w 17
+h 24
+file "CMAG_DS_DEF.edl"
+numStates 2
+numPvs 0
+orientation "rotateCW"
+colorPv "IDmp_Mag:PS_QV01:Err"
+fgColor index 14
+bgColor index 149
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 422
+y 347
+w 39
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "DCV01"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 304
+y 354
+w 25
+h 15
+lineColor index 112
+fill
+fillColor index 149
+lineWidth 2
+alarmPv "IDmp_Mag:PS_DCD01:Err"
+closePolygon
+numPoints 3
+xPoints {
+  0 329
+  1 329
+  2 304
+}
+yPoints {
+  0 369
+  1 354
+  2 362
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 304
+y 339
+w 25
+h 15
+lineColor index 112
+fill
+fillColor index 149
+lineWidth 2
+alarmPv "IDmp_Mag:PS_DCS01:Err"
+closePolygon
+numPoints 3
+xPoints {
+  0 304
+  1 304
+  2 328
+}
+yPoints {
+  0 354
+  1 339
+  2 347
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 420
+y 301
+w 40
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "DCH01"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 220
+y 65
+w 55
+h 45
+lineColor index 10
+fill
+fillColor index 3
+fillAlarm
+lineWidth 2
+alarmPv "ID_DIWS:Summary:Alarm"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 225
+y 70
+w 41
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+value {
+  "Inj"
+  "Dump"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 225
+y 70
+w 45
+h 35
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+font "courier-medium-r-8.0"
+invisible
+buttonLabel "Inj Dump"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "TUOverview.edl"
+}
+menuLabel {
+  0 "Inj Dump"
+}
+setPosition {
+  0 "button"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 187
+y 116
+w 40
+h 24
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "Vacuum"
+  "Window"
+}
+autoSize
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 279
+y 303
+w 35
+h 25
+file "ringVac_sgv_v_DS.edl"
+numStates 4
+minValues {
+  0 2
+  1 1
+  3 3
+}
+maxValues {
+  0 3
+  1 2
+  2 1
+  3 4
+}
+controlPvs {
+  0 "IDmp_Vac:SGV_01:CL"
+  1 "IDmp_Vac:SGV_01:OP"
+}
+numPvs 2
+shiftCount {
+  1 1
+}
+useOriginalColors
+fgColor index 10
+bgColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 241
+y 325
+w 48
+h 28
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 0
+useDisplayBg
+value {
+  "IDmp"
+  "SGV_01"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 182
+y 149
+w 48
+h 28
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 0
+useDisplayBg
+value {
+  "IDmp"
+  "FV_01"
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 133
+w 35
+h 35
+file "ringFV.edl"
+truthTable
+numStates 3
+minValues {
+  0 3
+  1 2
+  2 1
+}
+maxValues {
+  0 4
+  1 3
+  2 2
+}
+controlPvs {
+  0 "IDmp_Vac:FV_01:StsCl"
+  1 "IDmp_Vac:FV_01:StsOp"
+}
+numPvs 2
+shiftCount {
+  1 1
+}
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 133
+w 35
+h 35
+lineColor index 130
+fillColor index 5
+lineWidth 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 83
+w 176
+h 79
+lineColor index 10
+fillColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 85
+w 103
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 50
+value {
+  "Fast Valve FV_01"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 107
+w 57
+h 17
+fgColor index 14
+onColor index 108
+offColor index 108
+topShadowColor index 1
+botShadowColor index 5
+controlPv "IDmp_Vac:FV_01:Opn_Cmd"
+pressValue "1"
+onLabel "Open"
+offLabel "Open"
+3d
+useEnumNumeric
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 124
+w 57
+h 17
+fgColor index 14
+onColor index 108
+offColor index 108
+topShadowColor index 1
+botShadowColor index 5
+controlPv "IDmp_Vac:FV_01:Rst_Cmd"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 141
+w 57
+h 17
+fgColor index 14
+onColor index 108
+offColor index 108
+topShadowColor index 1
+botShadowColor index 5
+controlPv "IDmp_Vac:FV_01:Cls_Cmd"
+pressValue "1"
+onLabel "Close"
+offLabel "Close"
+3d
+useEnumNumeric
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 91
+y 113
+w 11
+h 12
+lineColor index 14
+fill
+fillColor index 101
+alarmPv "IDmp_Vac:FV_01:StsOp"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 91
+y 126
+w 11
+h 12
+lineColor index 14
+fill
+fillColor index 101
+alarmPv "IDmp_Vac:FV_01:StsRdy"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 91
+y 139
+w 11
+h 12
+lineColor index 14
+fill
+fillColor index 101
+alarmPv "IDmp_Vac:FV_01:StsCl"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 110
+y 113
+w 35
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 50
+value {
+  "OPEN"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 110
+y 127
+w 42
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 50
+value {
+  "READY"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 110
+y 140
+w 51
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 50
+value {
+  "CLOSED"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 201
+y 213
+w 18
+h 18
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "TCGring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=IDmp_Vac:TCG_02"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 201
+y 212
+w 18
+h 21
+lineColor index 25
+fill
+fillColor index 83
+alarmPv "IDmp_Vac:TCG_02:Set"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 203
+y 216
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 112
+useDisplayBg
+value {
+  "TC"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 228
+y 206
+w 12
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "02"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 223
+y 222
+w 57
+h 2
+lineColor index 83
+fillColor index 9
+lineWidth 3
+alarmPv "IDmp_Vac:CCG_02:Set"
+numPoints 2
+xPoints {
+  0 280
+  1 223
+}
+yPoints {
+  0 222
+  1 222
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 150
+y 215
+w 48
+h 19
+controlPv "IDmp_Vac:TCG_02:P"
+displayMode "exp"
+precision 1
+fgColor index 112
+fgAlarm
+bgColor index 9
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 149
+y 218
+w 50
+h 14
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+visPv "IDmp_Vac:TCG_02:P"
+visMin "-21"
+visMax "-20"
+value {
+  "LO"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 196
+y 182
+w 25
+h 22
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IPring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=IDmp_Vac:IP_02"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 198
+y 181
+w 24
+h 24
+file "ringIonPumpDS.edl"
+numStates 4
+minValues {
+  1 1
+  3 3
+}
+maxValues {
+  1 2
+  2 1
+  3 4
+}
+controlPvs {
+  0 "IDmp_Vac:IP_02:HVSts"
+}
+numPvs 1
+orientation "rotateCW"
+useOriginalColors
+fgColor index 10
+bgColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 160
+y 173
+w 28
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "IP_02"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 151
+y 186
+w 45
+h 19
+controlPv "IDmp_Vac:IP_02:P"
+displayMode "exp"
+precision 1
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 223
+y 192
+w 49
+h 0
+lineColor index 83
+fillColor index 9
+lineWidth 3
+alarmPv "IDmp_Vac:IP_02:Set"
+numPoints 2
+xPoints {
+  0 272
+  1 223
+}
+yPoints {
+  0 192
+  1 192
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 149
+y 231
+w 49
+h 13
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 233
+w 48
+h 11
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "CCGring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=IDmp_Vac:CCG_02"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 149
+y 232
+w 49
+h 12
+lineColor index 25
+fill
+fillColor index 83
+alarmPv "IDmp_Vac:CCG_02:Set"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 151
+y 231
+w 46
+h 13
+controlPv "IDmp_Vac:CCG_02:P"
+displayMode "exp"
+precision 1
+fgColor index 25
+fgAlarm
+bgColor index 112
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 150
+y 233
+w 48
+h 11
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+visPv "IDmp_Vac:CCG_02:P"
+visMin "-12"
+visMax "-11"
+value {
+  "OFF"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 220
+y 284
+w 18
+h 18
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "TCGring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=IDmp_Vac:TCG_01"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 220
+y 283
+w 18
+h 21
+lineColor index 25
+fill
+fillColor index 83
+alarmPv "IDmp_Vac:TCG_01:Set"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 222
+y 287
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 112
+useDisplayBg
+value {
+  "TC"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 247
+y 277
+w 12
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "01"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 242
+y 293
+w 57
+h 2
+lineColor index 83
+fillColor index 9
+lineWidth 3
+alarmPv "IDmp_Vac:CCG_01:Set"
+numPoints 2
+xPoints {
+  0 299
+  1 242
+}
+yPoints {
+  0 293
+  1 293
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 169
+y 286
+w 48
+h 19
+controlPv "IDmp_Vac:TCG_01:P"
+displayMode "exp"
+precision 1
+fgColor index 112
+fgAlarm
+bgColor index 9
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 289
+w 50
+h 14
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+visPv "IDmp_Vac:TCG_01:P"
+visMin "-21"
+visMax "-20"
+value {
+  "LO"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 215
+y 254
+w 25
+h 22
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IPring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=IDmp_Vac:IP_01"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 217
+y 253
+w 24
+h 24
+file "ringIonPumpDS.edl"
+numStates 4
+minValues {
+  1 1
+  3 3
+}
+maxValues {
+  1 2
+  2 1
+  3 4
+}
+controlPvs {
+  0 "IDmp_Vac:IP_01:HVSts"
+}
+numPvs 1
+orientation "rotateCW"
+useOriginalColors
+fgColor index 10
+bgColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 179
+y 245
+w 28
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "IP_01"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 170
+y 258
+w 45
+h 19
+controlPv "IDmp_Vac:IP_01:P"
+displayMode "exp"
+precision 1
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 242
+y 264
+w 50
+h 0
+lineColor index 83
+fillColor index 9
+lineWidth 3
+alarmPv "IDmp_Vac:IP_01:Set"
+numPoints 2
+xPoints {
+  0 292
+  1 242
+}
+yPoints {
+  0 264
+  1 264
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 168
+y 302
+w 49
+h 13
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 169
+y 304
+w 48
+h 11
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "CCGring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=IDmp_Vac:CCG_01"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 168
+y 303
+w 49
+h 12
+lineColor index 25
+fill
+fillColor index 83
+alarmPv "IDmp_Vac:CCG_01:Set"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 170
+y 302
+w 46
+h 13
+controlPv "IDmp_Vac:CCG_01:P"
+displayMode "exp"
+precision 1
+fgColor index 25
+fgAlarm
+bgColor index 112
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 169
+y 304
+w 48
+h 11
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+visPv "IDmp_Vac:CCG_01:P"
+visMin "-12"
+visMax "-11"
+value {
+  "OFF"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 332
+y 443
+w 20
+h 40
+lineColor index 112
+fill
+fillColor index 149
+lineWidth 2
+alarmPv "IDmp_Mag:PS_Sptm:Err"
+closePolygon
+numPoints 4
+xPoints {
+  0 352
+  1 352
+  2 342
+  3 332
+}
+yPoints {
+  0 443
+  1 482
+  2 482
+  3 443
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 258
+y 502
+w 18
+h 18
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "TCGring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:TCG_A13"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 258
+y 501
+w 18
+h 21
+lineColor index 25
+fill
+fillColor index 83
+alarmPv "Ring_Vac:TCG_A13:Set"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 260
+y 505
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 112
+useDisplayBg
+value {
+  "TC"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 285
+y 495
+w 20
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "A13"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 280
+y 511
+w 67
+h 0
+lineColor index 83
+fillColor index 9
+lineWidth 3
+alarmPv "Ring_Vac:CCG_A13:Set"
+numPoints 2
+xPoints {
+  0 347
+  1 280
+}
+yPoints {
+  0 511
+  1 511
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 207
+y 501
+w 48
+h 19
+controlPv "Ring_Vac:TCG_A13:P"
+displayMode "exp"
+precision 1
+fgColor index 112
+fgAlarm
+bgColor index 9
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 206
+y 504
+w 50
+h 14
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+visPv "Ring_Vac:TCG_A13:P"
+visMin "-21"
+visMax "-20"
+value {
+  "LO"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 253
+y 475
+w 25
+h 22
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IPring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:IP_A13"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 255
+y 474
+w 24
+h 24
+file "ringIonPumpDS.edl"
+numStates 4
+minValues {
+  1 1
+  3 3
+}
+maxValues {
+  1 2
+  2 1
+  3 4
+}
+controlPvs {
+  0 "Ring_Vac:IP_A13:HVSts"
+}
+numPvs 1
+orientation "rotateCW"
+useOriginalColors
+fgColor index 10
+bgColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 213
+y 463
+w 36
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "IP_A13"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 208
+y 476
+w 45
+h 19
+controlPv "Ring_Vac:IP_A13:P"
+displayMode "exp"
+precision 1
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 280
+y 485
+w 67
+h 0
+lineColor index 9
+fillColor index 9
+lineWidth 3
+numPoints 2
+xPoints {
+  0 347
+  1 280
+}
+yPoints {
+  0 485
+  1 485
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 206
+y 517
+w 49
+h 13
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 207
+y 519
+w 48
+h 11
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "CCGring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:CCG_A13"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 206
+y 518
+w 49
+h 12
+lineColor index 25
+fill
+fillColor index 83
+alarmPv "Ring_Vac:CCG_A13:Set"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 208
+y 517
+w 46
+h 13
+controlPv "Ring_Vac:CCG_A13:P"
+displayMode "exp"
+precision 1
+fgColor index 25
+fgAlarm
+bgColor index 112
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 207
+y 519
+w 48
+h 11
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+visPv "Ring_Vac:CCG_A13:P"
+visMin "-12"
+visMax "-11"
+value {
+  "OFF"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 165
+y 564
+w 18
+h 18
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "TCGring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:TCG_A12"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 165
+y 563
+w 18
+h 21
+lineColor index 25
+fill
+fillColor index 83
+alarmPv "Ring_Vac:TCG_A12:Set"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 167
+y 567
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 112
+useDisplayBg
+value {
+  "TC"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 192
+y 557
+w 20
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "A12"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 187
+y 573
+w 160
+h 0
+lineColor index 83
+fillColor index 9
+lineWidth 3
+alarmPv "Ring_Vac:CCG_A12:Set"
+numPoints 2
+xPoints {
+  0 347
+  1 187
+}
+yPoints {
+  0 573
+  1 573
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 114
+y 563
+w 48
+h 19
+controlPv "Ring_Vac:TCG_A12:P"
+displayMode "exp"
+precision 1
+fgColor index 112
+fgAlarm
+bgColor index 9
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 113
+y 566
+w 50
+h 14
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+visPv "Ring_Vac:TCG_A12:P"
+visMin "-21"
+visMax "-20"
+value {
+  "LO"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 160
+y 537
+w 25
+h 22
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IPring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:IP_A12"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 162
+y 536
+w 24
+h 24
+file "ringIonPumpDS.edl"
+numStates 4
+minValues {
+  1 1
+  3 3
+}
+maxValues {
+  1 2
+  2 1
+  3 4
+}
+controlPvs {
+  0 "Ring_Vac:IP_A12:HVSts"
+}
+numPvs 1
+orientation "rotateCW"
+useOriginalColors
+fgColor index 10
+bgColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 120
+y 525
+w 36
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "IP_A12"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 115
+y 538
+w 45
+h 19
+controlPv "Ring_Vac:IP_A12:P"
+displayMode "exp"
+precision 1
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 187
+y 547
+w 161
+h 0
+lineColor index 83
+fillColor index 9
+lineWidth 3
+alarmPv "Ring_Vac:IP_A12:Set"
+numPoints 2
+xPoints {
+  0 348
+  1 187
+}
+yPoints {
+  0 547
+  1 547
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 113
+y 579
+w 49
+h 13
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 114
+y 581
+w 48
+h 11
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "CCGring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:CCG_A12"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 113
+y 580
+w 49
+h 12
+lineColor index 25
+fill
+fillColor index 83
+alarmPv "Ring_Vac:CCG_A12:Set"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 115
+y 579
+w 46
+h 13
+controlPv "Ring_Vac:CCG_A12:P"
+displayMode "exp"
+precision 1
+fgColor index 25
+fgAlarm
+bgColor index 112
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 114
+y 581
+w 48
+h 11
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+visPv "Ring_Vac:CCG_A12:P"
+visMin "-12"
+visMax "-11"
+value {
+  "OFF"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 254
+y 596
+w 25
+h 22
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IPring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:IP_A11C"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 595
+w 24
+h 24
+file "ringIonPumpDS.edl"
+numStates 4
+minValues {
+  1 1
+  3 3
+}
+maxValues {
+  1 2
+  2 1
+  3 4
+}
+controlPvs {
+  0 "Ring_Vac:IP_A11C:HVSts"
+}
+numPvs 1
+orientation "rotateCW"
+useOriginalColors
+fgColor index 10
+bgColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 209
+y 584
+w 44
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "IP_A11C"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 209
+y 597
+w 45
+h 19
+controlPv "Ring_Vac:IP_A11C:P"
+displayMode "exp"
+precision 1
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 281
+y 606
+w 67
+h 0
+lineColor index 9
+fillColor index 9
+lineWidth 3
+numPoints 2
+xPoints {
+  0 348
+  1 281
+}
+yPoints {
+  0 606
+  1 606
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 166
+y 684
+w 18
+h 18
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "TCGring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:TCG_A11"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 166
+y 683
+w 18
+h 21
+lineColor index 25
+fill
+fillColor index 83
+alarmPv "Ring_Vac:TCG_A11:Set"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 687
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 112
+useDisplayBg
+value {
+  "TC"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 193
+y 677
+w 20
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "A11"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 188
+y 693
+w 160
+h 0
+lineColor index 83
+fillColor index 9
+lineWidth 3
+alarmPv "IDmp_Vac:CCG_01:Set"
+numPoints 2
+xPoints {
+  0 348
+  1 188
+}
+yPoints {
+  0 693
+  1 693
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 115
+y 683
+w 48
+h 19
+controlPv "Ring_Vac:TCG_A11:P"
+displayMode "exp"
+precision 1
+fgColor index 112
+fgAlarm
+bgColor index 9
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 114
+y 686
+w 50
+h 14
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+visPv "Ring_Vac:TCG_A11:P"
+visMin "-21"
+visMax "-20"
+value {
+  "LO"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 161
+y 657
+w 25
+h 22
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IPring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:IP_A11A"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 163
+y 656
+w 24
+h 24
+file "ringIonPumpDS.edl"
+numStates 4
+minValues {
+  1 1
+  3 3
+}
+maxValues {
+  1 2
+  2 1
+  3 4
+}
+controlPvs {
+  0 "Ring_Vac:IP_A11A:HVSts"
+}
+numPvs 1
+orientation "rotateCW"
+useOriginalColors
+fgColor index 10
+bgColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 116
+y 645
+w 44
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "IP_A11A"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 116
+y 658
+w 45
+h 19
+controlPv "Ring_Vac:IP_A11A:P"
+displayMode "exp"
+precision 1
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 188
+y 667
+w 161
+h 0
+lineColor index 9
+fillColor index 9
+lineWidth 3
+numPoints 2
+xPoints {
+  0 349
+  1 188
+}
+yPoints {
+  0 667
+  1 667
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 114
+y 699
+w 49
+h 13
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 115
+y 701
+w 48
+h 11
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "CCGring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:CCG_A11"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 114
+y 700
+w 49
+h 12
+lineColor index 25
+fill
+fillColor index 83
+alarmPv "Ring_Vac:CCG_A11:Set"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 116
+y 699
+w 46
+h 13
+controlPv "Ring_Vac:CCG_A11:P"
+displayMode "exp"
+precision 1
+fgColor index 25
+fgAlarm
+bgColor index 112
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 115
+y 701
+w 48
+h 11
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+visPv "Ring_Vac:CCG_A11:P"
+visMin "-12"
+visMax "-11"
+value {
+  "OFF"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 254
+y 623
+w 25
+h 22
+fgColor index 0
+bgColor index 61
+topShadowColor index 61
+botShadowColor index 61
+font "helvetica-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IPring.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "N=Ring_Vac:IP_A11B"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 622
+w 24
+h 24
+file "ringIonPumpDS.edl"
+numStates 4
+minValues {
+  1 1
+  3 3
+}
+maxValues {
+  1 2
+  2 1
+  3 4
+}
+controlPvs {
+  0 "Ring_Vac:IP_A11B:HVSts"
+}
+numPvs 1
+orientation "rotateCW"
+useOriginalColors
+fgColor index 10
+bgColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 209
+y 617
+w 43
+h 12
+font "helvetica-bold-r-10.0"
+fgColor index 112
+bgColor index 122
+useDisplayBg
+value {
+  "IP_A11B"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 209
+y 630
+w 45
+h 19
+controlPv "Ring_Vac:IP_A11B:P"
+displayMode "exp"
+precision 1
+fgColor index 15
+fgAlarm
+bgColor index 9
+fill
+font "helvetica-bold-r-10.0"
+fontAlign "right"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 281
+y 633
+w 67
+h 0
+lineColor index 9
+fillColor index 9
+lineWidth 3
+numPoints 2
+xPoints {
+  0 348
+  1 281
+}
+yPoints {
+  0 633
+  1 633
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 10
+y 4
+w 67
+h 28
+fgColor index 0
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-bold-r-18.0"
+buttonLabel "MAIN"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "navwogif.edl"
+}
+menuLabel {
+  0 "..."
+}
+setPosition {
+  0 "button"
+}
+replaceSymbols {
+  0 1
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 754
+y 5
+w 75
+h 28
+fgColor index 45
+bgColor index 9
+topShadowColor index 1
+botShadowColor index 11
+label "EXIT"
+font "helvetica-bold-r-12.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 675
+y 5
+w 67
+h 28
+fgColor index 0
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-bold-r-18.0"
+buttonLabel "RING"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "Ring_Overview_Detail.edl"
+}
+menuLabel {
+  0 "Ring Overview"
+}
+closeAction {
+  0 1
+}
+setPosition {
+  0 "button"
+}
+replaceSymbols {
+  0 1
+}
+propagateMacros {
+  0 0
+}
+closeDisplay {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 10
+y 35
+w 182
+h 28
+fgColor index 0
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-bold-r-18.0"
+buttonLabel "HEBT Inj Overview"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "HEBT_Inj.edl"
+  1 "HEBT_Overview.edl"
+}
+menuLabel {
+  0 "HEBT Inj Overview"
+  1 "HEBT Overview"
+}
+closeAction {
+  0 1
+}
+setPosition {
+  0 "button"
+  1 "button"
+}
+replaceSymbols {
+  0 1
+}
+propagateMacros {
+  0 0
+}
+closeDisplay {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 564
+y 264
+w 73
+h 18
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 109
+font "courier-bold-r-12.0"
+buttonLabel "Waveforms"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ringPS-RingInjection.edl"
+}
+menuLabel {
+  0 "Injection Kickers"
+}
+closeAction {
+  0 1
+}
+setPosition {
+  0 "button"
+}
+closeDisplay {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 340
+y 708
+w 15
+h 40
+lineColor index 14
+fill
+fillColor index 149
+lineWidth 2
+alarmPv "HEBT_Mag:PS_InjSptm:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 725
+y 330
+w 56
+h 36
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B Book"
+  "Set"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 481
+y 269
+w 47
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B SET"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 356
+y 742
+w 107
+h 1
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 463
+  1 356
+}
+yPoints {
+  0 743
+  1 742
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 437
+y 707
+w 25
+h 0
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 462
+  1 437
+}
+yPoints {
+  0 707
+  1 707
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 437
+y 651
+w 28
+h 0
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 465
+  1 437
+}
+yPoints {
+  0 651
+  1 651
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 437
+y 587
+w 27
+h 0
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 464
+  1 437
+}
+yPoints {
+  0 587
+  1 587
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 444
+y 527
+w 19
+h 0
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 463
+  1 444
+}
+yPoints {
+  0 527
+  1 527
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 352
+y 461
+w 111
+h 0
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 463
+  1 352
+}
+yPoints {
+  0 461
+  1 461
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 329
+y 344
+w 133
+h 17
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 4
+xPoints {
+  0 462
+  1 377
+  2 376
+  3 329
+}
+yPoints {
+  0 344
+  1 344
+  2 360
+  3 361
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 327
+y 313
+w 136
+h 34
+lineColor index 112
+fillColor index 5
+lineWidth 2
+numPoints 4
+xPoints {
+  0 463
+  1 356
+  2 355
+  3 327
+}
+yPoints {
+  0 314
+  1 313
+  2 347
+  3 347
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 291
+w 255
+h 39
+
+beginGroup
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 294
+w 60
+h 17
+controlPv "IDmp_Mag:PS_DCS01:I"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 310
+w 60
+h 17
+controlPv "IDmp_Mag:PS_DCS01:B"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 598
+y 311
+w 39
+h 17
+fgColor index 25
+onColor index 5
+offColor index 5
+inconsistentColor index 10
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DCS01:CClr"
+onLabel "CLEAR"
+offLabel "CLEAR"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 538
+y 310
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DCS01:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_DCS01:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 558
+y 294
+w 26
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DCS01:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_DCS01:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 538
+y 294
+w 21
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DCS01:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_DCS01:On"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 469
+y 294
+w 67
+h 32
+controlPv "IDmp_Mag:PS_DCH01:B_Set"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 291
+w 255
+h 39
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 642
+y 311
+w 11
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 646
+y 294
+w 4
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 583
+y 294
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 583
+y 294
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 583
+y 294
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "IDmp_Mag:PS_DCS01:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 583
+y 294
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "IDmp_Mag:PS_DCS01:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 583
+y 294
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 583
+y 294
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "IDmp_Mag:PS_DCS01:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 583
+y 294
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "IDmp_Mag:PS_DCS01:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 330
+w 255
+h 39
+
+beginGroup
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 333
+w 60
+h 17
+controlPv "IDmp_Mag:PS_DCD01:I"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 349
+w 60
+h 17
+controlPv "IDmp_Mag:PS_DCD01:B"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 602
+y 349
+w 39
+h 17
+fgColor index 25
+onColor index 5
+offColor index 5
+inconsistentColor index 10
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DCD01:CClr"
+onLabel "CLEAR"
+offLabel "CLEAR"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 349
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DCD01:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_DCD01:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 333
+w 26
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DCD01:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_DCD01:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 333
+w 21
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DCD01:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_DCD01:On"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 469
+y 333
+w 67
+h 32
+controlPv "IDmp_Mag:PS_DCV01:B_Set"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 330
+w 255
+h 39
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 642
+y 350
+w 11
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 646
+y 333
+w 4
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 333
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 333
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 333
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "IDmp_Mag:PS_DCD01:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 586
+y 333
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "IDmp_Mag:PS_DCD01:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 333
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 333
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "IDmp_Mag:PS_DCD01:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 586
+y 333
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "IDmp_Mag:PS_DCD01:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 447
+w 326
+h 39
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 642
+y 466
+w 11
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 646
+y 449
+w 4
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 450
+w 60
+h 17
+controlPv "IDmp_Mag:PS_Sptm:I"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 466
+w 60
+h 17
+controlPv "IDmp_Mag:PS_Sptm:B"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 601
+y 466
+w 39
+h 17
+fgColor index 25
+onColor index 5
+offColor index 5
+inconsistentColor index 10
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_Sptm:CClr"
+onLabel "CLEAR"
+offLabel "CLEAR"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 541
+y 466
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_Sptm:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_Sptm:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 561
+y 450
+w 26
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_Sptm:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_Sptm:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 541
+y 450
+w 21
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_Sptm:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_Sptm:On"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 469
+y 450
+w 67
+h 32
+controlPv "IDmp_Mag:PS_Sptm:B_Set"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 447
+w 326
+h 39
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 718
+y 450
+w 68
+h 32
+controlPv "IDmp_Mag:PS_Sptm:B_Book"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 450
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 450
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 450
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "IDmp_Mag:PS_Sptm:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 586
+y 450
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "IDmp_Mag:PS_Sptm:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 450
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 450
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "IDmp_Mag:PS_Sptm:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 586
+y 450
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "IDmp_Mag:PS_Sptm:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 369
+w 326
+h 39
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 369
+w 326
+h 39
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 718
+y 372
+w 68
+h 32
+controlPv "IDmp_Mag:PS_QV01:B_Book"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 642
+y 388
+w 11
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 646
+y 371
+w 4
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 372
+w 60
+h 17
+controlPv "IDmp_Mag:PS_QV01:I"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 388
+w 60
+h 17
+controlPv "IDmp_Mag:PS_QV01:B"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 601
+y 388
+w 39
+h 17
+fgColor index 25
+onColor index 5
+offColor index 5
+inconsistentColor index 10
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_QV01:CClr"
+onLabel "CLEAR"
+offLabel "CLEAR"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 541
+y 388
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_QV01:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_QV01:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 561
+y 372
+w 26
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_QV01:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_QV01:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 541
+y 372
+w 21
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_QV01:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_QV01:On"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 469
+y 372
+w 67
+h 32
+controlPv "IDmp_Mag:PS_QV01:B_Set"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 372
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 372
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 372
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "IDmp_Mag:PS_QV01:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 586
+y 372
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "IDmp_Mag:PS_QV01:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 372
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 372
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "IDmp_Mag:PS_QV01:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 586
+y 372
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "IDmp_Mag:PS_QV01:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 643
+y 528
+w 11
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 647
+y 511
+w 4
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 656
+y 512
+w 60
+h 17
+controlPv "Ring_Mag:PS_DH_A13:I"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 656
+y 528
+w 60
+h 17
+controlPv "Ring_Mag:PS_DH_A13:B"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 600
+y 528
+w 39
+h 17
+fgColor index 25
+onColor index 5
+offColor index 5
+inconsistentColor index 10
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A13:CClr"
+onLabel "CLEAR"
+offLabel "CLEAR"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 528
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A13:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A13:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 512
+w 26
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A13:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A13:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 512
+w 21
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A13:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A13:On"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 468
+y 512
+w 67
+h 32
+controlPv "Ring_Mag:PS_DH_A13:B_Set"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 509
+w 327
+h 39
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 719
+y 512
+w 68
+h 32
+controlPv "Ring_Mag:PS_DH_A13:B_Book"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 643
+y 588
+w 11
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 647
+y 571
+w 4
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 656
+y 572
+w 60
+h 17
+controlPv "Ring_Mag:PS_DH_A12:I"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 656
+y 588
+w 60
+h 17
+controlPv "Ring_Mag:PS_DH_A12:B"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 600
+y 588
+w 39
+h 17
+fgColor index 25
+onColor index 5
+offColor index 5
+inconsistentColor index 10
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A12:CClr"
+onLabel "CLEAR"
+offLabel "CLEAR"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 588
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A12:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A12:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 572
+w 26
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A12:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A12:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 572
+w 21
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A12:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A12:On"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 468
+y 572
+w 67
+h 32
+controlPv "Ring_Mag:PS_DH_A12:B_Set"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 569
+w 327
+h 39
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 719
+y 572
+w 68
+h 32
+controlPv "Ring_Mag:PS_DH_A12:B_Book"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 643
+y 648
+w 11
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 647
+y 631
+w 4
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 656
+y 632
+w 60
+h 17
+controlPv "Ring_Mag:PS_DH_A11:I"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 656
+y 648
+w 60
+h 17
+controlPv "Ring_Mag:PS_DH_A11:B"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 600
+y 648
+w 39
+h 17
+fgColor index 25
+onColor index 5
+offColor index 5
+inconsistentColor index 10
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A11:CClr"
+onLabel "CLEAR"
+offLabel "CLEAR"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 648
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A11:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A11:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 632
+w 26
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A11:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A11:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 632
+w 21
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A11:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A11:On"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 468
+y 632
+w 67
+h 32
+controlPv "Ring_Mag:PS_DH_A11:B_Set"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 629
+w 327
+h 39
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 719
+y 632
+w 68
+h 32
+controlPv "Ring_Mag:PS_DH_A11:B_Book"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 643
+y 709
+w 11
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 647
+y 692
+w 4
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 656
+y 693
+w 60
+h 17
+controlPv "Ring_Mag:PS_DH_A10:I"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 656
+y 709
+w 60
+h 17
+controlPv "Ring_Mag:PS_DH_A10:B"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 599
+y 709
+w 39
+h 17
+fgColor index 25
+onColor index 5
+offColor index 5
+inconsistentColor index 10
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A10:CClr"
+onLabel "CLEAR"
+offLabel "CLEAR"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 709
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A10:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A10:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 693
+w 26
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A10:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A10:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 693
+w 21
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "Ring_Mag:PS_DH_A10:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "Ring_Mag:PS_DH_A10:On"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 468
+y 693
+w 67
+h 32
+controlPv "Ring_Mag:PS_DH_A10:B_Set"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 690
+w 328
+h 39
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 719
+y 693
+w 68
+h 32
+controlPv "Ring_Mag:PS_DH_A10:B_Book"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 643
+y 748
+w 11
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 647
+y 731
+w 4
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 656
+y 732
+w 60
+h 17
+controlPv "HEBT_Mag:PS_InjSptm:I"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 656
+y 748
+w 60
+h 17
+controlPv "HEBT_Mag:PS_InjSptm:B"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 599
+y 748
+w 39
+h 17
+fgColor index 25
+onColor index 5
+offColor index 5
+inconsistentColor index 10
+topShadowColor index 107
+botShadowColor index 109
+controlPv "HEBT_Mag:PS_InjSptm:CClr"
+onLabel "CLEAR"
+offLabel "CLEAR"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 748
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "HEBT_Mag:PS_InjSptm:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "HEBT_Mag:PS_InjSptm:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 732
+w 26
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "HEBT_Mag:PS_InjSptm:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "HEBT_Mag:PS_InjSptm:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 540
+y 732
+w 21
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "HEBT_Mag:PS_InjSptm:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "HEBT_Mag:PS_InjSptm:On"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 468
+y 732
+w 67
+h 32
+controlPv "HEBT_Mag:PS_InjSptm:B_Set"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 729
+w 328
+h 39
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 719
+y 732
+w 68
+h 32
+controlPv "HEBT_Mag:PS_InjSptm:B_Book"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 693
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 693
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 693
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "Ring_Mag:PS_DH_A10:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 693
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "Ring_Mag:PS_DH_A10:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 693
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 693
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "Ring_Mag:PS_DH_A10:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 693
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "Ring_Mag:PS_DH_A10:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 732
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 732
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 732
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "HEBT_Mag:PS_InjSptm:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 732
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "HEBT_Mag:PS_InjSptm:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 732
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 732
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "HEBT_Mag:PS_InjSptm:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 732
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "HEBT_Mag:PS_InjSptm:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 632
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 632
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 632
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "Ring_Mag:PS_DH_A11:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 632
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "Ring_Mag:PS_DH_A11:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 632
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 632
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "Ring_Mag:PS_DH_A11:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 632
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "Ring_Mag:PS_DH_A11:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 572
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 572
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 572
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "Ring_Mag:PS_DH_A12:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 572
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "Ring_Mag:PS_DH_A12:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 572
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 585
+y 572
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "Ring_Mag:PS_DH_A12:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 585
+y 572
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "Ring_Mag:PS_DH_A12:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 512
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 512
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 512
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "Ring_Mag:PS_DH_A13:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 586
+y 512
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "Ring_Mag:PS_DH_A13:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 512
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 512
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "Ring_Mag:PS_DH_A13:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 586
+y 512
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "Ring_Mag:PS_DH_A13:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 22
+y 362
+w 85
+h 26
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 24
+y 363
+w 82
+h 23
+fgColor index 14
+onColor index 5
+offColor index 5
+topShadowColor index 107
+botShadowColor index 110
+pressValue "Show"
+releaseValue "NotShow"
+onLabel "Why"
+offLabel "Why"
+3d
+invisible
+font "helvetica-bold-r-12.0"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 22
+y 362
+w 85
+h 26
+font "helvetica-bold-r-20.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 84
+bgAlarm
+alarmPv "IDmp_Vac:Sum"
+value {
+  "Vacuum"
+}
+border
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 495
+y 8
+w 83
+h 23
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 497
+y 9
+w 81
+h 20
+fgColor index 14
+onColor index 5
+offColor index 5
+topShadowColor index 107
+botShadowColor index 110
+pressValue "Show"
+releaseValue "NotShow"
+onLabel "Why"
+offLabel "Why"
+3d
+invisible
+font "helvetica-bold-r-12.0"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 495
+y 8
+w 83
+h 23
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 84
+bgAlarm
+alarmPv "IDmp_Mag:Sum"
+value {
+  "Magnets"
+}
+border
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 582
+y 7
+w 86
+h 25
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 583
+y 7
+w 84
+h 25
+fgColor index 133
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-14.0"
+invisible
+buttonLabel "Ring Water"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "HEBT_Cooling_Overview.edl"
+}
+menuLabel {
+  0 "Ring Cooling"
+}
+setPosition {
+  0 "button"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 582
+y 7
+w 86
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 94
+bgAlarm
+alarmPv "Ring_Cool:Sum"
+value {
+  "Ring Water"
+}
+border
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 304
+w 30
+h 23
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 315
+w 30
+h 12
+fgColor index 112
+onColor index 5
+offColor index 1
+topShadowColor index 1
+botShadowColor index 11
+controlPv "IDmp_Vac:SGV_01:Ctl_Cmd"
+pressValue "1"
+releaseValue "0"
+onLabel "CLOSE"
+offLabel "CLOSE"
+3d
+useEnumNumeric
+font "helvetica-bold-r-8.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 249
+y 304
+w 27
+h 12
+fgColor index 112
+onColor index 4
+offColor index 1
+topShadowColor index 1
+botShadowColor index 11
+controlPv "IDmp_Vac:SGV_01:Ctl_Cmd"
+pressValue "2"
+releaseValue "0"
+onLabel "OPEN"
+offLabel "OPEN"
+3d
+useEnumNumeric
+font "helvetica-bold-r-8.0"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 334
+y 34
+w 461
+h 224
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+displaySource "menu"
+filePv "LOC\\$(!W)HEBTInj=i:0"
+center
+sizeOfs 5
+numDsps 10
+displayFileName {
+  0 "embedded-SNS-MagPS-Quad.edl"
+  1 "embedded-SNS-MagPS-Quad.edl"
+  2 "embedded-SNS-MagPS-Quad.edl"
+  3 "embedded-SNS-MagPS-Quad.edl"
+  4 "embedded-SNS-MagPS-Quad.edl"
+  5 "embedded-SNS-MagPS-Quad.edl"
+  6 "embedded-SNS-MagPS-Quad.edl"
+  7 "embedded-SNS-MagPS-Corrector.edl"
+  8 "embedded-SNS-MagPS-Corrector.edl"
+  9 "embedded-SNS-MagPS-Corrector.edl"
+}
+menuLabel {
+  0 "InjSptm Details"
+  1 "DH_A10 Details"
+  2 "DH_A11 Details"
+  3 "DH_A12 Details"
+  4 "DH_A13 Details"
+  5 "IDmp:Sptm Details"
+  6 "IDmp QV01 Details"
+  7 "DCV01 Details"
+  8 "DCH01 Details"
+  9 "DH01 Details"
+}
+symbols {
+  0 "S=HEBT,SS=Mag,DVC=PS,N=Inj,DI=Sptm"
+  1 "S=Ring,SS=Mag,DVC=PS,N=DH,DI=_A10"
+  2 "S=Ring,SS=Mag,DVC=PS,N=DH,DI=_A11"
+  3 "S=Ring,SS=Mag,DVC=PS,N=DH,DI=_A12"
+  4 "S=Ring,SS=Mag,DVC=PS,N=DH,DI=_A13"
+  5 "S=IDmp,SS=Mag,DVC=PS,N=Sptm,DI=''"
+  6 "S=IDmp,SS=Mag,DVC=PS,N=QV,DI=01"
+  7 "S=IDmp,SS=Mag,DVC=PS,N=DCS,DI=01"
+  8 "S=IDmp,SS=Mag,DVC=PS,N=DCD,DI=01"
+  9 "S=IDmp,SS=Mag,DVC=PS,N=DH,DI=01,PSVendor=IEPower"
+}
+propagateMacros {
+  0 0
+  1 0
+  2 0
+  3 0
+  4 0
+  5 0
+  6 0
+  7 0
+  8 0
+  9 0
+}
+noScroll
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 103
+w 205
+h 118
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 167
+w 119
+h 54
+font "helvetica-bold-i-16.0"
+fontAlign "center"
+fgColor index 20
+bgColor index 5
+useDisplayBg
+value {
+  "Check InjDump"
+  "water when "
+  "FV_01 closed"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 135
+y 103
+w 85
+h 67
+lineColor index 20
+fillColor index 5
+lineWidth 2
+arrows "to"
+numPoints 2
+xPoints {
+  0 135
+  1 220
+}
+yPoints {
+  0 170
+  1 103
+}
+endObjectProperties
+
+endGroup
+
+visPv "IDmp:FV_H20_Itlk:Sum"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 428
+y 7
+w 62
+h 21
+fgColor index 10
+bgColor index 40
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+buttonLabel "Set Lmts"
+numCmds 1
+commandLabel {
+  0 "Set Limits"
+}
+command {
+  0 "cd /ade/epics/supTop/operations/scripts/magnet_limits; php ring_run.php"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 301
+y 7
+w 62
+h 21
+fgColor index 10
+bgColor index 40
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+buttonLabel "RMag On"
+numCmds 1
+commandLabel {
+  0 "Ring Magnets On"
+}
+command {
+  0 "cd /ade/epics/supTop/operations/scripts/magnet_limits; php ring_on_run.php"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 365
+y 7
+w 62
+h 21
+fgColor index 10
+bgColor index 40
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+buttonLabel "RMag Off"
+numCmds 1
+commandLabel {
+  0 "Ring Magnets Off"
+}
+command {
+  0 "cd /ade/epics/supTop/operations/scripts/magnet_limits; php ring_off_run.php"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 408
+w 326
+h 39
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 642
+y 427
+w 11
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 646
+y 410
+w 4
+h 18
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 411
+w 60
+h 17
+controlPv "IDmp_Mag:PS_DH01:I"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 427
+w 60
+h 17
+controlPv "IDmp_Mag:PS_DH01:B"
+displayMode "decimal"
+precision 3
+fgColor index 112
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 601
+y 427
+w 39
+h 17
+fgColor index 25
+onColor index 5
+offColor index 5
+inconsistentColor index 10
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DH01:CClr"
+onLabel "CLEAR"
+offLabel "CLEAR"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 541
+y 427
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DH01:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_DH01:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 561
+y 411
+w 26
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DH01:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_DH01:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 541
+y 411
+w 21
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "IDmp_Mag:PS_DH01:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-10.0"
+colorPv "IDmp_Mag:PS_DH01:On"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 469
+y 411
+w 67
+h 32
+controlPv "IDmp_Mag:PS_DH01:B_Set"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 408
+w 326
+h 39
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 718
+y 411
+w 68
+h 32
+controlPv "IDmp_Mag:PS_DH01:B_Book"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "courier-bold-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 411
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 411
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 411
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "IDmp_Mag:PS_DH01:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 586
+y 411
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "IDmp_Mag:PS_DH01:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 411
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 586
+y 411
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "IDmp_Mag:PS_DH01:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 586
+y 411
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "IDmp_Mag:PS_DH01:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 429
+y 425
+w 32
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "DH01"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 323
+y 397
+w 24
+h 40
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+invisible
+buttonLabel "IDmp_Mag:PS_DH01"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=IDmp,SS=Mag,DVC=PS,N=_DH01,DI='',PSVendor=IEPower"
+}
+propagateMacros {
+  0 0
+}
+swapButtons
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 323
+y 398
+w 23
+h 39
+lineColor index 112
+fill
+fillColor index 149
+lineWidth 2
+alarmPv "IDmp_Mag:PS_DH01:Err"
+closePolygon
+numPoints 4
+xPoints {
+  0 336
+  1 346
+  2 333
+  3 323
+}
+yPoints {
+  0 398
+  1 437
+  2 437
+  3 398
+}
+endObjectProperties
+

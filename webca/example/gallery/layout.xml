@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+
+	<verticalPanel caption="verticalPanel 1">
+		<row>
+			<staticText> verticalPanel 1, row 1 </staticText>
+		</row>		
+		<row>
+			<staticText> verticalPanel 1, row 2 </staticText>
+		</row>				
+	</verticalPanel>	
+	
+	<verticalPanel caption="verticalPanel 2">
+		<row>
+			<staticText> verticalPanel 2, row 1 </staticText>
+		</row>		
+		<row>
+			<staticText> verticalPanel 2, row 2 </staticText>
+		</row>	
+		<row>
+			<staticText> verticalPanel 2, row 3 </staticText>
+		</row>			
+		<row>
+			<staticText> verticalPanel 2, row 4 </staticText>
+		</row>			
+		<row>
+			<staticText> verticalPanel 2, row 5 </staticText>
+		</row>			
+		<row>
+			<staticText> verticalPanel 2, row 6 </staticText>
+		</row>																
+	</verticalPanel>		
+
+	<horizontalPanel caption="horizontalPanel 1">
+		<column>
+			<staticText> horizontalPanel 1, column 1 </staticText>
+		</column>		
+		<column>
+			<staticText> horizontalPanel 1, column 2 </staticText>
+		</column>				
+	</horizontalPanel>		
+	
+	<horizontalPanel caption="horizontalPanel 2">
+		<column>
+			<staticText> horizontalPanel 2, column 1 </staticText>
+		</column>		
+		<column>
+			<staticText> horizontalPanel 2, column 2 </staticText>
+		</column>	
+		<column>
+			<staticText> horizontalPanel 2, column 3 </staticText>
+		</column>					
+	</horizontalPanel>	
+	
+	<verticalPanel caption="complicated vertical panel" width="50%">
+		<row caption="Complicated row">
+			<staticText> verticalPanel 3, row 1. This row has horizontal panel inside. </staticText>
+			<horizontalPanel caption="embedded horizontal panel">
+				<column>
+					<staticText> horizontalPanel 2, column 1 </staticText>
+				</column>		
+				<column>
+					<staticText> horizontalPanel 2, column 2 </staticText>
+				</column>	
+				<column>
+					<staticText> horizontalPanel 2, column 3 </staticText>
+				</column>					
+			</horizontalPanel>							
+		</row>		
+		<row>
+			<staticText> verticalPanel 3, row 2 </staticText>
+		</row>	
+		<row>
+			<staticText> verticalPanel 3, row 3 </staticText>
+		</row>						
+	</verticalPanel>	
+	
+	<verticalPanel caption="fixed width verticalPanel" width="300px">
+		<row>
+			<staticText> verticalPanel 4, row 1 </staticText>
+		</row>		
+		<row>
+			<staticText> verticalPanel 4, row 2 </staticText>
+		</row>	
+		<row>
+			<staticText> verticalPanel 4, row 3 </staticText>
+		</row>	
+		<row>
+			<staticText> verticalPanel 4, row 4 </staticText>
+		</row>							
+	</verticalPanel>	
+		
+	<panel width="80%">
+		<row>
+			<column width="70%">
+				<verticalPanel caption="verticalPanel 5 with width 70%">
+					<row>
+						<staticText> verticalPanel 5, row 1 </staticText>
+					</row>		
+					<row>
+						<staticText> verticalPanel 5, row 2 </staticText>
+					</row>				
+				</verticalPanel>	
+			</column>	
+			<column>
+				<verticalPanel caption="verticalPanel 6">
+					<row>
+						<staticText> verticalPanel 6, row 1 </staticText>
+					</row>		
+					<row>
+						<staticText> verticalPanel 6, row 2 </staticText>
+					</row>	
+					<row>
+						<staticText> verticalPanel 6, row 3 </staticText>
+					</row>			
+					<row>
+						<staticText> verticalPanel 6, row 4 </staticText>
+					</row>			
+					<row>
+						<staticText> verticalPanel 6, row 5 </staticText>
+					</row>			
+					<row>
+						<staticText> verticalPanel 6, row 6 </staticText>
+					</row>																
+				</verticalPanel>		
+			</column>
+			<column>
+				<verticalPanel caption="verticalPanel 7">
+					<row>
+						<staticText> verticalPanel 7, row 1 </staticText>
+					</row>		
+					<row>
+						<staticText> verticalPanel 7, row 2 </staticText>
+					</row>
+					<row>
+						<staticText> verticalPanel 7, row 3 </staticText>
+					</row>								
+				</verticalPanel>			
+			</column>			
+		</row>
+	</panel>	
+	<panel caption="panel 2">	
+		<row>
+			<column>
+				<verticalPanel caption="verticalPanel 8">
+					<row>
+						<staticText> verticalPanel 8, row 1 </staticText>
+					</row>		
+					<row>
+						<staticText> verticalPanel 8, row 2 </staticText>
+					</row>				
+				</verticalPanel>	
+			</column>	
+			<column>
+				<verticalPanel caption="verticalPanel 9">
+					<row>
+						<staticText> verticalPanel 9, row 1 </staticText>
+					</row>		
+					<row>
+						<staticText> verticalPanel 9, row 2 </staticText>
+					</row>	
+					<row>
+						<staticText> verticalPanel 9, row 3 </staticText>
+					</row>			
+					<row>
+						<staticText> verticalPanel 9, row 4 </staticText>
+					</row>			
+					<row>
+						<staticText> verticalPanel 9, row 5 </staticText>
+					</row>			
+					<row>
+						<staticText> verticalPanel 9, row 6 </staticText>
+					</row>																
+				</verticalPanel>		
+			</column>
+			<column width="60%">
+				<panel caption="embedded panel">
+					<row>
+						<column width="30%">
+							<verticalPanel>
+								<row>
+									<staticText> verticalPanel 5, row 1 </staticText>
+								</row>		
+								<row>
+									<staticText> verticalPanel 5, row 2 </staticText>
+								</row>				
+							</verticalPanel>	
+						</column>	
+						<column>
+							<verticalPanel caption="verticalPanel 6">
+								<row>
+									<staticText> verticalPanel 6, row 1 </staticText>
+								</row>		
+								<row>
+									<staticText> verticalPanel 6, row 2 </staticText>
+								</row>	
+								<row>
+									<staticText> verticalPanel 6, row 3 </staticText>
+								</row>			
+								<row>
+									<staticText> verticalPanel 6, row 4 </staticText>
+								</row>			
+								<row>
+									<staticText> verticalPanel 6, row 5 </staticText>
+								</row>			
+								<row>
+									<staticText> verticalPanel 6, row 6 </staticText>
+								</row>																
+							</verticalPanel>		
+						</column>
+						<column>
+							<verticalPanel caption="verticalPanel 7">
+								<row>
+									<staticText> verticalPanel 7, row 1 </staticText>
+								</row>		
+								<row>
+									<staticText> verticalPanel 7, row 2 </staticText>
+								</row>
+								<row>
+									<staticText> verticalPanel 7, row 3 </staticText>
+								</row>								
+							</verticalPanel>			
+						</column>			
+					</row>
+					<row>
+						<column colspan="3">
+							<horizontalPanel caption="horizontalPanel 1">
+								<column>
+									<staticText> horizontalPanel 1, column 1 </staticText>
+								</column>		
+								<column>
+									<staticText> horizontalPanel 1, column 2 </staticText>
+								</column>	
+								<column>
+									<staticText> horizontalPanel 1, column 3 </staticText>
+								</column>											
+								<column>
+									<staticText> horizontalPanel 1, column 4 </staticText>
+								</column>																			
+							</horizontalPanel>
+						</column>	
+					</row>					
+				</panel>
+			</column>			
+		</row>
+		<row>
+			<column colspan="3">
+				<horizontalPanel caption="horizontalPanel 1">
+					<column>
+						<staticText> horizontalPanel 1, column 1 </staticText>
+					</column>		
+					<column>
+						<staticText> horizontalPanel 1, column 2 </staticText>
+					</column>				
+				</horizontalPanel>
+			</column>	
+		</row>	
+		<row>
+			<column colspan="2">
+				<horizontalPanel caption="horizontalPanel 1">
+					<column>
+						<staticText> horizontalPanel 1, column 1 </staticText>
+					</column>		
+					<column>
+						<staticText> horizontalPanel 1, column 2 </staticText>
+					</column>				
+				</horizontalPanel>
+			</column>	
+		</row>			
+	</panel>	
+	
+	
+</caml>

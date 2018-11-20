@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../"/>
+</head>
+<body>
+
+    <!-- mode tests -->
+    <h2> Mode tests</h2>
+
+    <!-- ca records -->
+    <h3> CA records</h3>
+    record2 no parameters:
+    <caml:textUpdate readbackPV="record2"/>
+    record2 normal:
+    <caml:textUpdate readbackPV="record2" displayFormat="normal"/>
+    record2 timestamp:
+    <caml:textUpdate readbackPV="record2" displayFormat="timestamp"/>
+    record2 complete:
+    <caml:textUpdate readbackPV="record2" displayFormat="complete"/>
+
+    barWaveform complete:
+    <caml:textUpdate readbackPV="barWaveform" displayFormat="complete"/>
+    enum complete:
+    <caml:textUpdate readbackPV="enum" displayFormat="complete"/>
+
+    <!-- virtual records -->
+    <h3> Virtual records</h3>
+
+    <caml:virtualPV name="v_record2" init="0" eval="val+1" scan="1000"/>
+    <caml:virtualPV name="v_barWaveform" init="[]" eval="for (var i = 0; i &lt; 10; i++) val[i] = random() * 10;" scan="3000"/>
+    <caml:virtualPV name="v_string_array" init="['one', 'two', 'three']"/>
+
+    v_record2 no parameters:
+    <caml:textUpdate readbackPV="v_record2"/>
+    v_record2 normal:
+    <caml:textUpdate readbackPV="v_record2" displayFormat="normal"/>
+    v_record2 timestamp:
+    <caml:textUpdate readbackPV="v_record2" displayFormat="timestamp"/>
+    v_record2 complete:
+    <caml:textUpdate readbackPV="v_record2" displayFormat="complete"/>
+
+    v_barWaveform complete:
+    <caml:textUpdate readbackPV="v_barWaveform" displayFormat="complete"/>
+    v_string_array complete:
+    <caml:textUpdate readbackPV="v_string_array" displayFormat="complete"/>
+
+    <!-- format tests -->
+    <h2> Format tests</h2>
+    +##000.00:
+    <caml:textUpdate readbackPV="record2" displayFormat="+##000.00"/>
+    +00.000u:
+    <caml:textUpdate readbackPV="record2" displayFormat="+00.000u"/>
+    +00.000###At(m/dd/yy)U:    
+    <caml:textUpdate readbackPV="record2" displayFormat="+00.000###At(m/dd/yy)U"/>
+    v(+00.00E+00)AST(dddd, mmmm d, yyyy, h:MM:ss TT)U:
+    <caml:textUpdate readbackPV="record2" displayFormat="v(+00.00E+00)AST(dddd, mmmm d, yyyy, h:MM:ss TT)U"/>
+    'Alarm:'A'Value:'v(00.00E+00)u'Status code:'S(c)t:
+    <caml:textUpdate readbackPV="record2" displayFormat="'Alarm:'A'Value:'v(00.00E+00)u'Status code:'S(c)t"/>
+
+    record1:
+    <caml:textEntry controlPV="record1"/>
+    'Alarm:'A'Value:'00.00E+00ut(longTime)'Status:'S:
+    <caml:textUpdate readbackPV="record1" displayFormat="'Alarm:'A'Value:'00.00E+00ut(longTime)'Status:'S"/>
+
+    <!-- date format examples -->
+    t(default):
+    <caml:textUpdate readbackPV="record1" displayFormat="t(default)"/>
+    t(isoUtcDateTimeL):
+    <caml:textUpdate readbackPV="record1" displayFormat="t(isoUtcDateTimeL)"/>
+    t(fullDate):
+    <caml:textUpdate readbackPV="record1" displayFormat="t(fullDate)"/>
+    t(longTime):
+    <caml:textUpdate readbackPV="record1" displayFormat="t(longTime)"/>
+    
+    <!-- examples for documentation -->
+    <br/><br/>
+    displayFormat not defined
+    <caml:textUpdate readbackPV="record1"/>
+    displayFormat = "timestamp"
+    <caml:textUpdate readbackPV="record1" displayFormat="timestamp"/>
+    displayFormat = "###0.000"
+    <caml:textUpdate readbackPV="record1" displayFormat="###0.000"/>
+    displayFormat = "vt(default)"
+    <caml:textUpdate readbackPV="record1" displayFormat="vt(default)"/>
+    displayFormat = "t(h:MM:ss:l)vuas"
+    <caml:textUpdate readbackPV="record1" displayFormat="t(h:MM:ss:l)vuas"/>
+    displayFormat = "v(+0.00E00)'Status code:'s(c)"
+    <caml:textUpdate readbackPV="record1" displayFormat="v(+0.00E00)'Status code:'s(c)"/>
+    
+</body>
+</html>

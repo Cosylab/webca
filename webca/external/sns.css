@@ -1,0 +1,35 @@
+/***************************************************
+SNS definition - example
+/****************************************************/
+
+
+/***************************************************
+StaticText definition
+/****************************************************/
+
+.sns.staticText{
+	     font-family:courier;
+	     background-color:gray;
+	     color:black;	     
+	     text-align:left;
+}
+
+/***************************************************
+textEntry definition
+/****************************************************/
+
+.sns.textEntry{
+	     font-family:courier;
+	     background-color:blue;
+	     color:black;		     
+}
+
+/***************************************************
+textUpdate definition
+/****************************************************/
+
+.sns.textUpdate{
+	     font-family:courier;
+	     background-color:rgb(50,221,123);
+	     color:black;		     
+}

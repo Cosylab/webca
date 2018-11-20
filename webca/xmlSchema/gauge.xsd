@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://webca.cosylab.com"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified"
+targetNamespace="http://webca.cosylab.com">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="gauge">
+	<xs:complexType>
+		<xs:complexContent>			
+			<xs:extension base="monitor">
+				<xs:attribute name="displayFormat" type="xs:string"/>
+				<xs:attribute name="minValue" type="xs:decimal"/>	
+				<xs:attribute name="maxValue" type="xs:decimal"/>						
+			</xs:extension>		
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>	   	   
+
+</xs:schema>

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"	
+targetNamespace="http://webca.cosylab.com"	
+xmlns="http://webca.cosylab.com"		
+elementFormDefault="qualified">
+	
+	
+				
+<!--
+#############################################
+	general stuff
+############################################
+-->	
+<xs:include schemaLocation="common.xsd"/>											
+<!--
+#############################################
+	individual components 
+############################################
+-->		
+<xs:include schemaLocation="include.xsd"/>	
+<xs:include schemaLocation="textEntry.xsd"/>	
+<xs:include schemaLocation="textUpdate.xsd"/>
+<xs:include schemaLocation="staticText.xsd"/>	
+<xs:include schemaLocation="image.xsd"/>		
+<xs:include schemaLocation="mux.xsd"/>	
+<xs:include schemaLocation="tabView.xsd"/>		
+<xs:include schemaLocation="menuButton.xsd"/>		
+<xs:include schemaLocation="radioButton.xsd"/>	
+<xs:include schemaLocation="messageButton.xsd"/>			
+<xs:include schemaLocation="wheelSwitch.xsd"/>	
+<xs:include schemaLocation="bitControl.xsd"/>	
+<xs:include schemaLocation="slider.xsd"/>
+<xs:include schemaLocation="xyChart.xsd"/>	
+<xs:include schemaLocation="barChart.xsd"/>		
+<xs:include schemaLocation="gauge.xsd"/>	
+<xs:include schemaLocation="relatedDisplay.xsd"/>	
+<xs:include schemaLocation="intensityPlot.xsd"/>	
+<xs:include schemaLocation="virtualPV.xsd"/>	
+<xs:include schemaLocation="repetition.xsd"/>	
+									
+<xs:element name="caml">
+	<xs:complexType>   		    
+    	<xs:choice minOccurs="0" maxOccurs="unbounded">	
+			<xs:group ref="components"/>			           										
+		</xs:choice>	
+		<xs:attribute name="webcaPath" type="xs:string" use="required"/> 	
+		<xs:attribute name="pluginUrl" type="xs:string" default=""/> 	
+		<xs:attribute name="style" type="xs:string" default="sns"/> 
+		<xs:attribute name="title" type="xs:string" default=""/> 
+		<xs:attribute name="pendEvents" type="xs:decimal"/> 
+		<xs:attribute name="pendEventsPeriodMs" type="xs:decimal"/> 
+    </xs:complexType>	
+</xs:element>						
+<!--
+#############################################
+	components group	
+############################################
+-->						
+<xs:group name="components">
+  <xs:choice>	  	  	  
+	<xs:element ref="panel"/>  
+	<xs:element ref="horizontalPanel"/>
+	<xs:element ref="verticalPanel"/>	  
+    <xs:element ref="staticText"/>
+	<xs:element ref="img"/>
+    <xs:element ref="html"/>
+	<xs:element ref="javaScript"/>  	  
+	<xs:element ref="textEntry"/>
+	<xs:element ref="textUpdate"/>	
+	<xs:element ref="mux"/>	  
+	<xs:element ref="tabView"/> 
+	<xs:element ref="menuButton"/>  
+	<xs:element ref="radioButton"/> 	  
+	<xs:element ref="messageButton"/> 	  
+	<xs:element ref="wheelSwitch"/> 		  
+	<xs:element ref="bitControl"/> 		  
+	<xs:element ref="slider"/> 	  	  	  
+	<xs:element ref="xyChart"/> 
+	<xs:element ref="barChart"/> 	
+	<xs:element ref="gauge"/>	  
+	<xs:element ref="relatedDisplay"/>	  
+	<xs:element ref="intensityPlot"/>	  
+	<xs:element ref="virtualPV"/>	  
+	<xs:any processContents="lax" namespace="http://www.w3.org/2001/XInclude" 
+    minOccurs="0" maxOccurs="unbounded" />   	  
+  </xs:choice>	
+</xs:group>					
+	
+</xs:schema>

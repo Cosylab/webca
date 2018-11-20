@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"	
+xmlns="http://webca.cosylab.com"		
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="webca.xsd"/>	
+
+<!--
+#############################################
+	components
+#############################################	
+-->	
+<xs:complexType name="component">
+	<xs:attribute name="size"  type="sizeDefinition" default="small"/>
+	<xs:attribute name="style" type="xs:string"/>	
+</xs:complexType>	
+	
+<xs:complexType name="monitor">
+  <xs:complexContent>
+    <xs:extension base="component">
+		<xs:attribute name="readbackPV" type="xs:string" />	
+        <xs:attribute name="alarmSensitive" type="alarmSensitiveType" default="true"/>	
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>	
+	
+<xs:complexType name="control">
+  <xs:complexContent>
+    <xs:extension base="monitor">
+		<xs:attribute name="controlPV" type="xs:string" use="required"/>		
+		<xs:attribute name="readOnly" type="threeStateBoolean" default="auto"/>		
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>		
+	
+<xs:complexType name="container">
+	<xs:attribute name="style" type="xs:string"/>	
+</xs:complexType>	
+	
+<!--
+#############################################
+	html markup and java script
+#############################################	
+-->	
+<xs:element name="html" type="xs:string">		
+</xs:element>		
+	
+<xs:element name="javaScript" type="xs:string">	
+</xs:element>				
+	
+<!--
+#############################################
+	layout components
+#############################################	
+-->	
+<xs:element name="panel">
+	<xs:complexType>	
+		<xs:complexContent>
+			<xs:extension base="container">
+		   		<xs:choice minOccurs="0" maxOccurs="unbounded">	
+	           		<xs:element ref="row"/>	
+		   		</xs:choice>
+				<xs:attribute name="caption" type="xs:string"/>
+				<xs:attribute name="width" type="xs:string"/>				
+			</xs:extension>	
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>	
+	
+<xs:element name="horizontalPanel">
+	<xs:complexType>	
+		<xs:complexContent>
+			<xs:extension base="container">
+		   		<xs:choice minOccurs="0" maxOccurs="unbounded">	
+	           		<xs:element ref="column"/>										
+		   		</xs:choice>
+				<xs:attribute name="caption" type="xs:string"/>
+				<xs:attribute name="width" type="xs:string"/>
+			</xs:extension>	
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>	   		
+	
+<xs:element name="verticalPanel">
+	<xs:complexType>	
+		<xs:complexContent>
+			<xs:extension base="container">
+		   		<xs:choice minOccurs="0" maxOccurs="unbounded">	
+	           		<xs:element ref="row"/>										
+		   		</xs:choice>
+				<xs:attribute name="caption" type="xs:string"/>	
+				<xs:attribute name="width" type="xs:string"/>			
+			</xs:extension>	
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>		
+		
+<xs:element name="column">
+	<xs:complexType>
+		<xs:complexContent>	
+			<xs:extension base="container">
+				<xs:choice minOccurs="0" maxOccurs="unbounded">	
+	    	       <xs:group ref="components"/>
+				</xs:choice>
+				<xs:attribute name="width" type="xs:string"/>
+				<xs:attribute name="height" type="xs:string"/>
+				<xs:attribute name="colspan" type="xs:string"/>					
+				<xs:attribute name="caption" type="xs:string"/>				
+			</xs:extension>	
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>   		
+		
+<xs:element name="row">
+	<xs:complexType>
+		<xs:complexContent>	
+			<xs:extension base="container">
+				<xs:choice minOccurs="0" maxOccurs="unbounded">	
+				   <xs:element ref="column"/>
+	    	       <xs:group ref="components"/>				  
+				</xs:choice>
+				<xs:attribute name="width" type="xs:string"/>
+				<xs:attribute name="height" type="xs:string"/>
+				<xs:attribute name="rowspan" type="xs:string"/>					
+				<xs:attribute name="caption" type="xs:string"/>				
+			</xs:extension>	
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>		
+	
+<!--
+#############################################
+	macro definitions
+#############################################	
+-->		
+<xs:element name="macroValuePair">
+	<xs:complexType> 									   
+		<xs:attribute name="macroName" type="xs:string" use="required"/>		
+		<xs:attribute name="macroValue" type="xs:string" use="required"/>		
+	</xs:complexType>    
+</xs:element>	
+	
+<!--
+#############################################
+	simple type definitions
+#############################################	
+-->		
+<xs:simpleType name="sizeDefinition">
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "small"/>
+      <xs:enumeration value = "medium"/>
+      <xs:enumeration value = "large"/>
+    </xs:restriction>
+</xs:simpleType>	
+	
+<xs:simpleType name="dataTypeDefinition">
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "numeric"/>
+      <xs:enumeration value = "text"/>
+    </xs:restriction>
+</xs:simpleType>
+	
+<xs:simpleType name="threeStateBoolean">
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "auto"/>
+      <xs:enumeration value = "true"/>
+      <xs:enumeration value = "false"/>
+    </xs:restriction>
+</xs:simpleType>	
+
+<xs:simpleType name="alarmSensitiveType">
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "true"/>
+      <xs:enumeration value = "false"/>
+      <xs:enumeration value = "none"/>
+      <xs:enumeration value = "foreground"/>
+      <xs:enumeration value = "background"/>
+    </xs:restriction>
+</xs:simpleType>	
+
+</xs:schema>

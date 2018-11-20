@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../" title="WebCa Test"
+        pendEvents="30" pendEventsPeriodMs="30">
+
+	<horizontalPanel>
+		<column>
+			<mux>
+			    <sequence name="none1">
+					<macroValuePair macroName="$(VARIABLE1)" macroValue="none1"/>			
+					<macroValuePair macroName="$(VAR_DESC1)" macroValue="none1"/>			
+			    </sequence>
+			    <sequence name="virtualval1" selected="true">
+					<macroValuePair macroName="$(VARIABLE1)" macroValue="virtualval1"/>			
+					<macroValuePair macroName="$(VAR_DESC1)" macroValue="virtualval1"/>			
+			    </sequence>
+			</mux>
+		</column>
+		<column>
+			<mux>
+			    <sequence name="none2">
+					<macroValuePair macroName="$(VARIABLE2)" macroValue="none2"/>			
+					<macroValuePair macroName="$(VAR_DESC2)" macroValue="none2"/>			
+			    </sequence>
+			    <sequence name="virtualval2" selected="true">
+					<macroValuePair macroName="$(VARIABLE2)" macroValue="virtualval2"/>			
+					<macroValuePair macroName="$(VAR_DESC2)" macroValue="virtualval2"/>			
+			    </sequence>
+			</mux>
+		</column>
+		<column>
+			<mux>
+			    <sequence name="none3">
+					<macroValuePair macroName="$(VARIABLE3)" macroValue="none3"/>			
+					<macroValuePair macroName="$(VAR_DESC3)" macroValue="none3"/>			
+			    </sequence>
+			    <sequence name="virtualval3" selected="true">
+					<macroValuePair macroName="$(VARIABLE3)" macroValue="virtualval3"/>			
+					<macroValuePair macroName="$(VAR_DESC3)" macroValue="virtualval3"/>			
+			    </sequence>
+			</mux>
+		</column>
+	</horizontalPanel>	
+
+	<virtualPV name="$(VARIABLE1)" init="10" display="true"/>
+	<virtualPV name="$(VARIABLE2)" init="5" display="true"/>
+
+	<!-- Basic tests -->
+	<virtualPV name="eval1" init="0" eval="sin(2*PI*pvs.$(NAME1)/pvs.virtualval1)*pvs.virtualval2" display="true"/>
+	<textEntry controlPV="eval1" displayFormat="##0.000"/>
+
+	<!-- Repetitions of identifiers test -->
+	<virtualPV name="eval2" init="0" eval="pvs.$(NAME1)*pvs.virtualval1+pvs.$(NAME2)*pvs.virtualval2+pvs.virtualval1+pvs.virtualval1+pvs.$(NAME1)" display="true"/>
+	<textEntry controlPV="eval2" displayFormat="##0.000"/>
+
+	<!-- Control data test: scaled display -->
+	<virtualPV name="eval3" init="0" eval="ctrl.upperWarningLimit=pvs.$(NAME1).ctrl.upperWarningLimit*2;ctrl.lowerWarningLimit=pvs.$(NAME1).ctrl.lowerWarningLimit*2;this=pvs.$(NAME1)*2" display="true"/>
+
+	<slider controlPV="$(NAME1)"/>
+	<slider controlPV="eval3"/>
+
+	<!-- Alarm data test: minor alarms to major alarms -->
+	<virtualPV name="eval4" init="0" eval="alarm = pvs.$(NAME1).alarm; if (alarm == MINOR) {alarm = MAJOR}" display="true"/>
+
+	<textEntry controlPV="$(NAME1)" displayFormat="##0.000"/>
+	<textEntry controlPV="eval4" displayFormat="##0.000"/>
+    
+	<!-- Reference count test -->
+	<virtualPV name="eval5" init="0" eval="pvs.$(NAME1); val= val+1;" display="true"/>
+	<textEntry controlPV="eval5" displayFormat="##0.000"/>
+	
+	<!-- Syntax error test -->
+	<virtualPV name="eval6" init="0" eval="sin(2*PI*pvs.$(NAME1)/pvs.virtualval1)*pvs.virtualval2)" display="true"/>
+	<textEntry controlPV="eval6" displayFormat="##0.000"/>
+
+	<!-- Divide by zero test -->
+	<virtualPV name="eval7" init="0" eval="sin(2*PI*pvs.$(NAME1)/0)*pvs.virtualval2" display="true"/>
+	<textEntry controlPV="eval7" displayFormat="##0.000"/>
+
+	<!-- Array test -->
+	<virtualPV name="eval8" init="[]" eval="this.ctrl.lowerControlLimit = pvs.$(NAME1).ctrl.lowerControlLimit; val = []; if (pvs.$(NAME1).length == null) {val[0]=pvs.$(NAME1) } else {for(var i = pvs.$(NAME1).length -1; i != -1; i-=1) { val[i] = pvs.$(NAME1)[i] + random(1) - .5; }}" display="true"/>
+
+	<verticalPanel>
+		<row>
+            <barChart flavor="advanced" xAxisLabel="Axis X label " yAxisLabel="Axis Y label ">
+        		<series PVname="$(NAME1)" name="$(NAME1)"/>
+        		<series PVname="eval8" name="eval8"/>
+            </barChart>	 
+		</row>			
+	</verticalPanel>
+
+    <virtualPV name="gaugeVal" init="val=12.3; ctrl.upperDisplayLimit = 50; ctrl.lowerDisplayLimit = -50; " eval="val += random() * 10 - 5;" scan="500" display="true"/>
+    <gauge readbackPV="gaugeVal"/>
+	
+	<!-- Outside function call test -->
+	<!-- Test in xhtml version. 
+    <script type="text/javascript">
+        var i = 0;
+	    function initMyI() {
+	        i = 5;
+	        return i;
+	    } 
+
+	    function incrementMyI() {
+	        i++;
+	        return i;
+	    }
+	</script>
+	
+	<virtualPV name="eval9" init="initMyI()" eval="incrementMyI()" scan="750" display="true"/>
+	<textEntry controlPV="eval9" displayFormat="##0.000"/>
+	-->
+	
+</caml>

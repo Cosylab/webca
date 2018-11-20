@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<note
+xmlns="http://example.org/ord"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://example.org/ord ../main.xsd" level1="blub"/>

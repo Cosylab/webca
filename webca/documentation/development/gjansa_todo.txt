@@ -1,0 +1,31 @@
+HIGH Priority:
+8.Mozilla se isuje ko zapres nekaj kar je povezano na plugin (win in linux) -> (debugger v linux)
+11.Gumbi: toggle (message button), menu button, radio button (zadnja dva imata tudi readback pv
+ - ce je readback nardi monitor na najega, cene pa kar na control pv, 
+ce readback pv nima stringov napise vprasajcek, ce control pv nima string knof rece da je zlabo)
+14.Context menu - to bi blo kull
+15.Poglej v EDM kako tocno dela message gumb.
+16.Message button - xml shema - daj ven monitor pv.
+18.Rednering in xslt for buttons!!!
+20.Wheel switch todo: focus!!!,key event supporot, css (look&feel),se ne pokaze ce ni sconnectan.
+21.Prazne celice so problem v mozilli
+22.Check if alt attribute for images works in mac safari!!.
+26.Message Button - on/off value enaka -> to bi se moralo spremeniti
+29.Shema za dhtml in xml
+30.Vrstni red komponent
+34.V xslt v common doday en template, ki vrne class v obliki stringa (za yui gumbe).
+35.Radio button right mouse button problem -> yui forum
+36.Width = v procentih ali pa v pixlih -> spremeni shemo in xslt
+37.Dva file ne najde example pri pelaili2 (mail)
+
+
+LOW priority:
+1.MenuButton menu - ce je iz pv-ja je desni rob takoj za cifro (hack narejen, samo to ni glih lepo).
+2.Mux ima pv name za selectat trenutno stanje. 
+3.Related display implementation
+
+
+Kaj mora developer naredit ce hoce novo komponent:
+
+- ID na topmost element of component
+- Dodat v common.xsl za array component za context menu

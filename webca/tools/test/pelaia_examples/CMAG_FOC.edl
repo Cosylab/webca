@@ -1,0 +1,268 @@
+# File: /ade/epics/supTop/operations/opi/CMAG_FOC.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1145
+y 1591
+w 150
+h 65
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 112
+bgColor index 50
+textColor index 112
+ctlFgColor1 index 112
+ctlFgColor2 index 1
+ctlBgColor1 index 1
+ctlBgColor2 index 0
+topShadowColor index 1
+botShadowColor index 0
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 18
+y 12
+w 22
+h 38
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 18
+y 12
+w 22
+h 38
+lineColor index 112
+fillColor index 1
+invisible
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 19
+y 13
+w 20
+h 35
+lineColor index 112
+fill
+fillColor index 15
+startAngle 270
+totalAngle 360
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 51
+y 12
+w 22
+h 38
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 51
+y 12
+w 22
+h 38
+lineColor index 112
+fillColor index 1
+invisible
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 52
+y 13
+w 20
+h 35
+lineColor index 112
+fill
+fillColor index 20
+startAngle 270
+totalAngle 360
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 80
+y 12
+w 22
+h 38
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 80
+y 12
+w 22
+h 38
+lineColor index 112
+fillColor index 1
+invisible
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 81
+y 13
+w 20
+h 35
+lineColor index 112
+fill
+fillColor index 35
+startAngle 270
+totalAngle 360
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 12
+w 22
+h 38
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 12
+w 22
+h 38
+lineColor index 112
+fillColor index 1
+invisible
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 111
+y 13
+w 20
+h 35
+lineColor index 112
+fill
+fillColor index 15
+startAngle 270
+totalAngle 360
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 112
+y 15
+w 18
+h 33
+lineColor index 126
+fillColor index 1
+lineWidth 3
+numPoints 2
+xPoints {
+  0 130
+  1 112
+}
+yPoints {
+  0 15
+  1 48
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 112
+y 15
+w 18
+h 33
+lineColor index 126
+fillColor index 1
+lineWidth 3
+numPoints 2
+xPoints {
+  0 112
+  1 130
+}
+yPoints {
+  0 15
+  1 48
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

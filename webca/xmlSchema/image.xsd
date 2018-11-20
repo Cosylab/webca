@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="img">
+	<xs:complexType>		
+		<xs:complexContent>			
+			<xs:extension base="component">				
+				<xs:attribute name="src" type="xs:string" use="required"/>
+				<xs:attribute name="alt" type="xs:string"/>
+				<xs:attribute name="width" type="xs:string"/>
+				<xs:attribute name="height" type="xs:string"/>				
+			</xs:extension>				
+		</xs:complexContent>	
+	</xs:complexType>
+</xs:element>	   	   
+
+		
+	
+</xs:schema>

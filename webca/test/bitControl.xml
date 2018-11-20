@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns="http://webca.cosylab.com"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://webca.cosylab.com ../xmlSchema/webca.xsd"
+      webcaPath="../" title="WebCa Test">
+
+	<mux>
+		<sequence name="record1">
+			<macroValuePair macroName="$(NAME1)" macroValue="record1"/>
+		</sequence>
+	</mux>
+
+	<textUpdate readbackPV="$(NAME1)"/>
+
+	<verticalPanel>
+		<row><bitControl controlPV="$(NAME1)" startBit="0" endBit="8"/></row>
+		<row><bitControl controlPV="$(NAME1)" startBit="1" endBit="9" alarmSensitive="false"/></row>
+		<row><bitControl controlPV="$(NAME1)" startBit="2" endBit="10"/></row>
+		<row><bitControl controlPV="$(NAME1)" startBit="3" endBit="11" alarmSensitive="false"/></row>
+		<row><bitControl controlPV="$(NAME1)" startBit="7" endBit="15"/></row>
+	</verticalPanel>
+	
+	<horizontalPanel>
+	    <column><bitControl controlPV="$(NAME2)" startBit="0" endBit="0"/></column>
+	    <column><bitControl controlPV="$(NAME2)" startBit="1" endBit="2"/></column>
+	    <column><bitControl controlPV="$(NAME2)" startBit="3" endBit="6"/></column>
+	    <column><bitControl controlPV="$(NAME2)" startBit="7" endBit="15"/></column>
+	</horizontalPanel>
+
+	<horizontalPanel>
+	    <column><bitControl controlPV="$(NAME3)" startBit="15" endBit="7"/></column>
+	    <column><bitControl controlPV="$(NAME3)" startBit="6" endBit="3"/></column>
+	    <column><bitControl controlPV="$(NAME3)" startBit="2" endBit="1"/></column>
+	    <column><bitControl controlPV="$(NAME3)" startBit="0" endBit="0"/></column>
+	</horizontalPanel>
+
+</caml>

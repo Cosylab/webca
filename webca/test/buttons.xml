@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" ?>
+<caml
+	title="WebCa Test"
+	extStyle="asp"
+	>		
+	<verticalPanel>
+		<row>
+			<mux>
+				<sequence name="record1" selected="true">
+					<macroValuePair macroName="$(NAME)" macroValue="record1"/>
+					<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME)" macroValue="record2"/>			
+					<macroValuePair macroName="$(DESC)" macroValue="counter PV"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME)" macroValue="enum"/>
+					<macroValuePair macroName="$(DESC)" macroValue="enumerated PV"/>
+			    </sequence>
+			</mux>
+		</row>
+		<row>
+			<!-- I really like macros being supported inside staticText :) --> 
+			<!-- it would be very helpful to support basic HTML formatting statements in staticText... --> 
+			<staticText>PV under control is <b>$(NAME)</b>, description: <b>$(DESC)</b></staticText>
+			
+			<!-- but here is a way to do it :) --> 
+			<staticText><![CDATA[PV under control is <b>$(NAME)</b>, description: <b>$(DESC)</b>]]></staticText>
+		</row>
+	</verticalPanel>
+	
+	<verticalPanel>
+		<row>
+			<radioButton readbackPV="ai001" alarmSensitive="true" controlPV="ai001">
+												<radioButtonItem value="-300" name="radio 0"/>
+												<radioButtonItem value="0" name="radio 1"/>
+												<radioButtonItem value="50" name="radio 2"/>
+												<radioButtonItem value="100" name="radio 3"/>	
+												<radioButtonItem value="700" name="radio 4"/>			
+											</radioButton>
+		</row>		
+		<row>
+			<radioButton readbackPV="ai001" alarmSensitive="true" controlPV="ai001" type="toggle">
+												<radioButtonItem value="-300" name="less than minimum"/>
+												<radioButtonItem value="0" name="min"/>
+												<radioButtonItem value="50" name="medium"/>
+												<radioButtonItem value="100" name="full"/>	
+												<radioButtonItem value="700" name="beyond full"/>			
+											</radioButton>	
+		</row>
+		<row>
+			<radioButton readbackPV="enum" alarmSensitive="true" controlPV="enum" type="toggle">												
+											</radioButton>	
+		</row>
+		<row>
+			<radioButton readbackPV="enum" alarmSensitive="true" controlPV="enum" type="radio">												
+											</radioButton>	
+		</row>	
+		
+		<row>
+			<radioButton controlPV="$(NAME)" type="radio">	
+												<radioButtonItem value="-300" name="less than minimum"/>
+												<radioButtonItem value="0" name="min"/>
+												<radioButtonItem value="50" name="medium"/>
+												<radioButtonItem value="100" name="full"/>	
+												<radioButtonItem value="700" name="beyond full"/>																
+											</radioButton>	
+		</row>				
+	</verticalPanel>
+				
+</caml>

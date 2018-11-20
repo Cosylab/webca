@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" ?>
+<caml 
+
+
+	webcaPath="../"
+	title="Device control - WebCa example"
+	extStyle="sns"
+	>
+	
+	<horizontalPanel>
+		<column>			
+			<staticText size="large" >This example shows how device control panels can be created using WebCa.</staticText>
+		</column>
+		<column>
+			<img src="cosylab.png" alt="epics Logo"></img>
+			<img src="sns.gif" alt="sns Logo"></img>
+		</column>
+		
+	</horizontalPanel>
+
+	<tabView>
+		<tab name="Vacuum Pumps" selected="true">
+			<horizontalPanel caption="Device selector">
+				<column width="50%">		
+						<staticText>Device Name</staticText>		
+				</column>
+				<column width="50%">
+						<mux>	
+							<sequence name="IOPC-A-3-1" selected="true">
+								<macroValuePair macroName="$(DEVICE)" macroValue="IOPC-A-3-1"/>
+							</sequence>
+							<sequence name="IOPC-B-3-2">
+								<macroValuePair macroName="$(DEVICE)" macroValue="IOPC-B-3-2"/>
+							</sequence>
+							<sequence name="IOPC-B-3-3">
+								<macroValuePair macroName="$(DEVICE)" macroValue="IOPC-B-3-3"/>
+							</sequence>
+							<sequence name="IOPC-C-3-1">
+								<macroValuePair macroName="$(DEVICE)" macroValue="IOPC-C-3-1"/>
+							</sequence>
+							<sequence name="IOPC-D-3-2">
+								<macroValuePair macroName="$(DEVICE)" macroValue="IOPC-D-3-2"/>
+							</sequence>								
+						</mux>
+				</column>	
+			</horizontalPanel>
+			<horizontalPanel caption="Commands">
+				<column width="25%">
+					<messageButton readbackPV="$(DEVICE):HVON_CMD.PROC" alarmSensitive="false" controlPV="$(DEVICE):HVON_CMD.PROC">
+						<on caption="ON" value="1"></on>
+						<off caption="ON" value="1"></off>
+					</messageButton>
+				</column>
+				<column width="25%">
+					<messageButton readbackPV="$(DEVICE):HVOFF_CMD.PROC" alarmSensitive="false" controlPV="$(DEVICE):HVOFF_CMD.PROC">
+						<on caption="OFF" value="1"></on>
+						<off caption="OFF" value="1"></off>
+					</messageButton>					
+				</column>
+				<column width="25%">
+					<messageButton readbackPV="$(DEVICE):START_CMD.PROC" alarmSensitive="false" controlPV="$(DEVICE):START_CMD.PROC">
+						<on caption="START" value="1"></on>
+						<off caption="START" value="1"></off>
+					</messageButton>
+				</column>								
+				<column width="25%">
+					<messageButton readbackPV="$(DEVICE):PROTECT_CMD.PROC" alarmSensitive="false" controlPV="$(DEVICE):PROTECT_CMD.PROC">
+						<on caption="PROTECT" value="1"></on>
+						<off caption="PROTECT" value="1"></off>
+					</messageButton>					
+				</column>				
+			</horizontalPanel>	
+			<horizontalPanel caption="Output Voltage">
+				<column>
+					<menuButton readbackPV="$(DEVICE):OUTPUT_VOLTAGE_CMD" alarmSensitive="false" controlPV="$(DEVICE):OUTPUT_VOLTAGE_CMD">
+					</menuButton>
+				</column>
+				<column>
+					<horizontalPanel>
+						<column>
+							<staticText>Output voltage</staticText>							
+						</column>
+					</horizontalPanel>
+					<horizontalPanel>
+						<column>
+							<staticText>Actual voltage</staticText>							
+						</column>					
+					</horizontalPanel>
+				</column>
+				<column>
+					<horizontalPanel>
+						<column>
+							<textUpdate readbackPV="$(DEVICE):OUTPUT_VOLTAGE_MONITOR"></textUpdate>
+						</column>
+					</horizontalPanel>
+					<horizontalPanel>
+						<column>
+							<textUpdate readbackPV="$(DEVICE):VOLTAGE_MONITOR"></textUpdate>
+						</column>
+					</horizontalPanel>
+				</column>
+			</horizontalPanel>
+			<horizontalPanel caption="Setpoints">
+				<column width="25%">
+					<horizontalPanel>
+						<column>
+							<staticText>Setpoint 1</staticText>
+						</column>
+					</horizontalPanel>
+					<horizontalPanel>
+						<column>
+							<staticText>Setpoint 2</staticText>
+						</column>
+					</horizontalPanel>
+				</column>
+				<column width="25%">
+					<horizontalPanel>
+						<column>
+							<wheelSwitch alarmSensitive="false" controlPV="$(DEVICE):SET_POINT1_SP" displayFormat="+##00.000"></wheelSwitch>
+						</column>
+					</horizontalPanel>
+					<horizontalPanel>
+						<column>
+							<wheelSwitch alarmSensitive="false" controlPV="$(DEVICE):SET_POINT2_SP" displayFormat="+##00.000"></wheelSwitch>							
+						</column>
+					</horizontalPanel>					
+				</column>
+				<column width="25%">
+					<horizontalPanel>
+						<column>
+							<textUpdate readbackPV="$(DEVICE):SET_POINT1_MONITOR"></textUpdate>
+						</column>
+					</horizontalPanel>
+					<horizontalPanel>
+						<column>
+							<textUpdate readbackPV="$(DEVICE):SET_POINT2_MONITOR"></textUpdate>
+						</column>
+					</horizontalPanel>					
+				</column>
+				<column width="25%">
+					<horizontalPanel>
+						<column>
+							<textUpdate readbackPV="$(DEVICE):SET_POINT1_STATUS" dataType="text"></textUpdate>							
+						</column>
+					</horizontalPanel>
+					<horizontalPanel>
+						<column>
+							<textUpdate readbackPV="$(DEVICE):SET_POINT2_STATUS" dataType="text"></textUpdate>							
+						</column>
+					</horizontalPanel>					
+				</column>
+			</horizontalPanel>
+			<horizontalPanel caption="Current">
+				<column>
+					<horizontalPanel>
+						<column width="15%">
+							<staticText>Protect current</staticText>
+						</column>
+						<column width="150px">
+							<textEntry								
+								controlPV="$(DEVICE):PROTECT_CURRENT_SP"
+								dataType="numeric">								
+							</textEntry>
+						</column>
+						<column width="5%">
+						</column>							
+						<column>
+							<gauge readbackPV="$(DEVICE):PROTECT_CURRENT_MONITOR"
+								maxValue="650"
+				 			    minValue="-300"
+							    displayFormat="#0.0"
+								></gauge>														
+						</column>						
+					</horizontalPanel>		
+					<horizontalPanel>
+						<column width="15%">
+							<staticText>Actual current</staticText>							
+						</column>
+						<column width="70%">
+							<slider readbackPV="$(DEVICE):PROTECT_CURRENT_MONITOR" 
+									alarmSensitive="true" 
+									controlPV="$(DEVICE):PROTECT_CURRENT_SP"
+									increment="0.01"
+									displayFormat="#0.0"
+									maxValue="650"
+									minValue="-300">								
+							</slider>		
+						</column>	
+						<column width="5%">
+						</column>	
+						<column>
+							<textUpdate readbackPV="$(DEVICE):CURRENT_MONITOR"></textUpdate>																					
+						</column>											
+					</horizontalPanel>
+				</column>									
+			</horizontalPanel>
+			<horizontalPanel caption="Status">
+				<column width="50%">
+					<horizontalPanel>
+						<column>
+							<textUpdate readbackPV="$(DEVICE):HVON_STATUS" dataType="text"></textUpdate>
+						</column>
+					</horizontalPanel>
+						<horizontalPanel>
+						<column>
+							<textUpdate readbackPV="$(DEVICE):PROTECT_STATUS" dataType="text"></textUpdate>
+						</column>
+					</horizontalPanel>
+				</column>
+				<column width="50%">
+					<horizontalPanel>
+						<column>
+							<textUpdate readbackPV="$(DEVICE):HVFAULT_STATUS" dataType="text"></textUpdate>
+						</column>
+					</horizontalPanel>
+					<horizontalPanel>
+						<column>
+							<textUpdate readbackPV="$(DEVICE):OVERCURR_STATUS" dataType="text"></textUpdate>
+						</column>
+					</horizontalPanel>
+				</column>
+			</horizontalPanel>
+		</tab>
+		<tab name="Power Supplies">
+			<staticText> TODO : Add control of the power supplies here.</staticText>			
+		</tab>
+	</tabView>
+	
+</caml>

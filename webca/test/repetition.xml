@@ -1,0 +1,61 @@
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title></title>
+    <caml:head webcaPath="../"/>
+</head>
+<body>
+<!--
+
+    <caml:virtualPV name="MEBT_Mag:DCH01:$(INC):I" init="0" eval="pvs.MEBT_Mag:DCH01:$(INC):I_Set" scan="2000"/>
+    <caml:virtualPV name="MEBT_Mag:DCH04:$(INC):I" init="0" eval="pvs.MEBT_Mag:DCH04:$(INC):I_Set" scan="2000"/>
+    <caml:virtualPV name="MEBT_Mag:DCH05:$(INC):I" init="0" eval="pvs.MEBT_Mag:DCH05:$(INC):I_Set" scan="2000"/>
+    <caml:virtualPV name="MEBT_Mag:DCH10:$(INC):I" init="0" eval="pvs.MEBT_Mag:DCH10:$(INC):I_Set" scan="2000"/>
+    <caml:virtualPV name="MEBT_Mag:DCH11:$(INC):I" init="0" eval="pvs.MEBT_Mag:DCH11:$(INC):I_Set" scan="2000"/>
+    <caml:virtualPV name="MEBT_Mag:DCH14:$(INC):I" init="0" eval="pvs.MEBT_Mag:DCH14:$(INC):I_Set" scan="2000"/>
+
+    <caml:virtualPV name="MEBT_Mag:DCH01:$(INC):I_Set" init="0"/>
+    <caml:virtualPV name="MEBT_Mag:DCH04:$(INC):I_Set" init="0"/>
+    <caml:virtualPV name="MEBT_Mag:DCH05:$(INC):I_Set" init="0"/>
+    <caml:virtualPV name="MEBT_Mag:DCH10:$(INC):I_Set" init="0"/>
+    <caml:virtualPV name="MEBT_Mag:DCH11:$(INC):I_Set" init="0"/>
+    <caml:virtualPV name="MEBT_Mag:DCH14:$(INC):I_Set" init="0"/>
+-->
+<table>
+
+    <caml:repetition name="RepMag">
+        <caml:list>
+            <caml:item>
+                <caml:macroValuePair macroName="$(DEVICE)" macroValue="MEBT_Mag:DCH01" />
+                <caml:macroValuePair macroName="$(PS)" macroValue="MEBT_Mag:PS_DCH01" />
+            </caml:item>
+            <caml:item>
+                <caml:macroValuePair macroName="$(DEVICE)" macroValue="MEBT_Mag:DCH04" />
+                <caml:macroValuePair macroName="$(PS)" macroValue="MEBT_Mag:PS_DCH04" />
+            </caml:item>
+            <caml:item>
+                <caml:macroValuePair macroName="$(DEVICE)" macroValue="MEBT_Mag:DCH05" />
+                <caml:macroValuePair macroName="$(PS)" macroValue="MEBT_Mag:PS_DCH05" />
+            </caml:item>
+            <caml:item>
+                <caml:macroValuePair macroName="$(DEVICE)" macroValue="MEBT_Mag:DCH10" />
+                <caml:macroValuePair macroName="$(PS)" macroValue="MEBT_Mag:PS_DCH10" />
+            </caml:item>
+            <caml:item>
+                <caml:macroValuePair macroName="$(DEVICE)" macroValue="MEBT_Mag:DCH11" />
+                <caml:macroValuePair macroName="$(PS)" macroValue="MEBT_Mag:PS_DCH11" />
+            </caml:item>
+            <caml:item>
+                <caml:macroValuePair macroName="$(DEVICE)" macroValue="MEBT_Mag:DCH14" />
+                <caml:macroValuePair macroName="$(PS)" macroValue="MEBT_Mag:PS_DCH14" />
+            </caml:item>
+        </caml:list>
+        <caml:template>
+   		    <caml:include href="repetition_el.xml" style="color: green;"/>
+        </caml:template>
+    </caml:repetition>
+
+</table>
+
+</body>
+</html>

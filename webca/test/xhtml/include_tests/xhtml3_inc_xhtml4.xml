@@ -1,0 +1,25 @@
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../" pendEvents="30" pendEventsPeriodMs="30" extStyle="csl"/>
+</head>
+<body>
+    <caml:staticText>This is xhtml3_inc_xhtml4.xml.</caml:staticText>
+
+    This is a normal html table.
+    <table>
+        <tr><td>a1</td><td>a2</td></tr>
+        <tr><td>b1</td><td>b2</td></tr>
+        <tr><td>c1</td><td>c2</td></tr>
+    </table>
+
+	<caml:textUpdate readbackPV="record1" dataType="text"/>
+	<caml:textUpdate readbackPV="$(NAME)" dataType="text"/>
+
+    This is normal html text.
+	
+    <caml:include href="xhtml4_inc_xhtmlgallery.xml"/>
+    
+</body>
+</html>

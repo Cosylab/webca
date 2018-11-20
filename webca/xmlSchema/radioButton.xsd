@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="radioButton">	
+	<xs:complexType>
+		<xs:complexContent>			
+			<xs:extension base="control">
+				<xs:choice minOccurs="0" maxOccurs="unbounded">	
+					<xs:element ref="radioButtonItem"/>
+				</xs:choice>	
+				<xs:attribute name="type" type="radioButtonTypeDefinition"/>			
+				<xs:attribute name="direction" type="directionType" default="horizontal"/>			
+			</xs:extension>		
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>
+	
+<xs:element name="radioButtonItem">
+	<xs:complexType>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="value" type="xs:string" use="required"/>
+	</xs:complexType>	
+</xs:element>		
+	
+<xs:simpleType name="radioButtonTypeDefinition">
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "toggle"/>
+      <xs:enumeration value = "radio"/>
+    </xs:restriction>
+</xs:simpleType>
+		
+<xs:simpleType name="directionType">
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "horizontal"/>
+      <xs:enumeration value = "vertical"/>
+    </xs:restriction>
+</xs:simpleType>
+	
+</xs:schema>

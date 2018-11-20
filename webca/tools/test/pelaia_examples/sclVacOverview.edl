@@ -1,0 +1,14802 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 56
+y 20
+w 953
+h 1160
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 112
+bgColor index 50
+textColor index 5
+ctlFgColor1 index 0
+ctlFgColor2 index 34
+ctlBgColor1 index 38
+ctlBgColor2 index 17
+topShadowColor index 38
+botShadowColor index 0
+title "SCL Vacuum Overview - New Serial"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 90
+w 950
+h 140
+lineColor index 2
+fill
+fillColor index 4
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 930
+w 80
+h 170
+lineColor index 112
+fillColor index 38
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 690
+w 80
+h 110
+lineColor index 112
+fillColor index 38
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 920
+h 40
+lineColor index 132
+fill
+fillColor index 132
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 810
+w 950
+h 110
+lineColor index 2
+fill
+fillColor index 4
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 570
+w 950
+h 110
+lineColor index 2
+fill
+fillColor index 4
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 360
+w 950
+h 80
+lineColor index 2
+fill
+fillColor index 4
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 100
+y -40
+w 1140
+h 40
+lineColor index 48
+fill
+fillColor index 68
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 420
+y -400
+w 70
+h 20
+fgColor index 133
+bgColor index 44
+topShadowColor index 107
+botShadowColor index 109
+font "helvetica-medium-r-14.0"
+buttonLabel "HPM"
+numPvs 4
+numDsps 6
+displayFileName {
+  0 "hpm.edl"
+  1 "hpm.edl"
+  2 "hpm_hw.edl"
+  3 "hpm_hb.edl"
+  4 "hpm_foarc.edl"
+  5 "hpm_dm.edl"
+}
+menuLabel {
+  1 "HPM Main"
+  2 "HPM Hardware"
+  3 "HPM Hist."
+  4 "HPM F.O. Arc"
+  5 "HPM Mux."
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 240
+y 10
+w 352
+h 27
+font "helvetica-bold-r-24.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 68
+useDisplayBg
+value {
+  "SCL Vacuum Status Overview"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 50
+w 74
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "right"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Wm&Cold "
+  "VacOK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 240
+y 50
+w 55
+h 32
+font "helvetica-bold-r-14.0"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "SGV (A)"
+  "Status"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 630
+y 50
+w 46
+h 32
+font "helvetica-bold-r-14.0"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "DwStr"
+  "VacOk"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 190
+y 50
+w 46
+h 32
+font "helvetica-bold-r-14.0"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "UpStr"
+  "VacOk"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 10
+y 10
+w 80
+h 20
+fgColor index 112
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-16.0"
+buttonLabel "<- CCL"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "cclVacOverview.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 830
+y 10
+w 80
+h 20
+fgColor index 112
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-16.0"
+buttonLabel "HEBT ->"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "hebtVacOverview.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 90
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "LEDP"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacLEDP-CM01-asyn.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=00, N=01, K=00"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 120
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "MB 01"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacLEDP-CM01-asyn.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=00, N=01, K=00"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 150
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "02"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacMediumBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=03, N=02, K=00"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 180
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "03"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacMediumBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=04, N=03, K=00"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 210
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "04"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacMediumBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=05, N=04, K=00"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 240
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "05"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacMediumBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=06, N=05, K=02"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 270
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "06"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacMediumBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=07, N=06, K=02"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 300
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "07"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacMediumBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=08, N=07, K=02"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 330
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "08"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacMediumBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=09, N=08, K=02"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 360
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "09"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacMediumBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=10, N=09, K=03"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 390
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "10"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacMediumBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=11, N=10, K=03"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 420
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "11"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacMediumBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=12, N=11, K=03"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 90
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank00001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 120
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank01001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 150
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank02001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 240
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank05001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 210
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank04001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 180
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank03001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 420
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank11001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 390
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank10001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 360
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank09001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 330
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank08001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 300
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank07001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 270
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank06001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 450
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank12001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 450
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "HB 12"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=13, N=12, K=04"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 480
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank13001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 540
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "15"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=16, N=15, K=04"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 540
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank15001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 510
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank14001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 510
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "14"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=15, N=14, K=04"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 660
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "19"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=20, N=19, K=05"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 660
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank19001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 630
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank18001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 630
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "18"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=19, N=18, K=05"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 600
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "17"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=18, N=17, K=05"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 600
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank17001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 570
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank16001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 570
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "16"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=17, N=16, K=05"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 780
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "23"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, N=23, K=06, M=24"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 780
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank23001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 750
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank22001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 750
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "22"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, N=22, M=23, K=06"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 720
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "21"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=22, N=21, K=06"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 720
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank21001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 690
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank20001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 690
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "20"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=21, N=20, K=06"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 810
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank24001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 810
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "Df 24"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacDrift24.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=25, N=24, K=04"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 840
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank25001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 840
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "Df 25"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacDrift.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=26, N=25, K=07"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 900
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "Df 27"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacDrift.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=28, N=27, K=07"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 900
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank27001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 870
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank26001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 870
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "Df 26"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacDrift.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=27, N=26, K=07"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 930
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank28001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 930
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "Df 28"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacDrift.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=29, N=28, K=08"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 960
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "Df 29"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacDrift.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=30, N=29, K=08"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 960
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank29001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 1020
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "Df 31"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacDrift.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=32, N=31, K=08"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 1020
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank31001:TankOk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 990
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank30001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 990
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "Df 30"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacDrift.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=31, N=30, K=08"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 1050
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank32001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 1050
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "Df 32"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacDrift32.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=33, N=32, K=08"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 1080
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank33001:TankOk"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 1080
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "HEDP"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHEDP-HEBT.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=34, N=33, K=08"
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 150
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV02001:Opn"
+  1 "SCL_Vac:SGV02001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 150
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP02001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 150
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP02501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 150
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV02501:Opn"
+  1 "SCL_Vac:SGV02501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 180
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV03501:Opn"
+  1 "SCL_Vac:SGV03501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 180
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP03501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 180
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV03001:Opn"
+  1 "SCL_Vac:SGV03001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 180
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP03001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 690
+y 50
+w 55
+h 32
+font "helvetica-bold-r-14.0"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "SGV (B)"
+  "Status"
+}
+autoSize
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 210
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV04001:Opn"
+  1 "SCL_Vac:SGV04001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 210
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP04001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 210
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP04501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 210
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV04501:Opn"
+  1 "SCL_Vac:SGV04501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 240
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV05501:Opn"
+  1 "SCL_Vac:SGV05501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 240
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP05501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 240
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV05001:Opn"
+  1 "SCL_Vac:SGV05001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 240
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP05001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 270
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV06001:Opn"
+  1 "SCL_Vac:SGV06001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 270
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP06001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 270
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP06501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 270
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV06501:Opn"
+  1 "SCL_Vac:SGV06501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 300
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV07501:Opn"
+  1 "SCL_Vac:SGV07501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 300
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP07501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 300
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV07001:Opn"
+  1 "SCL_Vac:SGV07001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 300
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP07001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 330
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV08001:Opn"
+  1 "SCL_Vac:SGV08001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 330
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP08001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 330
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP08501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 330
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV08501:Opn"
+  1 "SCL_Vac:SGV08501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 360
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV09501:Opn"
+  1 "SCL_Vac:SGV09501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 360
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP09501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 360
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV09001:Opn"
+  1 "SCL_Vac:SGV09001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 360
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP09001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 780
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP23001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 780
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV23001:Opn"
+  1 "SCL_Vac:SGV23001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 780
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+alarmPv "SCL_Vac:IP23501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 780
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV23501:Opn"
+  1 "SCL_Vac:SGV23501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 750
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV22501:Opn"
+  1 "SCL_Vac:SGV22501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 750
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+alarmPv "SCL_Vac:IP22501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 750
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP22001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 750
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV22001:Opn"
+  1 "SCL_Vac:SGV22001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 720
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP21001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 720
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV21001:Opn"
+  1 "SCL_Vac:SGV21001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 720
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP21501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 720
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV21501:Opn"
+  1 "SCL_Vac:SGV21501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 690
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV20501:Opn"
+  1 "SCL_Vac:SGV20501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 690
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP20501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 690
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP20001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 690
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV20001:Opn"
+  1 "SCL_Vac:SGV20001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 660
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP19001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 660
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV19001:Opn"
+  1 "SCL_Vac:SGV19001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 660
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP19501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 660
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV19501:Opn"
+  1 "SCL_Vac:SGV19501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 630
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV18501:Opn"
+  1 "SCL_Vac:SGV18501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 630
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP18501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 630
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP18001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 630
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV18001:Opn"
+  1 "SCL_Vac:SGV18001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 600
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP17001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 600
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV17001:Opn"
+  1 "SCL_Vac:SGV17001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 600
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP17501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 600
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV17501:Opn"
+  1 "SCL_Vac:SGV17501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 570
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV16501:Opn"
+  1 "SCL_Vac:SGV16501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 570
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP16501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 570
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP16001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 570
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV16001:Opn"
+  1 "SCL_Vac:SGV16001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 540
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP15001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 540
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV15001:Opn"
+  1 "SCL_Vac:SGV15001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 540
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP15501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 540
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV15501:Opn"
+  1 "SCL_Vac:SGV15501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 510
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV14501:Opn"
+  1 "SCL_Vac:SGV14501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 510
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP14501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 510
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP14001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 510
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV14001:Opn"
+  1 "SCL_Vac:SGV14001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 480
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP13001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 480
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV13001:Opn"
+  1 "SCL_Vac:SGV13001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 480
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP13501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 480
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV13501:Opn"
+  1 "SCL_Vac:SGV13501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 450
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV12501:Opn"
+  1 "SCL_Vac:SGV12501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 450
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP12501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 450
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP12001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 450
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV12001:Opn"
+  1 "SCL_Vac:SGV12001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 420
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP11001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 420
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV11001:Opn"
+  1 "SCL_Vac:SGV11001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 420
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP11501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 420
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV11501:Opn"
+  1 "SCL_Vac:SGV11501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 390
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV10501:Opn"
+  1 "SCL_Vac:SGV10501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 390
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP10501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 390
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP10001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 390
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV10001:Opn"
+  1 "SCL_Vac:SGV10001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 120
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP01001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 120
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV01001:Opn"
+  1 "SCL_Vac:SGV01001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 120
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP01501:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 120
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV01501:Opn"
+  1 "SCL_Vac:SGV01501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 350
+y 90
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:CCG00001:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 90
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV00001:Opn"
+  1 "SCL_Vac:SGV00001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 90
+w 60
+h 20
+file "sclvacfastvalve.edl"
+truthTable
+numStates 8
+minValues {
+  1 1
+  2 2
+  3 3
+  4 4
+  5 5
+  6 6
+  7 7
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+  4 5
+  5 6
+  6 7
+  7 8
+}
+controlPvs {
+  0 "SCL_Vac:FV00001:Opn"
+  1 "SCL_Vac:FV00001:Clsd"
+  2 "SCL_Vac:FV00001:rdy"
+}
+numPvs 3
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 510
+y 1080
+w 60
+h 20
+file "sclvacfastvalve.edl"
+truthTable
+numStates 8
+minValues {
+  1 1
+  2 2
+  3 3
+  4 4
+  5 5
+  6 6
+  7 7
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+  4 5
+  5 6
+  6 7
+  7 8
+}
+controlPvs {
+  0 "SCL_Vac:FV33001:Opn"
+  1 "SCL_Vac:FV33001:Clsd"
+  2 "SCL_Vac:FV33001:rdy"
+}
+numPvs 3
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 810
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV24501:Opn"
+  1 "SCL_Vac:SGV24501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 330
+y 1080
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP33002:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 1080
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV33001:Opn"
+  1 "SCL_Vac:SGV33001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 1080
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP33001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 1080
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV33501:Opn"
+  1 "SCL_Vac:SGV33501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 810
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP24301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 810
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV24001:Opn"
+  1 "SCL_Vac:SGV24001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 810
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP24001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 840
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP25301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 840
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV25001:Opn"
+  1 "SCL_Vac:SGV25001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 840
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP25001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 870
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP26301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 870
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV26001:Opn"
+  1 "SCL_Vac:SGV26001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 870
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP26001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 900
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP27301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 900
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV27001:Opn"
+  1 "SCL_Vac:SGV27001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 900
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP27001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 930
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP28301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 930
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV28001:Opn"
+  1 "SCL_Vac:SGV28001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 930
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP28001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 960
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+alarmPv "SCL_Vac:IP29301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 960
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV29001:Opn"
+  1 "SCL_Vac:SGV29001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 960
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP29001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 990
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP30301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 990
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV30001:Opn"
+  1 "SCL_Vac:SGV30001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 990
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP30001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 1020
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP31301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 1020
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV31001:Opn"
+  1 "SCL_Vac:SGV31001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 1020
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP31001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 1050
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP32301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 1050
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV32001:Opn"
+  1 "SCL_Vac:SGV32001:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 1050
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP32001:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 120
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM01a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 130
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG01101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 130
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG01101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 360
+y 40
+w 206
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "RF Permit Status"
+  "VacOK Status/RF Power [KW]"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 120
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 130
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG01201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 130
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG01201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 120
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM01b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 120
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 130
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG01301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 130
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG01301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 120
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM01c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 150
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 160
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG02201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 160
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG02201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 150
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM02b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 150
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 160
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG02301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 160
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG02301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 150
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM02c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 150
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 150
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM02a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 160
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG02101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 160
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG02101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 180
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 190
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG03301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 190
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG03301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 180
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM03c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 180
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 190
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG03201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 190
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG03201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 180
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM03b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 180
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 180
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM03a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 190
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG03101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 190
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG03101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 210
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 220
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG04301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 220
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG04301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 210
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM04c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 210
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 220
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG04201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 220
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG04201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 210
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM04b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 210
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 210
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM04a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 220
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG04101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 220
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG04101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 240
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 250
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG05301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 250
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG05301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 240
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM05c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 240
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 250
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG05201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 250
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG05201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 240
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM05b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 240
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 240
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM05a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 250
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG05101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 250
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG05101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 270
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 280
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG06301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 280
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG06301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 270
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM06c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 270
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 280
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG06201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 280
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG06201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 270
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM06b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 270
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 270
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM06a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 280
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG06101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 280
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG06101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 300
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 310
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG07301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 310
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG07301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 300
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM07c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 300
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 310
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG07201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 310
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG07201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 300
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM07b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 300
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 300
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM07a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 310
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG07101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 310
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG07101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 330
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 330
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM08a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 340
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG08101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 340
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG08101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 330
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 340
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG08201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 340
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG08201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 330
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM08b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 330
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 340
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG08301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 340
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG08301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 330
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM08c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 360
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 370
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG09301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 370
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG09301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 360
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM09c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 360
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 370
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG09201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 370
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG09201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 360
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM09b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 360
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 360
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM09a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 370
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG09101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 370
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG09101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 390
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 400
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG10301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 400
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG10301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 390
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM10c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 390
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 400
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG10201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 400
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG10201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 390
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM10b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 390
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 390
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM10a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 400
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG10101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 400
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG10101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 420
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 430
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG11301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 430
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG11301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 420
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM11c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 420
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 430
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG11201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 430
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG11201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 420
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM11b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 420
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 420
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM11a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 430
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG11101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 430
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG11101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 450
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 460
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG12301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 460
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG12301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 450
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM12c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 450
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 460
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG12201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 460
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG12201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 450
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM12b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 450
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 450
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM12a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 460
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG12101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 460
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG12101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 450
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 459
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG12401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 459
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG12401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 450
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM12d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 480
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 489
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG13401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 489
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG13401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 481
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM13d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 480
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 490
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG13301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 490
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG13301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 480
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM13c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 480
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 490
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG13201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 490
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG13201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 480
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM13b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 480
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 480
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM13a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 490
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG13101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 490
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG13101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 510
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 519
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG14401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 519
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG14401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 511
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM14d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 510
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 520
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG14301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 520
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG14301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 510
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM14c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 510
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 520
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG14201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 520
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG14201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 510
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM14b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 510
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 510
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM14a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 520
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG14101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 520
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG14101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 540
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 540
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM15a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 550
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG15101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 550
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG15101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 540
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 550
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG15201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 550
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG15201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 540
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM15b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 540
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 550
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG15301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 550
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG15301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 540
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM15c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 540
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 549
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG15401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 549
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG15401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 541
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM15d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 570
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 580
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG16401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 580
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG16401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 572
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM16d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 570
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 580
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG16301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 580
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG16301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 570
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM16c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 570
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 580
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG16201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 580
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG16201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 570
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM16b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 570
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 570
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM16a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 580
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG16101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 580
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG16101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 600
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 600
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM17a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 610
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG17101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 610
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG17101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 600
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 610
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG17201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 610
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG17201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 600
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM17b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 600
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 610
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG17301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 610
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG17301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 600
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM17c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 600
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 609
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG17401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 609
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG17401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 601
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM17d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 640
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 639
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG18401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 639
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG18401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 631
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM18d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 630
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 640
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG18301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 640
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG18301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 630
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM18c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 630
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 640
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG18201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 640
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG18201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 630
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM18b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 630
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 630
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM18a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 640
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG18101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 640
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG18101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 660
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 660
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM19a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 670
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG19101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 670
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG19101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 660
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 670
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG19201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 670
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG19201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 660
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM19b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 660
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 670
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG19301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 670
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG19301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 660
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM19c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 660
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 670
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG19401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 670
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG19401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 660
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM19d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 690
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 700
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG20401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 700
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG20401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 690
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM20d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 690
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 700
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG20301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 700
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG20301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 690
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM20c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 690
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 700
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG20201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 700
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG20201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 690
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM20b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 690
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 690
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM20a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 700
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG20101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 700
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG20101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 720
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 720
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM21a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 730
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG21101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 730
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG21101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 720
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 730
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG21201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 730
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG21201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 720
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM21b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 720
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 730
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG21301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 730
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG21301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 720
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM21c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 720
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 730
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG21401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 730
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG21401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 720
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM21d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 750
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 760
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG22401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 760
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG22401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 750
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM22d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 750
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 760
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG22301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 760
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG22301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 750
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM22c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 750
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 760
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG22201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 760
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG22201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 750
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM22b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 750
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 750
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM22a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 760
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG22101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 760
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG22101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 780
+w 20
+h 20
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 780
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM23a:Flt13"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 790
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG23101:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 790
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG23101:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 780
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 790
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG23201:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 790
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG23201:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 780
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM23b:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 780
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 480
+y 790
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG23301:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 790
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG23301:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 780
+w 20
+h 10
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM23c:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 780
+w 20
+h 20
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 790
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 15
+lineWidth 2
+visPv "SCL_Vac:CCG23401:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 790
+w 10
+h 9
+lineColor index 14
+fill
+fillColor index 20
+lineWidth 2
+visPv "SCL_Vac:CCG23401:VacOK"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 780
+w 20
+h 9
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_LLRF:HPM23d:Flt13"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 90
+w 60
+h 20
+lineColor index 25
+fillColor index 38
+lineWidth 2
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 110
+w 60
+h 20
+fgColor index 14
+onColor index 10
+offColor index 10
+topShadowColor index 1
+botShadowColor index 11
+controlPv "SCL_Vac:IEL00001:Reset"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 90
+w 47
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Zone 1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 240
+w 47
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Zone 2"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 260
+w 60
+h 20
+fgColor index 14
+onColor index 10
+offColor index 10
+topShadowColor index 1
+botShadowColor index 11
+controlPv "SCL_Vac:IEL02001:Reset"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 380
+w 60
+h 20
+fgColor index 14
+onColor index 10
+offColor index 10
+topShadowColor index 1
+botShadowColor index 11
+controlPv "SCL_Vac:IEL03001:Reset"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 360
+w 47
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Zone 3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 450
+w 47
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Zone 4"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 470
+w 60
+h 20
+fgColor index 14
+onColor index 10
+offColor index 10
+topShadowColor index 1
+botShadowColor index 11
+controlPv "SCL_Vac:IEL04001:Reset"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 590
+w 60
+h 20
+fgColor index 14
+onColor index 10
+offColor index 10
+topShadowColor index 1
+botShadowColor index 11
+controlPv "SCL_Vac:IEL05001:Reset"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 570
+w 47
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Zone 5"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 690
+w 47
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Zone 6"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 710
+w 60
+h 20
+fgColor index 14
+onColor index 10
+offColor index 10
+topShadowColor index 1
+botShadowColor index 11
+controlPv "SCL_Vac:IEL06001:Reset"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 830
+w 60
+h 20
+fgColor index 14
+onColor index 10
+offColor index 10
+topShadowColor index 1
+botShadowColor index 11
+controlPv "SCL_Vac:IEL07001:Reset"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 810
+w 47
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Zone 7"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 930
+w 47
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Zone 8"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 950
+w 60
+h 20
+fgColor index 14
+onColor index 10
+offColor index 10
+topShadowColor index 1
+botShadowColor index 11
+controlPv "SCL_Vac:IEL08001:Reset"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 610
+y 10
+w 120
+h 20
+fgColor index 123
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-10.0"
+buttonLabel "SNS Vac Related"
+numPvs 4
+numDsps 5
+displayFileName {
+  0 "SNSVacOverview.edl"
+  1 "sclVacCMInsulationVacSummary.edl"
+  2 "sclVacSerialControl.edl"
+  3 "testSerialVacOK.edl"
+  4 "insVacOverview.edl"
+}
+menuLabel {
+  0 "SNS Vacuum"
+  1 "SCL CM Insulation Vacuum Summary"
+  2 "SCL Vacuum Serial Control Manager"
+  3 "SCL Vacuum Status"
+  4 "New SCL Insulting Vacuum"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 120
+w 40
+h 20
+controlPv "SCL_LLRF:FCM01a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 120
+w 40
+h 20
+controlPv "SCL_LLRF:FCM01b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 120
+w 40
+h 20
+controlPv "SCL_LLRF:FCM01c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 150
+w 40
+h 20
+controlPv "SCL_LLRF:FCM02c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 150
+w 40
+h 20
+controlPv "SCL_LLRF:FCM02b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 150
+w 40
+h 20
+controlPv "SCL_LLRF:FCM02a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 180
+w 40
+h 20
+controlPv "SCL_LLRF:FCM03a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 180
+w 40
+h 20
+controlPv "SCL_LLRF:FCM03b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 180
+w 40
+h 20
+controlPv "SCL_LLRF:FCM03c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 210
+w 40
+h 20
+controlPv "SCL_LLRF:FCM04c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 210
+w 40
+h 20
+controlPv "SCL_LLRF:FCM04b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 210
+w 40
+h 20
+controlPv "SCL_LLRF:FCM04a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 240
+w 40
+h 20
+controlPv "SCL_LLRF:FCM05a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 240
+w 40
+h 20
+controlPv "SCL_LLRF:FCM05b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 240
+w 40
+h 20
+controlPv "SCL_LLRF:FCM05c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 270
+w 40
+h 20
+controlPv "SCL_LLRF:FCM06c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 270
+w 40
+h 20
+controlPv "SCL_LLRF:FCM06b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 270
+w 40
+h 20
+controlPv "SCL_LLRF:FCM06a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 300
+w 40
+h 20
+controlPv "SCL_LLRF:FCM07a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 300
+w 40
+h 20
+controlPv "SCL_LLRF:FCM07b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 300
+w 40
+h 20
+controlPv "SCL_LLRF:FCM07c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 330
+w 40
+h 20
+controlPv "SCL_LLRF:FCM08c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 330
+w 40
+h 20
+controlPv "SCL_LLRF:FCM08b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 330
+w 40
+h 20
+controlPv "SCL_LLRF:FCM08a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 360
+w 40
+h 20
+controlPv "SCL_LLRF:FCM09c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 360
+w 40
+h 20
+controlPv "SCL_LLRF:FCM09b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 360
+w 40
+h 20
+controlPv "SCL_LLRF:FCM09a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 390
+w 40
+h 20
+controlPv "SCL_LLRF:FCM10a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 390
+w 40
+h 20
+controlPv "SCL_LLRF:FCM10b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 390
+w 40
+h 20
+controlPv "SCL_LLRF:FCM10c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 420
+w 40
+h 20
+controlPv "SCL_LLRF:FCM11c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 420
+w 40
+h 20
+controlPv "SCL_LLRF:FCM11b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 420
+w 40
+h 20
+controlPv "SCL_LLRF:FCM11a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 450
+w 40
+h 20
+controlPv "SCL_LLRF:FCM12c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 450
+w 40
+h 20
+controlPv "SCL_LLRF:FCM12b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 450
+w 40
+h 20
+controlPv "SCL_LLRF:FCM12a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 450
+w 40
+h 20
+controlPv "SCL_LLRF:FCM12d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 480
+w 40
+h 20
+controlPv "SCL_LLRF:FCM13d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 480
+w 40
+h 20
+controlPv "SCL_LLRF:FCM13c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 480
+w 40
+h 20
+controlPv "SCL_LLRF:FCM13b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 480
+w 40
+h 20
+controlPv "SCL_LLRF:FCM13a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 510
+w 40
+h 20
+controlPv "SCL_LLRF:FCM14a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 510
+w 40
+h 20
+controlPv "SCL_LLRF:FCM14b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 510
+w 40
+h 20
+controlPv "SCL_LLRF:FCM14c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 510
+w 40
+h 20
+controlPv "SCL_LLRF:FCM14d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 540
+w 40
+h 20
+controlPv "SCL_LLRF:FCM15d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 540
+w 40
+h 20
+controlPv "SCL_LLRF:FCM15c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 540
+w 40
+h 20
+controlPv "SCL_LLRF:FCM15b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 540
+w 40
+h 20
+controlPv "SCL_LLRF:FCM15a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 570
+w 40
+h 20
+controlPv "SCL_LLRF:FCM16a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 570
+w 40
+h 20
+controlPv "SCL_LLRF:FCM16b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 570
+w 40
+h 20
+controlPv "SCL_LLRF:FCM16c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 570
+w 40
+h 20
+controlPv "SCL_LLRF:FCM16d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 600
+w 40
+h 20
+controlPv "SCL_LLRF:FCM17d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 600
+w 40
+h 20
+controlPv "SCL_LLRF:FCM17c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 600
+w 40
+h 20
+controlPv "SCL_LLRF:FCM17b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 600
+w 40
+h 20
+controlPv "SCL_LLRF:FCM17a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 630
+w 40
+h 20
+controlPv "SCL_LLRF:FCM18a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 630
+w 40
+h 20
+controlPv "SCL_LLRF:FCM18b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 630
+w 40
+h 20
+controlPv "SCL_LLRF:FCM18c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 630
+w 40
+h 20
+controlPv "SCL_LLRF:FCM18d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 660
+w 40
+h 20
+controlPv "SCL_LLRF:FCM19d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 660
+w 40
+h 20
+controlPv "SCL_LLRF:FCM19c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 660
+w 40
+h 20
+controlPv "SCL_LLRF:FCM19b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 660
+w 40
+h 20
+controlPv "SCL_LLRF:FCM19a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 690
+w 40
+h 20
+controlPv "SCL_LLRF:FCM20a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 690
+w 40
+h 20
+controlPv "SCL_LLRF:FCM20b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 690
+w 40
+h 20
+controlPv "SCL_LLRF:FCM20c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 690
+w 40
+h 20
+controlPv "SCL_LLRF:FCM20d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 720
+w 40
+h 20
+controlPv "SCL_LLRF:FCM21d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 720
+w 40
+h 20
+controlPv "SCL_LLRF:FCM21c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 720
+w 40
+h 20
+controlPv "SCL_LLRF:FCM21b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 720
+w 40
+h 20
+controlPv "SCL_LLRF:FCM21a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 750
+w 40
+h 20
+controlPv "SCL_LLRF:FCM22a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 750
+w 40
+h 20
+controlPv "SCL_LLRF:FCM22b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 750
+w 40
+h 20
+controlPv "SCL_LLRF:FCM22c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 750
+w 40
+h 20
+controlPv "SCL_LLRF:FCM22d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 580
+y 780
+w 40
+h 20
+controlPv "SCL_LLRF:FCM23d:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 500
+y 780
+w 40
+h 20
+controlPv "SCL_LLRF:FCM23c:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 780
+w 40
+h 20
+controlPv "SCL_LLRF:FCM23b:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 340
+y 780
+w 40
+h 20
+controlPv "SCL_LLRF:FCM23a:PwrRead"
+displayMode "decimal"
+precision 2
+fgColor index 112
+bgColor index 32
+fill
+font "courier-medium-r-12.0"
+fontAlign "right"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 240
+w 80
+h 110
+lineColor index 112
+fillColor index 38
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 360
+w 80
+h 80
+lineColor index 112
+fillColor index 38
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 450
+w 80
+h 110
+lineColor index 112
+fillColor index 38
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 570
+w 80
+h 110
+lineColor index 112
+fillColor index 38
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 810
+w 80
+h 110
+lineColor index 112
+fillColor index 38
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 330
+y 70
+w 274
+h 16
+font "helvetica-bold-i-14.0"
+fgColor index 112
+bgColor index 38
+useDisplayBg
+value {
+  "    a                 b                  c                 d    "
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 490
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:AllVlv04001:reqClsd"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 400
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:AllVlv03001:reqClsd"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 280
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:AllVlv02001:reqClsd"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 130
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:AllVlv00001:reqClsd"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 610
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:AllVlv05001:reqClsd"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 730
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:AllVlv06001:reqClsd"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 850
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:AllVlv07001:reqClsd"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 970
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:AllVlv08001:reqClsd"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 820
+y 60
+w 87
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Beam Permit"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 740
+y 10
+w 75
+h 25
+fgColor index 45
+bgColor index 10
+topShadowColor index 0
+botShadowColor index 0
+label "Exit"
+font "helvetica-bold-r-12.0"
+3d
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 80
+y 480
+w 60
+h 20
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 80
+y 480
+w 60
+h 20
+fgColor index 0
+bgColor index 44
+topShadowColor index 112
+botShadowColor index 112
+font "courier-medium-r-14.0"
+buttonLabel "13"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sclVacHighBeta.edl"
+}
+symbols {
+  0 "S=SCL, SS=Vac, M=14, N=13, K=04"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 1080
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP33003:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 1080
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP33005:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 510
+y 1080
+w 60
+h 20
+lineColor index 25
+fillColor index 38
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 810
+w 310
+h 260
+lineColor index 5
+fill
+fillColor index 4
+lineWidth 5
+lineStyle "dash"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 350
+y 910
+w 242
+h 42
+font "helvetica-bold-r-36.0"
+fgColor index 112
+bgColor index 38
+useDisplayBg
+value {
+  "Drift Sections"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 480
+y 1080
+w 19
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "FV"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 660
+y 90
+w 19
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "FV"
+}
+autoSize
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 90
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP00002:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 790
+y 90
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:CCG00002:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 420
+y 90
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 15
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:IP00001:VacOK"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 170
+y 90
+w 30
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "CCL"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 770
+y 1080
+w 37
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "HEBT"
+}
+autoSize
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 210
+y 90
+w 20
+h 20
+lineColor index 14
+fill
+fillColor index 126
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Vac:WrmVac00001:sts"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 1080
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 20
+fillAlarm
+alarmPv "SCL_Vac:WrmVac08001:sts"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 540
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank15001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 690
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank20001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 660
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank19001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 630
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank18001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 540
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank15001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 600
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank17001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 570
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank16001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 510
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank14001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 480
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank13001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 390
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank10001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 450
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank12001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 420
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank11001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 360
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank09001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 330
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank08001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 240
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank05001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 300
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank07001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 270
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank06001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 210
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank04001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 180
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank03001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 90
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:LEDP00001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 150
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank02001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 120
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank01001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 720
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank21001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 750
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank22001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 780
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank23001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 810
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank24001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 840
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank25001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 870
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank26001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 900
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank27001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 1020
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank31001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 990
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank30001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 960
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank29001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 930
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank28001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 1050
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank32001:MPSOK"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 1080
+w 15
+h 15
+lineColor index 112
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Vac:Tank33001:MPSOK"
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 840
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV25501:Opn"
+  1 "SCL_Vac:SGV25501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 870
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV26501:Opn"
+  1 "SCL_Vac:SGV26501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 930
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV28501:Opn"
+  1 "SCL_Vac:SGV28501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 900
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV27501:Opn"
+  1 "SCL_Vac:SGV27501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 990
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV30501:Opn"
+  1 "SCL_Vac:SGV30501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 960
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV29501:Opn"
+  1 "SCL_Vac:SGV29501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 1050
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV32501:Opn"
+  1 "SCL_Vac:SGV32501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 690
+y 1020
+w 60
+h 20
+file "sclvacvalve2hDS.edl"
+truthTable
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "SCL_Vac:SGV31501:Opn"
+  1 "SCL_Vac:SGV31501:Clsd"
+}
+numPvs 2
+useOriginalColors
+fgColor index 14
+bgColor index 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 650
+y 1120
+w 30
+h 30
+lineColor index 123
+fillColor index 38
+lineStyle "dash"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 680
+y 840
+w 150
+h 230
+lineColor index 112
+fillColor index 38
+lineStyle "dash"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 760
+y 840
+w 54
+h 98
+font "helvetica-medium-r-12.0"
+fgColor index 112
+bgColor index 10
+useDisplayBg
+value {
+  "Dummy "
+  "Valves"
+  "on JLAB "
+  "Box"
+  "(required "
+  "to be on "
+  "for OP)"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 90
+w 80
+h 140
+lineColor index 112
+fillColor index 38
+lineWidth 2
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 110
+y 10
+w 60
+h 20
+fgColor index 112
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+buttonLabel "Scope"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tds3054_c.edl"
+}
+symbols {
+  0 "scope=SCL_Vac:Osc01:"
+}
+endObjectProperties

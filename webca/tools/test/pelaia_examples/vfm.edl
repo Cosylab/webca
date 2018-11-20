@@ -1,0 +1,2654 @@
+# File: /ade/epics/iocTop/R3.14.7/diagnostics/pcbased/Development/opi/vfm.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1555
+y 148
+w 1343
+h 847
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+ctlFont "courier-bold-r-14.0"
+ctlFontAlign "right"
+btnFont "courier-medium-r-8.0"
+fgColor index 10
+bgColor index 55
+textColor index 10
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 5
+ctlBgColor2 index 10
+topShadowColor index 5
+botShadowColor index 10
+orthoLineDraw
+pvType "EPICS"
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x -1
+y 1
+w 482
+h 35
+lineColor index 57
+fill
+fillColor index 57
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 981
+y 60
+w 290
+h 241
+lineColor index 112
+fillColor index 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 657
+y 60
+w 324
+h 241
+lineColor index 112
+fillColor index 5
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 3
+y 60
+w 630
+h 765
+lineColor index 112
+fill
+fillColor index 3
+lineWidth 2
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+# Geometry
+x 50
+y 138
+w 392
+h 300
+# Appearance
+border
+xLabel "Horizontal Profile (mm)"
+yLabel "Amplitude (a.u.)"
+fgColor index 10
+bgColor index 5
+gridColor index 10
+font "helvetica-bold-r-14.0"
+# Operating Modes
+nPts 2
+triggerPv "Ring_Diag:VFM:sigrawH"
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+xPv {
+  0 "Ring_Diag:VFM:sigaxisH"
+}
+yPv {
+  0 "Ring_Diag:VFM:sigrawH"
+}
+opMode {
+  0 "plot"
+}
+ySigned {
+  0 1
+}
+plotColor {
+  0 index 112
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+# Geometry
+x 50
+y 461
+w 392
+h 300
+# Appearance
+border
+xLabel "Veritical Profile (mm)"
+yLabel "Amplitude (a.u.)"
+fgColor index 10
+bgColor index 5
+gridColor index 10
+font "helvetica-bold-r-14.0"
+# Operating Modes
+nPts 2
+triggerPv "Ring_Diag:VFM:sigrawV"
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+xPv {
+  0 "Ring_Diag:VFM:sigaxisV"
+}
+yPv {
+  0 "Ring_Diag:VFM:sigrawV"
+}
+opMode {
+  0 "plot"
+}
+xSigned {
+  0 16
+}
+ySigned {
+  0 23
+}
+plotColor {
+  0 index 112
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 123
+y 2
+w 325
+h 35
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 5
+useDisplayBg
+value {
+  "Video Foil Monitor"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 481
+y 180
+w 87
+h 21
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Horizontal"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 486
+y 511
+w 70
+h 19
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Vertical"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 441
+y 215
+w 73
+h 17
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Amplitude"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 466
+y 237
+w 48
+h 17
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Mean"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 446
+y 259
+w 68
+h 17
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Std. Dev."
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 466
+y 281
+w 48
+h 17
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Offset"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 466
+y 302
+w 48
+h 17
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Slope"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 466
+y 323
+w 48
+h 17
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Area"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 517
+y 215
+w 81
+h 19
+controlPv "Ring_Diag:VFM:ampH"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 517
+y 237
+w 81
+h 19
+controlPv "Ring_Diag:VFM:meanH"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 517
+y 259
+w 81
+h 19
+controlPv "Ring_Diag:VFM:sigmaH"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 517
+y 281
+w 81
+h 19
+controlPv "Ring_Diag:VFM:offsetH"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 517
+y 302
+w 81
+h 19
+controlPv "Ring_Diag:VFM:slopeH"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 517
+y 323
+w 81
+h 19
+controlPv "Ring_Diag:VFM:areaH"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 439
+y 544
+w 75
+h 18
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Amplitude"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 465
+y 567
+w 49
+h 18
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Mean"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 446
+y 591
+w 68
+h 17
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Std. Dev."
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 465
+y 615
+w 49
+h 18
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Offset"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 465
+y 637
+w 49
+h 18
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Slope"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 465
+y 659
+w 49
+h 18
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Area"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 511
+y 544
+w 87
+h 20
+controlPv "Ring_Diag:VFM:ampV"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 511
+y 567
+w 87
+h 20
+controlPv "Ring_Diag:VFM:meanV"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 511
+y 590
+w 87
+h 20
+controlPv "Ring_Diag:VFM:sigmaV"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 511
+y 614
+w 87
+h 20
+controlPv "Ring_Diag:VFM:offsetV"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 511
+y 636
+w 87
+h 20
+controlPv "Ring_Diag:VFM:slopeV"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 511
+y 657
+w 87
+h 20
+controlPv "Ring_Diag:VFM:areaV"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 767
+y 64
+w 134
+h 21
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Camera Setup"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 688
+y 280
+w 143
+h 19
+font "helvetica-bold-i-14.0"
+fontAlign "right"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Calibrate"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 882
+y 280
+w 31
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "3"
+onLabel "On"
+offLabel "On"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 914
+y 280
+w 31
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "8"
+onLabel "Off"
+offLabel "Off"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1026
+y 64
+w 207
+h 25
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Neutral Density Filter"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 836
+y 280
+w 43
+h 19
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 836
+y 280
+w 43
+h 19
+lineColor index 10
+fill
+fillColor index 10
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 836
+y 280
+w 43
+h 19
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 49
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:calibrateOn_Rb"
+visMin "0"
+visMax "1"
+value {
+  "Off"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 836
+y 280
+w 43
+h 19
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:calibrateOn_Rb"
+visMin "1"
+visMax "2"
+value {
+  "On"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 837
+y 99
+w 106
+h 21
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "11"
+onLabel "Primary"
+offLabel "Primary"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 837
+y 122
+w 107
+h 23
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "12"
+onLabel "Secondary"
+offLabel "Secondary"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 716
+y 108
+w 107
+h 19
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Camera Select"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 688
+y 177
+w 143
+h 19
+font "helvetica-bold-i-14.0"
+fontAlign "right"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Primary Lamp"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 688
+y 197
+w 143
+h 19
+font "helvetica-bold-i-14.0"
+fontAlign "right"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Primary Insta-View"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 836
+y 176
+w 43
+h 19
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 836
+y 176
+w 43
+h 19
+lineColor index 10
+fill
+fillColor index 10
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 836
+y 176
+w 43
+h 19
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 49
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:lampPrimOn_Rb"
+visMin "0"
+visMax "1"
+value {
+  "Off"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 836
+y 176
+w 43
+h 19
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:lampPrimOn_Rb"
+visMin "1"
+visMax "2"
+value {
+  "On"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 836
+y 197
+w 43
+h 19
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 836
+y 197
+w 43
+h 19
+lineColor index 10
+fill
+fillColor index 10
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 836
+y 197
+w 43
+h 19
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 49
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:instaviewPrimOn_Rb"
+visMin "0"
+visMax "1"
+value {
+  "Off"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 836
+y 197
+w 43
+h 19
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:instaviewPrimOn_Rb"
+visMin "1"
+visMax "2"
+value {
+  "On"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 688
+y 227
+w 143
+h 19
+font "helvetica-bold-i-14.0"
+fontAlign "right"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Secondary Lamp"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 666
+y 249
+w 165
+h 19
+font "helvetica-bold-i-14.0"
+fontAlign "right"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Secondary Insta-View"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 836
+y 227
+w 43
+h 19
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 836
+y 227
+w 43
+h 19
+lineColor index 10
+fill
+fillColor index 10
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 836
+y 227
+w 43
+h 19
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 49
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:lampSecOn_Rb"
+visMin "0"
+visMax "1"
+value {
+  "Off"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 836
+y 227
+w 43
+h 19
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:lampSecOn_Rb"
+visMin "1"
+visMax "2"
+value {
+  "On"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 836
+y 248
+w 43
+h 19
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 836
+y 248
+w 43
+h 19
+lineColor index 10
+fill
+fillColor index 10
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 836
+y 248
+w 43
+h 19
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 49
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:instaviewSecOn_Rb"
+visMin "0"
+visMax "1"
+value {
+  "Off"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 836
+y 248
+w 43
+h 19
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:instaviewSecOn_Rb"
+visMin "1"
+visMax "2"
+value {
+  "On"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 656
+y 308
+w 198
+h 21
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:activeCamera_Rb"
+visMin "0"
+visMax "1"
+value {
+  "Primary Camera Image:"
+}
+autoSize
+endObjectProperties
+
+# (Video)
+object TwoDProfileMonitorClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 655
+y 346
+w 640
+h 480
+dataPvStr "Ring_Diag:VFM:image"
+widthPvStr "320"
+heightPvStr "240"
+dataWidth 320
+pvBasedDataSize 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1074
+y 308
+w 223
+h 21
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:activeCamera_Rb"
+visMin "1"
+visMax "2"
+value {
+  "Secondary Camera Image:"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 882
+y 176
+w 31
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "1"
+onLabel "On"
+offLabel "On"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 914
+y 176
+w 31
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "6"
+onLabel "Off"
+offLabel "Off"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 882
+y 197
+w 31
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "4"
+onLabel "On"
+offLabel "On"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 914
+y 197
+w 31
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "9"
+onLabel "Off"
+offLabel "Off"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 882
+y 227
+w 31
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "2"
+onLabel "On"
+offLabel "On"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 914
+y 227
+w 31
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "7"
+onLabel "Off"
+offLabel "Off"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 882
+y 248
+w 31
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "5"
+onLabel "On"
+offLabel "On"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 914
+y 248
+w 31
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "10"
+onLabel "Off"
+offLabel "Off"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1035
+y 113
+w 88
+h 19
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Primary"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1035
+y 135
+w 88
+h 28
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1035
+y 135
+w 88
+h 28
+lineColor index 10
+fill
+fillColor index 10
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1035
+y 141
+w 88
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfPrim_Rb"
+visMin "0"
+visMax "1"
+value {
+  "100% (blank)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1035
+y 141
+w 88
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfPrim_Rb"
+visMin "1"
+visMax "2"
+value {
+  "25%"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1035
+y 141
+w 88
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfPrim_Rb"
+visMin "2"
+visMax "3"
+value {
+  "10%"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1035
+y 141
+w 88
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfPrim_Rb"
+visMin "3"
+visMax "4"
+value {
+  "1%"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1035
+y 141
+w 88
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfPrim_Rb"
+visMin "4"
+visMax "5"
+value {
+  "0.1%"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1035
+y 141
+w 88
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfPrim_Rb"
+visMin "5"
+visMax "6"
+value {
+  "0.01%"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1035
+y 165
+w 88
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfPrim"
+pressValue "0"
+onLabel "100% (blank)"
+offLabel "100% (blank)"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1035
+y 184
+w 88
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfPrim"
+pressValue "1"
+onLabel "25%"
+offLabel "25%"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1035
+y 203
+w 88
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfPrim"
+pressValue "2"
+onLabel "10%"
+offLabel "10%"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1035
+y 222
+w 88
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfPrim"
+pressValue "3"
+onLabel "1%"
+offLabel "1%"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1035
+y 241
+w 88
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfPrim"
+pressValue "4"
+onLabel ".1%"
+offLabel ".1%"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1035
+y 260
+w 88
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfPrim"
+pressValue "5"
+onLabel ".01%"
+offLabel ".01%"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1138
+y 112
+w 90
+h 19
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Secondary"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1138
+y 135
+w 90
+h 28
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1138
+y 135
+w 90
+h 28
+lineColor index 10
+fill
+fillColor index 10
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1138
+y 141
+w 90
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfSec_Rb"
+visMin "0"
+visMax "1"
+value {
+  "100% (blank)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1138
+y 141
+w 90
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfSec_Rb"
+visMin "1"
+visMax "2"
+value {
+  "25%"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1138
+y 141
+w 90
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfSec_Rb"
+visMin "2"
+visMax "3"
+value {
+  "10%"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1138
+y 141
+w 90
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfSec_Rb"
+visMin "3"
+visMax "4"
+value {
+  "1%"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1138
+y 141
+w 90
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfSec_Rb"
+visMin "4"
+visMax "5"
+value {
+  "0.1%"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1138
+y 141
+w 90
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:ndfSec_Rb"
+visMin "5"
+visMax "6"
+value {
+  "0.01%"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1138
+y 165
+w 90
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfSec"
+pressValue "0"
+onLabel "100% (blank)"
+offLabel "100% (blank)"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1138
+y 184
+w 90
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfSec"
+pressValue "1"
+onLabel "25%"
+offLabel "25%"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1138
+y 203
+w 90
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfSec"
+pressValue "2"
+onLabel "10%"
+offLabel "10%"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1138
+y 222
+w 90
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfSec"
+pressValue "3"
+onLabel "1%"
+offLabel "1%"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1138
+y 241
+w 90
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfSec"
+pressValue "4"
+onLabel ".1%"
+offLabel ".1%"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1138
+y 260
+w 90
+h 18
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:ndfSec"
+pressValue "5"
+onLabel ".01%"
+offLabel ".01%"
+3d
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 215
+y 82
+w 182
+h 30
+font "helvetica-bold-i-24.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:activeCamera_Rb"
+visMin "0"
+visMax "1"
+value {
+  "Primary"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 214
+y 82
+w 182
+h 30
+font "helvetica-bold-i-24.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 5
+useDisplayBg
+visPv "Ring_Diag:VFM:activeCamera_Rb"
+visMin "1"
+visMax "2"
+value {
+  "Secondary"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 598
+y 241
+w 25
+h 16
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 598
+y 259
+w 25
+h 16
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 598
+y 570
+w 25
+h 16
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 598
+y 591
+w 25
+h 16
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 914
+y 152
+w 32
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "14"
+onLabel "Off"
+offLabel "Off"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 882
+y 152
+w 30
+h 19
+fgColor index 25
+onColor index 5
+offColor index 5
+topShadowColor index 5
+botShadowColor index 10
+controlPv "Ring_Diag:VFM:Command"
+pressValue "13"
+onLabel "On"
+offLabel "On"
+3d
+font "helvetica-bold-r-16.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 763
+y 150
+w 72
+h 19
+font "helvetica-bold-i-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Overlay"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 659
+y 16
+w 120
+h 30
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-14.0"
+buttonLabel "VFM Timing"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "TTStime_ind.edl"
+}
+menuLabel {
+  0 "VFM Timing"
+}
+symbols {
+  0 "S=Ring,SS=Diag,DI=VFM,N=0,M=0"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 985
+y 16
+w 105
+h 33
+fgColor index 107
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-16.0"
+buttonLabel "Foil Selection"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "operFoils.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 1100
+y 16
+w 173
+h 33
+fgColor index 107
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-16.0"
+buttonLabel "Foil/Scraper Overview"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "chainsaw.edl"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 0
+y 2
+w 105
+h 21
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 10
+useDisplayBg
+value {
+  "Diagnostics"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 889
+y 307
+w 62
+h 17
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Plunge"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 955
+y 304
+w 81
+h 19
+controlPv "Ring_IDmp:Foil_Plunge:Psn"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 955
+y 324
+w 81
+h 19
+controlPv "Ring_IDmp:Foil_Selection:Mot.RBV"
+displayMode "decimal"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 888
+y 326
+w 62
+h 17
+font "helvetica-medium-r-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 5
+useDisplayBg
+value {
+  "Foil"
+}
+endObjectProperties
+

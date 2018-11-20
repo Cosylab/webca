@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///Users/msekoranja/Work/workspace/webca3/webca/xsl/webca.xsl" type="text/xsl" ?>
+
+<!-- start html element and define caml namespace -->
+<html xmlns:caml="http://webca.cosylab.com/caml">
+  
+    <head>
+        <title>Magnets Example</title>
+        <style>
+        table.data {background-color: #DDD; border-collapse: collapse;}
+        th, td { margin: 5px; border-style: solid; border-width: 1.0px; border-color: black; padding-left: 10px; padding-right: 10px; }
+        th { padding-left: 2em; padding-right: 2em; background-color: #BBB; }
+        td.numeric { text-align: right; color: maroon; padding-left: 2em; }
+        td.plain { margin: 0px; border-style: none; }
+		test { text-align: right; color: orange; }
+        </style>
+        <!-- this is required for CAML, some initializaion has to be done, e.g. to instantiate plugin -->
+        <caml:head webcaPath="file:///Users/msekoranja/Work/workspace/webca3/webca/" pendEvents="30" pendEventsPeriodMs="100"/>
+    </head>    
+    <body>
+		<h3>MEBT Orbit</h3>
+		<table>
+			<tr>
+				<td class="plain" valign="top">
+					<table class="data">
+						<caption>MEBT Dipole Correctors</caption>
+						<tr> <th>Magnet</th> <th>Current</th> <th>Current Set</th> <th>Field</th> <th>Field Set</th>  </tr>
+						<tr>
+							<td>DCH 01</td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH01:I" /></td> 
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH01:I_Set" displayFormat="+000.000" size="small" /></td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:DCH01:B" displayFormat="+0.00000" /></td> 
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH01:B_Set" displayFormat="+00.00000" size="small" /></td>
+						</tr>
+						<tr>
+							<td>DCH 04</td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH04:I" /></td> 
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH04:I_Set" displayFormat="+000.000" size="small" /></td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:DCH04:B" displayFormat="+0.00000" /></td> 
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH04:B_Set" displayFormat="+00.00000" size="small" /></td>
+						</tr>
+						<tr>
+							<td>DCH 05</td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH05:I" /></td>
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH05:I_Set" displayFormat="+000.000" size="small" /></td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:DCH05:B" displayFormat="+0.00000" /></td> 
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH05:B_Set" displayFormat="+00.00000" size="small" /></td>
+						</tr>
+						<tr>
+							<td>DCH 10</td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH10:I" /></td>
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH10:I_Set" displayFormat="+000.000" size="small" /></td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:DCH10:B" displayFormat="+0.00000" /></td> 
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH10:B_Set" displayFormat="+00.00000" size="small" /></td>
+						</tr>
+						<tr>
+							<td>DCH 11</td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH11:I" /></td>
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH11:I_Set" displayFormat="+000.000" size="small" /></td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:DCH11:B" displayFormat="+0.00000" /></td> 
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH11:B_Set" displayFormat="+00.00000" size="small" /></td>
+						</tr>
+						<tr>
+							<td>DCH 14</td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH14:I" /></td>
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH14:I_Set" displayFormat="+000.000" size="small" /></td>
+							<td><caml:textUpdate readbackPV="MEBT_Mag:DCH14:B" displayFormat="+0.00000" /></td> 
+							<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH14:B_Set" displayFormat="+00.00000" size="small" /></td>
+						</tr>
+					</table>
+				</td>
+				<td class="plain" valign="top">
+					<table class="data">
+						<caption>MEBT Beam Position Monitors</caption>
+						<tr> <th>BPM</th> <th>X (mm)</th> <th>Y (mm)</th> </tr>
+						<tr>
+							<td>BPM 01</td>
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM01:xAvg" displayFormat="+0.00" /></td> 
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM01:yAvg" displayFormat="+0.00" /></td> 
+						</tr>
+						<tr>
+							<td>BPM 04</td>
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM04:xAvg" displayFormat="+0.00" /></td> 
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM04:yAvg" displayFormat="+0.00" /></td> 
+						</tr>
+						<tr>
+							<td>BPM 05</td>
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM05:xAvg" displayFormat="+0.00" /></td> 
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM05:yAvg" displayFormat="+0.00" /></td> 
+						</tr>
+						<tr>
+							<td>BPM 10</td>
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM10:xAvg" displayFormat="+0.00" /></td> 
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM10:yAvg" displayFormat="+0.00" /></td> 
+						</tr>
+						<tr>
+							<td>BPM 11</td>
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM11:xAvg" displayFormat="+0.00" /></td> 
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM11:yAvg" displayFormat="+0.00" /></td> 
+						</tr>
+						<tr>
+							<td>BPM 14</td>
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM14:xAvg" displayFormat="+0.00" /></td> 
+							<td><caml:textUpdate readbackPV="MEBT_Diag:BPM14:yAvg" displayFormat="+0.00" /></td> 
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		
+		<hr />
+		<h3>MEBT Orbit with Repetition</h3>
+		<table class="data">
+			<caption>MEBT Orbit</caption>
+			<tr> <th>Index</th> <th>Magnet</th> <th>Current</th> <th>Current Set</th> <th>Field</th> <th>Field Set</th> <th>BPM</th> <th>X (mm)</th> <th>Y (mm)</th> </tr>
+			
+			<caml:repetition name="RepMag">
+				<caml:list>
+					<caml:item>
+						<caml:macroValuePair macroName="$(CORRECTOR)" macroValue="DCH01" />
+						<caml:macroValuePair macroName="$(BPM)" macroValue="BPM01" />
+					</caml:item>
+					<caml:item>
+						<caml:macroValuePair macroName="$(CORRECTOR)" macroValue="DCH04" />
+						<caml:macroValuePair macroName="$(BPM)" macroValue="BPM04" />
+					</caml:item>
+					<caml:item>
+						<caml:macroValuePair macroName="$(CORRECTOR)" macroValue="DCH05" />
+						<caml:macroValuePair macroName="$(BPM)" macroValue="BPM05" />
+					</caml:item>
+					<caml:item>
+						<caml:macroValuePair macroName="$(CORRECTOR)" macroValue="DCH10" />
+						<caml:macroValuePair macroName="$(BPM)" macroValue="BPM10" />
+					</caml:item>
+					<caml:item>
+						<caml:macroValuePair macroName="$(CORRECTOR)" macroValue="DCH11" />
+						<caml:macroValuePair macroName="$(BPM)" macroValue="BPM11" />
+					</caml:item>
+					<caml:item>
+						<caml:macroValuePair macroName="$(CORRECTOR)" macroValue="DCH14" />
+						<caml:macroValuePair macroName="$(BPM)" macroValue="BPM14" />
+					</caml:item>
+				</caml:list>
+				<caml:template>
+					<tr>
+						<td><caml:staticText style="test">$(RepMag:index)</caml:staticText></td>
+						<td><caml:staticText>$(CORRECTOR)</caml:staticText></td>
+						<td><caml:textUpdate readbackPV="MEBT_Mag:PS_$(CORRECTOR):I" /></td> 
+						<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_$(CORRECTOR):I_Set" displayFormat="+000.000" size="small" /></td>
+						<td><caml:textUpdate readbackPV="MEBT_Mag:$(CORRECTOR):B" displayFormat="+0.00000" /></td> 
+						<td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_$(CORRECTOR):B_Set" displayFormat="+00.00000" size="small" /></td>
+						<td><caml:staticText>$(BPM)</caml:staticText></td>
+						<td><caml:textUpdate readbackPV="MEBT_Diag:$(BPM):xAvg" displayFormat="+0.00" /></td> 
+						<td><caml:textUpdate readbackPV="MEBT_Diag:$(BPM):yAvg" displayFormat="+0.00" /></td> 
+					</tr>
+				</caml:template>
+			</caml:repetition>
+		</table>
+
+		<hr />
+        <h3>Virtual PV Demo</h3>
+		<div>
+			Here we display the horizontal and vertical beam position at a beam position monitor along with their average (virtual PV) and plot the values against time along the X axis.
+		</div>
+        <caml:virtualPV name="bpm1xy" init="0" eval="(pvs.MEBT_Diag:BPM01:xAvg + pvs.MEBT_Diag:BPM01:yAvg)/2" />
+		<table class="data">
+			<tr> <th>PV</th> <th>Value</th> </tr>
+			<tr> <td>MEBT_Diag:BPM01:xAvg</td> <td><caml:textUpdate readbackPV="MEBT_Diag:BPM01:xAvg" displayFormat="v(0.000) u t(mm-dd-yyyy HH:MM:ss)" /></td> </tr>
+			<tr> <td>MEBT_Diag:BPM01:yAvg</td> <td><caml:textUpdate readbackPV="MEBT_Diag:BPM01:yAvg" displayFormat="v(0.000) u t(mm-dd-yyyy HH:MM:ss)" /></td> </tr>
+			<tr> <td>bpm1xy</td> <td><caml:textUpdate readbackPV="bpm1xy" displayFormat="v(0.000) u t(mm-dd-yyyy HH:MM:ss)" /></td> </tr>
+		</table>
+        <div>
+			<caml:xyChart flavor="advanced" xAxisLabel="Axis X label " yAxisLabel="Axis Y label " xAxisStyle="time(HH:MM:ss)">
+				<caml:xySeries Y-PVname="bpm1xy" name="Average" />
+				<caml:xySeries Y-PVname="MEBT_Diag:BPM01:xAvg" name="X" />
+				<caml:xySeries Y-PVname="MEBT_Diag:BPM01:yAvg" name="Y" />
+			</caml:xyChart>	 
+        </div>	
+
+		<hr />
+        <h3>Bar Chart Demo</h3>
+		<div>
+			Here we display a series of PV values as a bar chart with one bar per PV.
+		</div>
+        <div>
+			<caml:barChart>
+				<caml:series PVname="MEBT_Diag:BPM01:xAvg" name="BPM01" />
+				<caml:series PVname="MEBT_Diag:BPM04:yAvg" name="BPM04" />
+				<caml:series PVname="MEBT_Diag:BPM05:yAvg" name="BPM05" />
+				<caml:series PVname="MEBT_Diag:BPM10:yAvg" name="BPM10" />
+				<caml:series PVname="MEBT_Diag:BPM11:yAvg" name="BPM11" />
+				<caml:series PVname="MEBT_Diag:BPM14:yAvg" name="BPM14" />
+			</caml:barChart>	 
+        </div>	
+    </body>
+</html>

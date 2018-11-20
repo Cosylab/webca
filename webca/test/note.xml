@@ -1,0 +1,38 @@
+<html xmlns:caml="http://webca.cosylab.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://webca.cosylab.com ../xmlSchema/webca.xsd">
+
+<head>
+    <title></title>
+    <caml:head webcaPath="../"/>
+</head>
+<body>
+	<caml:virtualPV name="normalValue" init="this = 12.345;"/>
+	<caml:virtualPV name="minorValue" init="this = 123.45; alarm = MINOR;"/>
+	<caml:virtualPV name="majorValue" init="this = 1234.56; alarm = MAJOR;"/>
+	<caml:virtualPV name="invalidValue" init="this = -1.234; alarm = INVALID;"/>
+	
+	<caml:textEntry controlPV="normalValue"/>
+	<caml:textEntry controlPV="minorValue"/>
+	<caml:textEntry controlPV="majorValue"/>
+	<caml:textEntry controlPV="invalidValue"/>
+
+	<caml:textUpdate readbackPV="normalValue"/>
+	<caml:textUpdate readbackPV="minorValue"/>
+	<caml:textUpdate readbackPV="majorValue"/>
+	<caml:textUpdate readbackPV="invalidValue"/>
+
+	<caml:textEntry controlPV="normalValue" alarmSensitive="background"/>
+	<caml:textEntry controlPV="minorValue" alarmSensitive="background"/>
+	<caml:textEntry controlPV="majorValue" alarmSensitive="background"/>
+	<caml:textEntry controlPV="invalidValue" alarmSensitive="background"/>
+
+	<caml:textUpdate readbackPV="normalValue" alarmSensitive="background"/>
+	<caml:textUpdate readbackPV="minorValue" alarmSensitive="background"/>
+	<caml:textUpdate readbackPV="majorValue" alarmSensitive="background"/>
+	<caml:textUpdate readbackPV="invalidValue" alarmSensitive="background"/>
+
+</body>
+
+
+</html>

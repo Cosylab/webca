@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+	
+<xs:complexType name="messageButton_">	
+		<xs:complexContent>		
+			<xs:restriction base="control">				 
+				 <xs:attribute name="readbackPV" type="xs:string" use="prohibited"/>					 
+			</xs:restriction>																								
+		</xs:complexContent>	
+</xs:complexType>	
+		
+<xs:element name="messageButton">	
+	<xs:complexType>
+		<xs:complexContent>		
+				<xs:extension base="messageButton_"> 				 
+				 <xs:sequence>
+					  <xs:element ref="on"/>
+					  <xs:element ref="off"/>					 
+				 </xs:sequence>	 						 
+			</xs:extension>
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>		
+		
+<xs:element name="on">
+	<xs:complexType>
+		<xs:attribute name="caption" type="xs:string" use="required"/>
+		<xs:attribute name="value" type="xs:string"/>
+	</xs:complexType>	
+</xs:element>
+	
+<xs:element name="off">
+	<xs:complexType>
+		<xs:attribute name="caption" type="xs:string" use="required"/>
+		<xs:attribute name="value" type="xs:string" use="required"/>
+	</xs:complexType>	
+</xs:element>		
+	
+</xs:schema>

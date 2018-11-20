@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" ?>
+<caml title="WebCa Test">
+	
+			<mux>
+				<sequence name="record1" selected="true">
+					<macroValuePair macroName="$(NAME)" macroValue="record1"/>
+					<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME)" macroValue="record2"/>			
+					<macroValuePair macroName="$(DESC)" macroValue="counter PV"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME)" macroValue="enum"/>
+					<macroValuePair macroName="$(DESC)" macroValue="enumerated PV"/>
+			    </sequence>
+			</mux>
+		
+	<verticalPanel>
+		<row height="130px">
+			<gauge readbackPV="$(NAME)"
+				   maxValue="650"
+				   minValue="-301"
+				   displayFormat="#0.0"/>	
+			
+			<!--FIXME:  no units shown -->
+			<!--TOTHINK:  slider is not consistent with gauger wrt alarm colors (only thumb shuld change colors?) -->
+			
+		</row>		
+		
+	</verticalPanel>
+	
+			<slider
+				controlPV="$(NAME)"
+				displayFormat="#0.0"	
+				increment="0.001"	
+				maxValue="800"
+				minValue="-390"									
+				size="small">										
+			</slider>
+		
+</caml>

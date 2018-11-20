@@ -1,0 +1,51 @@
+.xyChart,
+.barChart, .xyHFChart, .barHFChart {
+	font: menu;
+	background: white;
+	color: black;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.xyChart .legend, 
+.barChart .legend
+{
+	float: left;
+	border: 1px solid black;
+	background: white;
+	padding: 5px 10px 5px 0px;
+}
+
+.xyChart .legend ul,
+.barChart .legend ul {
+	margin: 0px;
+	padding: 0px 0px 0px 25px;
+	float: left;
+}
+
+.xyChart .legend ul li, 
+.barChart .legend ul li{
+	list-style: square;
+}
+
+.xyChart .legend ul li span,
+.barChart .legend ul li span {
+	color: black;
+}
+
+.flotr-legend {
+	border: 1px solid black;
+	padding: 2px 5px 2px 5px;
+}
+
+div.tooltip span{
+	display: none
+}
+
+div.tooltip:link {}    
+div.tooltip:visited {} 
+div.tooltip:hover span{ 
+    display:block;
+    text-align: center;
+    white-space:nowrap;
+}

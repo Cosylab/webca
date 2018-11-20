@@ -1,0 +1,16 @@
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title></title>
+    <caml:head webcaPath="../"/>
+</head>
+<body>
+    
+	<caml:horizontalPanel>
+	    <caml:column><caml:textUpdate readbackPV="$(NAME)"/></caml:column>
+	    <caml:column><caml:textEntry controlPV="$(NAME)"/></caml:column>
+	    <caml:column><caml:wheelSwitch controlPV="$(NAME)"/></caml:column>
+	</caml:horizontalPanel>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://webca.cosylab.com"
+    xmlns="http://webca.cosylab.com"			
+    elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="repetition">
+	<xs:complexType>		
+		<xs:complexContent>			
+			<xs:extension base="component">
+				<xs:choice minOccurs="1" maxOccurs="1">	
+					<xs:element ref="list"/>
+					<xs:element ref="template"/>
+				</xs:choice>							
+				<xs:attribute name="name" type="xs:string"/>
+			</xs:extension>						
+		</xs:complexContent>	
+	</xs:complexType>
+</xs:element>	   	   
+	
+<xs:element name="list">
+	<xs:complexType>
+    	<xs:choice minOccurs="1" maxOccurs="unbounded">	
+	    	<xs:element ref="item"/>
+	    </xs:choice>		
+	</xs:complexType>	
+</xs:element>	
+	
+<xs:element name="item">
+	<xs:complexType>
+    	<xs:choice minOccurs="0" maxOccurs="unbounded">	
+	    	<xs:element ref="macroValuePair"/>
+	    </xs:choice>		
+	</xs:complexType>	
+</xs:element>				
+
+<xs:element name="template">
+	<xs:complexType>
+		<xs:choice minOccurs="0" maxOccurs="unbounded">	
+   	       <xs:group ref="components"/>
+		</xs:choice>
+	</xs:complexType>	
+</xs:element>				
+	
+</xs:schema>

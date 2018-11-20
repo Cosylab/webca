@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" ?>
+
+<!-- start html element and define caml namespace -->
+<html xmlns:caml="http://webca.cosylab.com">
+
+<head>
+<title>virtualpvs for charts</title>
+<!-- this is required for CAML, some initialization has to be done, e.g. to instantiate plugin -->
+<caml:head webcaPath="../../" pendEvents="30" pendEventsPeriodMs="100" />
+</head>
+<body>
+
+<caml:virtualPV name="scalar1" init="0" eval="random() * 100"
+	scan="1000" />
+<caml:virtualPV name="scalar2" init="0" eval="random() * 100" scan="500" />
+<caml:virtualPV name="scalar3" init="0" eval="random() * 100" scan="100" />
+
+<caml:virtualPV name="vector1" init="[]"
+	eval="this = []; for (var i = 0; i &lt; 50; i++) this[i] = random() * 100;"
+	scan="2000" />
+<caml:virtualPV name="vector2" init="[]"
+	eval="this = []; for (var i = 0; i &lt; 50; i++) this[i] = random() * 100;"
+	scan="2000" />
+<caml:virtualPV name="vector3" init="[]"
+	eval="this = []; for (var i = 0; i &lt; 50; i++) this[i] = random() * 100;"
+	scan="2000" />
+
+</body>
+</html>

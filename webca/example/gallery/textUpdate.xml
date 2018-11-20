@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+
+	<verticalPanel width="300px">
+		<row>
+			<textUpdate readbackPV="$(NAME)" />			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" dataType="text" size="small" />			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" dataType="numeric" size="medium" displayFormat="+##0.000"/>			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" dataType="numeric" alarmSensitive="false" size="large" displayFormat="0.0E+00"/>			
+		</row>		
+	</verticalPanel>
+	
+</caml>

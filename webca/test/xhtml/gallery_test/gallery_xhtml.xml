@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../" pendEvents="30" pendEventsPeriodMs="30"/>
+</head>
+<body>
+
+	<caml:horizontalPanel>
+		<caml:column>			
+			<caml:staticText size="large" >This is a gallery of WebCA components.</caml:staticText>
+		</caml:column>
+		<caml:column>
+			<caml:img src="cosylab.png" alt="epics Logo"></caml:img>
+			<caml:img src="sns.gif" alt="sns Logo"></caml:img>
+		</caml:column>				
+	</caml:horizontalPanel>
+	<caml:verticalPanel>
+		<caml:row>
+			<caml:mux>
+				<caml:sequence name="record1">
+					<caml:macroValuePair macroName="$(NAME)" macroValue="record1"/>
+					<caml:macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+				</caml:sequence>
+			    <caml:sequence name="record2">
+					<caml:macroValuePair macroName="$(NAME)" macroValue="record2"/>			
+					<caml:macroValuePair macroName="$(DESC)" macroValue="counter PV"/>			
+			    </caml:sequence>
+			    <caml:sequence name="enum" selected="true">
+					<caml:macroValuePair macroName="$(NAME)" macroValue="enum"/>
+					<caml:macroValuePair macroName="$(DESC)" macroValue="enumerated PV"/>
+			    </caml:sequence>
+			</caml:mux>
+		</caml:row>
+	</caml:verticalPanel>	
+
+	<caml:tabView>
+		<caml:tab name="layout" selected="true">	
+			<caml:include href="layout.xml"/>				
+		</caml:tab>		
+
+		<caml:tab name="staticText">	
+			<caml:include href="staticText.xml"/>	
+		</caml:tab>				
+		
+		<caml:tab name="textEntry">	
+			<caml:include href="textEntry.xml"/>	
+		</caml:tab>
+		
+		<caml:tab name="textUpdate">	
+			<caml:include href="textUpdate.xml"/>	
+		</caml:tab>														
+		<caml:tab name="wheelSwitch">	
+			<caml:include href="wheelSwitch.xml"/>	
+		</caml:tab>
+
+		<caml:tab name="bitControl">	
+			<caml:include href="bitControl.xml"/>	
+		</caml:tab>
+		
+		<caml:tab name="slider">	
+			<caml:include href="slider.xml"/>	
+		</caml:tab>		
+		
+		<caml:tab name="buttons">	
+			<caml:include href="buttons.xml"/>	
+		</caml:tab>		
+
+		<caml:tab name="gauge">	
+			<caml:include href="gauge.xml"/>	
+		</caml:tab>		
+
+		<caml:tab name="charts">	
+			<caml:include href="charts.xml"/>	
+		</caml:tab>		
+
+		<caml:tab name="advanced charts">	
+			<caml:include href="adv_charts.xml"/>	
+		</caml:tab>		
+
+		<caml:tab name="virtual pv">	
+			<caml:include href="virtualPV.xml"/>	
+		</caml:tab>		
+				
+		<caml:tab name="relatedDisplay">	
+			<caml:include href="relatedDisplay.xml"/>	
+		</caml:tab>											
+    </caml:tabView>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="slider">
+	<xs:complexType>
+		<xs:complexContent>			
+			<xs:extension base="control">
+				<xs:attribute name="displayFormat" type="xs:string"/>
+				<xs:attribute name="increment" type="xs:string"/>
+				<xs:attribute name="minValue" type="xs:decimal"/>	
+				<xs:attribute name="maxValue" type="xs:decimal"/>						
+			</xs:extension>		
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>	   	   
+
+</xs:schema>

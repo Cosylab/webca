@@ -1,0 +1,27 @@
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title></title>
+    <caml:head webcaPath="../"/>
+</head>
+<body>
+	<caml:verticalPanel>
+	    <caml:row>
+	        <caml:include href="include_macros_include.xml">
+                <caml:macroValuePair macroName="$(NAME)" macroValue="record1"/>
+	        </caml:include>
+	    </caml:row>
+	    <caml:row>
+	        <caml:include href="include_macros_include.xml">
+                <caml:macroValuePair macroName="$(NAME)" macroValue="record2"/>
+	        </caml:include>
+	    </caml:row>
+	    <caml:row>
+	        <caml:include href="include_macros_include.xml">
+                <caml:macroValuePair macroName="$(NAME)" macroValue="enum"/>
+	        </caml:include>
+	    </caml:row>
+	</caml:verticalPanel>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+# File: /ade/epics/supTop/operations/opi/blank.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1693
+y 1407
+w 1286
+h 574
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+ctlFont "courier-bold-r-14.0"
+ctlFontAlign "right"
+btnFont "courier-medium-r-8.0"
+fgColor index 10
+bgColor index 6
+textColor index 10
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 6
+ctlBgColor2 index 10
+topShadowColor index 5
+botShadowColor index 10
+pvType "EPICS"
+disableScroll
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 13
+y 600
+w 1261
+h 504
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 13
+y 600
+w 1261
+h 473
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+displaySource "menu"
+filePv "LOC\\$(!W)DIAGWindow1=i:0"
+labelPv "LOC\\$(!W)DIAG1=s:"
+setSize
+sizeOfs 5
+numDsps 9
+displayFileName {
+  0 "RING_BLM_embed_A-B.edl"
+  1 "RING_BLM_embed_C-D.edl"
+  2 "RTBT_BLM_embed.edl"
+  3 "Ring_BPM_embed.edl"
+  4 "Ring_CD_BPM_embed.edl"
+  5 "RTBT_BPM_embed.edl"
+  6 "WS_5shot.edl"
+  7 "Harp.edl"
+  8 "vfm_embed.edl"
+}
+menuLabel {
+  0 "A&B Arch Ring BLMs"
+  1 "C&D Arch Ring BLMs"
+  2 "RTBT BLMs"
+  3 "A&B Arch Ring BPMs"
+  4 "C&D Arch Ring BPMs"
+  5 "RTBT BPMs"
+  6 "RTBT WS"
+  7 "RTBT Harp"
+  8 "VFM"
+}
+noScroll
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 13
+y 1077
+w 331
+h 27
+controlPv "LOC\\$(!W)DIAG1=s:"
+font "helvetica-bold-r-24.0"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 30
+fastUpdate
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+visPv "Diag_Diag:ChoiceButton"
+visMin "1.5"
+visMax "2.5"
+endObjectProperties
+

@@ -1,0 +1,555 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="./xsl/webca.xsl" type="text/xsl" ?>
+<caml webcaPath="./" title="Magnets Page" extStyle="sns">
+	<horizontalPanel>
+		<column>			
+			<staticText size="large" >1 Demonstration of CAML for a simple Magnet control page.</staticText>
+		</column>
+		<column>
+			<img src="cosylab.png" alt="epics Logo"></img>
+			<img src="sns.gif" alt="sns Logo"></img>
+		</column>
+		
+	</horizontalPanel>
+	
+	<html>
+		 <![CDATA[
+			<div>This is an HTML DIV inside <b>html</b> block and CDATA along with a link to the <a href="scope.xml?CHANNEL=ch1">Scope Channel 1</a></div>
+		 ]]>
+	</html>
+	
+	<horizontalPanel caption="Scope Channels">
+		<column>
+			<relatedDisplay type="button">
+				<display src="scope.xml" name="Channel 1">
+					<macroValuePair macroName="$(CHANNEL)" macroValue="ch1" />
+				</display>
+			</relatedDisplay>
+		</column>
+		<column>
+			<relatedDisplay type="button">
+				<display src="scope.xml" name="Channel 2">
+					<macroValuePair macroName="$(CHANNEL)" macroValue="ch2" />
+				</display>
+			</relatedDisplay>
+		</column>
+		<column>
+			<relatedDisplay type="button">
+				<display src="scope.xml" name="Channel 3">
+					<macroValuePair macroName="$(CHANNEL)" macroValue="ch3" />
+				</display>
+			</relatedDisplay>
+		</column>
+		<column width="100%"></column>
+	</horizontalPanel>
+
+	<tabView>
+		<tab name="MEBT" selected="true">		
+			<horizontalPanel caption="MEBT Correctors">
+				<column width="50" caption="Horizontal">
+				  <panel>
+					<row>
+						<column>		
+								<staticText>DCH 01</staticText>		
+						</column>
+						<column>
+								<textUpdate readbackPV="MEBT_Mag:PS_DCH01:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH01:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCH 04</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCH04:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH04:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCH 05</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCH05:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH05:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCH 10</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCH10:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH10:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCH 11</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCH11:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH11:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCH 14</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCH14:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH14:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+				  </panel>
+				</column>
+				<column width="50" caption="Vertical">
+				  <panel>
+					<row>
+						<column>		
+								<staticText>DCV 01</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCV01:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCV01:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCV 04</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCV04:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCV04:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCV 05</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCV05:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCV05:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCV 10</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCV10:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCV10:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCV 11</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCV11:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCV11:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCV 14</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_DCV14:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCV14:I_Set" displayFormat="+0.000" size="small" />
+						</column>
+					</row>
+				  </panel>
+				</column>				
+			</horizontalPanel>
+			
+			<horizontalPanel caption="MEBT Quadrupoles">
+				<column width="50" caption="Horizontal">
+				  <panel>
+					<row>
+						<column>		
+								<staticText>QH 01</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QH01:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QH01:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QH 03</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QH03:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QH03:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QH 05</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QH05a10:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QH05a10:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QH 07</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QH07a08:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QH07a08:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QH 10</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QH05a10:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QH05a10:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QH 12</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QH12:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QH12:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QH 14</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QH14:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QH14:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+				  </panel>
+				</column>
+				<column width="50" caption="Vertical">
+				  <panel>
+					<row>
+						<column>		
+								<staticText>QV 02</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QV02:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QV02:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QV 04</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QV04:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QV04:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QV 06</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QV06a09:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QV06a09:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QV 09</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QV06a09:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QV06a09:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QV 11</staticText>
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QV11:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QV11:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>QV 13</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="MEBT_Mag:PS_QV13:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_QV13:I_Set" displayFormat="0000.0" size="small" />
+						</column>
+					</row>
+				  </panel>
+				</column>				
+			</horizontalPanel>
+				
+		</tab>
+		<tab name="DTL">
+			<horizontalPanel caption="DTL Correctors">
+				<column width="50" caption="Horizontal">
+				  <panel>
+					<row>
+						<column>		
+								<staticText>DCH 149</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCH149:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCH149:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCH 155</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCH155:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCH155:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCH 236</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCH236:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCH236:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCH 242</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCH242:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCH242:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCH 323</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCH323:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCH323:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCH 329</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCH329:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCH329:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+				  </panel>
+				</column>
+				<column width="50" caption="Vertical">
+				  <panel>
+					<row>
+						<column>		
+								<staticText>DCV 152</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCV152:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCV152:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCV 158</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCV158:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCV158:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCV 239</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCV239:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCV239:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCV 245</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCV245:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCV245:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCV 326</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCV326:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCV326:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+					<row>
+						<column>		
+								<staticText>DCV 332</staticText>		
+						</column>
+						<column>		
+								<textUpdate readbackPV="DTL_Mag:PS_DCV332:I"></textUpdate>
+						</column>
+						<column>		
+								<wheelSwitch alarmSensitive="false" controlPV="DTL_Mag:PS_DCV332:I_Set" displayFormat="+000.000" size="small" />
+						</column>
+					</row>
+				  </panel>
+				</column>				
+			</horizontalPanel>
+		</tab>
+		<tab name="Ring">
+			<horizontalPanel>
+				<column>
+					<xyChart xAxisLabel="X" yAxisLabel="Y">
+						<xySeries type="scatter" name="A10 Profile" X-PVname="Ring_Diag:BPM_A10:xTBT" Y-PVname="Ring_Diag:BPM_A10:yTBT" />
+						<xySeries type="scatter" name="A13 Profile" X-PVname="Ring_Diag:BPM_A13:xTBT" Y-PVname="Ring_Diag:BPM_A13:yTBT" />
+					</xyChart>
+				</column>
+			</horizontalPanel>		
+		</tab>
+		<tab name="RF">
+			<horizontalPanel>
+				<column>
+					<xyChart xAxisLabel="index" yAxisLabel="Power">
+						<xySeries name="HPM01a" Y-PVname="SCL_LLRF:HPM01a:HB0" />
+						<xySeries name="HPM01b" Y-PVname="SCL_LLRF:HPM01b:HB0" />
+					</xyChart>
+				</column>
+			</horizontalPanel>		
+			<horizontalPanel>
+				<column>
+					<xyChart xAxisLabel="index" yAxisLabel="Power">
+						<xySeries name="HPM01a" Y-PVname="SCL_LLRF:HPM01a:HB1" />
+						<xySeries name="HPM01b" Y-PVname="SCL_LLRF:HPM01b:HB1" />
+					</xyChart>
+				</column>
+			</horizontalPanel>		
+		</tab>
+		<tab name="Intensity">
+			<horizontalPanel>
+				<column>
+					<intensityPlot readbackPV="Physics_Test:Scope:ch1" width="100" height="240" maxValue="1.0" waterfall="true"/>
+				</column>
+				<column>
+					<intensityPlot readbackPV="Ring_Diag:BPM_A10:xTBT" width="50" height="20" maxValue="50.0" waterfall="false"/>
+				</column>
+			</horizontalPanel>		
+		</tab>
+		<tab name="Scope">
+			<horizontalPanel>
+				<column width="25%">		
+						<staticText>Scope Update Period</staticText>		
+				</column>
+				<column>		
+						<textUpdate readbackPV="Physics_Test:Scope:UpdatePeriod" displayFormat="0.00"></textUpdate>
+				</column>
+				<column>		
+						<wheelSwitch alarmSensitive="false" controlPV="Physics_Test:Scope:UpdatePeriod_Set" displayFormat="0.00" size="small" />
+				</column>
+				<column width="75%"></column>
+			</horizontalPanel>
+
+			<horizontalPanel>
+				<column>
+					<xyChart xAxisLabel="index" yAxisLabel="Value">
+						<xySeries name="Channel 1" Y-PVname="Physics_Test:Scope:ch1" />
+						<xySeries name="Channel 2" Y-PVname="Physics_Test:Scope:ch2" />
+						<xySeries name="Channel 3" Y-PVname="Physics_Test:Scope:ch3" />
+					</xyChart>
+				</column>
+			</horizontalPanel>		
+		</tab>
+	</tabView>
+</caml>

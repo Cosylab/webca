@@ -1,0 +1,648 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 213
+y 73
+w 1024
+h 895
+font "helvetica-medium-r-14.0"
+ctlFont "courier-bold-r-14.0"
+btnFont "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 3
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 11
+title "The titled title"
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 374
+y 34
+w 126
+h 64
+font "helvetica-bold-r-14.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+visPv "record1"
+visInvert
+visMin "0"
+visMax "10"
+value {
+  "This is an example"
+  "of"
+  "multi-line"
+  "text."
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 38
+y 64
+w 110
+h 27
+controlPv "$(RECORD)"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 43
+y 85
+w 147
+h 43
+controlPv "record1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 171
+y 110
+w 178
+h 80
+fgColor index 14
+bgColor index 3
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 11
+controlPv "enum"
+indicatorPv "enum"
+font "courier-medium-r-14.0"
+endObjectProperties
+
+# (Radio Box)
+object activeRadioButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 82
+y 128
+w 124
+h 211
+fgColor index 14
+bgColor index 3
+buttonColor index 3
+selectColor index 25
+topShadowColor index 1
+botShadowColor index 11
+controlPv "enum"
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 360
+y 111
+w 172
+h 68
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 11
+controlPv "record1"
+pressValue "12.3"
+releaseValue "23.4"
+onLabel "press label"
+offLabel "release label"
+3d
+font "helvetica-medium-r-14.0"
+endObjectProperties
+
+# (Slider)
+object activeSliderClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 345
+w 429
+h 82
+fgColor index 14
+bgColor index 3
+2ndBgColor index 3
+controlColor index 25
+indicatorColor index 30
+indicatorAlarm 1
+font "courier-bold-r-14.0"
+controlPv "record1"
+indicatorPv "record1"
+controlLabelType "pvName"
+readLabel "Readback label"
+incMultiplier 1
+precision 0
+scaleMin -10
+scaleMax 10
+displayFormat "FFloat"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 49
+y 445
+w 269
+h 41
+controlPv "$(RECORD)"
+lineColor index 14
+onColor index 17
+offColor index 0
+numBits 9
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+# Geometry
+x 546
+y 32
+w 452
+h 217
+# Appearance
+border
+xLabel "This is x label"
+yLabel "And this is y label"
+fgColor index 14
+bgColor index 3
+gridColor index 14
+font "courier-bold-r-14.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 16
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+xAxisTimeFormat "dateTime"
+xMajorsPerLabel 0
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yMajorsPerLabel 0
+# Y2 axis properties
+showY2Axis
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 2
+yPv {
+  0 "waveform2"
+  1 "$(WAVEFORM)"
+}
+plotStyle {
+  0 "point"
+}
+lineThickness {
+  0 7
+}
+plotUpdateMode {
+  0 "xOrY"
+}
+plotSymbolType {
+  0 "diamond"
+}
+plotColor {
+  0 index 20
+  1 index 26
+}
+endObjectProperties
+
+# (Menu Mux)
+object menuMuxClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 522
+y 282
+w 250
+h 185
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-14.0"
+initialState "1"
+numItems 2
+symbolTag {
+  0 "tag1"
+  1 "tag2"
+}
+symbol0 {
+  0 "WAVEFORM"
+  1 "WAVEFORM"
+}
+value0 {
+  0 "barWaveform"
+  1 "waveform1"
+}
+symbol1 {
+  0 "RECORD"
+  1 "RECORD"
+}
+value1 {
+  0 "record1"
+  1 "record2"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 804
+y 282
+w 194
+h 180
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-14.0"
+xPosOffset 100
+yPosOffset 100
+buttonLabel "Sub Display"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "subdisplay.edl"
+  1 "subdisplay.edl"
+  2 "subsubdisplay.edl"
+}
+menuLabel {
+  0 "Sub Display Title"
+  1 "Label1"
+  2 "Label2"
+}
+setPosition {
+  0 "parentWindow"
+}
+symbols {
+  0 "SUB_RECORD1 = scalar1, SUB_RECORD2 = scalar2"
+}
+replaceSymbols {
+  0 1
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 24
+y 16
+w 169
+h 27
+font "helvetica-bold-i-24.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "$(CL)"
+}
+autoSize
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 852
+y 625
+w 149
+h 118
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+displaySource "file"
+filePv "record1"
+file "subdisplay.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "subdisplay.edl"
+}
+menuLabel {
+  0 "Label1"
+}
+symbols {
+  0 "SUB_RECORD1 = scalar1, SUB_RECORD2 = scalar2"
+}
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 852
+y 492
+w 148
+h 117
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+displaySource "file"
+file "subdisplay.edl"
+center
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 460
+y 490
+w 375
+h 222
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+displaySource "file"
+file "subsubdisplay.edl"
+center
+setSize
+sizeOfs 128
+numDsps 0
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 42
+y 514
+w 390
+h 357
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+displaySource "file"
+file "subdisplay.edl"
+center
+sizeOfs 32
+numDsps 0
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 458
+y 741
+w 157
+h 43
+controlPv "record1"
+fgColor index 25
+fgAlarm
+bgColor index 3
+fill
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 640
+y 742
+w 185
+h 16
+controlPv "record1"
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+autoHeight
+precision 5
+nullColor index 30
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 647
+y 795
+w 185
+h 16
+controlPv "record1"
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+autoHeight
+limitsFromDb
+nullColor index 30
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Meter)
+object activeMeterClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 225
+y 197
+w 234
+h 170
+caseColor index 3
+scaleColor index 14
+labelColor index 14
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+readPv "record1"
+labelType "pvLabel"
+showScale
+scaleFormat "FFloat"
+useDisplayBg
+labelIntervals 10
+majorIntervals 2
+minorIntervals 5
+complexNeedle
+3d
+scaleMin -10
+scaleMax 10
+labelFontTag "helvetica-medium-r-14.0"
+scaleFontTag "courier-bold-r-14.0"
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 460
+y 801
+w 163
+h 16
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Power on"
+}
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 470
+y 834
+w 524
+h 43
+fgColor index 14
+bgColor index 3
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+controlPv "record1"
+controlLabelType "pvName"
+font "courier-bold-r-14.0"
+limitsFromDb
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 849
+y 770
+w 152
+h 16
+controlPv "record2"
+font "helvetica-medium-r-14.0"
+fgColor index 14
+fgAlarm
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 30
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 212
+y 28
+w 69
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+visPv "record1"
+visMin "0"
+visMax "10"
+value {
+  "Text String"
+}
+autoSize
+endObjectProperties
+

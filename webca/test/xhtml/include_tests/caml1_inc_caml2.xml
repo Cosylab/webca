@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl" ?>
+
+<caml webcaPath="../../../" title="WebCa Test"
+      pendEvents="30" pendEventsPeriodMs="30" extStyle="csl"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <staticText>This is caml1_inc_caml2.xml.</staticText>
+	<textUpdate readbackPV="record2" dataType="text"/>
+
+    <xi:include href="caml2_inc_camlgallery.xml"/>
+</caml>

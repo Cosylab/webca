@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="barChart">
+	<xs:complexType>
+		<xs:complexContent>			
+			<xs:extension base="component">     
+				<xs:choice minOccurs="1" maxOccurs="unbounded">	
+					<xs:element ref="series"/>	
+				</xs:choice>	
+				<xs:attribute name="xAxisLabel" type="xs:string"/>
+				<xs:attribute name="yAxisLabel" type="xs:string"/>				
+				<xs:attribute name="xLabelsPV" type="xs:string"/>
+				<xs:attribute name="xLabels" type="xs:string"/>	
+				<xs:attribute name="flavor" type="xs:string"/>
+			</xs:extension>		
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>
+	
+<xs:element name="series">
+	<xs:complexType>
+		<xs:attribute name="PVname" type="xs:string" use="required"/>		
+		<xs:attribute name="name"   type="xs:string"/>	
+	</xs:complexType>	
+</xs:element>		
+
+</xs:schema>

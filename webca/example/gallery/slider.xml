@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+	
+	<verticalPanel>
+		<row>
+			<slider
+				 readbackPV="ai002"										
+				 controlPV="$(NAME)"
+				 displayFormat="#0.0"			
+				 increment="0.001"										
+				 size="small">										
+			</slider>
+		</row>			
+		<row>
+			<slider							
+				 controlPV="$(NAME)"
+				 displayFormat="#0.0"			
+				 increment="-6"										
+				 size="small">										
+			</slider>	
+		</row>			
+		<row>
+			<slider									
+				 controlPV="$(NAME)"
+				 displayFormat="#0.0"			
+				 increment="4"	
+				 size="medium">										
+			</slider>	
+		</row>			
+		<row>
+			<slider									
+				 controlPV="$(NAME)"
+				 displayFormat="+##0.0"			
+				 increment="0.01"										
+				 minValue="-300"
+				 maxValue="300"
+				 size="large"
+				 alarmSensitive="false">										
+			</slider>	
+		</row>
+	</verticalPanel>
+	
+</caml>

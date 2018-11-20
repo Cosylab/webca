@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../" title="WebCa Test">
+
+	<horizontalPanel caption="advanced barChart">
+			<column width="50%">
+				<barChart flavor="advanced" xAxisLabel="Axis X label "
+ 						     yAxisLabel="Axis Y label ">
+     				<series PVname="$(NAME1)" name="$(DESC1)"/>
+	    			<series PVname="$(NAME2)" name="$(DESC2)"/>
+	    			<series PVname="$(NAME3)" name="$(DESC3)"/>
+				</barChart>	 
+			</column>			
+	</horizontalPanel>	
+
+	<horizontalPanel caption="fast barChart">
+			<column width="50%">
+				<barChart xAxisLabel="Axis X label "
+ 						     yAxisLabel="Axis Y label ">
+    				<series PVname="$(NAME1)" name="$(DESC1)"/>
+	    			<series PVname="$(NAME2)" name="$(DESC2)"/>
+	    			<series PVname="$(NAME3)" name="$(DESC3)"/>
+				</barChart>	 
+			</column>			
+	</horizontalPanel>	
+</caml>

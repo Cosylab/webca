@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl"?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../"/>
+</head>
+<body>
+
+	<caml:verticalPanel>
+
+		<caml:row>
+			<caml:radioButton readbackPV="ai001" alarmSensitive="true" controlPV="ai001" direction="horizontal">
+												<caml:radioButtonItem value="-300" name="radio 0"/>
+												<caml:radioButtonItem value="0" name="radio 1"/>
+												<caml:radioButtonItem value="50" name="radio 2"/>
+												<caml:radioButtonItem value="100" name="radio 3"/>	
+												<caml:radioButtonItem value="700" name="radio 4"/>			
+											</caml:radioButton>
+		</caml:row>		
+		<caml:row>
+			<caml:radioButton readbackPV="ai001" alarmSensitive="true" controlPV="ai001" type="toggle" direction="vertical">
+												<caml:radioButtonItem value="-300" name="less than minimum"/>
+												<caml:radioButtonItem value="0" name="min"/>
+												<caml:radioButtonItem value="50" name="medium"/>
+												<caml:radioButtonItem value="100" name="full"/>	
+												<caml:radioButtonItem value="700" name="beyond full"/>			
+											</caml:radioButton>	
+		</caml:row>
+		<caml:row>
+			<caml:radioButton readbackPV="enum" alarmSensitive="true" controlPV="enum" type="toggle">												
+											</caml:radioButton>	
+		</caml:row>
+		<caml:row>
+			<caml:radioButton readbackPV="enum" alarmSensitive="true" controlPV="enum" type="radio" direction="vertical">												
+											</caml:radioButton>	
+		</caml:row>	
+		
+		<caml:row>
+			<caml:radioButton controlPV="$(NAME)" type="radio" direction="vertical">	
+												<caml:radioButtonItem value="-300" name="less than minimum"/>
+												<caml:radioButtonItem value="0" name="min"/>
+												<caml:radioButtonItem value="50" name="medium"/>
+												<caml:radioButtonItem value="100" name="full"/>	
+												<caml:radioButtonItem value="700" name="beyond full"/>																
+											</caml:radioButton>	
+		</caml:row>		
+
+		<caml:row>
+			<caml:messageButton controlPV="$(NAME)">
+				<caml:on caption="on" value="10"></caml:on>
+				<caml:off caption="off" value="0"></caml:off>
+			</caml:messageButton>
+		</caml:row>
+		<caml:row>
+			<caml:menuButton controlPV="$(NAME)" >
+				<caml:menuButtonItem name="negative" value="-10" />
+				<caml:menuButtonItem name="positive" value="+10" />
+			</caml:menuButton>
+		</caml:row>		
+	</caml:verticalPanel>
+</body>
+</html>

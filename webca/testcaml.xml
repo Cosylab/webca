@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="./xsl/webca.xsl" type="text/xsl" ?>
+<caml webcaPath="./" pluginUrl="plugin/npca.xpi" title="Test" xmlns:xi="http://www.w3.org/2001/XInclude" >
+
+    <xi:include href="test/xhtml/include_tests/maincamlnew_inc_caml1.xml"/>
+    <!--  
+    <xi:include href="example/gallery/layout.xml"/>
+    <xi:include href="test/xhtml/include_tests/maincamlnew_inc_caml1.xml"/>
+    <xi:include href="example/gallery/wheelswitch.xml"/>
+    <xi:include href="test/peter_adio/microIOC-ADIO_main_white.xml"/>
+    -->
+</caml>

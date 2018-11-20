@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<svg id="myg">
+<rect id="border" class="box" x="360" y="305" width="100" height="75" rx="10"/>
+</svg>
+ 
+<!--
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000303 Stylable//EN"
+ "http://www.w3.org/TR/2000/03/WD-SVG-20000303/DTD/svg-20000303-stylable.dtd">
+
+<svg id="myg" width="100%" height="100%"> 
+ 
+<desc> Account linker illustrating SVG line drawing </desc>
+
+
+
+<script><![CDATA[
+// Pure XML is not hacked to handle scripts, so use CDATA.
+
+// BEWARE that the Adobe SVG plugin uses Netscape JavaScript 1.2.
+// Avoid <SCRIPT LANGUAGE="JavaScript1.2"> or else expect wierd
+// behaviour from the == and != ECMAScript operators.
+
+
+// Constants: the start and end points for lines
+var terminals = {
+    savings : {x:140, y:75 },
+    credit :  {x:140, y:188 },
+    term :    {x:140, y:300 },
+    cheque :  {x:360, y:58 },
+    pass :    {x:360, y:153 },
+    ccard :   {x:360, y:248 },
+    ecard :   {x:360, y:343 }
+    };
+
+
+// "global" state information on lines being drawn
+var state = {
+	current_line : null,	// null == no line in progress
+	start_id : "",
+	end_id : "",
+	x1 : 0,
+	y1 : 0,
+	x2 : 0,
+	y2 : 0
+        };
+
+// Routines to implement the mouseover highlights.
+// A quickie solution that is heavily dependant on the
+// current formatting of the <tags> within this file.
+
+function putBorder(e)
+{
+  var border = e.currentTarget.childNodes.item(1);
+  border.getStyle().setProperty("visibility","visible");
+}
+
+function takeBorder(e)
+{
+  var border = e.currentTarget.childNodes.item(1);
+  border.getStyle().setProperty("visibility","hidden");
+}
+
+// Routines to implement the appearance and morphing
+// of the line drawn by the user.
+
+// make visible the line to be drawn, with some initial coordinates
+function startDraw(e)
+{
+  var tagid;
+
+  tagid = e.currentTarget.getAttribute("id");
+
+  state.start_id = tagid;
+  state.x1 = terminals[tagid].x;
+  state.y1 = terminals[tagid].y;
+  state.x2 = terminals[tagid].x-10;
+  state.y2 = terminals[tagid].y-10;
+  
+  state.current_line =
+    e.currentTarget.getOwnerDocument().getElementById(tagid+"line");
+
+  state.current_line.getStyle().setProperty("visibility","visible");
+  renderLine();
+}
+
+// lock down the final line, clean up and record the user gesture
+function endDraw(e)
+{
+  var tagid;
+
+  tagid = e.currentTarget.getAttribute("id");
+
+  state.end_id = tagid;
+
+  if ( state.current_line )
+  {
+    state.x2 = terminals[tagid].x;
+    state.y2 = terminals[tagid].y;
+    renderLine();
+    state.current_line = null;
+  }
+
+  captureData(state.start_id,state.end_id);
+}
+
+// stretch a line out 
+function extendDraw(e)
+{
+  if ( !state.current_line )
+    return;
+
+  state.x2 = e.clientX;
+  state.y2 = e.clientY;
+
+  // tricky little algorithm to keep line-end away
+  // from cursor hot-spot.
+
+  if ( e.clientX >= state.x1 )
+     state.x2 -= 5;
+  else
+     state.x2 += 5;
+
+  if (e.clientY >= state.y1 )
+     state.y2 -= 5;
+  else
+     state.y2 += 5;
+
+  renderLine();
+}
+
+// cleanup the line, reset all state.
+function cancelDraw(e)
+{
+  var rects;
+  var i;
+
+  if ( state.current_line)
+  {
+    state.current_line.getStyle().setProperty("visibility","hidden");
+    state.current_line = null;
+  }
+
+  rects =
+    e.currentTarget.getOwnerDocument().getElementsByTagName("rect");
+
+  for (i=0; i < rects.length; i++)
+  {
+    if ( rects.item(i).getAttribute("class") == "border" )
+      rects.item(i).getStyle().setProperty("visibility","hidden");
+  }
+}
+
+// change the SVG <line> graphic primitive
+function renderLine()
+{
+   with (state)
+   {
+       current_line.setAttribute("x1", "" + x1);
+       current_line.setAttribute("y1", "" + y1);
+       current_line.setAttribute("x2", "" + x2);
+       current_line.setAttribute("y2", "" + y2);
+   }
+}
+
+// Save from the user's drawing gesture the implied
+// data input. Put it where it is externally accessible.
+
+function captureData(start_id, end_id)
+{
+   var textdata = svgDocument.getElementById(start_id+"data");
+   textdata.firstChild.nodeValue = end_id;
+}
+
+]]></script>
+
+
+<g onmousemove="extendDraw(evt);"
+   onmouseup="cancelDraw(evt);"
+>
+
+<rect fill="linen" width="100%" height="100%"/>
+
+<g id="savings"
+     onmouseover="putBorder(evt);"
+     onmouseout="takeBorder(evt);"
+     onmousedown="cancelDraw(evt);"
+     onmouseup="endDraw(evt);"
+>
+<rect class="border" x="35" y="32" width="110" height="85" rx="10"/>
+<rect class="box" x="40" y="37" width="100" height="75" rx="10"/>
+<text x="50" y="67">
+Savings
+<tspan x="50" dy="20">Account</tspan>
+</text>
+</g>
+
+<g id="credit"
+     onmouseover="putBorder(evt);"
+     onmouseout="takeBorder(evt);"
+     onmousedown="cancelDraw(evt);"
+     onmouseup="endDraw(evt);"
+>
+<rect class="border" x="35" y="145" width="110" height="85" rx="10"/>
+<rect class="box" x="40" y="150" width="100" height="75" rx="10"/>
+<text x="50" y="180">
+Credit
+<tspan x="50" dy="20">Account</tspan>
+</text>
+</g>
+
+<g id="term"
+     onmouseover="putBorder(evt);"
+     onmouseout="takeBorder(evt);"
+     onmousedown="cancelDraw(evt);"
+     onmouseup="endDraw(evt);"
+>
+<rect class="border" x="35" y="257" width="110" height="85" rx="10"/>
+<rect class="box" x="40" y="262" width="100" height="75" rx="10"/>
+<text x="50" y="292">
+Term
+<tspan x="50" dy="20">Deposit</tspan>
+</text>
+</g>
+
+<g id="cheque"
+     onmouseover="putBorder(evt);"
+     onmouseout="takeBorder(evt);"
+     onmousedown="startDraw(evt);"
+     onmouseup="cancelDraw(evt);"
+>
+<rect class="border" x="355" y="15" width="110" height="85" rx="10"/>
+<rect class="box" x="360" y="20" width="100" height="75" rx="10"/>
+<text x="370" y="50">
+Cheque
+<tspan x="370" dy="20">Book</tspan>
+</text>
+</g>
+
+<g id="pass"
+     onmouseover="putBorder(evt);"
+     onmouseout="takeBorder(evt);"
+     onmousedown="startDraw(evt);"
+     onmouseup="cancelDraw(evt);"
+>
+<rect class="border" x="355" y="110" width="110" height="85" rx="10"/>
+<rect class="box" x="360" y="115" width="100" height="75" rx="10"/>
+<text x="370" y="145">
+Pass
+<tspan x="370" dy="20">Book</tspan>
+</text>
+</g>
+
+<g id="ccard"
+     onmouseover="putBorder(evt);"
+     onmouseout="takeBorder(evt);"
+     onmousedown="startDraw(evt);"
+     onmouseup="cancelDraw(evt);"
+>
+<rect class="border" x="355" y="205" width="110" height="85" rx="10"/>
+<rect class="box" x="360" y="210" width="100" height="75" rx="10"/>
+<text x="370" y="240">
+Credittt
+<tspan x="370" dy="20">Card</tspan>
+</text>
+
+</g>
+
+<g id="ecard"
+     onmouseover="putBorder(evt);"
+     onmouseout="takeBorder(evt);"
+     onmousedown="startDraw(evt);"
+     onmouseup="cancelDraw(evt);"
+>
+<rect class="border" x="355" y="300" width="110" height="85" rx="10"/>
+<rect id="border" class="box" x="360" y="305" width="100" height="75" rx="10"/>
+<text x="370" y="335">
+EFT
+<tspan x="370" dy="20">Card</tspan>
+</text>
+
+</g>
+
+<line id="chequeline" x1="1" y1="1" x2="90" y2="90"/>
+<line id="passline" x1="1" y1="1" x2="80" y2="90"/>
+<line id="ccardline" x1="1" y1="1" x2="70" y2="90"/>
+<line id="ecardline" x1="1" y1="1" x2="60" y2="90"/>
+
+<text class="data" id="chequedata" x="200" y="100">data11</text>
+<text class="data" id="passdata" x="200" y="130">data22</text>
+<text class="data" id="ccarddata" x="200" y="160">data33</text>
+<text class="data" id="ecarddata" x="200" y="190">data44</text>
+
+</g>
+</svg>
+-->

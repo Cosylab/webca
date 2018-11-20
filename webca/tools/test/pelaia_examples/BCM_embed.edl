@@ -1,0 +1,3654 @@
+# File: /ade/epics/supTop/operations/opi/BCM_embed.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1908
+y 1293
+w 1272
+h 474
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+ctlFont "courier-bold-r-14.0"
+ctlFontAlign "right"
+btnFont "courier-bold-r-18.0"
+fgColor index 10
+bgColor index 56
+textColor index 10
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 5
+ctlBgColor2 index 10
+topShadowColor index 5
+botShadowColor index 10
+pvType "EPICS"
+disableScroll
+endScreenProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 9
+w 529
+h 426
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+displaySource "menu"
+filePv "LOC\\$(!W)BCMWindow=i:0"
+labelPv "LOC\\$(!W)BCMDSP=s:"
+setSize
+sizeOfs 5
+numDsps 19
+displayFileName {
+  0 "BCM_ALL.edl"
+  1 "BCM_LINAC.edl"
+  2 "BCM_MEBT.edl"
+  3 "BCM_DTL.edl"
+  4 "BCM_CCL.edl"
+  5 "BCM_SCL.edl"
+  6 "BCM_HEBT.edl"
+  7 "BCM_RING.edl"
+  8 "BCM_RTBT.edl"
+  9 "BCM02.edl"
+  10 "BCM11.edl"
+  11 "BCM200.edl"
+  12 "BCM248.edl"
+  13 "BCM400.edl"
+  14 "BCM428.edl"
+  15 "BCM600.edl"
+  16 "BCM622.edl"
+  17 "BCM102.edl"
+  18 "BCM00.edl"
+}
+menuLabel {
+  0 "All BCMs"
+  1 "LINAC BCMs"
+  2 "MEBT BCMs"
+  3 "DTL BCMs"
+  4 "CCL BCM"
+  5 "SCL BCM"
+  6 "HEBT BCMs"
+  7 "Ring BCM"
+  8 "RTBT BCMs"
+  9 "BCM02"
+  10 "BCM11"
+  11 "BCM200"
+  12 "BCM248"
+  13 "BCM400"
+  14 "BCM428"
+  15 "BCM600"
+  16 "BCM622"
+  17 "BCM102"
+  18 "BCM00"
+}
+replaceSymbols {
+  0 1
+  1 1
+  2 1
+  3 1
+  4 1
+  5 1
+  6 1
+  7 1
+  8 1
+  9 1
+  10 1
+  11 1
+  12 1
+  13 1
+  14 1
+  15 1
+  16 1
+  17 1
+  18 1
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 331
+y 435
+w 331
+h 30
+controlPv "LOC\\$(!W)BCMDSP=s:"
+font "helvetica-bold-r-24.0"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 30
+fastUpdate
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1150
+y 7
+w 93
+h 35
+fgColor index 0
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-bold-r-14.0"
+buttonLabel "Detach Page"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCM_embed.edl"
+}
+menuLabel {
+  0 "Detach Page"
+}
+endObjectProperties
+
+# (Menu Mux)
+object menuMuxClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 541
+y 10
+w 135
+h 38
+fgColor index 0
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)BCMWindow=i:$(P)"
+font "helvetica-bold-r-18.0"
+numItems 9
+symbolTag {
+  0 "All BCMs"
+  1 "Linac BCMs"
+  2 "MEBT BCMs"
+  3 "DTL BCMs"
+  4 "CCL BCM"
+  5 "SCL BCM"
+  6 "HEBT BCMs"
+  7 "Ring BCM"
+  8 "RTBT BCM"
+}
+symbol0 {
+  0 "P"
+  1 "P"
+  2 "P"
+  3 "P"
+  4 "P"
+  5 "P"
+  6 "P"
+  7 "P"
+  8 "P"
+}
+value0 {
+  0 "0"
+  1 "1"
+  2 "2"
+  3 "3"
+  4 "4"
+  5 "5"
+  6 "6"
+  7 "7"
+  8 "8"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 778
+y 379
+w 168
+h 32
+fgColor index 0
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-bold-r-18.0"
+buttonLabel "Individual Plots"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCM1_embed.edl"
+}
+menuLabel {
+  0 "Individual Plots"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 552
+y 49
+w 116
+h 73
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 552
+y 101
+w 116
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "Beam Length"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 557
+y 75
+w 106
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "Current Avg"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 557
+y 49
+w 107
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "Current Max"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1152
+y 49
+w 42
+h 73
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1152
+y 101
+w 42
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "usec"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1152
+y 75
+w 28
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "mA"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1152
+y 49
+w 28
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "mA"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1019
+y 13
+w 61
+h 111
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1020
+y 13
+w 58
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 35
+bgColor index 10
+useDisplayBg
+value {
+  "DTL"
+  "BCM428"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1019
+y 46
+w 61
+h 26
+controlPv "DTL_Diag:BCM428:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1019
+y 72
+w 61
+h 26
+controlPv "DTL_Diag:BCM428:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1019
+y 98
+w 61
+h 26
+controlPv "DTL_Diag:BCM428:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 951
+y 13
+w 61
+h 111
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 952
+y 13
+w 58
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 43
+bgColor index 10
+useDisplayBg
+value {
+  "DTL"
+  "BCM400"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 951
+y 46
+w 61
+h 26
+controlPv "DTL_Diag:BCM400:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 951
+y 72
+w 61
+h 26
+controlPv "DTL_Diag:BCM400:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 951
+y 98
+w 61
+h 26
+controlPv "DTL_Diag:BCM400:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 883
+y 13
+w 61
+h 111
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 884
+y 13
+w 58
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 45
+bgColor index 10
+useDisplayBg
+value {
+  "DTL"
+  "BCM248"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 883
+y 46
+w 61
+h 26
+controlPv "DTL_Diag:BCM248:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 883
+y 72
+w 61
+h 26
+controlPv "DTL_Diag:BCM248:currentAvg"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 883
+y 98
+w 61
+h 26
+controlPv "DTL_Diag:BCM248:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 815
+y 13
+w 61
+h 111
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 816
+y 13
+w 58
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 114
+bgColor index 10
+useDisplayBg
+value {
+  "DTL"
+  "BCM200"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 815
+y 46
+w 61
+h 26
+controlPv "DTL_Diag:BCM200:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 815
+y 72
+w 61
+h 26
+controlPv "DTL_Diag:BCM200:currentAvg"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 815
+y 98
+w 61
+h 26
+controlPv "DTL_Diag:BCM200:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 747
+y 13
+w 61
+h 111
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 752
+y 13
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 10
+useDisplayBg
+value {
+  "MEBT"
+  "BCM11"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 747
+y 46
+w 61
+h 26
+controlPv "MEBT_Diag:BCM11:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 747
+y 72
+w 61
+h 26
+controlPv "MEBT_Diag:BCM11:currentAvg"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 747
+y 98
+w 61
+h 26
+controlPv "MEBT_Diag:BCM11:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 679
+y 13
+w 61
+h 111
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 684
+y 13
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 20
+bgColor index 10
+useDisplayBg
+value {
+  "MEBT"
+  "BCM02"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 679
+y 46
+w 61
+h 26
+controlPv "MEBT_Diag:BCM02:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 679
+y 72
+w 61
+h 26
+controlPv "MEBT_Diag:BCM02:currentAvg"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 679
+y 98
+w 61
+h 26
+controlPv "MEBT_Diag:BCM02:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1086
+y 11
+w 61
+h 112
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1087
+y 11
+w 58
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 41
+bgColor index 10
+useDisplayBg
+value {
+  "DTL"
+  "BCM600"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1086
+y 45
+w 61
+h 26
+controlPv "DTL_Diag:BCM600:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1086
+y 71
+w 61
+h 26
+controlPv "DTL_Diag:BCM600:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1086
+y 97
+w 61
+h 26
+controlPv "DTL_Diag:BCM600:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1217
+y 162
+w 42
+h 73
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1217
+y 214
+w 42
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "usec"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1217
+y 188
+w 28
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "mA"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1217
+y 162
+w 28
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "mA"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 552
+y 162
+w 116
+h 73
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 552
+y 214
+w 116
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "Beam Length"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 557
+y 188
+w 106
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "Current Avg"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 557
+y 162
+w 107
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "Current Max"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 679
+y 125
+w 61
+h 112
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 680
+y 125
+w 58
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 10
+bgColor index 10
+useDisplayBg
+value {
+  "DTL"
+  "BCM622"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 679
+y 159
+w 61
+h 26
+controlPv "DTL_Diag:BCM622:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 679
+y 185
+w 61
+h 26
+controlPv "DTL_Diag:BCM622:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 679
+y 211
+w 61
+h 26
+controlPv "DTL_Diag:BCM622:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 747
+y 125
+w 61
+h 112
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 748
+y 125
+w 58
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 32
+bgColor index 10
+useDisplayBg
+value {
+  "CCL"
+  "BCM102"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 747
+y 159
+w 61
+h 26
+controlPv "CCL_Diag:BCM102:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 747
+y 185
+w 61
+h 26
+controlPv "CCL_Diag:BCM102:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 747
+y 211
+w 61
+h 26
+controlPv "CCL_Diag:BCM102:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 815
+y 125
+w 61
+h 112
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 821
+y 125
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 39
+bgColor index 10
+useDisplayBg
+value {
+  "SCL"
+  "BCM00"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 815
+y 159
+w 61
+h 26
+controlPv "SCL_Diag:BCM00:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 815
+y 185
+w 61
+h 26
+controlPv "SCL_Diag:BCM00:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 815
+y 211
+w 61
+h 26
+controlPv "SCL_Diag:BCM00:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1217
+y 273
+w 42
+h 73
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1217
+y 325
+w 42
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "usec"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1217
+y 299
+w 2
+h 0
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1217
+y 273
+w 28
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "mA"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 889
+y 125
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 122
+bgColor index 10
+useDisplayBg
+value {
+  "HEBT"
+  "BCM01"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 883
+y 159
+w 61
+h 26
+controlPv "HEBT_Diag:BCM01:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 883
+y 185
+w 61
+h 26
+controlPv "HEBT_Diag:BCM01:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 883
+y 211
+w 61
+h 26
+controlPv "HEBT_Diag:BCM01:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 951
+y 125
+w 61
+h 112
+
+beginGroup
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 951
+y 211
+w 61
+h 26
+controlPv "HEBT_Diag:BCM09:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 956
+y 125
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 68
+bgColor index 10
+useDisplayBg
+value {
+  "HEBT"
+  "BCM09"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 951
+y 159
+w 61
+h 26
+controlPv "HEBT_Diag:BCM09:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 951
+y 185
+w 61
+h 26
+controlPv "HEBT_Diag:BCM09:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1019
+y 125
+w 61
+h 112
+
+beginGroup
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1019
+y 211
+w 61
+h 26
+controlPv "LDmp_Diag:BCM05:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1022
+y 125
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 53
+bgColor index 10
+useDisplayBg
+value {
+  "LDmp"
+  "BCM05"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1019
+y 159
+w 61
+h 26
+controlPv "LDmp_Diag:BCM05:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1019
+y 185
+w 61
+h 26
+controlPv "LDmp_Diag:BCM05:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1153
+y 123
+w 61
+h 112
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1157
+y 123
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 24
+bgColor index 10
+useDisplayBg
+value {
+  "HEBT"
+  "BCM32"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1153
+y 157
+w 61
+h 26
+controlPv "HEBT_Diag:BCM32:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1153
+y 183
+w 61
+h 26
+controlPv "HEBT_Diag:BCM32:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1153
+y 209
+w 61
+h 26
+controlPv "HEBT_Diag:BCM32:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1087
+y 125
+w 61
+h 112
+
+beginGroup
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1087
+y 211
+w 61
+h 26
+controlPv "HEBT_Diag:BCM20:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1092
+y 125
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 59
+bgColor index 10
+useDisplayBg
+value {
+  "HEBT"
+  "BCM20"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1087
+y 159
+w 61
+h 26
+controlPv "HEBT_Diag:BCM20:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1087
+y 185
+w 61
+h 26
+controlPv "HEBT_Diag:BCM20:currentBar"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 678
+y 10
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "MEBT BCM02"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=MEBT,SS=Diag,N=02,I=02t248,D=DTL"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 746
+y 10
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw3.edl"
+}
+menuLabel {
+  0 "MEBT BCM11"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=MEBT,SS=Diag,N=11,O=02,I=02a11,D=DTL"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 814
+y 10
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw3.edl"
+}
+menuLabel {
+  0 "DTL BCM200"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=DTL,SS=Diag,N=200,O=200,I=200a248,D=DTL"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 883
+y 10
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw3.edl"
+}
+menuLabel {
+  0 "DTL BCM248"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=DTL,SS=Diag,N=248,O=200,I=200a248,D=DTL"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 951
+y 10
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "DTL BCM400"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=DTL,SS=Diag,N=400, I=400,D=DTL"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1019
+y 10
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "DTL BCM428"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=DTL,SS=Diag,N=428, I=428,D=DTL"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1086
+y 10
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "DTL BCM600"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=DTL,SS=Diag,N=600, I=600,D=DTL"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1087
+y 123
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "HEBT BCM20"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=HEBT,SS=Diag,N=20, I=20, D=HEBT"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1019
+y 123
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "LDmp BCM05"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=LDmp,SS=Diag,N=05, I=05,D=LDmp"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 951
+y 124
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "HEBT BCM09"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=HEBT,SS=Diag,N=09,I=09,D=HEBT"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 882
+y 124
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "HEBT BCM01"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=HEBT,SS=Diag,N=01, I=01,D=HEBT"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 815
+y 124
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw3.edl"
+}
+menuLabel {
+  0 "SCL BCM00"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=SCL,SS=Diag,N=00,O=00b, I=00,D=SCL"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 747
+y 124
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "CCL BCM102"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=CCL,SS=Diag,N=102,I=102,D=CCL"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 678
+y 124
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "DTL BCM622"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=DTL,SS=Diag,N=622,I=622,D=DTL"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1152
+y 123
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "HEBT BCM01"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=HEBT,SS=Diag,N=32, I=32, D=HEBT"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 552
+y 273
+w 116
+h 73
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 552
+y 325
+w 116
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "Beam Length"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 552
+y 299
+w 116
+h 21
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "# of Particles"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 557
+y 273
+w 107
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "Current Max"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 236
+w 75
+h 112
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 678
+y 236
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "IDmp BCM01"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=IDmp,SS=Diag,N=01"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 683
+y 236
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 77
+bgColor index 10
+useDisplayBg
+value {
+  "IDmp"
+  "BCM01"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 671
+y 270
+w 75
+h 26
+controlPv "IDmp_Diag:BCM01:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 671
+y 296
+w 75
+h 26
+controlPv "IDmp_Diag:BCM01:Particles"
+displayMode "exp"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 671
+y 322
+w 75
+h 26
+controlPv "IDmp_Diag:BCM01:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 749
+y 236
+w 75
+h 112
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 756
+y 236
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "Ring BCMD09"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=Ring,SS=Diag,N=_D09"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 756
+y 237
+w 61
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 76
+bgColor index 10
+useDisplayBg
+value {
+  "Ring"
+  "BCMD09"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 749
+y 271
+w 75
+h 26
+controlPv "Ring_Diag:BCM_D09:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 749
+y 297
+w 75
+h 26
+controlPv "Ring_Diag:BCM_D09:Particles"
+displayMode "exp"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 749
+y 322
+w 75
+h 26
+controlPv "Ring_Diag:BCM_D09:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 827
+y 236
+w 75
+h 112
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 834
+y 236
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "EDmp BCM02"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=EDmp,SS=Diag,N=02"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 839
+y 237
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 75
+bgColor index 10
+useDisplayBg
+value {
+  "EDmp"
+  "BCM02"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 827
+y 271
+w 75
+h 26
+controlPv "EDmp_Diag:BCM02:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 827
+y 297
+w 75
+h 26
+controlPv "EDmp_Diag:BCM02:Particles"
+displayMode "exp"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 827
+y 322
+w 75
+h 26
+controlPv "EDmp_Diag:BCM02:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 905
+y 236
+w 75
+h 112
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 912
+y 236
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "RTBT BCM02"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=RTBT,SS=Diag,N=02"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 905
+y 322
+w 75
+h 26
+controlPv "RTBT_Diag:BCM02:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 917
+y 237
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 12
+bgColor index 10
+useDisplayBg
+value {
+  "RTBT"
+  "BCM02"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 905
+y 271
+w 75
+h 26
+controlPv "RTBT_Diag:BCM02:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 905
+y 297
+w 75
+h 26
+controlPv "RTBT_Diag:BCM02:Particles"
+displayMode "exp"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 983
+y 236
+w 75
+h 112
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 990
+y 236
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "RTBT BCM11"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=RTBT,SS=Diag,N=11"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 983
+y 322
+w 75
+h 26
+controlPv "RTBT_Diag:BCM11:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 995
+y 237
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 73
+bgColor index 10
+useDisplayBg
+value {
+  "RTBT"
+  "BCM11"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 983
+y 271
+w 75
+h 26
+controlPv "RTBT_Diag:BCM11:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 983
+y 297
+w 75
+h 26
+controlPv "RTBT_Diag:BCM11:Particles"
+displayMode "exp"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1061
+y 236
+w 75
+h 112
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1068
+y 236
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "RTBT BCM14"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=RTBT,SS=Diag,N=14"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1061
+y 322
+w 75
+h 26
+controlPv "RTBT_Diag:BCM14:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1073
+y 237
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 30
+bgColor index 10
+useDisplayBg
+value {
+  "RTBT"
+  "BCM14"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1061
+y 271
+w 75
+h 26
+controlPv "RTBT_Diag:BCM14:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1061
+y 297
+w 75
+h 26
+controlPv "RTBT_Diag:BCM14:Particles"
+displayMode "exp"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1139
+y 236
+w 75
+h 112
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1146
+y 236
+w 61
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+invisible
+buttonLabel "Raw Data"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMR_Raw2.edl"
+}
+menuLabel {
+  0 "RTBT BCM25"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "S=RTBT,SS=Diag,N=25"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1139
+y 322
+w 75
+h 26
+controlPv "RTBT_Diag:BCM25:tAvgLen"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1151
+y 237
+w 50
+h 32
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 64
+bgColor index 10
+useDisplayBg
+value {
+  "RTBT"
+  "BCM25"
+}
+autoSize
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1139
+y 271
+w 75
+h 26
+controlPv "RTBT_Diag:BCM25:currentMax"
+displayMode "decimal"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1139
+y 297
+w 75
+h 26
+controlPv "RTBT_Diag:BCM25:Particles"
+displayMode "exp"
+precision 1
+fgColor index 15
+bgColor index 9
+fill
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

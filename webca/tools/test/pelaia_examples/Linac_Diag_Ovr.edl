@@ -1,0 +1,719 @@
+# File: /ade/epics/supTop/operations/opi/Linac_Diag_Ovr.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1663
+y 661
+w 1299
+h 585
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+ctlFont "courier-bold-r-14.0"
+ctlFontAlign "right"
+btnFont "courier-medium-r-8.0"
+fgColor index 10
+bgColor index 6
+textColor index 10
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 6
+ctlBgColor2 index 10
+topShadowColor index 5
+botShadowColor index 10
+pvType "EPICS"
+disableScroll
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 13
+y 600
+w 1261
+h 504
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 13
+y 600
+w 1261
+h 473
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+displaySource "menu"
+filePv "LOC\\$(!W)DIAGWindow1=i:0"
+labelPv "LOC\\$(!W)DIAG1=s:"
+setSize
+sizeOfs 5
+numDsps 9
+displayFileName {
+  0 "RING_BLM_embed_A-B.edl"
+  1 "RING_BLM_embed_C-D.edl"
+  2 "RTBT_BLM_embed.edl"
+  3 "Ring_BPM_embed.edl"
+  4 "Ring_CD_BPM_embed.edl"
+  5 "RTBT_BPM_embed.edl"
+  6 "WS_5shot.edl"
+  7 "Harp.edl"
+  8 "vfm_embed.edl"
+}
+menuLabel {
+  0 "A&B Arch Ring BLMs"
+  1 "C&D Arch Ring BLMs"
+  2 "RTBT BLMs"
+  3 "A&B Arch Ring BPMs"
+  4 "C&D Arch Ring BPMs"
+  5 "RTBT BPMs"
+  6 "RTBT WS"
+  7 "RTBT Harp"
+  8 "VFM"
+}
+noScroll
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 13
+y 1077
+w 331
+h 27
+controlPv "LOC\\$(!W)DIAG1=s:"
+font "helvetica-bold-r-24.0"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 30
+fastUpdate
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+visPv "Diag_Diag:ChoiceButton"
+visMin "1.5"
+visMax "2.5"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 964
+y 12
+w 29
+h 42
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 5
+useDisplayBg
+value {
+  "A"
+  "Set"
+}
+autoSize
+endObjectProperties
+
+# (Menu Mux)
+object menuMuxClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1003
+y 9
+w 263
+h 48
+fgColor index 0
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)DIAGWindow=i:$(P)"
+font "helvetica-bold-r-20.0"
+numItems 16
+symbolTag {
+  0 "BCMs"
+  1 "Warm LINAC BPMs"
+  2 "Cold Linac BPMs"
+  3 "HEBT BPMs"
+  4 "All BPM Gain"
+  5 "MEBT WS"
+  6 "DTL WS"
+  7 "CCL WS"
+  8 "SCL/HEBT WS"
+  9 "DTL BLMs"
+  10 "CCL BLMs"
+  11 "SCL BLMs"
+  12 "HEBT BLMs"
+  13 "BSM"
+  14 "Linac FC/BS"
+  15 "View Screen"
+}
+symbol0 {
+  0 "P"
+  1 "P"
+  2 "P"
+  3 "P"
+  4 "P"
+  5 "P"
+  6 "P"
+  7 "P"
+  8 "P"
+  9 "P"
+  10 "P"
+  11 "P"
+  12 "P"
+  13 "P"
+  14 "P"
+  15 "P"
+}
+value0 {
+  0 "0"
+  1 "1"
+  2 "2"
+  3 "3"
+  4 "4"
+  5 "5"
+  6 "6"
+  7 "7"
+  8 "8"
+  9 "9"
+  10 "10"
+  11 "11"
+  12 "12"
+  13 "13"
+  14 "14"
+  15 "15"
+}
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 63
+w 1274
+h 481
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+displaySource "menu"
+filePv "LOC\\$(!W)DIAGWindow=i:0"
+labelPv "LOC\\$(!W)DIAG=s:"
+setSize
+sizeOfs 5
+numDsps 16
+displayFileName {
+  0 "BCM_embed.edl"
+  1 "WRM_LINAC_BPM_embed.edl"
+  2 "COLD_LINAC_BPM_embed.edl"
+  3 "HEBT_BPM_embed.edl"
+  4 "BPM_Time_Gain.edl"
+  5 "WS_1shot.edl"
+  6 "WS_2shot.edl"
+  7 "WS_3shot.edl"
+  8 "WS_4shot.edl"
+  9 "DTLBLM1.edl"
+  10 "CCLBLM1.edl"
+  11 "SCLBLM_embed.edl"
+  12 "HEBTBLM1.edl"
+  13 "BSM.edl"
+  14 "FC_1.edl"
+  15 "view_screen_ovr.edl"
+}
+menuLabel {
+  0 "BCMs"
+  1 "Warm LINAC BPMs"
+  2 "COLD LINAC BPMs"
+  3 "HEBT BPMs"
+  4 "All BPM Gain"
+  5 "MEBT WS"
+  6 "DTL WS"
+  7 "CCL WS"
+  8 "SCL/HEBT WS"
+  9 "DTL BLMs"
+  10 "CCL BLMs"
+  11 "SCL BLMs"
+  12 "HEBT BLMs"
+  13 "BSM"
+  14 "LINAC Faraday Cups"
+  15 "View Screen"
+}
+symbols {
+  4 "S=MEBT,S1=DTL,S2=CCL,S3=SCL"
+}
+propagateMacros {
+  0 0
+  1 0
+  2 0
+  3 0
+  4 0
+  5 0
+  6 0
+  7 0
+  8 0
+  9 0
+  10 0
+  11 0
+  12 0
+  13 0
+  14 0
+  15 0
+}
+noScroll
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 118
+y 35
+w 23
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "CCL"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 199
+y 36
+w 24
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "SCL"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 279
+y 35
+w 107
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "HEBT/LDmp/IDmp"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 64
+y 34
+w 40
+h 16
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 64
+y 35
+w 40
+h 15
+fgColor index 10
+onColor index 6
+offColor index 6
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)DIAGWindow=i:0"
+pressValue "9"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 64
+y 34
+w 40
+h 16
+lineColor index 10
+fill
+fillColor index 15
+fillAlarm
+alarmPv "DTL_Diag:BLM_Sum"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 33
+w 40
+h 16
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 34
+w 40
+h 15
+fgColor index 10
+onColor index 6
+offColor index 6
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)DIAGWindow=i:0"
+pressValue "12"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 33
+w 40
+h 16
+lineColor index 10
+fill
+fillColor index 15
+fillAlarm
+alarmPv "HEBT_Diag:BLM_ND_Sum"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 230
+y 34
+w 40
+h 16
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 230
+y 35
+w 40
+h 15
+fgColor index 10
+onColor index 6
+offColor index 6
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)DIAGWindow=i:0"
+pressValue "11"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 230
+y 34
+w 40
+h 16
+lineColor index 10
+fill
+fillColor index 15
+fillAlarm
+alarmPv "SCL_Diag:BLM_Sum"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 146
+y 34
+w 40
+h 16
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 146
+y 35
+w 40
+h 15
+fgColor index 10
+onColor index 6
+offColor index 6
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)DIAGWindow=i:0"
+pressValue "10"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 146
+y 34
+w 40
+h 16
+lineColor index 10
+fill
+fillColor index 15
+fillAlarm
+alarmPv "CCL_Diag:BLM_Sum"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 33
+y 36
+w 24
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "DTL"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 119
+y 15
+w 177
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "Beam Loss Monitor Summary"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 565
+y 14
+w 165
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "Neutron Detector Summary"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 643
+y 33
+w 40
+h 16
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 643
+y 34
+w 40
+h 15
+fgColor index 10
+onColor index 6
+offColor index 6
+topShadowColor index 5
+botShadowColor index 10
+controlPv "LOC\\$(!W)DIAGWindow=i:0"
+pressValue "9"
+3d
+invisible
+font "courier-medium-r-8.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 643
+y 33
+w 40
+h 16
+lineColor index 10
+fill
+fillColor index 15
+fillAlarm
+alarmPv "DTL_Diag:ND_Sum_Ovr"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 571
+y 35
+w 64
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 6
+useDisplayBg
+value {
+  "DTL/MEBT"
+}
+autoSize
+endObjectProperties
+

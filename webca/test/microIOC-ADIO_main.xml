@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" ?>
+<caml 
+	webcaPath="../"
+	title="microIOC ADIO Main screen"
+	extStyle="sns"
+	>
+	
+ 	<horizontalPanel>
+		<column>			
+			<staticText size="large" >microIOC ADIO Main screen</staticText>
+		</column>
+	</horizontalPanel>
+	<horizontalPanel caption="Card selector">
+		<column width="50%">		
+			<staticText>ADC card number</staticText>		
+		</column>
+		<column width="50%">
+			<mux>	
+				<sequence name="ADC card 1" selected="true">
+					<macroValuePair macroName="$(ANAME)" macroValue="aio0"/>
+				</sequence>
+				<sequence name="ADC card 2">
+					<macroValuePair macroName="$(ANAME)" macroValue="aio1"/>
+				</sequence>
+				<sequence name="ADC card 3">
+					<macroValuePair macroName="$(ANAME)" macroValue="aio2"/>
+				</sequence>
+			</mux>
+		</column>
+	</horizontalPanel>
+ 
+ 	<panel caption="ADC signals">
+		<row>
+			<column>
+ 				<horizontalPanel caption="Digital inputs" width="1024">
+					<column>
+						<staticText>DI0:</staticText>
+					</column>
+						<column>
+							<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_0_GET" />
+						</column>
+					<column>
+						<staticText>DI1:</staticText>
+					</column>
+					<column>
+						<bitControl controlPV="ADIO:DIG_$(ANAME)_18_1_GET" startBit="0" endBit="0" size="small"/> 		
+					</column>
+					<column>
+						<staticText>DI2:</staticText>
+					</column>
+					<column>
+							<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_2_GET" />
+					</column>
+					<column>
+						<staticText>DI3:</staticText>
+					</column>
+					<column>
+							<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_3_GET" />
+					</column>	
+					<column>
+						<staticText>DI4:</staticText>
+					</column>
+					<column>
+						<bitControl controlPV="ADIO:DIG_$(ANAME)_18_4_GET" startBit="0" endBit="0" size="small"/> 		
+					</column>
+					<column>
+						<staticText>DI5:</staticText>
+					</column>
+					<column>
+						<bitControl controlPV="ADIO:DIG_$(ANAME)_18_5_GET" startBit="0" endBit="0" size="small"/> 		
+					</column>
+					<column>
+						<staticText>DI6:</staticText>
+					</column>
+					<column>
+						<bitControl controlPV="ADIO:DIG_$(ANAME)_18_6_GET" startBit="0" endBit="0" size="small"/> 		
+					</column>
+					<column>
+						<staticText>DI7:</staticText>
+					</column>
+					<column>
+						<bitControl controlPV="ADIO:DIG_$(ANAME)_18_7_GET" startBit="0" endBit="0" size="small"/>
+					</column>	
+				</horizontalPanel>
+
+				<horizontalPanel caption="Digital outputs" width="1024">
+					<column>
+						<staticText>DO0:</staticText>
+					</column>
+					<column width="12">
+						<messageButton readbackPV="ADIO:DIG_$(ANAME)_19_0_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_0_SET">
+							<on caption="ON" value="1"></on>
+							<off caption="OFF" value="0"></off>
+						</messageButton>
+					</column>
+					<column>
+						<staticText>DO1:</staticText>
+					</column>
+					<column width="12">
+						<messageButton readbackPV="ADIO:DIG_$(ANAME)_19_1_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_1_SET">
+							<on caption="ON" value="1"></on>
+							<off caption="OFF" value="0"></off>
+						</messageButton>
+					</column>
+						<column>
+							<staticText>DO2:</staticText>
+						</column>
+					<column width="12">
+						<messageButton readbackPV="ADIO:DIG_$(ANAME)_19_2_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_2_SET">
+							<on caption="ON" value="1"></on>
+							<off caption="OFF" value="0"></off>
+						</messageButton>
+					</column>
+						<column>
+							<staticText>DO3:</staticText>
+						</column>
+					<column width="12">
+						<messageButton readbackPV="ADIO:DIG_$(ANAME)_19_3_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_3_SET">
+							<on caption="ON" value="1"></on>
+							<off caption="OFF" value="0"></off>
+						</messageButton>
+					</column>
+						<column>
+							<staticText>DO4:</staticText>
+						</column>
+					<column width="12">
+						<messageButton readbackPV="ADIO:DIG_$(ANAME)_19_4_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_4_SET">
+							<on caption="ON" value="1"></on>
+							<off caption="OFF" value="0"></off>
+						</messageButton>
+					</column>
+						<column>
+							<staticText>DO5:</staticText>
+						</column>
+					<column width="12">
+						<messageButton readbackPV="ADIO:DIG_$(ANAME)_19_5_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_5_SET">
+							<on caption="ON" value="1"></on>
+							<off caption="OFF" value="0"></off>
+						</messageButton>
+					</column>
+						<column>
+							<staticText>DO6:</staticText>
+						</column>
+					<column width="12">
+						<messageButton readbackPV="ADIO:DIG_$(ANAME)_19_6_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_6_SET">
+							<on caption="ON" value="1"></on>
+							<off caption="OFF" value="0"></off>
+						</messageButton>
+					</column>
+						<column>
+							<staticText>DO7:</staticText>
+						</column>
+					<column width="12">
+						<messageButton readbackPV="ADIO:DIG_$(ANAME)_19_7_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_7_SET">
+							<on caption="ON" value="1"></on>
+							<off caption="OFF" value="0"></off>
+						</messageButton>
+					</column>
+				</horizontalPanel>
+			</column>
+			<column>
+				<panel caption="Analog inputs" width="512">
+					<row>
+						<column>
+							<staticText>AI0:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_0_GET" />
+						</column>
+						<column>
+							<staticText>AI1:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_1_GET" />
+						</column>
+						<column>
+							<staticText>AI2:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_2_GET" />
+						</column>
+						<column>
+							<staticText>AI3:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_3_GET" />
+						</column>
+					</row>	
+					<row>
+						<column>
+							<staticText>AI4:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_4_GET" />
+						</column>
+						<column>
+							<staticText>AI5:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_5_GET" />
+						</column>
+						<column>
+							<staticText>AI6:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_6_GET" />
+						</column>
+						<column>
+							<staticText>AI7:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_7_GET" />
+						</column>
+					</row>	
+					<row>
+						<column>
+							<staticText>AI8:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_8_GET" />
+						</column>
+						<column>
+							<staticText>AI9:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_9_GET" />
+						</column>
+						<column>
+							<staticText>AI10:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_10_GET" />
+						</column>
+						<column>
+							<staticText>AI11:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_11_GET" />
+						</column>
+					</row>	
+					<row>
+						<column>
+							<staticText>AI12:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_12_GET" />
+						</column>
+						<column>
+							<staticText>AI13:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_13_GET" />
+						</column>
+						<column>
+							<staticText>AI14:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_14_GET" />
+						</column>
+						<column>
+							<staticText>AI15:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_15_GET" />
+						</column>
+					</row>	
+				</panel>
+			</column>
+		</row>
+		<row>
+			<column colspan="2">
+				<horizontalPanel caption="Analog outputs" width="100%">	
+					<column>
+						<staticText>AO0:</staticText>
+					</column>
+					<column>
+						<textEntry controlPV="ADIO:ANA_$(ANAME)_16_SET"/>			
+					</column>
+					<column>
+						<staticText>AO1:</staticText>
+					</column>
+					<column>
+						<textEntry controlPV="ADIO:ANA_$(ANAME)_17_SET"/>			
+					</column>
+				</horizontalPanel>
+			</column>	
+		</row>
+	</panel>
+
+</caml>

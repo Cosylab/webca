@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:complexType name="wheelSwitch_">		
+		<xs:complexContent>			
+			<xs:restriction base="control">				
+				<xs:attribute name="readbackPV" type="xs:string" use="prohibited"/>
+			</xs:restriction>				
+		</xs:complexContent>	
+</xs:complexType>	
+
+	
+<xs:element name="wheelSwitch">
+	<xs:complexType>		
+		<xs:complexContent>			
+			<xs:extension base="wheelSwitch_">								
+				<xs:attribute name="displayFormat" type="xs:string"/>
+			</xs:extension>				
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>	
+	
+</xs:schema>

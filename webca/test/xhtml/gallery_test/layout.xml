@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl"?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../" extStyle="abc"/>
+</head>
+<body>
+
+	<caml:verticalPanel caption="verticalPanel 1">
+		<caml:row>
+			<caml:staticText> verticalPanel 1, row 1 </caml:staticText>
+		</caml:row>		
+		<caml:row>
+			<caml:staticText> verticalPanel 1, row 2 </caml:staticText>
+		</caml:row>				
+	</caml:verticalPanel>	
+
+	<caml:verticalPanel caption="verticalPanel 2">
+		<caml:row>
+			<caml:staticText> verticalPanel 2, row 1 </caml:staticText>
+		</caml:row>		
+		<caml:row>
+			<caml:staticText> verticalPanel 2, row 2 </caml:staticText>
+		</caml:row>	
+		<caml:row>
+			<caml:staticText> verticalPanel 2, row 3 </caml:staticText>
+		</caml:row>			
+		<caml:row>
+			<caml:staticText> verticalPanel 2, row 4 </caml:staticText>
+		</caml:row>			
+		<caml:row>
+			<caml:staticText> verticalPanel 2, row 5 </caml:staticText>
+		</caml:row>			
+		<caml:row>
+			<caml:staticText> verticalPanel 2, row 6 </caml:staticText>
+		</caml:row>																
+	</caml:verticalPanel>		
+
+	<caml:horizontalPanel caption="horizontalPanel 1">
+		<caml:column>
+			<caml:staticText> horizontalPanel 1, column 1 </caml:staticText>
+		</caml:column>		
+		<caml:column>
+			<caml:staticText> horizontalPanel 1, column 2 </caml:staticText>
+		</caml:column>				
+	</caml:horizontalPanel>		
+	
+	<caml:horizontalPanel caption="horizontalPanel 2">
+		<caml:column>
+			<caml:staticText> horizontalPanel 2, column 1 </caml:staticText>
+		</caml:column>		
+		<caml:column>
+			<caml:staticText> horizontalPanel 2, column 2 </caml:staticText>
+		</caml:column>	
+		<caml:column>
+			<caml:staticText> horizontalPanel 2, column 3 </caml:staticText>
+		</caml:column>					
+	</caml:horizontalPanel>	
+	
+	<caml:verticalPanel caption="complicated vertical panel" width="50%">
+		<caml:row caption="Complicated row">
+			<caml:staticText> verticalPanel 3, row 1. This row has horizontal panel inside. </caml:staticText>
+			<caml:horizontalPanel caption="embedded horizontal panel">
+				<caml:column>
+					<caml:staticText> horizontalPanel 2, column 1 </caml:staticText>
+				</caml:column>		
+				<caml:column>
+					<caml:staticText> horizontalPanel 2, column 2 </caml:staticText>
+				</caml:column>	
+				<caml:column>
+					<caml:staticText> horizontalPanel 2, column 3 </caml:staticText>
+				</caml:column>					
+			</caml:horizontalPanel>							
+		</caml:row>		
+		<caml:row>
+			<caml:staticText> verticalPanel 3, row 2 </caml:staticText>
+		</caml:row>	
+		<caml:row>
+			<caml:staticText> verticalPanel 3, row 3 </caml:staticText>
+		</caml:row>						
+	</caml:verticalPanel>	
+	
+	<caml:verticalPanel caption="fixed width verticalPanel" width="300px">
+		<caml:row>
+			<caml:staticText> verticalPanel 4, row 1 </caml:staticText>
+		</caml:row>		
+		<caml:row>
+			<caml:staticText> verticalPanel 4, row 2 </caml:staticText>
+		</caml:row>	
+		<caml:row>
+			<caml:staticText> verticalPanel 4, row 3 </caml:staticText>
+		</caml:row>	
+		<caml:row>
+			<caml:staticText> verticalPanel 4, row 4 </caml:staticText>
+		</caml:row>							
+	</caml:verticalPanel>	
+		
+	<caml:panel width="80%">
+		<caml:row>
+			<caml:column width="70%">
+				<caml:verticalPanel caption="verticalPanel 5 with width 70%">
+					<caml:row>
+						<caml:staticText> verticalPanel 5, row 1 </caml:staticText>
+					</caml:row>		
+					<caml:row>
+						<caml:staticText> verticalPanel 5, row 2 </caml:staticText>
+					</caml:row>				
+				</caml:verticalPanel>	
+			</caml:column>	
+			<caml:column>
+				<caml:verticalPanel caption="verticalPanel 6">
+					<caml:row>
+						<caml:staticText> verticalPanel 6, row 1 </caml:staticText>
+					</caml:row>		
+					<caml:row>
+						<caml:staticText> verticalPanel 6, row 2 </caml:staticText>
+					</caml:row>	
+					<caml:row>
+						<caml:staticText> verticalPanel 6, row 3 </caml:staticText>
+					</caml:row>			
+					<caml:row>
+						<caml:staticText> verticalPanel 6, row 4 </caml:staticText>
+					</caml:row>			
+					<caml:row>
+						<caml:staticText> verticalPanel 6, row 5 </caml:staticText>
+					</caml:row>			
+					<caml:row>
+						<caml:staticText> verticalPanel 6, row 6 </caml:staticText>
+					</caml:row>																
+				</caml:verticalPanel>		
+			</caml:column>
+			<caml:column>
+				<caml:verticalPanel caption="verticalPanel 7">
+					<caml:row>
+						<caml:staticText> verticalPanel 7, row 1 </caml:staticText>
+					</caml:row>		
+					<caml:row>
+						<caml:staticText> verticalPanel 7, row 2 </caml:staticText>
+					</caml:row>
+					<caml:row>
+						<caml:staticText> verticalPanel 7, row 3 </caml:staticText>
+					</caml:row>								
+				</caml:verticalPanel>			
+			</caml:column>			
+		</caml:row>
+	</caml:panel>	
+	<caml:panel caption="panel 2">	
+		<caml:row>
+			<caml:column>
+				<caml:verticalPanel caption="verticalPanel 8">
+					<caml:row>
+						<caml:staticText> verticalPanel 8, row 1 </caml:staticText>
+					</caml:row>		
+					<caml:row>
+						<caml:staticText> verticalPanel 8, row 2 </caml:staticText>
+					</caml:row>				
+				</caml:verticalPanel>	
+			</caml:column>	
+			<caml:column>
+				<caml:verticalPanel caption="verticalPanel 9">
+					<caml:row>
+						<caml:staticText> verticalPanel 9, row 1 </caml:staticText>
+					</caml:row>		
+					<caml:row>
+						<caml:staticText> verticalPanel 9, row 2 </caml:staticText>
+					</caml:row>	
+					<caml:row>
+						<caml:staticText> verticalPanel 9, row 3 </caml:staticText>
+					</caml:row>			
+					<caml:row>
+						<caml:staticText> verticalPanel 9, row 4 </caml:staticText>
+					</caml:row>			
+					<caml:row>
+						<caml:staticText> verticalPanel 9, row 5 </caml:staticText>
+					</caml:row>			
+					<caml:row>
+						<caml:staticText> verticalPanel 9, row 6 </caml:staticText>
+					</caml:row>																
+				</caml:verticalPanel>		
+			</caml:column>
+			<caml:column width="60%">
+				<caml:panel caption="embedded panel">
+					<caml:row>
+						<caml:column width="30%">
+							<caml:verticalPanel>
+								<caml:row>
+									<caml:staticText> verticalPanel 5, row 1 </caml:staticText>
+								</caml:row>		
+								<caml:row>
+									<caml:staticText> verticalPanel 5, row 2 </caml:staticText>
+								</caml:row>				
+							</caml:verticalPanel>	
+						</caml:column>	
+						<caml:column>
+							<caml:verticalPanel caption="verticalPanel 6">
+								<caml:row>
+									<caml:staticText> verticalPanel 6, row 1 </caml:staticText>
+								</caml:row>		
+								<caml:row>
+									<caml:staticText> verticalPanel 6, row 2 </caml:staticText>
+								</caml:row>	
+								<caml:row>
+									<caml:staticText> verticalPanel 6, row 3 </caml:staticText>
+								</caml:row>			
+								<caml:row>
+									<caml:staticText> verticalPanel 6, row 4 </caml:staticText>
+								</caml:row>			
+								<caml:row>
+									<caml:staticText> verticalPanel 6, row 5 </caml:staticText>
+								</caml:row>			
+								<caml:row>
+									<caml:staticText> verticalPanel 6, row 6 </caml:staticText>
+								</caml:row>																
+							</caml:verticalPanel>		
+						</caml:column>
+						<caml:column>
+							<caml:verticalPanel caption="verticalPanel 7">
+								<caml:row>
+									<caml:staticText> verticalPanel 7, row 1 </caml:staticText>
+								</caml:row>		
+								<caml:row>
+									<caml:staticText> verticalPanel 7, row 2 </caml:staticText>
+								</caml:row>
+								<caml:row>
+									<caml:staticText> verticalPanel 7, row 3 </caml:staticText>
+								</caml:row>								
+							</caml:verticalPanel>			
+						</caml:column>			
+					</caml:row>
+					<caml:row>
+						<caml:column colspan="3">
+							<caml:horizontalPanel caption="horizontalPanel 1">
+								<caml:column>
+									<caml:staticText> horizontalPanel 1, column 1 </caml:staticText>
+								</caml:column>		
+								<caml:column>
+									<caml:staticText> horizontalPanel 1, column 2 </caml:staticText>
+								</caml:column>	
+								<caml:column>
+									<caml:staticText> horizontalPanel 1, column 3 </caml:staticText>
+								</caml:column>											
+								<caml:column>
+									<caml:staticText> horizontalPanel 1, column 4 </caml:staticText>
+								</caml:column>																			
+							</caml:horizontalPanel>
+						</caml:column>	
+					</caml:row>					
+				</caml:panel>
+			</caml:column>			
+		</caml:row>
+		<caml:row>
+			<caml:column colspan="3">
+				<caml:horizontalPanel caption="horizontalPanel 1">
+					<caml:column>
+						<caml:staticText> horizontalPanel 1, column 1 </caml:staticText>
+					</caml:column>		
+					<caml:column>
+						<caml:staticText> horizontalPanel 1, column 2 </caml:staticText>
+					</caml:column>				
+				</caml:horizontalPanel>
+			</caml:column>	
+		</caml:row>	
+		<caml:row>
+			<caml:column colspan="2">
+				<caml:horizontalPanel caption="horizontalPanel 1">
+					<caml:column>
+						<caml:staticText> horizontalPanel 1, column 1 </caml:staticText>
+					</caml:column>		
+					<caml:column>
+						<caml:staticText> horizontalPanel 1, column 2 </caml:staticText>
+					</caml:column>				
+				</caml:horizontalPanel>
+			</caml:column>	
+		</caml:row>			
+	</caml:panel>	
+</body>
+</html>

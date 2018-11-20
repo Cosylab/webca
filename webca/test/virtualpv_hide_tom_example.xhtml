@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///Library/EPICS/CAML/xsl/webca.xsl" type="text/xsl" ?>
+
+<!-- start html element and define caml namespace -->
+<html xmlns:caml="http://webca.cosylab.com">
+  
+    <head>
+        <title>Magnets Example</title>
+        <style>
+        table.data {background-color: #DDD; border-collapse: collapse;}
+        th, td { margin: 5px; border-style: solid; border-width: 1.0px; border-color: black; padding-left: 10px; padding-right: 10px; }
+        th { padding-left: 2em; padding-right: 2em; background-color: #BBB; }
+        td.numeric { text-align: right; color: maroon; padding-left: 2em; }
+        td.plain { margin: 0px; border-style: none; }
+        </style>
+        <!-- this is required for CAML, some initializaion has to be done, e.g. to instantiate plugin -->
+        <caml:head webcaPath="file:///Library/EPICS/CAML/" pendEvents="30" pendEventsPeriodMs="100"/>
+    </head>    
+    <body>
+        <table class="data">
+            <caption>MEBT Correctors</caption>
+            <tr>
+                <td>DCH 01</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH01:I" /></td> 
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH01:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+            <tr>
+                <td>DCH 04</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH04:I" /></td> 
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH04:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+            <tr>
+                <td>DCH 05</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH05:I" /></td>
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH05:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+            <tr>
+                <td>DCH 10</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH10:I" /></td>
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH10:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+            <tr>
+                <td>DCH 11</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH11:I" /></td>
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH11:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+            <tr>
+                <td>DCH 14</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH14:I" /></td>
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH14:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+        </table>
+        <!--
+        <span extStyle="display: none;">
+        -->
+        <caml:virtualPV name="bpm1xy" init="0" eval="(pvs.MEBT_Diag:BPM01:xAvg + pvs.MEBT_Diag:BPM01:yAvg)/2" scan="1000" />
+        <!--
+        </span>
+        -->
+		<table>
+			<tr> <th>PV</th> <th>Value</th> </tr>
+			<tr> <td>MEBT_Diag:BPM01:xAvg</td> <td><caml:textUpdate readbackPV="MEBT_Diag:BPM01:xAvg" displayFormat="v(0.000) u t(mm-dd-yyyy HH:MM:ss)" /></td> </tr>
+			<tr> <td>MEBT_Diag:BPM01:yAvg</td> <td><caml:textUpdate readbackPV="MEBT_Diag:BPM01:yAvg" displayFormat="v(0.000) u t(mm-dd-yyyy HH:MM:ss)" /></td> </tr>
+			<tr> <td>bpm1xy</td> <td><caml:textUpdate readbackPV="bpm1xy" displayFormat="v(0.000) u t(mm-dd-yyyy HH:MM:ss)" /></td> </tr>
+		</table>
+        <div>
+			<caml:xyChart flavor="advanced" xAxisLabel="Axis X label " yAxisLabel="Axis Y label ">
+				<caml:xySeries Y-PVname="bpm1xy" name="Average" />
+				<caml:xySeries Y-PVname="MEBT_Diag:BPM01:xAvg" name="X" />
+				<caml:xySeries Y-PVname="MEBT_Diag:BPM01:yAvg" name="Y" />
+			</caml:xyChart>	 
+        </div>	
+    </body>
+</html>

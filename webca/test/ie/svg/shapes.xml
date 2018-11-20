@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../" pendEvents="5" pendEventsPeriodMs="100" extStyle="sns"/>
+</head>
+<body onload="/*alert('loaded!')*/" onresize="/*alert('resize!')*/">
+
+    This is normal html text.
+
+    <embed width="222" height="300" name="printable_map" type="image/svg+xml">
+<svg viewBox="0 0 270 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="mainlayer">
+		<rect fill="red" stroke="black" x="15" y="15" width="100" height="50"/>
+	</g>
+</svg>
+    
+    </embed>
+<!--   
+-->
+
+</body>
+</html>

@@ -1,0 +1,501 @@
+
+/***************************************************
+Common stuff
+/****************************************************/
+
+/***************************************************
+Size definition
+/****************************************************/
+
+
+.small{
+	     font-size:small
+}
+
+.medium{
+	     font-size:medium
+}
+
+.large{
+	     font-size:large
+}
+
+
+/***************************************************
+Data type definition
+/****************************************************/
+
+.text{
+	text-align:left;
+}
+
+.numeric{
+	text-align:right;
+}
+
+/***************************************************
+Background color definition
+/****************************************************/
+
+.textEntry {
+    background-color: #80c0ff; /* light blue */
+}
+
+.textUpdate {
+    background-color: #60ff60; /* light green */
+}
+
+/* Mozilla 2.0.0.16: dropdown menu activation button refreshes nicely only
+ * if background is white. 
+ */
+.mux {
+	background-color: white;
+}
+
+table.wheelSwitch td {
+	background-color: #B0B0F0;
+}
+
+table.wheelSwitch td.wheelSwitchSelected {
+	background-color: #8080D0;
+}
+
+.wheelSwitchButtonImage.pressed {
+	background-color: #404040;
+}
+
+.wheelSwitchButtonImage.disabled {
+	background-color: #808080;
+}
+
+table.bitControl td {
+	background-color: gray;
+}
+
+table.bitControl td.bitButtonSelected {
+	background-color: green;
+}
+
+/***************************************************
+Foreground color definition
+/****************************************************/
+.staticText,
+.textEntry,
+.textUpdate,
+.gauge.tickText,
+.gauge.tick {
+
+     color:black;	     
+}
+
+/***************************************************
+Alarm colors
+/****************************************************/
+.alarmFg.invalid, 
+.yui-skin-sam .yui-button.alarmFg.invalid button, /*Yahoo Button overrided definitions*/
+.yui-buttongroup.alarmFg.invalid .yui-button .first-child button  /*Yahoo CheckButton overrided definitions*/
+{
+	     color:white ! important; 
+	     fill:white ! important;
+}
+.alarmBg.invalid {
+	background-color: white ! important;
+}
+
+.alarmFg.major,
+.yui-skin-sam .yui-button.alarmFg.major button,  /*Yahoo Button overided definitions*/
+.yui-buttongroup.alarmFg.major .yui-button .first-child button /*Yahoo CheckButton overrided definitions*/
+{
+	     color:red ! important;
+	     fill:red ! important;	     
+}
+.alarmBg.major {
+	background-color:red ! important;
+}
+
+.alarmFg.minor,
+.yui-skin-sam .yui-button.alarmFg.minor button, /*Yahoo Button overrided definitions*/
+.yui-buttongroup.alarmFg.minor .yui-button .first-child button /*Yahoo CheckButton overrided definitions*/
+{
+	     color:yellow ! important;
+	     fill:yellow ! important;	     	     
+}
+.alarmBg.minor {
+	background-color:yellow ! important;
+}
+
+/***************************************************
+Alarm colors for specific components
+/****************************************************/
+
+.textEntry.alarmFg.invalid {
+    background-color: #000080;
+}
+
+.textEntry.alarmFg.major {
+    background-color: #80c0ff;
+}
+
+.textEntry.alarmFg.minor {
+    background-color: #000080;
+}
+
+.textUpdate.alarmFg.invalid {
+    background-color: #008000;
+}
+
+.textUpdate.alarmFg.major {
+    background-color: #60ff60;
+}
+
+.textUpdate.alarmFg.minor {
+    background-color: #008000;
+}
+
+/***************************************************
+Other colors
+/****************************************************/
+.userdefined {
+	     color:darkmagenta ! important;
+	     fill:darkmagenta ! important;	     	     
+}
+
+.constant {
+	     color:blue ! important;
+	     fill:blue ! important;	     	     
+}
+
+.special {
+	     color:cyan ! important;
+	     fill:cyan ! important;	     	     
+}
+
+.error {
+	     color:white;
+	     background-color:darkred;
+}
+
+/***************************************************
+Global definitions
+/****************************************************/
+
+.hidden {
+    display: none;
+}
+
+/***************************************************
+Layout definition
+/****************************************************/
+table.caml, .caml table {
+	border-spacing: 0px;
+	table-layout: automatic
+}
+
+/*
+td.column,
+tr.row
+{
+        padding: 0 0 0 0;
+        vertical-align: top
+}
+*/
+/***************************************************
+Components definition
+/****************************************************/
+
+/***************************************************
+StaticText definition
+/****************************************************/
+
+.staticText {
+    text-align: left;
+	font-family: courier;
+}
+.staticText.alignRight {
+    text-align: right;
+}
+
+/***************************************************
+textEntry definition
+/****************************************************/
+
+.textEntry {
+    font-family:courier;
+	width: 100%;
+	overflow: hidden;
+}
+
+/***************************************************
+textUpdate definition
+/****************************************************/
+
+.textUpdate {
+    font-family:courier;
+	overflow: hidden;
+}
+
+/***************************************************
+radioButton definition
+/****************************************************/
+
+.radioButton{
+	text-align:left;
+}
+
+/***************************************************
+WheelSwitch definition
+/****************************************************/
+
+.gradwhite img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.gradwhite input {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+.gradwhite * {
+  position: relative;
+}
+
+.box {
+  border: solid #333366 1px;
+  float: left;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.small .box {
+  min-height: 30px;
+}
+
+.medium .box {
+  min-height: 40px;
+}
+
+.large .box {
+  min-height: 50px;
+}
+
+
+table.wheelSwitch td{
+	padding: 0px;
+	min-width: 1em;
+}
+
+table.wheelSwitch td.wheelSwitchSelected{
+	padding: 0px;
+}
+
+.wheelSwitchText {
+  /* needed to center text */
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  height: 1em;
+  margin-top:-0.5em;
+  
+  font-family: sans;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.wheelSwitchUpDownButton {
+	padding: 0px;
+}
+
+.wheelSwitchButtonImage {
+}
+
+.small img.wheelSwitchButtonImage {
+	width: 1em;
+	height: 14px;
+}
+.small .wheelSwitchUpDownButton {
+	width: 1em;
+}
+
+.medium img.wheelSwitchButtonImage {
+	width: 19px;
+	height: 19px;
+}
+.medium .wheelSwitchUpDownButton {
+	width: 19px;
+}
+
+.large img.wheelSwitchButtonImage {
+	width: 24px;
+	height: 24px;
+}
+.large .wheelSwitchUpDownButton {
+	width: 24px;
+}
+
+.wheelSwitchUpDownButton td {
+	border: solid #333366 1px;
+	align: center;
+}
+
+/***************************************************
+BitControl definition
+/****************************************************/
+
+table.bitControl td {
+	padding: 0px;
+	min-width: 1em;
+}
+
+table.bitControl td.bitButtonSelected {
+	padding: 0px;
+}
+
+/***************************************************
+SVG definition
+/****************************************************/
+
+svg {
+ width:100%;
+}
+
+/***************************************************
+Slider definition
+/****************************************************/
+
+.slider.thumbMain{
+		stroke:none;
+		fill:#6666FF;
+}
+
+.slider.thumbUpperLine{
+		stroke:white;
+		fill:none;
+}
+
+.slider.thumbLowerLine{
+		stroke:black;
+		fill:none;
+}
+
+.slider.background{
+		fill:#c0c0c0;
+}
+
+.slider.ticks{
+		stroke:gray;
+		fill:none;
+}
+
+.slider.blackLine{
+		stroke:black;
+		stroke-width:2;
+}
+
+.slider.whiteLine{
+		stroke:white;
+		stroke-width:2;
+}
+
+.slider.text{
+		font-family: Times, sans;
+		stroke:black;
+        stroke-width:0.1;
+}
+
+/***************************************************
+Gauge definition
+/****************************************************/
+
+.gauge {
+	width: 100%;
+	height: 100%;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+.gauge.background {
+		fill:#B0B0F0;
+		stroke:black;
+        stroke-width:1;
+}
+
+.gauge.text {
+		font-family: Times, sans;
+}
+
+.gauge.tickText {
+		font-family: Times, sans;
+		fill: black;
+}
+
+.gauge.tick {
+		font-family: Times, sans;
+		fill: black;
+		stroke:black;
+        stroke-width:1pt;
+}
+
+.gauge.scale {
+		fill:#e0e0e0;
+		stroke:black;
+        stroke-width:1;
+}
+
+.gauge.needle {
+		fill:#00c000;
+		stroke:black;
+        stroke-width:1;
+}
+
+/***************************************************
+RelatedDisplay definition
+/****************************************************/
+
+.relatedDisplay {
+	text-align:left ! important;
+    position: relative;
+}
+
+.relatedDisplay .button {
+    border: 3px outset grey;
+    width: 100%;
+    height: 100%; 
+    margin-left: -3px;
+    margin-top: -3px;
+    position: absolute;
+    text-align: center;
+	overflow: hidden;
+}
+
+.relatedDisplay input.image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+/***************************************************
+IntensityPlot definition
+/****************************************************/
+
+.intensityPlot {
+	display: block;
+	border: solid black 1pt;
+}
+
+/***************************************************
+VirtualPV definition
+/****************************************************/
+
+.virtualPV td {
+    padding: 0px 1px;
+    white-space: nowrap;    
+}

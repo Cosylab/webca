@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../" readOnly="auto"/>
+</head>
+<body>
+    <caml:virtualPV name="virtual1" init="val = 0; this.writable = false;"/>
+
+    <caml:virtualPV name="virtual2" init="val = 1; this.writable = true;"/>
+
+    <!-- Alternate writable status at 5s interval -->
+    <caml:virtualPV name="virtual3"
+        init="val = 0; this.writable = false;"
+        eval="val++; this.writable = (floor(val) % 2) == 0; alarm=MINOR;"
+        scan="5000"
+    />
+
+    <!-- Alternate writable status at 5s interval, value 0 or 1 -->
+    <caml:virtualPV name="virtual4"
+        init="val = 0; this.writable = false;"
+        eval="val = ((floor(val) + 1) % 2); this.writable = val == 0; alarm=MINOR;"
+        scan="5000"
+    />
+
+    Readonly:<caml:textEntry controlPV="virtual1"/>
+    Read/write:<caml:textEntry controlPV="virtual2"/>
+    Alternating:<caml:textEntry controlPV="virtual4"/>
+    Not connected:<caml:textEntry controlPV="none"/>
+
+    Readonly:<caml:wheelSwitch controlPV="virtual1"/>
+    Read/write:<caml:wheelSwitch controlPV="virtual2"/>
+    Alternating:<caml:wheelSwitch controlPV="virtual3"/>
+    Not connected:<caml:wheelSwitch controlPV="none"/>
+
+    Readonly:<caml:bitControl controlPV="virtual1" startBit="0" endBit="7"/>
+    Read/write:<caml:bitControl controlPV="virtual2" startBit="0" endBit="7"/>
+    Alternating:<caml:bitControl controlPV="virtual3" startBit="0" endBit="7"/>
+    Not connected:<caml:bitControl controlPV="none" startBit="0" endBit="7"/>
+
+    Readonly:<caml:slider controlPV="virtual1"/>
+    Read/write:<caml:slider controlPV="virtual2"/>
+    Alternating:<caml:slider controlPV="virtual3"/>
+    Not connected:<caml:slider controlPV="none"/>
+
+    Readonly:<caml:messageButton controlPV="virtual1"><caml:on caption="ON " value="1"/><caml:off caption="OFF" value="0"/></caml:messageButton>
+    Read/write:<caml:messageButton controlPV="virtual2"><caml:on caption="ON " value="1"/><caml:off caption="OFF" value="0"/></caml:messageButton>
+    Alternating:<caml:messageButton controlPV="virtual4"><caml:on caption="ON " value="1"/><caml:off caption="OFF" value="0"/></caml:messageButton>
+    Not connected:<caml:menuButton controlPV="none"><caml:on caption="ON " value="1"/><caml:off caption="OFF" value="0"/></caml:menuButton>
+    <br/>
+
+    Readonly:<caml:radioButton controlPV="virtual1"><caml:radioButtonItem name="ON " value="1"/><caml:radioButtonItem name="OFF" value="0"/></caml:radioButton>
+    Read/write:<caml:radioButton controlPV="virtual2"><caml:radioButtonItem name="ON " value="1"/><caml:radioButtonItem name="OFF" value="0"/></caml:radioButton>
+    Alternating:<caml:radioButton controlPV="virtual4"><caml:radioButtonItem name="ON " value="1"/><caml:radioButtonItem name="OFF" value="0"/></caml:radioButton>
+    Not connected:<caml:radioButton controlPV="none"><caml:radioButtonItem name="ON " value="1"/><caml:radioButtonItem name="OFF" value="0"/></caml:radioButton>
+    <br/>
+
+    Readonly:<caml:menuButton controlPV="virtual1"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Read/write:<caml:menuButton controlPV="virtual2"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Alternating:<caml:menuButton controlPV="virtual4"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Not connected:<caml:menuButton controlPV="none"> <caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    <br/>
+
+    readonly="true"<br/>
+    Readonly:<caml:menuButton controlPV="virtual1" readOnly="true"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Read/write:<caml:menuButton controlPV="virtual2" readOnly="true"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Alternating:<caml:menuButton controlPV="virtual4" readOnly="true"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Not connected:<caml:menuButton controlPV="none" readOnly="true"> <caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    <br/>
+
+    readonly="false"<br/>
+    Readonly:<caml:menuButton controlPV="virtual1" readOnly="false"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Read/write:<caml:menuButton controlPV="virtual2" readOnly="false"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Alternating:<caml:menuButton controlPV="virtual4" readOnly="false"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Not connected:<caml:menuButton controlPV="none" readOnly="false"> <caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    <br/>
+
+    readonly="auto"<br/>
+    Readonly:<caml:menuButton controlPV="virtual1" readOnly="auto"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Read/write:<caml:menuButton controlPV="virtual2" readOnly="auto"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Alternating:<caml:menuButton controlPV="virtual4" readOnly="auto"><caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    Not connected:<caml:menuButton controlPV="none" readOnly="auto"> <caml:menuButtonItem name="ON " value="1"/><caml:menuButtonItem name="OFF" value="0"/></caml:menuButton>
+    
+</body>
+</html>

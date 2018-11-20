@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude"	
+	
+	webcaPath=""
+	title="WebCa Test"
+	extStyle="sns"
+	pendEvents="5"
+	pendEventsPeriodMs="30"
+	>
+	
+	<tabView>
+		<tab name="tab1" selected="true">
+			<horizontalPanel>
+				<column>
+					<staticText extStyle="asp" size="large">this is content of tab1</staticText>
+					<!--image src="logo_cosylab.gif" alt="Cosylab Logo"></image>
+					<image src="epicsLogo.gif" alt="EPICS Logo"></image-->
+				</column>
+			</horizontalPanel>
+			<horizontalPanel>
+				<column>			
+					<tabView>
+						<tab name="subTab1">
+							<horizontalPanel>
+								<column>
+									<staticText extStyle="asp" size="large">this is content of subTab1</staticText>
+								</column>
+								<column>									
+									<html>
+										<![CDATA[
+												<fieldset><legend>This html is from xml</legend>
+												<p>Some example text</p>
+												<input type="button" value="xml button" onclick="showMe();"/>	
+												</fieldset>									
+											]]>
+				
+									</html>	
+									<javaScript>
+												function showMe(){
+													alert("This script was written in xml.");
+												}											
+									</javaScript>										
+								</column>
+							</horizontalPanel>	
+							<horizontalPanel>
+								<column caption="radio Button example">
+									<horizontalPanel>	
+										<column>								
+											<radioButton readbackPV="ai001" alarmSensitive="true" controlPV="ai001">
+												<radioButtonItem value="-300" name="less than minimum"/>
+												<radioButtonItem value="0" name="min"/>
+												<radioButtonItem value="50" name="medium"/>
+												<radioButtonItem value="100" name="full"/>	
+												<radioButtonItem value="700" name="beyond full"/>			
+											</radioButton>								
+										</column>							
+										<column>
+											<textUpdate
+												readbackPV="ai001"
+												dataType="numeric"		
+												alarmSensitive="true"
+												size="large"/>
+											<textUpdate
+												readbackPV="ai001"
+												dataType="numeric"		
+												alarmSensitive="true"
+												size="large"/>											
+										</column>	
+									</horizontalPanel>	
+									<horizontalPanel>	
+										<column>		
+											<radioButton readbackPV="enum" alarmSensitive="true" controlPV="enum">												
+											</radioButton>							
+										</column>										
+									</horizontalPanel>																		
+								</column>	
+								<column>
+								</column>		
+							</horizontalPanel>
+						</tab>
+					   <tab name="subTab2" selected="true">
+							<horizontalPanel>
+								<column>
+									<staticText extStyle="asp" size="large">this is content of subTab2</staticText>
+								</column>
+								<column width ="20%">
+									<menuButton readbackPV="ai001" controlPV="ai001" alarmSensitive="true">
+										<menuButtonItem value="-300" name="less than minimum"/>
+										<menuButtonItem value="0" name="minimum"/>
+										<menuButtonItem value="50" name="medium"/>
+										<menuButtonItem value="100" name="full"/>				
+										<menuButtonItem value="700" name="beyond full"/>										
+									</menuButton>									</column>
+								<column width ="20%">
+									<menuButton controlPV="enum" alarmSensitive="true"></menuButton>
+									<textUpdate
+										readbackPV="enum"
+										dataType="text"		
+										alarmSensitive="false"
+										size="large"/>																									
+								</column>
+								<!--column>
+									<slider  alarmSensitive="true" controlPV="ai001"></slider>
+								</column-->
+								<!--column>
+									<slider readbackPV="ai001" alarmSensitive="true" controlPV="ai001"></slider>									
+								</column-->	
+								<column width="30%" caption="WheelSwitch example">		
+									<wheelSwitch controlPV="ai001" displayFormat="+00.00E+00"/>					
+								</column>							
+								<column caption="MPS 001 controls">									
+									<horizontalPanel>
+										<column>												
+											<staticText extStyle="asp" size="large">On/off control</staticText>
+										</column>	
+										<column>	
+											<messageButton readbackPV="ai001" alarmSensitive="true" controlPV="ai001">
+												<on caption="Off" value="0"/>
+												<off caption="On" value="600"/>
+											</messageButton>																														
+										</column>	
+									</horizontalPanel>																													
+									<textUpdate
+										readbackPV="ai001.NAME"
+										dataType="text"		
+										alarmSensitive="false"
+										size="large"
+										/>					
+							
+									<textEntry		
+										controlPV="ai001"								
+										displayFormat="##0.000"/>												
+											
+									<textUpdate
+										readbackPV="ai001"
+										dataType="numeric"		
+										alarmSensitive="true"
+										size="large"
+										displayFormat="##0.000"/>	
+									
+									<!--wheelSwitch alarmSensitive="true" controlPV="ai001"/-->					
+								</column>													
+							</horizontalPanel>				
+												   					   						   
+						   	<horizontalPanel>
+				   				<column width="50%">
+									<slider
+										 readbackPV="ai002"										
+										 controlPV="ai001"
+										 displayFormat="#0.0"
+										 maxValue="650"
+										 minValue="-300"
+										 increment="0.001"										
+										 size="small"/>
+								</column>
+								<column width="50%">
+									<slider
+										 readbackPV="ai002"										
+										 controlPV="ai001"
+										 displayFormat="#0.0"
+										 maxValue="650"
+										 minValue="-300"
+										 increment="0.001"										
+										 size="small"/>
+								</column>	
+							</horizontalPanel>	
+							   						   						   
+						</tab>	
+					
+						<tab name="charts">	
+							<xi:include href="charts.xml"/>	
+						</tab>								
+						<tab name="layout">	
+							<horizontalPanel caption="Layout">	
+								<column  width="100%">	
+									<staticText>This tab shows how layout can be done in webCa.</staticText>
+								</column>	
+							</horizontalPanel>							
+							<xi:include href="layout.xml"/>	
+							
+						</tab>						
+						<tab name="wheelSwitch">	
+							<xi:include href="wheelSwitch.xml"/>	
+						</tab>
+						<tab name="textEntry">	
+							<xi:include href="textEntry.xml"/>	
+						</tab>		
+						
+						<tab name="buttons">	
+							<xi:include href="buttons.xml"/>	
+						</tab>											
+								
+						<tab name="slider">	
+							<xi:include href="slider.xml"/>	
+						</tab>
+						
+						<tab name="gauge">	
+							<xi:include href="jansa_gauge.xml"/>	
+						</tab>						
+																						 				
+					</tabView>
+				</column>	
+			</horizontalPanel>		
+		</tab>
+		<tab name="tab2">
+			<horizontalPanel caption="content caption">	
+				<column  width="100%">	
+					<staticText>content of tab2</staticText>
+				</column>	
+			</horizontalPanel>						
+			<horizontalPanel caption="Device selectors">		
+				<column>
+					<mux>
+						<sequence name="ai001">
+							<macroValuePair macroName="$(NAME)" macroValue="ai001"></macroValuePair>
+						</sequence>
+					    <sequence name="ai002">
+							<macroValuePair macroName="$(NAME)" macroValue="ai002"></macroValuePair>			
+					    </sequence>
+					    <sequence name="ai003" selected="true">
+							<macroValuePair macroName="$(NAME)" macroValue="ai003"></macroValuePair>
+					    </sequence>
+					    <sequence name="ai004">
+							<macroValuePair macroName="$(NAME)" macroValue="ai004"></macroValuePair>					 
+					    </sequence>			  
+					</mux>
+				</column>		
+			</horizontalPanel>					
+			<horizontalPanel>	
+				<column width="50%">
+					<horizontalPanel  caption="Device names">
+						<column  width="50%">				
+							<staticText  size="large">$(NAME) control</staticText>				
+						</column>				
+						<column>				
+							<staticText  size="large">$(NAME) </staticText>								
+						</column>								
+					</horizontalPanel>				
+					<horizontalPanel  caption="neki neki">				
+						<column width="50%">									
+							<textUpdate
+								readbackPV="$(NAME).NAME"
+								dataType="text"		
+								alarmSensitive="false"
+								size="small"/>					
+					
+							<textEntry		
+								controlPV="$(NAME)"
+								dataType="numeric"		
+								alarmSensitive="true"
+								size="large"/>	
+									
+						</column>
+						<column>	
+							<textUpdate
+								readbackPV="$(NAME).NAME"
+								dataType="text"		
+								alarmSensitive="false"
+								size="large"/>	
+							
+							<textUpdate
+								readbackPV="$(NAME)"
+								dataType="numeric"		
+								alarmSensitive="true"
+								size="small"/>	
+											
+							<textUpdate
+								readbackPV="string.NAME"
+								dataType="text"		
+								alarmSensitive="false"
+								size="large"/>	
+							
+							<textUpdate
+								readbackPV="string"
+								dataType="text"		
+								alarmSensitive="true"
+								size="large"/>	
+				
+							<textEntry		
+								controlPV="string"
+								dataType="text"		
+								alarmSensitive="false"
+								size="large"/>	
+							
+							<messageButton readbackPV="string" alarmSensitive="true" controlPV="string">
+								<on caption="string on" value="string 1 - off"/>
+								<off caption="string off" value="on value for string"/>
+							</messageButton>															
+						</column>					
+					</horizontalPanel>					
+		    	</column>
+			</horizontalPanel>	
+		</tab>
+	</tabView>																			
+</caml>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="virtualPV">
+	<xs:complexType>
+		<xs:complexContent>			
+			<xs:extension base="component">
+				<xs:choice minOccurs="0" maxOccurs="1">	
+					<xs:element ref="ctrl"/>
+				</xs:choice>	
+			
+		        <xs:attribute name="name" type="xs:string" use="required"/>
+		        <xs:attribute name="init" type="xs:string" use="required"/>
+		        <xs:attribute name="eval" type="xs:string" default=""/>
+		        <xs:attribute name="scan" type="xs:string" default="passive"/>
+                <xs:attribute name="alarmSensitive" type="xs:boolean" default="true"/>	
+                <xs:attribute name="display" type="xs:boolean" default="false"/>	
+			</xs:extension>		
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>	   	   
+
+<xs:element name="ctrl">
+	<xs:complexType>
+		<xs:attribute name="units" type="xs:string"/>
+		<xs:attribute name="precision" type="xs:decimal"/>		
+		<xs:attribute name="upperDisplayLimit" type="xs:decimal"/>
+		<xs:attribute name="lowerDisplayLimit" type="xs:decimal"/>
+		<xs:attribute name="upperControlLimit" type="xs:decimal"/>
+		<xs:attribute name="lowerControlLimit" type="xs:decimal"/>
+		<xs:attribute name="upperAlarmLimit" type="xs:decimal"/>
+		<xs:attribute name="lowerAlarmLimit" type="xs:decimal"/>
+		<xs:attribute name="upperWarningLimit" type="xs:decimal"/>
+		<xs:attribute name="lowerWarningLimit" type="xs:decimal"/>
+		<xs:attribute name="labels" type="xs:string"/>		
+	</xs:complexType>	
+</xs:element>		
+
+</xs:schema>

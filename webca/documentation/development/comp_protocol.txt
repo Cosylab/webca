@@ -1,0 +1,11 @@
+manager:
+manager.register => component.preinitialize
+manager.connect => component.notifyConnectionStatus
+                => on true: component.initialize
+manager.createMonitor => component.monitorPV
+manager.getCtrl => component.notifyGetCtrl
+
+monitor:
+monitor.preInitialize => manager.connect
+monitor.initialize => manager.getCtrl
+monitor.cleanup => ... manager.unregister

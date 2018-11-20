@@ -1,0 +1,1903 @@
+# File: /ade/epics/iocTop/R3.14.7/diagnostics/pcbased/Development/opi/Diag_OverView.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 367
+y 191
+w 1018
+h 698
+font "helvetica-medium-r-14.0"
+ctlFont "helvetica-medium-r-14.0"
+btnFont "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 50
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 10
+ctlBgColor2 index 5
+topShadowColor index 1
+botShadowColor index 11
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 279
+y 180
+w 276
+h 237
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 279
+y 180
+w 276
+h 237
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 0
+totalAngle -90
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 288
+y 187
+w 258
+h 223
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 0
+totalAngle -90
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 194
+w 239
+h 210
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 0
+totalAngle -90
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 295
+y 198
+w 245
+h 204
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 0
+totalAngle -90
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 295
+y 204
+w 245
+h 190
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 0
+totalAngle -90
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 63
+y 389
+w 88
+h 32
+fgColor index 0
+bgColor index 44
+topShadowColor index 0
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+buttonLabel "Front End"
+numPvs 4
+numDsps 20
+displayFileName {
+  0 "Diag_OverView.edl"
+  1 "LEBT_BCM.edl"
+  2 "Diag_OverView.edl"
+  3 "BCMLinac.edl"
+  4 "BCMLinac.edl"
+  5 "Diag_OverView.edl"
+  6 "BPM.edl"
+  7 "BPM.edl"
+  8 "BPM.edl"
+  9 "BPM.edl"
+  10 "BPM.edl"
+  11 "BPM.edl"
+  12 "Diag_OverView.edl"
+  13 "WS.edl"
+  14 "WS.edl"
+  15 "WS.edl"
+  16 "WS.edl"
+  17 "WS.edl"
+  18 "Diag_OverView.edl"
+  19 "BlmMebt_Dtl.edl"
+}
+menuLabel {
+  0 "LEBT"
+  1 "   BCM 1 to 4"
+  2 "MEBT"
+  3 "     BCM 02"
+  4 "     BCM 11"
+  6 "     BPM 01"
+  7 "     BPM 04"
+  8 "     BPM 05"
+  9 "     BPM 10"
+  10 "     BPM 11"
+  11 "     BPM 14"
+  13 "     WS 01"
+  14 "     WS 04a"
+  15 "     WS 04b"
+  16 "     WS 07"
+  17 "     WS 14"
+  19 "     MEBT-DTL BLMs (New Screens)"
+}
+symbols {
+  3 "S=MEBT, SS=Diag,N=02,I=172.31.72.43"
+  4 "S=MEBT, SS=Diag,N=11,I=172.31.72.43"
+  6 "S=MEBT, SS=Diag,N=01,I=172.31.72.43"
+  7 "S=MEBT, SS=Diag,N=04,I=172.31.72.43"
+  8 "S=MEBT, SS=Diag,N=05,I=172.31.72.43"
+  9 "S=MEBT, SS=Diag,N=10,I=172.31.72.43"
+  10 "S=MEBT, SS=Diag,N=11,I=172.31.72.43"
+  11 "S=MEBT, SS=Diag,N=14,I=172.31.72.43"
+  13 "S=MEBT, SS=Diag,N=01,I=172.31.72.42,B=12"
+  14 "S=MEBT, SS=Diag,N=04a,I=172.31.72.42,B=9"
+  15 "S=MEBT, SS=Diag,N=04b,I=172.31.72.42,B=10"
+  16 "S=MEBT, SS=Diag,N=07,I=172.31.72.42,B=11"
+  17 "S=MEBT, SS=Diag,N=14,I=172.31.72.42,B=13"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 159
+y 389
+w 74
+h 32
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "helvetica-bold-r-14.0"
+buttonLabel "DTL"
+numPvs 4
+numDsps 4
+displayFileName {
+  0 "DTL-Diag.edl"
+  1 "DTLBLM.edl"
+  2 "ThermalNeutronDetectors.edl"
+  3 "SiNeutronDetectors.edl"
+}
+menuLabel {
+  0 "DTL-Diag"
+  1 "MEBT-DTL BLM"
+  2 "Thermal Neutron Detectors"
+  3 "Si Neutron Detectors"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 334
+y 389
+w 74
+h 32
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "helvetica-bold-r-14.0"
+buttonLabel "SCL"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "SCL-Diag.edl"
+  1 "SCLBLM.edl"
+  2 "SCLBLMlat.edl"
+}
+menuLabel {
+  0 "SCL Overview"
+  1 "BLM SCL"
+  2 "BLM SCL Advanced"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 437
+y 383
+w 56
+h 28
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "helvetica-bold-r-14.0"
+buttonLabel "HEBT"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "HEBT-Diag.edl"
+  1 "HEBTBLM.edl"
+  2 "Laser.edl"
+}
+menuLabel {
+  0 "HEBT-Diag"
+  1 "HEBT BLM"
+  2 "LDRD Timing Main"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 538
+y 184
+w 212
+h 196
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 593
+y 184
+w 156
+h 141
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 593
+y 184
+w 156
+h 141
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 0
+totalAngle 90
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 605
+y 194
+w 135
+h 120
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 0
+totalAngle 90
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 615
+y 202
+w 118
+h 108
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 0
+totalAngle 90
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 608
+y 223
+w 141
+h 156
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 608
+y 223
+w 141
+h 156
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 270
+totalAngle 90
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 619
+y 235
+w 120
+h 135
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 270
+totalAngle 90
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 623
+y 245
+w 108
+h 118
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 270
+totalAngle 90
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 538
+y 184
+w 141
+h 156
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 538
+y 184
+w 141
+h 156
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 90
+totalAngle 90
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 548
+y 193
+w 120
+h 135
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 90
+totalAngle 90
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 556
+y 200
+w 108
+h 118
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 90
+totalAngle 90
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 603
+y 184
+w 70
+h 18
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 603
+y 184
+w 75
+h 0
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 603
+  1 678
+}
+yPoints {
+  0 184
+  1 184
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 603
+y 193
+w 75
+h 0
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 603
+  1 678
+}
+yPoints {
+  0 193
+  1 193
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 603
+y 202
+w 75
+h 0
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 603
+  1 678
+}
+yPoints {
+  0 202
+  1 202
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 539
+y 256
+w 18
+h 57
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 557
+y 256
+w 0
+h 61
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 557
+  1 557
+}
+yPoints {
+  0 256
+  1 317
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 549
+y 256
+w 0
+h 61
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 549
+  1 549
+}
+yPoints {
+  0 256
+  1 317
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 539
+y 256
+w 0
+h 61
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 539
+  1 539
+}
+yPoints {
+  0 256
+  1 317
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 608
+y 363
+w 70
+h 17
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 608
+y 363
+w 75
+h 0
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 608
+  1 683
+}
+yPoints {
+  0 363
+  1 363
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 608
+y 371
+w 75
+h 0
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 608
+  1 683
+}
+yPoints {
+  0 371
+  1 371
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 608
+y 380
+w 75
+h 0
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 608
+  1 683
+}
+yPoints {
+  0 380
+  1 380
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 732
+y 245
+w 18
+h 59
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 750
+y 245
+w 0
+h 64
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 750
+  1 750
+}
+yPoints {
+  0 245
+  1 309
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 741
+y 245
+w 0
+h 64
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 741
+  1 741
+}
+yPoints {
+  0 245
+  1 309
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 732
+y 245
+w 0
+h 64
+lineColor index 44
+fillColor index 10
+lineWidth 10
+numPoints 2
+xPoints {
+  0 732
+  1 732
+}
+yPoints {
+  0 245
+  1 309
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 539
+y 238
+w 156
+h 141
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 539
+y 238
+w 156
+h 141
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 180
+totalAngle 90
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 548
+y 249
+w 135
+h 120
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 180
+totalAngle 90
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 557
+y 253
+w 116
+h 110
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 180
+totalAngle 90
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 606
+y 177
+w 74
+h 32
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "helvetica-bold-r-14.0"
+buttonLabel "Ring"
+numPvs 4
+numDsps 8
+displayFileName {
+  0 "RingArcA-Diag.edl"
+  1 "RingArcB-Diag.edl"
+  2 "RingArcC-Diag.edl"
+  3 "RingArcD-Diag.edl"
+  4 "IDmp-Diag.edl"
+  5 "RingBLM.edl"
+  6 "vfm.edl"
+  7 "ELS.edl"
+}
+menuLabel {
+  0 "Ring Arc A Diag"
+  1 "Ring Arc B Diag"
+  2 "Ring Arc C Diag"
+  3 "Ring Arc D Diag"
+  4 "Injection Dump"
+  5 "Ring BLM"
+  6 "Foil Video"
+  7 "Electron Scanner"
+}
+symbols {
+  7 "S=Ring, SS=Diag,N=01"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 726
+y 1
+w 161
+h 524
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 726
+y 60
+w 141
+h 465
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 195
+totalAngle 45
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 734
+y 49
+w 141
+h 471
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 195
+totalAngle 45
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 741
+y 33
+w 141
+h 481
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 195
+totalAngle 45
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 746
+y 1
+w 141
+h 512
+lineColor index 44
+fillColor index 10
+lineWidth 10
+startAngle 195
+totalAngle 45
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 723
+y 377
+w 49
+h 74
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "helvetica-bold-r-14.0"
+numPvs 4
+numDsps 4
+displayFileName {
+  0 "RTBT-Diag.edl"
+  1 "RTBTBLM.edl"
+  2 "Harp.edl"
+  3 "BCMRingF.edl"
+}
+menuLabel {
+  0 "RTBT-Diag"
+  1 "RTBT BLM"
+  2 "Harp"
+  3 "BCM25"
+}
+symbols {
+  3 "S=RTBT, SS=Diag,N=25"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 724
+y 457
+w 136
+h 141
+lineColor index 108
+fill
+fillColor index 108
+closePolygon
+numPoints 4
+xPoints {
+  0 724
+  1 809
+  2 860
+  3 773
+}
+yPoints {
+  0 514
+  1 457
+  2 541
+  3 598
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 17
+w 435
+h 27
+font "helvetica-bold-r-24.0"
+fgColor index 14
+bgColor index 10
+useDisplayBg
+value {
+  "Beam Instrumentation Overview Map"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 825
+y 171
+w 160
+h 29
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "courier-bold-r-14.0"
+buttonLabel "Diagnostic IOCs"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "DIAG_IOCStat1.edl"
+  1 "IOC_alive.edl"
+}
+menuLabel {
+  0 "VME IOC Stats"
+  1 "PCBased IOCs Alive PVs"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 155
+y 509
+w 210
+h 24
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "courier-bold-r-12.0"
+buttonLabel "Linac BCMs"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BCMLinac.edl"
+}
+menuLabel {
+  0 "MEBT BCMs"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 825
+y 204
+w 162
+h 30
+fgColor index 133
+bgColor index 44
+topShadowColor index 42
+botShadowColor index 111
+font "courier-bold-r-14.0"
+buttonLabel "Timing"
+numPvs 4
+numDsps 6
+displayFileName {
+  0 "DiagTimeMap.edl"
+  1 "DataTriggerGates.edl"
+  2 "timingScope.edl"
+  3 "timingScope.edl"
+  4 "timingScope.edl"
+  5 "timingScope.edl"
+}
+menuLabel {
+  0 "Diagnostics Timing Page"
+  1 "Thompson - Data Acquisition Gates"
+  2 "Scope 0"
+  3 "Scope 1"
+  4 "Scope 2"
+  5 "Scope 3"
+}
+symbols {
+  1 "S=ICS,SS=Tim,N=''"
+  2 "S=ICS,SS=Tim,N=''"
+  3 "S=ICS,SS=Tim,N=1"
+  4 "S=ICS,SS=Tim,N=2"
+  5 "S=ICS,SS=Tim,N=3"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 50
+y 426
+w 116
+h 34
+fgColor index 0
+bgColor index 44
+topShadowColor index 0
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+buttonLabel "D-Box Anti-Chop"
+numPvs 4
+numDsps 4
+displayFileName {
+  0 "aper.edl"
+  1 "BS10b.edl"
+  2 "newvid.edl"
+  3 "FC.edl"
+}
+menuLabel {
+  0 "MEBT Aperture"
+  1 "MEBT Beam Stop"
+  2 "Video"
+  3 "FC10f"
+}
+symbols {
+  0 "S=MEBT, SS=Diag,N=10"
+  1 "S=MEBT, SS=Diag,N=10b"
+  3 "S=MEBT, SS=Diag,D=FC,N=10f"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 245
+y 389
+w 74
+h 32
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "helvetica-bold-r-14.0"
+buttonLabel "CCL"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "CCL-Diag.edl"
+  1 "CCLBLM.edl"
+}
+menuLabel {
+  0 "CCL-Diag"
+  1 "CCL BLM"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 49
+y 463
+w 116
+h 28
+fgColor index 10
+bgColor index 40
+topShadowColor index 5
+botShadowColor index 10
+font "courier-bold-r-12.0"
+buttonLabel "Emittance App"
+numCmds 1
+command {
+  0 "labview /u/sns/opers/accel/home/diagnostics/VIs/ES/ES_Client.llb"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 276
+y 85
+w 328
+h 40
+fgColor index 10
+bgColor index 40
+topShadowColor index 5
+botShadowColor index 10
+font "courier-bold-r-18.0"
+buttonLabel "Diagnostics Status (Ch 13)"
+numCmds 1
+command {
+  0 "mozilla http://172.31.72.115/status.html"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 715
+y 19
+w 287
+h 30
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "courier-bold-r-18.0"
+buttonLabel "Channel 0 Message Center"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "Ch0.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 921
+y 327
+w 77
+h 41
+fgColor index 14
+bgColor index 10
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-14.0"
+buttonLabel "New"
+numPvs 4
+numDsps 4
+displayFileName {
+  0 "BLMFun.edl"
+  1 "HVPS-SCL.edl"
+  2 "HVPS-HEBT.edl"
+  3 "BLM_Proto.edl"
+}
+menuLabel {
+  0 "BLM Fun"
+  1 "SCL HVPS Overview"
+  2 "HEBT/LDmp HVPS Overview"
+  3 "LabView RFTF System"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 826
+y 237
+w 160
+h 21
+fgColor index 10
+bgColor index 40
+topShadowColor index 5
+botShadowColor index 10
+font "courier-bold-r-12.0"
+buttonLabel "Beam Finder App"
+numCmds 1
+command {
+  0 "labview /u/sns/opers/accel/home/diagnostics/VIs/ES/BeamFinder.llb"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 22
+y 88
+w 111
+h 32
+fgColor index 0
+bgColor index 44
+topShadowColor index 107
+botShadowColor index 109
+font "helvetica-bold-r-18.0"
+buttonLabel "Where To?"
+numPvs 4
+numDsps 16
+displayFileName {
+  0 "SNS-map.edl"
+  1 "navwogif.edl"
+  2 "Diag_OverView.edl"
+  3 "MEBT_Diag.edl"
+  4 "linac-map.edl"
+  5 "DiagTimeMap.edl"
+  6 "DTL-Diag.edl"
+  7 "CCL-Diag.edl"
+  8 "SCL-Diag.edl"
+  9 "HEBT-Diag.edl"
+  10 "RingArcA-Diag.edl"
+  11 "RingArcB-Diag.edl"
+  12 "RingArcC-Diag.edl"
+  13 "RingArcD-Diag.edl"
+  14 "IDmp-Diag.edl"
+  15 "RTBT-Diag.edl"
+}
+menuLabel {
+  0 "SNS Site Map"
+  1 "Main"
+  2 "Diagnostics Over View"
+  3 "MEBT Diags"
+  4 "Linac Site Map"
+  5 "Diagnostics Timing"
+  6 "DTL Diagnostics Map"
+  7 "CCL Diagnostics Map"
+  8 "SCL Diagnostics Map"
+  9 "HEBT Linac Dump Diagnostics Map"
+  10 "Ring Arc A Diag"
+  11 "Ring Arc B Diag"
+  12 "Ring Arc C Diag"
+  13 "Ring Arc D Diag"
+  14 "Injection Dump"
+  15 "RTBT and EDmp"
+}
+propagateMacros {
+  5 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 824
+y 138
+w 160
+h 29
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "courier-bold-r-14.0"
+buttonLabel "By system"
+numPvs 4
+numDsps 4
+displayFileName {
+  0 "MainBLM.edl"
+  1 "FBLMMain.edl"
+  2 "ThermalNeutronDetectorMain.edl"
+  3 "SiNeutronDetectorMain.edl"
+}
+menuLabel {
+  0 "BLMs and Neutron detectors"
+  1 "FBLMs"
+  2 "Thermal neutron detectors"
+  3 "Si-neutron detectors"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 727
+y 390
+w 41
+h 48
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 133
+bgColor index 10
+useDisplayBg
+value {
+  "RTBT"
+  "and"
+  "EDmp"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 826
+y 260
+w 160
+h 21
+fgColor index 10
+bgColor index 40
+topShadowColor index 5
+botShadowColor index 10
+font "courier-bold-r-12.0"
+buttonLabel "Turn By Turn App"
+numCmds 1
+command {
+  0 "labview /u/sns/opers/accel/home/diagnostics/VIs/RIT/RIT.llb"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 517
+y 223
+w 29
+h 72
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "helvetica-bold-r-14.0"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "IDmp-Diag.edl"
+  1 "HEBTBLM.edl"
+  2 "Laser.edl"
+}
+menuLabel {
+  0 "IDmp-Diag"
+  1 "HEBT BLM"
+  2 "LDRD Timing Main"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 525
+y 227
+w 12
+h 64
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 133
+bgColor index 10
+useDisplayBg
+value {
+  "I"
+  "D"
+  "m"
+  "p"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 155
+y 533
+w 210
+h 24
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 111
+font "courier-bold-r-12.0"
+buttonLabel "BPM Ring/RTBT Turn - Gain"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "BPM_Time_Gain.edl"
+}
+menuLabel {
+  0 "BPM Ring/RTBT Turn - Gain"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 155
+y 556
+w 210
+h 24
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 111
+font "courier-bold-r-12.0"
+buttonLabel "BPM Current Waveforms"
+numPvs 4
+numDsps 4
+displayFileName {
+  0 "BPMCurrentWfs.edl"
+  1 "BPMCurrentWfs01.edl"
+  2 "BPMCurrentWfs02.edl"
+  3 "BPMCurrentWfs03.edl"
+}
+menuLabel {
+  0 "MEBT - DTL - CCL - SCL"
+  1 "HEBT - LDmp - IDmp"
+  2 "Ring"
+  3 "RTBT"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 715
+y 51
+w 287
+h 30
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "courier-bold-r-18.0"
+buttonLabel "Channel 1 Safety Notices"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "Ch1.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 5
+y 388
+w 54
+h 32
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 111
+font "courier-bold-r-12.0"
+buttonLabel "Source"
+numPvs 4
+numDsps 5
+displayFileName {
+  0 "BCM_Src.edl"
+  1 "Spark.edl"
+  2 "VM_LEBT.edl"
+  3 "RGA.edl"
+  4 "RGA.edl"
+}
+menuLabel {
+  0 "Spark Detector 01"
+  1 "Spark Detector 02"
+  2 "Video Monitor"
+  3 "RGA LEBT"
+  4 "RGA RFQ"
+}
+symbols {
+  0 "S=Src, SS=Diag, N=01"
+  1 "S=LEBT, SS=Diag, N=02"
+  2 "S=LEBT, SS=Diag, N=01"
+  3 "S=LEBT, SS=Diag, N=01"
+  4 "S=RFQ, SS=Diag, N=01"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 155
+y 581
+w 210
+h 24
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 111
+font "courier-bold-r-12.0"
+buttonLabel "Beam Rep Rate"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "LongTrace.edl"
+}
+menuLabel {
+  0 "See Beam Rep Rate"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 155
+y 623
+w 210
+h 24
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "courier-bold-r-12.0"
+buttonLabel "BLM Research Mode Screens"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "research_launcher.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 764
+y 507
+w 56
+h 28
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "helvetica-bold-r-14.0"
+buttonLabel "Target"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "TLM.edl"
+}
+menuLabel {
+  0 "Target"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 762
+y 539
+w 59
+h 19
+fgColor index 10
+bgColor index 40
+topShadowColor index 5
+botShadowColor index 10
+font "courier-bold-r-12.0"
+buttonLabel "TLM"
+numCmds 1
+command {
+  0 "labview /u/sns/opers/accel/home/diagnostics/VIs/TLM/TLM_Client.vi"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 7
+y 367
+w 48
+h 19
+fgColor index 10
+bgColor index 40
+topShadowColor index 5
+botShadowColor index 10
+font "courier-medium-r-12.0"
+buttonLabel "RGA"
+numCmds 1
+command {
+  0 "labview /u/sns/opers/accel/home/diagnostics/VIs/RGA/RGA_Client.vi"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 155
+y 661
+w 210
+h 24
+fgColor index 133
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 10
+font "courier-bold-r-12.0"
+buttonLabel "Ridicules"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ridicules.edl"
+}
+endObjectProperties
+

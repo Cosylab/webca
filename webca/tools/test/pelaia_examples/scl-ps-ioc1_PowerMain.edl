@@ -1,0 +1,8843 @@
+# File: /ade/epics/iocTop/R3.14.7/magnets/R2-6-5-9/sclMag/opi/scl-ps-ioc1_PowerMain.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1836
+y 1431
+w 1180
+h 400
+font "helvetica-bold-i-18.0"
+fontAlign "center"
+ctlFont "courier-bold-r-14.0"
+ctlFontAlign "right"
+btnFont "courier-medium-r-8.0"
+fgColor index 10
+bgColor index 3
+textColor index 10
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 5
+ctlBgColor2 index 10
+topShadowColor index 5
+botShadowColor index 10
+pvType "EPICS"
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 607
+h 39
+lineColor index 10
+fill
+fillColor index 51
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 43
+y 6
+w 521
+h 27
+font "helvetica-bold-r-24.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "SCL_PS:IOC1 Magnet Power Supply Control"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 2
+y 40
+w 1123
+h 1
+lineColor index 10
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 2
+  1 1125
+}
+yPoints {
+  0 41
+  1 40
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 0
+y 66
+w 1123
+h 1
+lineColor index 10
+fillColor index 9
+lineWidth 2
+numPoints 2
+xPoints {
+  0 0
+  1 1123
+}
+yPoints {
+  0 67
+  1 66
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 91
+w 1123
+h 1
+lineColor index 10
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 92
+  1 91
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x -1
+y 116
+w 1123
+h 1
+lineColor index 10
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 -1
+  1 1122
+}
+yPoints {
+  0 117
+  1 116
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 136
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 136
+  1 136
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 165
+y 69
+w 225
+h 21
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "POWER SUPPLY STATUS"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 768
+y 69
+w 118
+h 21
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "READBACKS"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1
+y 96
+w 21
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "Itlk"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 62
+y 96
+w 63
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "PS Name"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 96
+w 86
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "Mode Select"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 24
+y 93
+w 1
+h 262
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 25
+  1 25
+  2 24
+  3 24
+}
+yPoints {
+  0 93
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 148
+y 93
+w 1
+h 262
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 149
+  1 149
+  2 148
+  3 148
+}
+yPoints {
+  0 93
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 272
+y 93
+w 1
+h 262
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 273
+  1 273
+  2 272
+  3 272
+}
+yPoints {
+  0 93
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 278
+y 92
+w 41
+h 24
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "ChannelStatus"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 604
+y 68
+w 0
+h 288
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 604
+  1 604
+  2 604
+  3 604
+}
+yPoints {
+  0 68
+  1 356
+  2 356
+  3 356
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 480
+y 97
+w 29
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "Set I"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 549
+y 96
+w 34
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "Set B"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 626
+y 97
+w 4
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 700
+y 97
+w 8
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "V"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 761
+y 97
+w 29
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "ISET"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 823
+y 97
+w 30
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "IERR"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 890
+y 97
+w 9
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 991
+y 93
+w 1
+h 262
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 992
+  1 992
+  2 991
+  3 991
+}
+yPoints {
+  0 93
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 669
+y 93
+w 1
+h 262
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 670
+  1 670
+  2 669
+  3 669
+}
+yPoints {
+  0 93
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 740
+y 93
+w 1
+h 262
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 741
+  1 741
+  2 740
+  3 740
+}
+yPoints {
+  0 93
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 807
+y 93
+w 1
+h 262
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 808
+  1 808
+  2 807
+  3 807
+}
+yPoints {
+  0 93
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 865
+y 93
+w 1
+h 262
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 866
+  1 866
+  2 865
+  3 865
+}
+yPoints {
+  0 93
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 927
+y 93
+w 1
+h 262
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 928
+  1 928
+  2 927
+  3 927
+}
+yPoints {
+  0 93
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 454
+y 67
+w 1
+h 288
+lineColor index 9
+fillColor index 9
+lineWidth 2
+numPoints 4
+xPoints {
+  0 455
+  1 455
+  2 454
+  3 454
+}
+yPoints {
+  0 67
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 528
+y 93
+w 1
+h 262
+lineColor index 111
+fillColor index 5
+numPoints 4
+xPoints {
+  0 529
+  1 529
+  2 528
+  3 528
+}
+yPoints {
+  0 93
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 975
+y 4
+w 52
+h 26
+fgColor index 45
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+label "EXIT"
+font "courier-medium-r-16.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 837
+y 3
+w 127
+h 29
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+font "courier-medium-r-16.0"
+buttonLabel "generalTime"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "generalTime.edl"
+}
+menuLabel {
+  0 "generalTime"
+}
+symbols {
+  0 "IOC=SCL_PS:IOC1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 726
+y 3
+w 96
+h 29
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+font "courier-medium-r-16.0"
+buttonLabel "Utility"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "utilStatus.edl"
+}
+menuLabel {
+  0 "Utility"
+}
+symbols {
+  0 "S=SCL, SS=PS, N='', DI=1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 617
+y 3
+w 96
+h 29
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+font "courier-medium-r-16.0"
+buttonLabel "vxStat"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IOC_Status.edl"
+}
+menuLabel {
+  0 "vxStat"
+}
+symbols {
+  0 "P=SCL_PS:IOC1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 158
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Mag:PS_QD01"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Mag,DVC=PS,N=_QD,DI=01,PSVendor=Alpha"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 178
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Mag:PS_QD02"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Mag,DVC=PS,N=_QD,DI=02,PSVendor=Alpha"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 198
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Mag:PS_QD03"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Mag,DVC=PS,N=_QD,DI=03,PSVendor=Alpha"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 218
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Mag:PS_QD04"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Mag,DVC=PS,N=_QD,DI=04,PSVendor=Alpha"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 238
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Mag:PS_DCH01"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Mag,DVC=PS,N=_DCH,DI=01,PSVendor=Danfysik"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 258
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Mag:PS_DCV01"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Mag,DVC=PS,N=_DCV,DI=01,PSVendor=Danfysik"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 278
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Mag:PS_DCH02"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Mag,DVC=PS,N=_DCH,DI=02,PSVendor=Danfysik"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 298
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Mag:PS_DCV02"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Mag,DVC=PS,N=_DCV,DI=02,PSVendor=Danfysik"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 318
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Diag:PS_LW01"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Diag,DVC=PS,N=_LW,DI=01,PSVendor=Danfysik"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 337
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Diag:PS_LW02"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Diag,DVC=PS,N=_LW,DI=02,PSVendor=Danfysik"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 316
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 316
+  1 316
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 295
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 295
+  1 295
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 276
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 276
+  1 276
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 256
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 256
+  1 256
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 236
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 236
+  1 236
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 216
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 216
+  1 216
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 196
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 196
+  1 196
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 176
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 176
+  1 176
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 156
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 156
+  1 156
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 336
+y 92
+w 37
+h 24
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "ControlStatus"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 400
+y 92
+w 33
+h 24
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "PSStatus"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 476
+y 69
+w 105
+h 21
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "SETPOINTS"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 936
+y 97
+w 48
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "B of QH"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 999
+y 97
+w 47
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "B of QV"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1125
+y 41
+w 0
+h 314
+lineColor index 9
+fillColor index 9
+lineWidth 2
+numPoints 4
+xPoints {
+  0 1125
+  1 1125
+  2 1125
+  3 1125
+}
+yPoints {
+  0 41
+  1 355
+  2 355
+  3 355
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 356
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 356
+  1 356
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 336
+w 1123
+h 0
+lineColor index 10
+fillColor index 5
+numPoints 2
+xPoints {
+  0 1
+  1 1124
+}
+yPoints {
+  0 336
+  1 336
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 118
+w 22
+h 120
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 118
+w 22
+h 120
+fgColor index 10
+bgColor index 5
+topShadowColor index 5
+botShadowColor index 10
+font "courier-medium-r-16.0"
+buttonLabel "Interlock"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scl-interlock.edl"
+}
+menuLabel {
+  0 "Interlock"
+}
+symbols {
+  0 "S=SCL,MY_IOC_N=1,RCCS_IOC_N=1"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 118
+w 22
+h 120
+lineColor index 10
+fill
+fillColor index 83
+alarmPv "SCL_Mag:PS_IOC1:SoftPS_Itlk"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 118
+w 20
+h 120
+lineColor index 35
+fillColor index 35
+lineWidth 5
+visPv "SCL_Mag:PS_IOC1:SoftPSOvr_Sts"
+visMin "0.5"
+visMax "1.5"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1
+y 241
+w 22
+h 114
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 49
+value {
+  "NoItlk"
+}
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 992
+y 158
+w 61
+h 17
+controlPv "SCL_Mag:QV01:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 992
+y 178
+w 61
+h 17
+controlPv "SCL_Mag:QV02:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 178
+w 61
+h 17
+controlPv "SCL_Mag:QH02:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 158
+w 61
+h 17
+controlPv "SCL_Mag:QH01:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 867
+y 158
+w 61
+h 17
+controlPv "SCL_Mag:PS_QD01:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 867
+y 178
+w 61
+h 17
+controlPv "SCL_Mag:PS_QD02:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 178
+w 55
+h 17
+controlPv "SCL_Mag:PS_QD02:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 158
+w 55
+h 17
+controlPv "SCL_Mag:PS_QD01:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 158
+w 63
+h 17
+controlPv "SCL_Mag:PS_QD01:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 178
+w 63
+h 17
+controlPv "SCL_Mag:PS_QD02:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 178
+w 66
+h 17
+controlPv "SCL_Mag:PS_QD02:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 158
+w 66
+h 17
+controlPv "SCL_Mag:PS_QD01:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 158
+w 62
+h 17
+controlPv "SCL_Mag:PS_QD01:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 178
+w 62
+h 17
+controlPv "SCL_Mag:PS_QD02:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 531
+y 179
+w 71
+h 18
+controlPv "SCL_Mag:PS_QD02:B_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 531
+y 159
+w 71
+h 18
+controlPv "SCL_Mag:PS_QD01:B_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 159
+w 70
+h 18
+controlPv "SCL_Mag:PS_QD01:I_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 179
+w 70
+h 18
+controlPv "SCL_Mag:PS_QD02:I_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 180
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 180
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QD02:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 183
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD02:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 183
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD02:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 160
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 160
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QD01:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 163
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD01:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 163
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD01:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 160
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 160
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 160
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Mag:PS_QD01:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 160
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QD01:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 160
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 160
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Mag:PS_QD01:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 160
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QD01:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 180
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 180
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 180
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Mag:PS_QD02:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 180
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QD02:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 180
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 180
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Mag:PS_QD02:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 180
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QD02:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 177
+w 51
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 177
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QD02:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 179
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD02:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 179
+w 51
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD02:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 157
+w 51
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 157
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QD01:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 159
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD01:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 159
+w 51
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD01:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 159
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD01:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD01:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 179
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD02:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD02:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 179
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD02:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD02:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 159
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD01:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD01:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 159
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD01:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD01:On"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 179
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD02:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD02:On"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 160
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Mag:PS_QD01:Err"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 180
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+fillAlarm
+lineWidth 2
+alarmPv "SCL_Mag:PS_QD02:Err"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 200
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Mag:PS_QD03:Err"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 199
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD03:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD03:On"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 199
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD03:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD03:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 199
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD03:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD03:Stb"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 197
+w 51
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 197
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QD03:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 199
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD03:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 199
+w 51
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD03:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 200
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 200
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 200
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Mag:PS_QD03:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 200
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QD03:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 200
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 200
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Mag:PS_QD03:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 200
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QD03:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 200
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 200
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QD03:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 203
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD03:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 203
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD03:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 199
+w 70
+h 18
+controlPv "SCL_Mag:PS_QD03:I_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 531
+y 199
+w 71
+h 18
+controlPv "SCL_Mag:PS_QD03:B_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 198
+w 62
+h 17
+controlPv "SCL_Mag:PS_QD03:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 198
+w 66
+h 17
+controlPv "SCL_Mag:PS_QD03:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 198
+w 63
+h 17
+controlPv "SCL_Mag:PS_QD03:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 198
+w 55
+h 17
+controlPv "SCL_Mag:PS_QD03:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 867
+y 198
+w 61
+h 17
+controlPv "SCL_Mag:PS_QD03:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 198
+w 61
+h 17
+controlPv "SCL_Mag:QH03:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 992
+y 198
+w 61
+h 17
+controlPv "SCL_Mag:QV03:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 992
+y 218
+w 61
+h 17
+controlPv "SCL_Mag:QV04:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 218
+w 61
+h 17
+controlPv "SCL_Mag:QH04:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 867
+y 218
+w 61
+h 17
+controlPv "SCL_Mag:PS_QD04:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 218
+w 55
+h 17
+controlPv "SCL_Mag:PS_QD04:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 218
+w 63
+h 17
+controlPv "SCL_Mag:PS_QD04:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 218
+w 66
+h 17
+controlPv "SCL_Mag:PS_QD04:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 218
+w 62
+h 17
+controlPv "SCL_Mag:PS_QD04:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 531
+y 219
+w 71
+h 18
+controlPv "SCL_Mag:PS_QD04:B_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 219
+w 70
+h 18
+controlPv "SCL_Mag:PS_QD04:I_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 220
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 220
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QD04:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 223
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD04:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 223
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD04:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 220
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 220
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 220
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Mag:PS_QD04:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 220
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QD04:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 220
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 220
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Mag:PS_QD04:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 220
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QD04:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 217
+w 51
+h 18
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 217
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QD04:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 219
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD04:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 219
+w 51
+h 14
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QD04:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 219
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD04:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD04:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 219
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD04:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD04:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 219
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QD04:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QD04:On"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 220
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Mag:PS_QD04:Err"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 240
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Mag:PS_DCH01:Err"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 239
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCH01:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCH01:On"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 239
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCH01:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCH01:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 239
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCH01:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCH01:Stb"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 237
+w 51
+h 18
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 237
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_DCH01:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 239
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCH01:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 239
+w 51
+h 14
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCH01:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 240
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 240
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 240
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Mag:PS_DCH01:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 240
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_DCH01:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 240
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 240
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Mag:PS_DCH01:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 240
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_DCH01:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 240
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 240
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_DCH01:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 243
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCH01:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 243
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCH01:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 239
+w 70
+h 18
+controlPv "SCL_Mag:PS_DCH01:I_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 531
+y 239
+w 71
+h 18
+controlPv "SCL_Mag:PS_DCH01:B_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 238
+w 62
+h 17
+controlPv "SCL_Mag:PS_DCH01:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 238
+w 66
+h 17
+controlPv "SCL_Mag:PS_DCH01:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 238
+w 63
+h 17
+controlPv "SCL_Mag:PS_DCH01:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 238
+w 55
+h 17
+controlPv "SCL_Mag:PS_DCH01:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 867
+y 238
+w 61
+h 17
+controlPv "SCL_Mag:DCH01:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 867
+y 258
+w 61
+h 17
+controlPv "SCL_Mag:DCV01:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 258
+w 55
+h 17
+controlPv "SCL_Mag:PS_DCV01:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 258
+w 63
+h 17
+controlPv "SCL_Mag:PS_DCV01:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 258
+w 66
+h 17
+controlPv "SCL_Mag:PS_DCV01:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 258
+w 62
+h 17
+controlPv "SCL_Mag:PS_DCV01:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 531
+y 260
+w 71
+h 18
+controlPv "SCL_Mag:PS_DCV01:B_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 259
+w 70
+h 18
+controlPv "SCL_Mag:PS_DCV01:I_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 260
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 260
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_DCV01:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 263
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCV01:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 263
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCV01:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 260
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 260
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 260
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Mag:PS_DCV01:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 260
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_DCV01:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 260
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 260
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Mag:PS_DCV01:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 260
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_DCV01:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 261
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Mag:PS_DCV01:Err"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 280
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Mag:PS_DCH02:Err"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 257
+w 51
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 257
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_DCV01:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 259
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCV01:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 259
+w 51
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCV01:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 260
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCV01:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCV01:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 260
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCV01:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCV01:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 260
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCV01:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCV01:On"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 280
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCH02:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCH02:On"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 280
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCH02:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCH02:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 280
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCH02:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCH02:Stb"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 277
+w 51
+h 18
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 277
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_DCH02:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 279
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCH02:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 279
+w 51
+h 14
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCH02:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 280
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 280
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 280
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Mag:PS_DCH02:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 280
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_DCH02:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 280
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 280
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Mag:PS_DCH02:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 280
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_DCH02:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 279
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 279
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_DCH02:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 282
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCH02:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 282
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCH02:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 279
+w 70
+h 18
+controlPv "SCL_Mag:PS_DCH02:I_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 531
+y 279
+w 71
+h 18
+controlPv "SCL_Mag:PS_DCH02:B_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 278
+w 62
+h 18
+controlPv "SCL_Mag:PS_DCH02:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 278
+w 66
+h 18
+controlPv "SCL_Mag:PS_DCH02:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 278
+w 63
+h 18
+controlPv "SCL_Mag:PS_DCH02:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 278
+w 55
+h 18
+controlPv "SCL_Mag:PS_DCH02:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 867
+y 278
+w 61
+h 18
+controlPv "SCL_Mag:DCH02:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 867
+y 297
+w 61
+h 17
+controlPv "SCL_Mag:DCV02:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 297
+w 55
+h 17
+controlPv "SCL_Mag:PS_DCV02:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 297
+w 63
+h 17
+controlPv "SCL_Mag:PS_DCV02:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 297
+w 66
+h 17
+controlPv "SCL_Mag:PS_DCV02:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 297
+w 62
+h 17
+controlPv "SCL_Mag:PS_DCV02:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 531
+y 300
+w 71
+h 18
+controlPv "SCL_Mag:PS_DCV02:B_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 299
+w 70
+h 18
+controlPv "SCL_Mag:PS_DCV02:I_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 299
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 299
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_DCV02:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 302
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCV02:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 302
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCV02:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 300
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 300
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 300
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Mag:PS_DCV02:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 300
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_DCV02:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 300
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 300
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Mag:PS_DCV02:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 300
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_DCV02:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 297
+w 51
+h 18
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 297
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_DCV02:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 299
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCV02:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 299
+w 51
+h 14
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_DCV02:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 300
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCV02:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCV02:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 300
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCV02:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCV02:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 300
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_DCV02:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_DCV02:On"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 301
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Mag:PS_DCV02:Err"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 320
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Diag:PS_LW01:Err"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 319
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Diag:PS_LW01:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Diag:PS_LW01:On"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 319
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Diag:PS_LW01:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Diag:PS_LW01:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 319
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Diag:PS_LW01:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Diag:PS_LW01:Stb"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 317
+w 51
+h 21
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 317
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Diag:PS_LW01:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 319
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Diag:PS_LW01:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 319
+w 51
+h 16
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Diag:PS_LW01:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 320
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 320
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 320
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Diag:PS_LW01:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 320
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Diag:PS_LW01:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 320
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 320
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Diag:PS_LW01:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 320
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Diag:PS_LW01:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 319
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 319
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Diag:PS_LW01:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 322
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Diag:PS_LW01:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 322
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Diag:PS_LW01:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 319
+w 70
+h 18
+controlPv "SCL_Diag:PS_LW01:CISet"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 318
+w 62
+h 17
+controlPv "SCL_Diag:PS_LW01:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 318
+w 66
+h 17
+controlPv "SCL_Diag:PS_LW01:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 318
+w 63
+h 17
+controlPv "SCL_Diag:PS_LW01:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 318
+w 55
+h 17
+controlPv "SCL_Diag:PS_LW01:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 338
+w 55
+h 17
+controlPv "SCL_Diag:PS_LW02:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 338
+w 63
+h 17
+controlPv "SCL_Diag:PS_LW02:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 338
+w 66
+h 17
+controlPv "SCL_Diag:PS_LW02:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 338
+w 62
+h 17
+controlPv "SCL_Diag:PS_LW02:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 338
+w 70
+h 18
+controlPv "SCL_Diag:PS_LW02:CISet"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 339
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 339
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Diag:PS_LW02:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 342
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Diag:PS_LW02:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 342
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Diag:PS_LW02:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 339
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 339
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 339
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Diag:PS_LW02:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 339
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Diag:PS_LW02:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 339
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 339
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Diag:PS_LW02:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 339
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Diag:PS_LW02:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 337
+w 51
+h 21
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 337
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Diag:PS_LW02:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 339
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Diag:PS_LW02:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 339
+w 51
+h 16
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Diag:PS_LW02:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 338
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Diag:PS_LW02:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Diag:PS_LW02:Stb"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 338
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Diag:PS_LW02:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Diag:PS_LW02:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 338
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Diag:PS_LW02:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Diag:PS_LW02:On"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 339
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Diag:PS_LW02:Err"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1054
+y 66
+w 0
+h 290
+lineColor index 111
+fillColor index 9
+numPoints 4
+xPoints {
+  0 1054
+  1 1054
+  2 1054
+  3 1054
+}
+yPoints {
+  0 66
+  1 356
+  2 356
+  3 356
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 117
+w 122
+h 18
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 117
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Mag:PS_QH00"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Mag,DVC=PS,N=_QH,DI=00,PSVendor=Alpha"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 118
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Mag:PS_QH00:Err"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 118
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QH00:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QH00:On"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 118
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QH00:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QH00:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 118
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QH00:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QH00:Stb"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 118
+w 51
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 118
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QH00:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 120
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QH00:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 120
+w 51
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QH00:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 118
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 118
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 118
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Mag:PS_QH00:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 118
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QH00:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 118
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 118
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Mag:PS_QH00:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 118
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QH00:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 118
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 118
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QH00:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 121
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QH00:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 121
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QH00:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 117
+w 70
+h 18
+controlPv "SCL_Mag:PS_QH00:I_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 531
+y 117
+w 71
+h 18
+controlPv "SCL_Mag:PS_QH00:B_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 118
+w 62
+h 17
+controlPv "SCL_Mag:PS_QH00:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 118
+w 66
+h 17
+controlPv "SCL_Mag:PS_QH00:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 118
+w 63
+h 17
+controlPv "SCL_Mag:PS_QH00:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 118
+w 55
+h 17
+controlPv "SCL_Mag:PS_QH00:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 867
+y 118
+w 61
+h 17
+controlPv "SCL_Mag:QH00:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 137
+w 122
+h 18
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 137
+w 122
+h 18
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL_Mag:PS_QV00"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "power.edl"
+}
+menuLabel {
+  0 "PS Detail"
+}
+symbols {
+  0 "S=SCL,SS=Mag,DVC=PS,N=_QV,DI=00,PSVendor=Alpha"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 138
+w 120
+h 16
+lineColor index 149
+fillColor index 5
+lineWidth 2
+alarmPv "SCL_Mag:PS_QV00:Err"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 138
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QV00:CCmd"
+pressValue "ON"
+onLabel "ON"
+offLabel "ON"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QV00:On"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 138
+w 31
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QV00:CCmd"
+pressValue "OFF"
+onLabel "OFF"
+offLabel "OFF"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QV00:Off"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 211
+y 138
+w 60
+h 17
+fgColor index 25
+onColor index 151
+offColor index 151
+topShadowColor index 107
+botShadowColor index 109
+controlPv "SCL_Mag:PS_QV00:CCmd"
+pressValue "STANDBY"
+onLabel "STANDBY"
+offLabel "STANDBY"
+3d
+font "helvetica-bold-r-12.0"
+colorPv "SCL_Mag:PS_QV00:Stb"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 138
+w 51
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 275
+y 138
+w 50
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QV00:ChDis"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 281
+y 140
+w 39
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QV00:ChDis"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "Enabled"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 275
+y 140
+w 51
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QV00:ChDis"
+visMin "0.5"
+visMax "1.5"
+value {
+  "Disabled"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 138
+w 54
+h 16
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 138
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 138
+w 54
+h 16
+lineColor index 126
+fill
+fillColor index 126
+visPv "SCL_Mag:PS_QV00:Rmt"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 138
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QV00:Rmt"
+visMin "0"
+visMax "1"
+value {
+  "Local"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 138
+w 54
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 138
+w 54
+h 16
+lineColor index 113
+fill
+fillColor index 113
+visPv "SCL_Mag:PS_QV00:Rmt"
+visMin "1"
+visMax "1.1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 138
+w 54
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+visPv "SCL_Mag:PS_QV00:Rmt"
+visMin "1"
+visMax "1.1"
+value {
+  "Remote"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 138
+w 68
+h 17
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 138
+w 68
+h 17
+lineColor index 10
+fill
+fillColor index 149
+alarmPv "SCL_Mag:PS_QV00:Err"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 408
+y 141
+w 15
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QV00:Err"
+visInvert
+visMin "0.5"
+visMax "1.5"
+value {
+  "OK"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 399
+y 141
+w 35
+h 13
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 131
+bgColor index 5
+useDisplayBg
+visPv "SCL_Mag:PS_QV00:Err"
+visMin "0.5"
+visMax "1.5"
+value {
+  "ERROR"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 458
+y 137
+w 70
+h 18
+controlPv "SCL_Mag:PS_QV00:I_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 531
+y 137
+w 71
+h 18
+controlPv "SCL_Mag:PS_QV00:B_Set"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+fgAlarm
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 606
+y 138
+w 62
+h 17
+controlPv "SCL_Mag:PS_QV00:I"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 673
+y 138
+w 66
+h 17
+controlPv "SCL_Mag:PS_QV00:V"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 743
+y 138
+w 63
+h 17
+controlPv "SCL_Mag:PS_QV00:ISet"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 810
+y 138
+w 55
+h 17
+controlPv "SCL_Mag:PS_QV00:IErr"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (RegTextupdate)
+object RegTextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 867
+y 138
+w 61
+h 17
+controlPv "SCL_Mag:QV00:B"
+displayMode "decimal"
+precision 3
+fgColor index 15
+fgAlarm
+bgColor index 10
+fill
+font "courier-bold-r-12.0"
+fontAlign "right"
+endObjectProperties
+
+# Additional properties
+beginObjectProperties
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1054
+y 116
+w 71
+h 120
+
+beginGroup
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1054
+y 116
+w 71
+h 18
+controlPv "SCL_Mag:PS_QH00:B_Book"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1054
+y 136
+w 71
+h 18
+controlPv "SCL_Mag:PS_QV00:B_Book"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1054
+y 158
+w 71
+h 18
+controlPv "SCL_Mag:PS_QD01:B_Book"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1054
+y 178
+w 71
+h 18
+controlPv "SCL_Mag:PS_QD02:B_Book"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1054
+y 198
+w 71
+h 18
+controlPv "SCL_Mag:PS_QD03:B_Book"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1054
+y 218
+w 71
+h 18
+controlPv "SCL_Mag:PS_QD04:B_Book"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 25
+bgColor index 5
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 30
+autoSelect
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1066
+y 97
+w 43
+h 14
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 111
+bgColor index 5
+useDisplayBg
+value {
+  "B Book"
+}
+autoSize
+endObjectProperties
+

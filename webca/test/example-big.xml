@@ -1,0 +1,7441 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude"	
+	webcaPath=""
+	title="WebCa Test"
+	extStyle="sns"
+	>
+	<horizontalPanel>		
+		<column width="50">
+			  <mux>
+				  <sequence name="ai001">
+					  <macroValuePair macroName="$(NAME)" macroValue="ai001"></macroValuePair>
+				  </sequence>
+				  <sequence name="ai002">
+					  <macroValuePair macroName="$(NAME)" macroValue="ai002"></macroValuePair>			
+				  </sequence>
+				  <sequence name="ai003">
+					  <macroValuePair macroName="$(NAME)" macroValue="ai003"></macroValuePair>
+				  </sequence>
+				  <sequence name="ai004">
+					  <macroValuePair macroName="$(NAME)" macroValue="ai004"></macroValuePair>			
+					  <macroValuePair macroName="$(NAME)" macroValue="ai004"></macroValuePair>			
+				  </sequence>
+			  				  
+			  
+			  </mux>
+		</column>
+	<column width="50">
+			  <mux>
+				  <sequence name="ai005">
+					  <macroValuePair macroName="$(NAME)" macroValue="ai005"></macroValuePair>
+				  </sequence>
+				  <sequence name="ai006">
+					  <macroValuePair macroName="$(NAME)" macroValue="ai006"></macroValuePair>			
+				  </sequence>
+				  <sequence name="ai007">
+					  <macroValuePair macroName="$(NAME)" macroValue="ai007"></macroValuePair>
+				  </sequence>
+				  <sequence name="ai008">
+					  <macroValuePair macroName="$(NAME)" macroValue="ai008"></macroValuePair>			
+					  <macroValuePair macroName="$(NAME)" macroValue="ai008"></macroValuePair>			
+				  </sequence>
+			  				  
+			  
+			  </mux>
+		</column>		
+			
+	</horizontalPanel>	
+
+		
+	<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+																				
+	<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+	
+
+		
+	<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+																				
+	<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+
+	
+<horizontalPanel>	
+		<column width="50">
+			
+			<horizontalPanel>
+				
+				<column  width="50">
+				
+				<staticText  size="large">control</staticText>				
+				
+				</column>
+				
+				<column>
+				
+				<staticText  size="large">monitor</staticText>				
+				
+				</column>
+				
+				
+			</horizontalPanel>	
+			
+			<horizontalPanel>
+				
+				<column width="50">
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="small"/>					
+	
+			<textEntry		
+				controlPV="$(NAME)"
+				dataType="numeric"		
+				alarmSensitive="true"
+				size="large"/>	
+					
+				</column>
+				
+					
+			<column>	
+				
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>	
+					
+			<textUpdate
+				readbackPV="$(NAME).NAME"
+				dataType="text"		
+				alarmSensitive="false"
+				size="large"/>	
+			
+			<textUpdate
+				readbackPV="$(NAME)"
+				dataType="text"		
+				alarmSensitive="true"
+				size="small"/>																
+					
+				</column>					
+				
+			</horizontalPanel>					
+	
+    	</column>
+		
+									
+	</horizontalPanel>			
+		
+
+																					
+</caml>

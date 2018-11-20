@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="relatedDisplay" >
+	<xs:complexType>		
+		<xs:complexContent>			
+			<xs:extension base="component">
+				<xs:choice minOccurs="1" maxOccurs="1">	
+					<xs:element ref="display"/>
+				</xs:choice>								
+				
+				<xs:attribute name="type" type="typeDefinition" use="required"/>
+				<xs:attribute name="src" type="xs:string"/>				
+				<xs:attribute name="alt" type="xs:string"/>
+				<xs:attribute name="width" type="xs:string"/>
+				<xs:attribute name="height" type="xs:string"/>
+			</xs:extension>						
+		</xs:complexContent>	
+	</xs:complexType>
+</xs:element>	   	   
+	
+<xs:element name="display">
+	<xs:complexType>
+		<xs:choice minOccurs="0" maxOccurs="unbounded">	
+			<xs:element ref="macroValuePair"/>
+		</xs:choice>		
+		<xs:attribute name="src" type="xs:string" use="required"/>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="macroPropagation" type="xs:boolean"/>		
+		<xs:attribute name="target" type="xs:string"/>						
+	</xs:complexType>	
+</xs:element>	
+	
+<xs:simpleType name="typeDefinition">
+    <xs:restriction base = "xs:string">
+      <xs:enumeration value = "image"/>
+      <xs:enumeration value = "button"/>
+    </xs:restriction>
+</xs:simpleType>				
+	
+</xs:schema>

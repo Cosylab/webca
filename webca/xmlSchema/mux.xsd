@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="mux" type="muxDefinition"/>	
+	
+<xs:complexType  name="muxDefinition">
+	<xs:complexContent>		
+		<xs:extension base="component">
+			 <xs:choice minOccurs="1" maxOccurs="unbounded">	
+				<xs:element name="sequence">
+					<xs:complexType> 
+    	               <xs:choice minOccurs="1" maxOccurs="unbounded">
+                	       <xs:element ref="macroValuePair"/>
+	   		            </xs:choice>	
+						<xs:attribute name="name" type="xs:string" use="required"/>	
+						<xs:attribute name="selected" type="xs:boolean"/>		
+					</xs:complexType> 
+				</xs:element>
+   		   </xs:choice>	
+		</xs:extension>	
+	</xs:complexContent>	
+</xs:complexType>
+
+</xs:schema>

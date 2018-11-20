@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+	
+	<!-- $(DESC) macro is resolved based on mux component selection in gallery.xml -->
+
+	<verticalPanel>
+		<row>
+			<staticText href="gallery.xml" target="_self" >this is static text with macro $(DESC) and link</staticText>	
+		</row>
+		<row>
+			<staticText>this is static text with macro $(DESC) and no link</staticText>	
+		</row>
+	</verticalPanel>
+	
+</caml>

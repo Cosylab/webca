@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Styles example</title>
+    <caml:head webcaPath="../../"/>
+    <link rel="stylesheet" type="text/css" href="../../external/asp.css"/>
+    <link rel="stylesheet" type="text/css" href="../../external/sns.css"/>
+</head>
+<body>
+
+    <caml:virtualPV name="Variable1" init="12.3"/>
+    <caml:virtualPV name="Variable2" init="1.23" eval="this+1" scan="1000"/>
+    <caml:virtualPV name="Variable3" init="123" eval="this+1" scan="2000"/>
+    <caml:virtualPV name="Variable4" init="0" eval="pvs.Variable2 + pvs.Variable3"/>
+    
+    <table border="1">
+        <caption><em><staticText>no style</staticText></em></caption>
+        <tr><td>Variable1:</td><td><caml:textUpdate readbackPV="Variable1"/></td></tr>
+        <tr><td>Variable2:</td><td><caml:textEntry controlPV="Variable2"/></td></tr>
+        <tr><td>Variable3:</td><td><caml:textUpdate readbackPV="Variable3"/></td></tr>
+        <tr><td>Variable4:</td><td><caml:textEntry controlPV="Variable4"/></td></tr>
+    </table>
+
+    <table border="1">
+        <caption><em><staticText class="asp">asp style</staticText></em></caption>
+        <tr><td>Variable1:</td><td><caml:textUpdate readbackPV="Variable1" class="asp"/></td></tr>
+        <tr><td>Variable2:</td><td><caml:textEntry controlPV="Variable2" class="asp"/></td></tr>
+        <tr><td>Variable3:</td><td><caml:textUpdate readbackPV="Variable3" class="asp"/></td></tr>
+        <tr><td>Variable4:</td><td><caml:textEntry controlPV="Variable4" class="asp"/></td></tr>
+    </table>
+
+    <table border="1">
+        <caption><em><staticText class="sns">sns style</staticText></em></caption>
+        <tr><td>Variable1:</td><td><caml:textUpdate readbackPV="Variable1" class="sns"/></td></tr>
+        <tr><td>Variable2:</td><td><caml:textEntry controlPV="Variable2" class="sns"/></td></tr>
+        <tr><td>Variable3:</td><td><caml:textUpdate readbackPV="Variable3" class="sns"/></td></tr>
+        <tr><td>Variable4:</td><td><caml:textEntry controlPV="Variable4" class="sns"/></td></tr>
+    </table>
+
+</body>
+</html>

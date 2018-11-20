@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl"?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../"/>
+</head>
+<body>
+
+	<caml:barChart flavor="advanced"
+	          xAxisLabel="Axis X label "
+			  yAxisLabel="Axis Y label "										
+		      xLabels="['label1','label2','label3','label4','label5','label6','label7']">
+		<caml:series PVname="barWaveform1" name="name"/>
+	</caml:barChart>	 
+	<caml:xyChart flavor="advanced"
+	         xAxisLabel="Axis X label "
+    	     yAxisLabel="Axis Y label ">
+		<caml:xySeries Y-PVname="waveform1" name="line"></caml:xySeries>						
+		<caml:xySeries Y-PVname="waveform2" name="scatter" type="scatter"></caml:xySeries>						
+	</caml:xyChart>	 
+</body>
+</html>

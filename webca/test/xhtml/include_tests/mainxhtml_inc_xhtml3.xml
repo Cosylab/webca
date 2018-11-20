@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../" pendEvents="5" pendEventsPeriodMs="100" extStyle="sns"/>
+</head>
+<body onload="/*alert('loaded!')*/" onresize="/*alert('resize!')*/">
+
+    This is normal html text.
+
+    <caml:staticText extStyle="sns">This is mainxhtml_inc_xhtml3.xml.</caml:staticText>
+    
+    This is a normal html table.
+    <table>
+        <tr><td>a1</td><td>a2</td></tr>
+        <tr><td>b1</td><td>b2</td></tr>
+        <tr><td>c1</td><td>c2</td></tr>
+    </table>
+
+    Below is staticText as normal html.<br/>
+    
+    <staticText>This is staticText without caml: prefix.</staticText><br/>
+    
+    Above is static text as normal html.<br/>
+    
+	<caml:textUpdate readbackPV="record2" dataType="text"/>
+    <caml:include href="xhtml3_inc_xhtml4.xml"/>
+</body>
+</html>

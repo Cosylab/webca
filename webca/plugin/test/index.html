@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Plugin load test</title>
+
+<script type="text/javascript">
+
+function installNPCA()  {  
+    InstallTrigger.install({'EPICS Channel Access Plug-in 1.1.1':'npca.xpi'});
+}
+
+</script>
+
+</head>
+
+<body>
+
+Plugin load test<p>
+
+If there is a box below this, the plugin is loaded.<p>
+
+<object id="NPCAPlugin"
+        type="application/mozilla-npca-scriptable-plugin"
+        width="100" 
+	height="100"
+        codebase="npca.xpi">
+No npca plugin yet. Install from the missing plugin bar, or click
+<a href="#" onclick="installNPCA();">here</a>, and then refresh the page.<p>
+
+</object>
+
+<p>
+
+<a href="about:plugins">Bookmark this link to display all plugins.</a>
+
+</body>
+
+</html>

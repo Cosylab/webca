@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://webca.cosylab.com"
+xmlns="http://webca.cosylab.com"			
+elementFormDefault="qualified">	
+
+<xs:include schemaLocation="common.xsd"/>	
+
+<xs:element name="textUpdate">
+	<xs:complexType>
+		<xs:complexContent>			
+			<xs:extension base="monitor">				
+		        <xs:attribute name="dataType" type="dataTypeDefinition" default="numeric"/>
+				<xs:attribute name="displayFormat" type="xs:string"/>			
+			</xs:extension>		
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>	   	   
+	
+</xs:schema>

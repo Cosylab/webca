@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" ?>
+<caml
+	title="WebCa Test"
+	extStyle="asp"
+	pendEvents="100"
+	pendEventsPeriodMs="100"
+	>
+	
+		   <mux>
+				<sequence name="record1" selected="true">
+					<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+					<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+					<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME)" macroValue="record2"/>
+					<macroValuePair macroName="$(NAME1)" macroValue="record1"/>			
+					<macroValuePair macroName="$(DESC)" macroValue="counter PV"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME)" macroValue="enum"/>
+					<macroValuePair macroName="$(DESC)" macroValue="enumerated PV"/>
+			    </sequence>
+			</mux>
+		
+	<slider
+		 readbackPV="$(NAME1)"										
+		 controlPV="$(NAME)"
+		 displayFormat="#0.0"	
+		 increment="0.001"										
+		 size="small">										
+	</slider>	
+		
+
+	
+	
+	<!--horizontalPanel>
+		<column>
+			<slider
+				 readbackPV="ai002"										
+				 controlPV="ai001"
+				 displayFormat="#0.0"			
+				 increment="0.001"										
+				 size="small">										
+			</slider>
+		</column>	
+		<column>
+			<slider
+				 readbackPV="ai002"										
+				 controlPV="ai001"
+				 displayFormat="#0.0"			
+				 increment="0.001"										
+				 size="small">										
+			</slider>	
+		</column>	
+		<column>
+			<slider
+				 readbackPV="ai002"										
+				 controlPV="ai001"
+				 displayFormat="#0.0"			
+				 increment="0.001"										
+				 size="small">										
+			</slider>	
+		</column>
+		<column>
+			<slider
+				 readbackPV="ai002"										
+				 controlPV="ai001"
+				 displayFormat="#0.0"			
+				 increment="0.001"										
+				 size="small">										
+			</slider>	
+		</column>							
+			
+	</horizontalPanel-->
+	
+	<!--verticalPanel>
+		<row>
+			<slider
+				 readbackPV="ai002"										
+				 controlPV="ai001"
+				 displayFormat="#0.0"			
+				 increment="0.001"										
+				 size="small">										
+			</slider>						
+		</row>
+		<row>
+			<slider
+				 readbackPV="ai002"										
+				 controlPV="ai001"
+				 displayFormat="#0.0"			
+				 increment="0.001"										
+				 size="small">										
+			</slider>			
+			
+		</row>			
+	</verticalPanel-->
+			
+</caml>

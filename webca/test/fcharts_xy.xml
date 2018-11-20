@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../" title="WebCa Test">
+
+	<horizontalPanel caption="advanced xyChart">
+			<column width="50%">
+				<xyChart flavor="advanced" xAxisLabel="Axis X label "
+ 						     yAxisLabel="Axis Y label " numberOfPoints="100">
+    				<xySeries X-PVname="$(NAME1)" Y-PVname="$(NAME2)" name="X-$(DESC1) Y-$(DESC2)"/>
+    				<xySeries X-PVname="$(NAME2)" Y-PVname="$(NAME3)" name="scatter: X-$(DESC2) Y-$(DESC3)" type="scatter"/>
+				</xyChart>	 
+			</column>			
+	</horizontalPanel>	
+
+	<horizontalPanel caption="fast xyChart">
+			<column width="50%">
+				<xyChart xAxisLabel="Axis X label "
+ 						     yAxisLabel="Axis Y label " numberOfPoints="100">
+    				<xySeries X-PVname="$(NAME1)" Y-PVname="$(NAME2)" name="X-$(DESC1) Y-$(DESC2)"/>
+    				<xySeries X-PVname="$(NAME2)" Y-PVname="$(NAME3)" name="scatter: X-$(DESC2) Y-$(DESC3)" type="scatter"/>
+				</xyChart>	 
+			</column>			
+	</horizontalPanel>	
+</caml>

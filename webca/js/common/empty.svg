@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<svg id="svg">
+
+<style type="text/css"><![CDATA[
+/* Pure XML is not hacked to handle styles as early HTML was. */
+/* Therefore we must/should use CDATA to delimit the content. */
+
+
+/***************************************************
+Gauge definition
+/****************************************************/
+
+.gauge {
+	width: 100%;
+	height: 100%;
+	min-height: 100px;
+	min-width: 100px;
+}
+
+.gauge.background {
+		fill:#B0B0F0;
+		stroke:black;
+        stroke-width:1;
+}
+
+.gauge.text {
+		font-family: Times, sans;
+}
+
+.gauge.tickText {
+		font-family: Times, sans;
+		color: black;
+		fill: black;
+}
+
+.gauge.tick {
+		font-family: Times, sans;
+		color: black;
+		fill: black;
+		stroke:black;
+        stroke-width:1pt;
+}
+
+.gauge.scale {
+		fill:#e0e0e0;
+		stroke:black;
+        stroke-width:1;
+}
+
+.gauge.needle {
+		fill:#00c000;
+		stroke:black;
+        stroke-width:1;
+}
+
+]]></style>
+
+    <rect fill="green" x="360" y="305" width="100" height="75" rx="10"/>
+</svg>

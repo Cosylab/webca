@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../" extStyle=""/>
+</head>
+<body>
+
+    <caml:virtualPV name="Readback1" init="12.3"/>
+    <caml:virtualPV name="Readback2" init="1.23" eval="this+1" scan="1000"/>
+    <caml:virtualPV name="Readback3" init="123" eval="this+1" scan="2000"/>
+    <caml:virtualPV name="Readback4" init="0" eval="pvs.Readback2 + pvs.Readback3"/>
+    
+    <table border="1">
+        <caption><em>no style</em></caption>
+        <tr><td>Readback1:</td><td><caml:textUpdate readbackPV="Readback1"/></td></tr>
+        <tr><td>Readback2:</td><td><caml:textUpdate readbackPV="Readback2"/></td></tr>
+        <tr><td>Readback3:</td><td><caml:textUpdate readbackPV="Readback3"/></td></tr>
+        <tr><td>Readback4:</td><td><caml:textUpdate readbackPV="Readback4"/></td></tr>
+    </table>
+
+    <table border="1">
+        <caption><em>asp style</em></caption>
+        <tr><td>Readback1:</td><td><caml:textUpdate readbackPV="Readback1" extStyle="asp"/></td></tr>
+        <tr><td>Readback2:</td><td><caml:textUpdate readbackPV="Readback2" extStyle="asp"/></td></tr>
+        <tr><td>Readback3:</td><td><caml:textUpdate readbackPV="Readback3" class="asp"/></td></tr>
+        <tr><td>Readback4:</td><td><caml:textUpdate readbackPV="Readback4" class="asp"/></td></tr>
+    </table>
+
+    <table border="1">
+        <caption><em>sns style</em></caption>
+        <tr><td>Readback1:</td><td><caml:textUpdate readbackPV="Readback1" extStyle="sns"/></td></tr>
+        <tr><td>Readback2:</td><td><caml:textUpdate readbackPV="Readback2" extStyle="sns"/></td></tr>
+        <tr><td>Readback3:</td><td><caml:textUpdate readbackPV="Readback3" class="sns"/></td></tr>
+        <tr><td>Readback4:</td><td><caml:textUpdate readbackPV="Readback4" class="sns"/></td></tr>
+    </table>
+
+</body>
+</html>
+    

@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../" title="WebCa Test"
+        pendEvents="30" pendEventsPeriodMs="30">
+
+	<horizontalPanel>
+		<column>
+			<mux>
+			    <sequence name="none1">
+					<macroValuePair macroName="$(VARIABLE1)" macroValue="none1"/>			
+					<macroValuePair macroName="$(VAR_DESC1)" macroValue="none1"/>			
+			    </sequence>
+			    <sequence name="virtualval1" selected="true">
+					<macroValuePair macroName="$(VARIABLE1)" macroValue="virtualval1"/>			
+					<macroValuePair macroName="$(VAR_DESC1)" macroValue="virtualval1"/>			
+			    </sequence>
+			</mux>
+		</column>
+		<column>
+			<mux>
+			    <sequence name="none2">
+					<macroValuePair macroName="$(VARIABLE2)" macroValue="none2"/>			
+					<macroValuePair macroName="$(VAR_DESC2)" macroValue="none2"/>			
+			    </sequence>
+			    <sequence name="virtualval2" selected="true">
+					<macroValuePair macroName="$(VARIABLE2)" macroValue="virtualval2"/>			
+					<macroValuePair macroName="$(VAR_DESC2)" macroValue="virtualval2"/>			
+			    </sequence>
+			</mux>
+		</column>
+		<column>
+			<mux>
+			    <sequence name="none3">
+					<macroValuePair macroName="$(VARIABLE3)" macroValue="none3"/>			
+					<macroValuePair macroName="$(VAR_DESC3)" macroValue="none3"/>			
+			    </sequence>
+			    <sequence name="virtualval3" selected="true">
+					<macroValuePair macroName="$(VARIABLE3)" macroValue="virtualval3"/>			
+					<macroValuePair macroName="$(VAR_DESC3)" macroValue="virtualval3"/>			
+			    </sequence>
+			</mux>
+		</column>
+	</horizontalPanel>	
+
+	<textEntry controlPV="virtualval1" displayFormat="##0.000"/>
+	<textEntry controlPV="virtualval2" displayFormat="##0.000"/>
+	<textEntry controlPV="virtualval3" displayFormat="##0.000"/>
+
+	<!-- Ctrl data setting tests -->
+	<virtualPV name="eval1" init="0">
+        <ctrl
+            precision="5"
+            units="Units"
+		    upperDisplayLimit="127"
+		    lowerDisplayLimit="-128"
+    		upperControlLimit="63"
+		    lowerControlLimit="-64"	
+		    upperAlarmLimit="47"
+		    lowerAlarmLimit="-48"
+		    upperWarningLimit="39"	
+		    lowerWarningLimit="-40"	
+		    labels="['Label1', 'Label2', 'Label3']"
+        />
+	</virtualPV>
+	<textEntry controlPV="eval1" displayFormat="##0.000"/>
+
+	<virtualPV name="eval2" init="0">
+        <ctrl
+		    upperDisplayLimit="127"
+    		upperControlLimit="63"
+		    upperAlarmLimit="47"
+		    upperWarningLimit="39"	
+        />
+	</virtualPV>
+	<textEntry controlPV="eval2" displayFormat="##0.000"/>
+
+	<virtualPV name="eval3" init="0"/>
+	<textEntry controlPV="eval3" displayFormat="##0.000"/>
+
+	<!-- Default alarm settings -->
+
+	<virtualPV name="$(VARIABLE1)" init="0">
+        <ctrl
+		    upperDisplayLimit="100"
+		    lowerDisplayLimit="-100"
+    		upperControlLimit="100"
+		    lowerControlLimit="-100"	
+		    upperAlarmLimit="90"
+		    lowerAlarmLimit="-90"
+		    upperWarningLimit="70"	
+		    lowerWarningLimit="-70"	
+        />
+	</virtualPV>
+	<virtualPV name="$(VARIABLE2)" init="0">
+        <ctrl
+		    upperDisplayLimit="95"
+		    lowerDisplayLimit="-95"
+    		upperControlLimit="100"
+		    lowerControlLimit="-100"	
+		    upperAlarmLimit="90"
+		    lowerAlarmLimit="-90"
+		    upperWarningLimit="70"	
+		    lowerWarningLimit="-70"	
+        />
+	</virtualPV>
+	<virtualPV name="$(VARIABLE3)" init="0">
+        <ctrl
+		    upperDisplayLimit="97"
+		    lowerDisplayLimit="-97"
+    		upperControlLimit="70"
+		    lowerControlLimit="-70"	
+		    upperAlarmLimit="90"
+		    lowerAlarmLimit="-90"
+		    upperWarningLimit="70"	
+		    lowerWarningLimit="-70"	
+        />
+	</virtualPV>
+
+	<virtualPV name="eval4" init="0" eval="pvs.virtualval1 + pvs.virtualval2 + pvs.virtualval3"/>
+	<textEntry controlPV="eval4" displayFormat="##0.000"/>
+
+	<!--  alarm insensitive test -->
+	<virtualPV name="eval5" init="0" eval="pvs.virtualval1 + pvs.virtualval2 + pvs.virtualval3" alarmSensitive="false"/>
+	<textEntry controlPV="eval5" displayFormat="##0.000"/>
+
+</caml>

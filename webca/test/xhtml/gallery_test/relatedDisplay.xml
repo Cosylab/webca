@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl"?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title>Title!</title>
+    <caml:head webcaPath="../../../"/>
+</head>
+<body>
+	<caml:textUpdate readbackPV="record2"/>
+
+	<caml:verticalPanel>
+	  <caml:row caption="opens CAML in a new window propagating specified macro definitions">
+
+		<caml:relatedDisplay type="image" src="test/xhtml/gallery_test/sns.gif" alt="alt" width="110px" height="70px" >
+			<caml:display src="test/xhtml/gallery_test/slider2.xml" name="beamline1" target="slider2">
+				<caml:macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+			</caml:display>		
+		</caml:relatedDisplay>
+
+	  </caml:row>
+	  
+	  <caml:row caption="opens CAML in a new window propagating all current macro definitions">
+		
+		<caml:relatedDisplay type="image" src="test/xhtml/gallery_test/sns.gif">
+			<caml:display src="test/xhtml/gallery_test/slider2.xml"  name="beamline1" macroPropagation="true" target="slider2"/>
+		</caml:relatedDisplay>	
+	
+	  </caml:row>
+	  
+	  <caml:row caption="opens CAML in a new window propagating all current macro definitions and adds some extra">
+
+		<caml:relatedDisplay type="image" src="test/xhtml/gallery_test/sns.gif">
+			<caml:display src="test/xhtml/gallery_test/slider2.xml" name="beamline1" macroPropagation="true" target="_blank">
+				<caml:macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+			</caml:display>		
+		</caml:relatedDisplay>		
+
+	  </caml:row>
+	  
+	  <caml:row caption="opens CAML in a new window propagating all current macro definitions and adds some extra">
+
+		<caml:relatedDisplay type="text" width="110px" height="70px">
+			<caml:display src="test/xhtml/gallery_test/slider2.xml" name="beamline1" macroPropagation="true" target="_blank">
+				<caml:macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+			</caml:display>		
+		</caml:relatedDisplay>		
+
+	  </caml:row>
+	  
+	  <caml:row caption="opens CAML in a current window propagating specified macro definitions">
+	
+		<caml:relatedDisplay type="button" width="110px" height="70px">
+			<caml:display src="test/xhtml/gallery_test/slider2.xml" name="slider replace" target="_self">
+				<caml:macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+			</caml:display>			
+		</caml:relatedDisplay>
+		
+	  </caml:row>
+	</caml:verticalPanel>
+	
+</body>
+</html>

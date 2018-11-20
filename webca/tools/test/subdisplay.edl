@@ -1,0 +1,82 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 869
+y 606
+w 256
+h 245
+font "helvetica-medium-r-14.0"
+ctlFont "courier-bold-r-14.0"
+btnFont "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 3
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 11
+title "Sub Display Title"
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 30
+w 225
+h 64
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "CL:$(CL)"
+  "RECORD:$(RECORD) (disabled)"
+  "SUB_RECORD1:$(SUB_RECORD1)"
+  "SUB_RECORD2:$(SUB_RECORD2)"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 117
+w 153
+h 119
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-14.0"
+buttonLabel "Sub Sub Display"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "subsubdisplay.edl"
+}
+menuLabel {
+  0 "Sub Sub Display Title"
+}
+closeAction {
+  0 1
+}
+symbols {
+  0 "@macros.txt"
+}
+closeDisplay {
+  0 1
+}
+endObjectProperties
+

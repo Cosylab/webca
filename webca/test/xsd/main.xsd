@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.org/ord"
+           xmlns="http://example.org/ord">
+
+<xs:include schemaLocation="node.xsd"/>
+<xs:include schemaLocation="extnode.xsd"/>
+
+</xs:schema>

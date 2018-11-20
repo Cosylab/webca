@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://example.org/ord"
+xmlns="http://example.org/ord"
+elementFormDefault="qualified">
+  
+<xs:include schemaLocation="node.xsd"></xs:include>
+	
+<xs:complexType name="monitor">
+  <xs:complexContent>
+    <xs:extension base="componentType">
+	    <xs:attribute name="level2"  type="xs:string"/>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>	
+
+<xs:element name="note">
+	<xs:complexType>
+		<xs:complexContent>			
+			<xs:extension base="monitor"/>     
+		</xs:complexContent>	
+	</xs:complexType>	
+</xs:element>
+
+</xs:schema>
+
+

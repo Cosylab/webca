@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude"	
+	webcaPath="../../../"
+	title="WebCa Test"
+	pendEvents="30"
+	pendEventsPeriodMs="30"
+    extStyle="sns"
+    >
+	
+	<horizontalPanel>
+		<column>			
+			<staticText size="large" >This is a gallery of WebCA components.</staticText>
+		</column>
+		<column>
+			<img src="cosylab.png" alt="epics Logo"></img>
+			<img src="sns.gif" alt="sns Logo"></img>
+		</column>				
+	</horizontalPanel>
+
+	<verticalPanel>
+		<row>
+			<mux>
+				<sequence name="record1" selected="true">
+					<macroValuePair macroName="$(NAME)" macroValue="record1"/>
+					<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME)" macroValue="record2"/>			
+					<macroValuePair macroName="$(DESC)" macroValue="counter PV"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME)" macroValue="enum"/>
+					<macroValuePair macroName="$(DESC)" macroValue="enumerated PV"/>
+			    </sequence>
+			</mux>
+		</row>
+	</verticalPanel>	
+
+	<tabView>
+		<tab name="layout">
+			<xi:include href="../../../example/gallery/layout.xml"/>
+		</tab>		
+		<tab name="staticText">	
+			<xi:include href="../../../example/gallery/staticText.xml"/>	
+		</tab>				
+		<tab name="textEntry">	
+			<xi:include href="../../../example/gallery/textEntry.xml"/>	
+		</tab>
+		
+		<tab name="textUpdate">	
+			<xi:include href="../../../example/gallery/textUpdate.xml"/>	
+		</tab>														
+		
+		<tab name="wheelSwitch">	
+			<xi:include href="../../../example/gallery/wheelSwitch.xml"/>	
+		</tab>
+		
+		<tab name="bitControl">	
+			<xi:include href="../../../example/gallery/bitControl.xml"/>	
+		</tab>
+		
+		<tab name="slider">	
+			<xi:include href="../../../example/gallery/slider.xml"/>	
+		</tab>		
+		
+		<tab name="buttons">	
+			<xi:include href="../../../example/gallery/buttons.xml"/>	
+		</tab>		
+		
+		<tab name="gauge">	
+			<xi:include href="../../../example/gallery/gauge.xml"/>	
+		</tab>		
+		<tab name="charts" selected="true">	
+			<xi:include href="../../../example/gallery/charts.xml"/>	
+		</tab>
+		<tab name="advanced charts">	
+			<xi:include href="../../../example/gallery/adv_charts.xml"/>	
+		</tab>
+		<tab name="virtual pv">	
+			<xi:include href="../../../example/gallery/virtualPV.xml"/>	
+		</tab>		
+		<tab name="relatedDisplay">	
+			<xi:include href="../../../example/gallery/relatedDisplay.xml"/>	
+		</tab>
+    </tabView>
+																					
+</caml>

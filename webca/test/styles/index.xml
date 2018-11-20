@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../../" title="WebCa Test"
+        extStyle="">
+
+    <virtualPV name="Readback1" init="12.3"/>
+    <virtualPV name="Readback2" init="1.23" eval="this+1" scan="100000"/>
+    <virtualPV name="Readback3" init="123" eval="this+1" scan="200000"/>
+    <virtualPV name="Readback4" init="0" eval="pvs.Readback2 + pvs.Readback3"/>
+    
+    <staticText>no style</staticText>
+    <textUpdate readbackPV="Readback1"/>
+    <textUpdate readbackPV="Readback2"/>
+    <textUpdate readbackPV="Readback3"/>
+    <textUpdate readbackPV="Readback4"/>
+
+    <staticText extStyle="asp">asp style</staticText>
+    <textUpdate readbackPV="Readback1" extStyle="asp"/>
+    <textUpdate readbackPV="Readback2" extStyle="asp"/>
+    <textUpdate readbackPV="Readback3" class="asp"/>
+    <textUpdate readbackPV="Readback4" class="asp"/>
+
+    <staticText extStyle="sns">sns style</staticText>
+    <textUpdate readbackPV="Readback1" extStyle="sns"/>
+    <textUpdate readbackPV="Readback2" extStyle="sns"/>
+    <textUpdate readbackPV="Readback3" class="sns"/>
+    <textUpdate readbackPV="Readback4" class="sns"/>
+</caml>

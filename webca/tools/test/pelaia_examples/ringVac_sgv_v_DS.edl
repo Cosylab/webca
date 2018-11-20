@@ -1,0 +1,533 @@
+# File: /ade/epics/iocTop/R3.14.7/vacuum/hebtVac/current/opi/ringVac_sgv_v_DS.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 512
+y 496
+w 426
+h 158
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 112
+bgColor index 50
+textColor index 5
+ctlFgColor1 index 0
+ctlFgColor2 index 34
+ctlBgColor1 index 38
+ctlBgColor2 index 17
+topShadowColor index 38
+botShadowColor index 0
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 20
+w 60
+h 60
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 20
+w 60
+h 60
+lineColor index 0
+fillColor index 38
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 20
+w 40
+h 60
+lineColor index 112
+fill
+fillColor index 17
+closePolygon
+numPoints 5
+xPoints {
+  0 40
+  1 80
+  2 40
+  3 80
+  4 40
+}
+yPoints {
+  0 80
+  1 20
+  2 20
+  3 80
+  4 80
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 40
+w 40
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 18
+value {
+  "Open"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 40
+w 40
+h 20
+lineColor index 112
+fillColor index 38
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 40
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 17
+numPoints 7
+xPoints {
+  0 40
+  1 30
+  2 30
+  3 20
+  4 20
+  5 30
+  6 30
+}
+yPoints {
+  0 50
+  1 50
+  2 40
+  3 40
+  4 60
+  5 60
+  6 50
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 20
+w 60
+h 60
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 20
+w 60
+h 60
+lineColor index 0
+fillColor index 38
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 20
+w 40
+h 60
+lineColor index 112
+fill
+fillColor index 22
+closePolygon
+numPoints 5
+xPoints {
+  0 130
+  1 170
+  2 130
+  3 170
+  4 130
+}
+yPoints {
+  0 80
+  1 20
+  2 20
+  3 80
+  4 80
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 130
+y 40
+w 40
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 112
+value {
+  "Closed"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 40
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 22
+numPoints 7
+xPoints {
+  0 130
+  1 120
+  2 120
+  3 110
+  4 110
+  5 120
+  6 120
+}
+yPoints {
+  0 50
+  1 50
+  2 40
+  3 40
+  4 60
+  5 60
+  6 50
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 20
+w 60
+h 60
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 20
+w 60
+h 60
+lineColor index 0
+fillColor index 38
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 220
+y 20
+w 40
+h 60
+lineColor index 112
+fill
+fillColor index 37
+closePolygon
+numPoints 5
+xPoints {
+  0 220
+  1 260
+  2 220
+  3 260
+  4 220
+}
+yPoints {
+  0 80
+  1 20
+  2 20
+  3 80
+  4 80
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 220
+y 40
+w 40
+h 20
+font "helvetica-medium-r-10.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 37
+value {
+  "Traveling"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 220
+y 40
+w 40
+h 20
+lineColor index 112
+fillColor index 38
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 40
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 37
+numPoints 7
+xPoints {
+  0 220
+  1 210
+  2 210
+  3 200
+  4 200
+  5 210
+  6 210
+}
+yPoints {
+  0 50
+  1 50
+  2 40
+  3 40
+  4 60
+  5 60
+  6 50
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 290
+y 20
+w 60
+h 60
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 290
+y 20
+w 60
+h 60
+lineColor index 0
+fillColor index 38
+invisible
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 20
+w 40
+h 60
+lineColor index 112
+fill
+fillColor index 0
+closePolygon
+numPoints 5
+xPoints {
+  0 310
+  1 350
+  2 310
+  3 350
+  4 310
+}
+yPoints {
+  0 80
+  1 20
+  2 20
+  3 80
+  4 80
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 310
+y 40
+w 40
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 0
+value {
+  "Fault"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 40
+w 40
+h 20
+lineColor index 112
+fillColor index 38
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 290
+y 40
+w 20
+h 20
+lineColor index 112
+fill
+fillColor index 0
+numPoints 7
+xPoints {
+  0 310
+  1 300
+  2 300
+  3 290
+  4 290
+  5 300
+  6 300
+}
+yPoints {
+  0 50
+  1 50
+  2 40
+  3 40
+  4 60
+  5 60
+  6 50
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

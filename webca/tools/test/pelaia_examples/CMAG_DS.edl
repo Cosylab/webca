@@ -1,0 +1,260 @@
+# File: /ade/epics/supTop/operations/opi/CMAG_DS.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1145
+y 1591
+w 150
+h 65
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 112
+bgColor index 50
+textColor index 112
+ctlFgColor1 index 112
+ctlFgColor2 index 1
+ctlBgColor1 index 1
+ctlBgColor2 index 0
+topShadowColor index 1
+botShadowColor index 0
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 21
+y 8
+w 11
+h 32
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 21
+y 8
+w 11
+h 32
+lineColor index 112
+fillColor index 1
+invisible
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 22
+y 9
+w 9
+h 30
+lineColor index 112
+fill
+fillColor index 15
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 42
+y 8
+w 11
+h 32
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 42
+y 8
+w 11
+h 32
+lineColor index 112
+fillColor index 1
+invisible
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 43
+y 9
+w 9
+h 30
+lineColor index 112
+fill
+fillColor index 20
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 66
+y 7
+w 11
+h 32
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 66
+y 7
+w 11
+h 32
+lineColor index 112
+fillColor index 1
+invisible
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 67
+y 8
+w 9
+h 30
+lineColor index 112
+fill
+fillColor index 35
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 8
+w 11
+h 32
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 8
+w 11
+h 32
+lineColor index 112
+fillColor index 1
+invisible
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 96
+y 9
+w 9
+h 30
+lineColor index 112
+fill
+fillColor index 15
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 9
+w 7
+h 29
+lineColor index 20
+fillColor index 1
+lineWidth 3
+numPoints 2
+xPoints {
+  0 97
+  1 104
+}
+yPoints {
+  0 9
+  1 38
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 10
+w 7
+h 28
+lineColor index 20
+fillColor index 1
+lineWidth 3
+numPoints 2
+xPoints {
+  0 104
+  1 97
+}
+yPoints {
+  0 10
+  1 38
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

@@ -1,0 +1,19 @@
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title></title>
+    <caml:head webcaPath="../"/>
+</head>
+<body>
+    <tr><td>
+    <caml:virtualPV name="$(DEVICE):$(INC):I" init="0" eval="pvs.$(DEVICE):$(INC):I_Set" scan="2000" display="true"/>
+    <caml:virtualPV name="$(DEVICE):$(INC):I_Set" init="0" display="true"/>
+        <table><tr>
+            <td><caml:staticText>$(RepMag:index)</caml:staticText></td>
+            <td><caml:textUpdate readbackPV="$(DEVICE):$(INC):I"/></td>
+            <td><caml:wheelSwitch controlPV="$(DEVICE):$(INC):I_Set"/></td>
+            <td><caml:textUpdate readbackPV="$(DEVICE):$(INC):I_Set"/></td>
+        </tr></table>
+    </td></tr>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title></title>
+    <caml:head webcaPath="../"/>
+</head>
+<body>
+
+    <caml:virtualPV name="Record1State" init="2"/>
+    <caml:virtualPV name="Record2State" init="4"/>
+    <caml:virtualPV name="Record3State" init="7"/>
+
+    <caml:virtualPV name="Record1Get" init="0" eval="pvs.Record1Set" scan="2000"/>
+    <caml:virtualPV name="Record2Get" init="0" eval="pvs.Record2Set" scan="2000"/>
+    <caml:virtualPV name="Record3Get" init="0" eval="pvs.Record3Set" scan="2000"/>
+
+    <caml:virtualPV name="Record1Set" init="0"/>
+    <caml:virtualPV name="Record2Set" init="0"/>
+    <caml:virtualPV name="Record3Set" init="0"/>
+
+    <caml:horizontalPanel>
+    
+        <caml:repetition name="RepPV">
+            <caml:list>
+                <caml:item>
+                    <caml:macroValuePair macroName="$(PV)" macroValue="Record1"/>
+                </caml:item>
+                <caml:item>
+                    <caml:macroValuePair macroName="$(PV)" macroValue="Record2"/>
+                </caml:item>
+                <caml:item>
+                    <caml:macroValuePair macroName="$(PV)" macroValue="Record3"/>
+                </caml:item>
+        </caml:list>
+
+        <caml:template>
+            <caml:column>
+                <caml:staticText>PV: $(RepPV:index)</caml:staticText>
+                <caml:textUpdate readbackPV="$(PV)State"/>
+                <caml:textUpdate readbackPV="$(PV)Get"/>
+                <caml:wheelSwitch controlPV="$(PV)Set"/>
+            </caml:column>
+        </caml:template>
+
+    </caml:repetition>
+
+</caml:horizontalPanel>
+
+</body>
+</html>

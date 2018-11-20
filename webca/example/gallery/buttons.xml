@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+	
+	<verticalPanel>
+		<row>
+			<radioButton readbackPV="ai001" alarmSensitive="true" controlPV="ai001">
+												<radioButtonItem value="-300" name="radio 0"/>
+												<radioButtonItem value="0" name="radio 1"/>
+												<radioButtonItem value="50" name="radio 2"/>
+												<radioButtonItem value="100" name="radio 3"/>	
+												<radioButtonItem value="700" name="radio 4"/>			
+											</radioButton>
+		</row>		
+		<row>
+			<radioButton readbackPV="ai001" alarmSensitive="true" controlPV="ai001" type="toggle">
+												<radioButtonItem value="-300" name="less than minimum"/>
+												<radioButtonItem value="0" name="min"/>
+												<radioButtonItem value="50" name="medium"/>
+												<radioButtonItem value="100" name="full"/>	
+												<radioButtonItem value="700" name="beyond full"/>			
+											</radioButton>	
+		</row>
+		<row>
+			<radioButton readbackPV="enum" alarmSensitive="true" controlPV="enum" type="toggle">												
+											</radioButton>	
+		</row>
+		<row>
+			<radioButton readbackPV="enum" alarmSensitive="true" controlPV="enum" type="radio">												
+											</radioButton>	
+		</row>	
+		
+		<row>
+			<radioButton controlPV="$(NAME)" type="radio">	
+												<radioButtonItem value="-300" name="less than minimum"/>
+												<radioButtonItem value="0" name="min"/>
+												<radioButtonItem value="50" name="medium"/>
+												<radioButtonItem value="100" name="full"/>	
+												<radioButtonItem value="700" name="beyond full"/>																
+											</radioButton>	
+		</row>		
+		
+		<row>
+			<messageButton controlPV="$(NAME)">
+				<on caption="on" value="10"></on>
+				<off caption="off" value="0"></off>
+			</messageButton>
+		</row>
+		<row>
+			<menuButton controlPV="$(NAME)" >
+				<menuButtonItem name="negative" value="-10" />
+				<menuButtonItem name="positive" value="+10" />
+			</menuButton>
+		</row>		
+	</verticalPanel>
+				
+</caml>

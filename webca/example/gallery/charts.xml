@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl"?>
+<caml webcaPath="../../">
+
+		<horizontalPanel caption="barChart">
+				<column height="400px" width="60%">
+					<barChart xAxisLabel="Axis X label "
+							  yAxisLabel="Axis Y label "										
+						      xLabels="['label1','label2','label3','label4','label5','label6','label7']">
+						<series PVname="barWaveform1" name="name"/>
+					</barChart>	 
+				</column>
+		</horizontalPanel>	
+	
+		<horizontalPanel caption="xyChart">
+				<column width="50%">
+					<xyChart xAxisLabel="Axis X label "
+  						     yAxisLabel="Axis Y label ">
+						<xySeries Y-PVname="waveform1" name="line"></xySeries>						
+						<xySeries Y-PVname="waveform2" name="scatter" type="scatter"></xySeries>						
+					</xyChart>	 
+				</column>			
+		</horizontalPanel>	
+
+		<verticalPanel caption="intensityPlot"> 	
+			<row>
+				<intensityPlot readbackPV="waveform5" width="72" height="240" maxValue="64" waterfall="false"/> 	
+			</row>
+			<row>
+				<staticText size="small">(for intensity plot set EPICS_CA_MAX_ARRAY_BYTES to 400000)</staticText> 	
+			</row>
+		</verticalPanel>	
+						
+		
+</caml>

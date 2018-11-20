@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<!-- IMPORTANT : Modify href attribute to point to webca.xsl file 
+	 and webcaPath to point to webca root directory. -->
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude"	
+	webcaPath=""
+	title="WebCa Test"
+	>
+	<!--extStyle="matej"-->
+	
+	<!-- TODO have user-defined CCS in different files, e.g. sns in sns.ccs, ... -->
+	
+	<!-- TODO/TOTHINK basic/simple HTML support in CAML would be really nice... -->
+	<!-- TODO posibility to add 'customStyle' --> 
+	
+	<img src="http://webca.cosylab.com/images/cosylablogo.gif" width="100%" />
+
+	<verticalPanel>
+		<row>
+			<mux>
+				<sequence name="record1" selected="true">
+					<macroValuePair macroName="$(NAME)" macroValue="record1"/>
+					<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME)" macroValue="record2"/>			
+					<macroValuePair macroName="$(DESC)" macroValue="counter PV"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME)" macroValue="enum"/>
+					<macroValuePair macroName="$(DESC)" macroValue="enumerated PV"/>
+			    </sequence>
+			</mux>
+		</row>
+		<row>
+			<!-- I really like macros being supported inside staticText :) --> 
+			<!-- it would be very helpful to support basic HTML formatting statements in staticText... --> 
+			<staticText>PV under control is <b>$(NAME)</b>, description: <b>$(DESC)</b></staticText>
+			
+			<!-- but here is a way to do it :) --> 
+			<staticText><![CDATA[PV under control is <b>$(NAME)</b>, description: <b>$(DESC)</b>]]></staticText>
+		</row>
+	</verticalPanel>
+	
+	<!-- this div is being ignored -->
+	<div>
+		This is user DIV
+	</div>
+	
+	<!-- this div is also being ignored -->
+	<html>
+		<div>
+			This is user DIV inside <b>html</b> block
+		</div>
+	</html>
+
+	<!-- this is ok -->
+	<html>
+		<![CDATA[
+		<div>
+			This is user DIV inside <b>html</b> block and CDATA
+		</div>
+		]]>
+	</html>
+	
+	<!-- let's try CDATA alone... this literally prints what's inside -->
+	<![CDATA[
+	<div>
+		This is user DIV inside CDATA
+	</div>
+	]]>
+	
+	<verticalPanel>
+		<row height="100px">
+			<textUpdate readbackPV="$(NAME)" />			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" dataType="text" alarmSensitive="true" size="small" />			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" dataType="numeric" alarmSensitive="false" size="large" />			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" displayFormat="0.000" />			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" displayFormat="+##0.0000" />			
+		</row>
+	</verticalPanel>
+	
+	<verticalPanel>
+		<row>
+			<textEntry controlPV="$(NAME)" />			
+		</row>
+		<row>
+			<textEntry controlPV="$(NAME)" dataType="text" alarmSensitive="true" size="small" />			
+		</row>
+		<row>
+			<textEntry controlPV="$(NAME)" dataType="numeric" alarmSensitive="false" size="large" />			
+		</row>
+		<row>
+			<textEntry controlPV="$(NAME)" displayFormat="+0" />			
+		</row>
+	</verticalPanel>
+	<!-- NOTE is controlPV changes if is hard to type a new value in -->
+		
+	<verticalPanel>
+		<row height="200px">
+			<wheelSwitch controlPV="$(NAME)" />
+		</row>
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="+##0.000" />
+		</row>
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="+0.00E+00" />
+		</row>
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="invalid" />
+		</row>
+	</verticalPanel>
+
+
+	<verticalPanel>
+		<row>
+			<slider controlPV="$(NAME)" />
+		</row>
+		<row>
+			<slider controlPV="$(NAME)" displayFormat="+##0.000" />
+		</row>
+		<row>
+			<slider controlPV="$(NAME)" displayFormat="invalid" />
+		</row>
+		<row>
+			<slider controlPV="$(NAME)" maxValue="100" minValue="-100" increment="10" />
+		</row>
+		<row>
+			<slider controlPV="$(NAME)" maxValue="-100" minValue="100" increment="1" />
+		</row>
+		<row>
+			<slider controlPV="$(NAME)" readbackPV="invalid" />
+		</row>
+		<row>
+			<!-- WOW! Slider is smart and detects controlPV==readbackPV -->
+			<slider controlPV="$(NAME)" readbackPV="$(NAME)" />
+		</row>
+	</verticalPanel>
+	<!-- FIXME Safari resize (download latest WebKit)... text needs another update -->
+
+	<!-- TOTHINK how do you determine increment if not specidied? how does it affect behaviour? -->
+	<!-- NOTE Safari 3 has buggy SVG (text is not shown), upgrade to latest WebKit it seems that MacOS/Firefox uses the same implementation -->
+
+	
+	<verticalPanel>
+		<row>
+			<messageButton controlPV="$(NAME)" />
+		</row>
+		<row>
+			<messageButton controlPV="$(NAME)">
+				<on caption="only one" value="-10" />
+			</messageButton>
+		</row>
+		<row>
+			<messageButton controlPV="$(NAME)">
+				<on caption="-invalid" value="-invalid" />
+				<off caption="+invalid" value="+invalid" />
+			</messageButton>
+		</row>
+		<row>
+			<messageButton controlPV="$(NAME)">
+				<on caption="negative" value="-10" />
+				<off caption="positive" value="+10" />
+			</messageButton>
+		</row>
+		<row>
+			<messageButton controlPV="invalid">
+				<on caption="negative" value="-10" />
+				<off caption="positive" value="+10" />
+			</messageButton>
+		</row>
+	</verticalPanel>
+	<!-- TOTHINK what about initial state? -->
+
+	<verticalPanel>
+		<row>
+			<menuButton controlPV="$(NAME)" />
+		</row>
+		<row>
+			<menuButton controlPV="$(NAME)">
+				<menuButtonItem name="only one" value="-10" />
+			</menuButton>
+		</row>
+		<row>
+			<menuButton controlPV="$(NAME)">
+				<menuButtonItem name="-invalid" value="-invalid" />
+				<menuButtonItem name="+invalid" value="+invalid" />
+			</menuButton>
+		</row>
+		<row>
+			<menuButton controlPV="$(NAME)" >
+				<menuButtonItem name="negative" value="-10" />
+				<menuButtonItem name="positive" value="+10" />
+			</menuButton>
+		</row>
+		<row>
+			<menuButton controlPV="invalid" >
+				<menuButtonItem name="negative" value="-10" />
+				<menuButtonItem name="positive" value="+10" />
+			</menuButton>
+		</row>
+		<row>
+			<menuButton controlPV="$(NAME)" readbackPV="invalid">
+				<menuButtonItem name="negative" value="-10" />
+				<menuButtonItem name="positive" value="+10" />
+			</menuButton>
+		</row>
+	</verticalPanel>
+	<!-- TOTHINK what about initial state for non-enums? -->
+	<!-- FIXME (minor) in drop-down menu a first entry is being seledcted, in all further drop-downs none... -->
+	
+	
+	<verticalPanel>
+		<row>
+			<radioButton controlPV="$(NAME)" />
+		</row>
+		<row>
+			<radioButton controlPV="$(NAME)">
+				<radioButtonItem name="only one" value="-10" />
+			</radioButton>
+		</row>
+		<row>
+			<radioButton controlPV="$(NAME)">
+				<radioButtonItem name="-invalid" value="-invalid" />
+				<radioButtonItem name="+invalid" value="+invalid" />
+			</radioButton>
+		</row>
+		<row>
+			<radioButton controlPV="$(NAME)">
+				<radioButtonItem name="negative" value="-10" />
+				<radioButtonItem name="positive" value="+10" />
+			</radioButton>
+		</row>
+		<row>
+			<radioButton controlPV="invalid">
+				<radioButtonItem name="negative" value="-10" />
+				<radioButtonItem name="positive" value="+10" />
+			</radioButton>
+		</row>
+		<row>
+			<radioButton controlPV="$(NAME)" readbackPV="invalid">
+				<radioButtonItem name="negative" value="-10" />
+				<radioButtonItem name="positive" value="+10" />
+			</radioButton>
+		</row>
+	</verticalPanel>
+	<!-- TOTHINK what about initial state for non-enums? -->
+
+	<verticalPanel>
+		<row>
+			<xyChart xAxisLabel="Axis X label [units]" yAxisLabel="Axis Y label [units]" numberOfPoints="1000">
+				<xySeries Y-PVname="$(NAME)" name="Y $(DESC)" />
+			</xyChart>	 
+		</row>		
+		<row>
+			<xyChart xAxisLabel="Axis X label [units]" yAxisLabel="Axis Y label [units]" numberOfPoints="1000">
+				<xySeries Y-PVname="record1" />
+				<xySeries Y-PVname="record2" />
+			</xyChart>	 
+		</row>
+	</verticalPanel>
+
+	<!-- I failed to get it work -->
+	
+	<!-- TODO support macro substitutions in name/xAxisLabel/yAxislabel -->
+	<!-- FIXME chart axis (especially y) can be a little bit "disordered", e.g. minus character in the begining...) -->
+	<!-- TODO can chart major lines be set in a little bit more smart way? -->
+	<!-- FIXME mux PV change confuses whole WebCA screen -->
+	<!-- FIXME if nything is wrong with chart (invalid numberOfPoints, not-conected) is just becomes all white... -->
+	<!-- TODO a little bit nice-ficiation of legend -->
+	<!-- TOTHINK is it OK to draw a likne from (x1, y1) - (x2,y2) or it should be done (x1, y1) - (x2, y1) - (x2 - y2) -->
+
+	<!-- FIXME are charts of fixed size? -->
+
+	<!-- TODO BAR CHART TEST :) -->
+
+</caml>

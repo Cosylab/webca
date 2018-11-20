@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="matej_xhtml.xslt" type="text/xsl" ?>
+
+<html xmlns:caml="http://webca.cosylab.com">
+ <div>to</div>
+ <div>je</div>
+ <div>test</div>
+ <img src="http://www.cosylab.com/icons/elementi/logo_cosylab.gif" />
+ <caml:text>ojla</caml:text>
+</html>

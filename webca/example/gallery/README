@@ -1,0 +1,25 @@
+Build in run galleryEpicsApp before opening "gallery.xml" CAML file. NPCA plugin must already be installed.
+
+Safari (WebKit engine)
+----------------------
+Latest WebKit recommended, since Safari 3.0.4 does not fully support SVG yet
+intensityPloti: very slow "pixel-by-pixel" mode, since WebKit does not implement get/putImageData yet.
+
+WebKit (nightly builds)
+----------------------
+Note that WebKit does not propagate system environment variables, e.g. EPICS_CA_* variables, that might cause you problems setting CA gateway, max. array size, etc. 
+WebKit launcher does not pass any of env. variable at all, see: http://trac.webkit.org/projects/webkit/browser/trunk/WebKitTools/WebKitLauncher/main.m
+This launcher was before a script, but now it is an executable which is more convenient and now you also have a different golden icon below compared to the Safari silver icon.
+WebKit can be manually run via command line and this will pass env. var.:
+
+export DYLD_FRAMEWORK_PATH=/Volumes/WebKit/WebKit.app/Contents/Frameworks/10.5
+export WEBKIT_UNSET_DYLD_FRAMEWORK_PATH=YES
+/Applications/Safari.app/Contents/MacOS/Safari
+
+The "trick" is to set WebKit framework path and run Safari.
+
+Firefox (Gecko engine)
+----------------------
+On MacOSX systems Gecko uses Safari's SVG engine that does fully not suport SVG, latest WebKit recommended.
+intensityPlot: FF2 implementation of putImageData is buggy (does not refresh), therefore FF3 recommended.
+FF3 has stronger security model and only allows accessing files in current domain (e.g. paths like ../webca will not work, only subdirectories are allowed). Therefore, gallery will not work with FF3 out-of-the-box... you have to copy CAMLs files in WebCA root and fix paths in the CAMLs. Using soft-links might be a good idea...

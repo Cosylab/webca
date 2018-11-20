@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="./xsl/webca.xsl" type="text/xsl" ?>
+<caml 
+	webcaPath="./"
+	title="microIOC ADIO Main screen"
+	extStyle="csl"
+	>
+
+		<img src="title.png" alt="microIOC" />
+ 	<horizontalPanel>
+		<column>			
+			<staticText style="title1">microIOC ADIO Control Panel</staticText>
+		</column>
+	</horizontalPanel>
+
+	<horizontalPanel caption="Card selector" width="1000">
+		<column width="50%">		
+			<staticText style="right">ADC card number :</staticText>		
+		</column>
+		<column width="50%">
+			<mux>	
+				<sequence name="ADC card 1" selected="true">
+					<macroValuePair macroName="$(ANAME)" macroValue="aio0"/>
+				</sequence>
+				<sequence name="ADC card 2">
+					<macroValuePair macroName="$(ANAME)" macroValue="aio1"/>
+				</sequence>
+				<sequence name="ADC card 3">
+					<macroValuePair macroName="$(ANAME)" macroValue="aio2"/>
+				</sequence>
+			</mux>
+		</column>
+	</horizontalPanel>
+ 
+ 	<panel caption="ADC signals" width="1000">
+		<row>
+			<column>
+ 				<horizontalPanel caption="Digital inputs" width="100%">
+					<column width="12,5%">
+						<staticText>DI0:</staticText>
+						<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_0_GET" />
+					</column>
+					<column width="12,5%">
+						<staticText>DI1:</staticText>
+						<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_1_GET" />
+					</column>
+					<column width="12,5%">
+						<staticText>DI2:</staticText>
+						<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_2_GET" />
+					</column>
+					<column width="12,5%">
+						<staticText>DI3:</staticText>
+						<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_3_GET" />
+					</column>
+					<column width="12,5%">
+						<staticText>DI4:</staticText>
+						<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_4_GET" />
+					</column>
+					<column width="12,5%">
+						<staticText>DI5:</staticText>
+						<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_5_GET" />
+					</column>
+					<column width="12,5%">
+						<staticText>DI6:</staticText>
+						<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_6_GET" />
+					</column>
+					<column width="12,5%">
+						<staticText>DI7:</staticText>
+						<textUpdate readbackPV="ADIO:DIG_$(ANAME)_18_7_GET" />
+					</column>					
+				</horizontalPanel>
+			</column>
+			</row>
+			<row>
+			 <column>
+				<horizontalPanel caption="Digital outputs" width="100%">
+					<column width="12,5%">
+						<staticText>DO0:</staticText>
+						<menuButton style="textBlue" readbackPV="ADIO:DIG_$(ANAME)_19_0_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_0_SET">
+							<menuButtonItem name="ON " value="1"/>
+							<menuButtonItem name="OFF" value="0"/>
+						</menuButton>
+					</column>
+					<column width="12,5%">
+						<staticText>DO1:</staticText>
+						<menuButton readbackPV="ADIO:DIG_$(ANAME)_19_1_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_1_SET">
+							<menuButtonItem name="ON " value="1"/>
+							<menuButtonItem name="OFF" value="0"/>
+						</menuButton>
+					</column>
+					<column width="12,5%">
+						<staticText>DO2:</staticText>
+						<menuButton readbackPV="ADIO:DIG_$(ANAME)_19_2_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_2_SET">
+							<menuButtonItem name="ON " value="1"/>
+							<menuButtonItem name="OFF" value="0"/>
+						</menuButton>
+					</column>
+					<column width="12,5%">
+						<staticText>DO3:</staticText>
+						<menuButton readbackPV="ADIO:DIG_$(ANAME)_19_3_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_3_SET">
+							<menuButtonItem name="ON " value="1"/>
+							<menuButtonItem name="OFF" value="0"/>
+						</menuButton>
+					</column>
+					<column width="12,5%">
+						<staticText>DO4:</staticText>
+						<menuButton readbackPV="ADIO:DIG_$(ANAME)_19_4_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_4_SET">
+							<menuButtonItem name="ON " value="1"/>
+							<menuButtonItem name="OFF" value="0"/>
+						</menuButton>
+					</column>
+					<column width="12,5%">
+						<staticText>DO5:</staticText>
+						<menuButton readbackPV="ADIO:DIG_$(ANAME)_19_5_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_5_SET">
+							<menuButtonItem name="ON " value="1"/>
+							<menuButtonItem name="OFF" value="0"/>
+						</menuButton>
+					</column>
+					<column width="12,5%">
+						<staticText>DO6:</staticText>
+						<menuButton readbackPV="ADIO:DIG_$(ANAME)_19_6_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_6_SET">
+							<menuButtonItem name="ON " value="1"/>
+							<menuButtonItem name="OFF" value="0"/>
+						</menuButton>
+					</column>
+					<column width="12,5%">
+						<staticText>DO7:</staticText>
+						<menuButton readbackPV="ADIO:DIG_$(ANAME)_19_7_SET" alarmSensitive="false" controlPV="ADIO:DIG_$(ANAME)_19_7_SET">
+							<menuButtonItem name="ON " value="1"/>
+							<menuButtonItem name="OFF" value="0"/>
+						</menuButton>
+					</column>					
+					
+				</horizontalPanel>
+			</column>
+			</row>
+			<row>
+			<column>
+				<panel caption="Analog inputs" width="100%">
+					<row>
+						<column width="12,5%">
+							<staticText>AI0:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_0_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI1:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_1_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI2:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_2_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI3:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_3_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI4:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_4_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI5:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_5_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI6:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_6_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI7:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_7_GET" />
+						</column>
+					</row>	
+					<row>
+						<column width="12,5%">
+							<staticText>AI8:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_8_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI9:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_9_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI10:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_10_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI11:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_11_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI12:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_12_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI13:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_13_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI14:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_14_GET" />
+						</column>
+						<column width="12,5%">
+							<staticText>AI15:</staticText>
+							<textUpdate readbackPV="ADIO:ANA_$(ANAME)_15_GET" />
+						</column>
+					</row>	
+				</panel>
+			</column>
+		</row>
+		<row>
+			<column>
+				<horizontalPanel caption="Analog outputs" width="100%">	
+					<column width="25%">
+						<staticText> </staticText>			
+					</column>				
+					<column width="12,5%">
+						<staticText>AO0:  </staticText>
+						<textEntry controlPV="ADIO:ANA_$(ANAME)_16_SET"/>			
+					</column>
+					<column width="25%">
+						<staticText> </staticText>			
+					</column>					
+					<column width="12,5%">
+						<staticText>AO1:  </staticText>
+						<textEntry controlPV="ADIO:ANA_$(ANAME)_17_SET"/>			
+					</column>	
+					<column width="25%">
+						<staticText> </staticText>			
+					</column>					
+
+				</horizontalPanel>
+			</column>	
+		</row>
+	</panel>
+	<horizontalPanel width="1000">
+		<column>
+		<staticText style="center" href="http://www.microIOC.com" target="_self"> www.microIOC.com </staticText>
+		<staticText style="center" href="http://www.cosylab.com" target="_blank"> (c) 2008 Cosylab </staticText>
+		</column>					
+	</horizontalPanel>
+	
+</caml>

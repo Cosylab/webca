@@ -1,0 +1,1200 @@
+# File: /ade/epics/iocTop/R3.14.7/vacuum/ringVac/current/opi/ringIonPumpDS.edl
+3 1 0
+648
+24
+381
+119
+helvetica-medium-r-18.0
+0
+helvetica-medium-r-18.0
+0
+index
+0
+index
+60
+index
+0
+index
+0
+index
+1
+index
+1
+index
+1
+index
+0
+index
+0
+<<<empty>>>
+1
+1
+10
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+helvetica-medium-r-18.0
+0
+<<<E~O~D>>>
+activeGroupClass
+10
+10
+80
+90
+{
+activeRectangleClass
+2 1 0
+10
+10
+80
+90
+index
+0
+0
+0
+index
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+1
+EOD
+activeLineClass
+2 2 0
+50
+10
+0
+8
+4
+50 10
+50 18
+50 10
+50 10
+index
+112
+0
+0
+index
+1
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+50
+22
+0
+8
+4
+50 22
+50 30
+50 22
+50 22
+index
+112
+0
+0
+index
+1
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+42
+18
+16
+0
+9
+42 18
+58 18
+50 18
+42 18
+58 18
+50 18
+50 18
+50 18
+50 18
+index
+112
+0
+0
+index
+1
+0
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+42
+22
+16
+0
+9
+42 22
+58 22
+50 22
+42 22
+58 22
+50 22
+50 22
+50 22
+50 22
+index
+112
+0
+0
+index
+1
+0
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeRectangleClass
+2 1 0
+20
+30
+60
+60
+index
+112
+0
+0
+index
+22
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+0
+EOD
+activeLineClass
+2 2 0
+35
+30
+30
+30
+3
+35 60
+50 30
+65 60
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeRectangleClass
+2 1 0
+30
+30
+40
+60
+index
+14
+0
+0
+index
+22
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+0
+EOD
+activeLineClass
+2 2 0
+35
+48
+8
+12
+3
+35 48
+35 60
+43 60
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+58
+48
+8
+12
+3
+58 60
+65 60
+65 48
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+100
+10
+80
+90
+{
+activeRectangleClass
+2 1 0
+100
+10
+80
+90
+index
+0
+0
+0
+index
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+1
+EOD
+activeLineClass
+2 2 0
+132
+22
+16
+0
+9
+132 22
+148 22
+140 22
+132 22
+148 22
+140 22
+140 22
+140 22
+140 22
+index
+112
+0
+0
+index
+1
+0
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeRectangleClass
+2 1 0
+110
+30
+60
+60
+index
+14
+0
+1
+index
+15
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+0
+EOD
+activeLineClass
+2 2 0
+125
+30
+30
+30
+3
+125 60
+140 30
+155 60
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeRectangleClass
+2 1 0
+120
+30
+40
+60
+index
+14
+0
+0
+index
+17
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+0
+EOD
+activeLineClass
+2 2 0
+125
+48
+8
+12
+3
+125 48
+125 60
+133 60
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+147
+48
+8
+12
+3
+147 60
+155 60
+155 48
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+132
+18
+16
+0
+9
+132 18
+148 18
+140 18
+132 18
+148 18
+140 18
+140 18
+140 18
+140 18
+index
+112
+0
+0
+index
+1
+0
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+140
+10
+0
+8
+4
+140 10
+140 18
+140 10
+140 10
+index
+112
+0
+0
+index
+1
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+140
+22
+0
+8
+4
+140 22
+140 30
+140 22
+140 22
+index
+112
+0
+0
+index
+1
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+190
+10
+80
+90
+{
+activeRectangleClass
+2 1 0
+190
+10
+80
+90
+index
+0
+0
+0
+index
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+1
+EOD
+activeLineClass
+2 2 0
+230
+10
+0
+8
+4
+230 10
+230 18
+230 10
+230 10
+index
+112
+0
+0
+index
+1
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+230
+22
+0
+8
+4
+230 22
+230 30
+230 22
+230 22
+index
+112
+0
+0
+index
+1
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+222
+18
+16
+0
+9
+222 18
+238 18
+230 18
+222 18
+238 18
+230 18
+230 18
+230 18
+230 18
+index
+112
+0
+0
+index
+1
+0
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+222
+22
+16
+0
+9
+222 22
+238 22
+230 22
+222 22
+238 22
+230 22
+230 22
+230 22
+230 22
+index
+112
+0
+0
+index
+1
+0
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeRectangleClass
+2 1 0
+200
+30
+60
+60
+index
+112
+0
+1
+index
+20
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+0
+EOD
+activeLineClass
+2 2 0
+215
+30
+30
+30
+3
+215 60
+230 30
+245 60
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeRectangleClass
+2 1 0
+210
+30
+40
+60
+index
+14
+0
+0
+index
+37
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+0
+EOD
+activeLineClass
+2 2 0
+215
+48
+8
+12
+3
+215 48
+215 60
+223 60
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+237
+48
+8
+12
+3
+237 60
+245 60
+245 48
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+}
+<<<E~O~D>>>
+activeGroupClass
+280
+10
+80
+90
+{
+activeRectangleClass
+2 1 0
+280
+10
+80
+90
+index
+0
+0
+0
+index
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+1
+EOD
+activeRectangleClass
+2 1 0
+290
+30
+60
+60
+index
+112
+0
+1
+index
+17
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+0
+EOD
+activeRectangleClass
+2 1 0
+300
+30
+40
+60
+index
+14
+0
+0
+index
+17
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+1
+0
+0
+EOD
+activeLineClass
+2 2 0
+290
+30
+60
+60
+2
+350 30
+290 90
+index
+22
+0
+0
+index
+1
+0
+4
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+290
+30
+60
+60
+2
+290 30
+350 90
+index
+22
+0
+0
+index
+1
+0
+4
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+320
+10
+0
+8
+4
+320 10
+320 18
+320 10
+320 10
+index
+112
+0
+0
+index
+1
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+320
+22
+0
+8
+4
+320 22
+320 30
+320 22
+320 22
+index
+112
+0
+0
+index
+1
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+312
+18
+16
+0
+9
+312 18
+328 18
+320 18
+312 18
+328 18
+320 18
+320 18
+320 18
+320 18
+index
+112
+0
+0
+index
+1
+0
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+312
+22
+16
+0
+9
+312 22
+328 22
+320 22
+312 22
+328 22
+320 22
+320 22
+320 22
+320 22
+index
+112
+0
+0
+index
+1
+0
+1
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+305
+30
+30
+30
+3
+305 60
+320 30
+335 60
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+305
+48
+8
+12
+3
+305 48
+305 60
+313 60
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+activeLineClass
+2 2 0
+327
+48
+8
+12
+3
+327 60
+335 60
+335 48
+index
+14
+0
+0
+index
+0
+0
+2
+0
+<<<empty>>>
+<<<empty>>>
+0
+<<<empty>>>
+<<<empty>>>
+0
+0
+EOD
+}
+<<<E~O~D>>>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" ?>
+<caml
+	title="WebCa Test"
+	extStyle="asp"
+	>		
+	
+	<verticalPanel>
+		<row>
+			<textUpdate readbackPV="$(NAME)" displayFormat="#0.0"/>			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" dataType="text" alarmSensitive="true" size="small" />			
+		</row>
+		<row>
+			<textUpdate readbackPV="$(NAME)" dataType="numeric" alarmSensitive="false" size="large" />			
+		</row>
+	</verticalPanel>	
+	
+	
+	<verticalPanel>
+		<row>
+			<mux>
+				<sequence name="record1" selected="true">
+					<macroValuePair macroName="$(NAME)" macroValue="record1"/>
+					<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME)" macroValue="record2"/>			
+					<macroValuePair macroName="$(DESC)" macroValue="counter PV"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME)" macroValue="enum"/>
+					<macroValuePair macroName="$(DESC)" macroValue="enumerated PV"/>
+			    </sequence>
+			</mux>
+		</row>		
+	</verticalPanel>	
+	
+	<verticalPanel>
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="0" /> 		
+		</row>	
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="#0.0" /> 		
+		</row>			
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="##000" /> 		
+		</row>
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="0.00" /> 		
+		</row>	
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="##0.00##" /> 		
+		</row>			
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="##00.0000" /> 		
+		</row>		
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="##0.00##" /> 		
+		</row>			
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="##00.0000" /> 		
+		</row>	
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="0.00E+00" /> 		
+		</row>			
+		<row>
+			<wheelSwitch controlPV="$(NAME)" displayFormat="00.0E000" /> 		
+		</row>										
+	</verticalPanel>
+</caml>

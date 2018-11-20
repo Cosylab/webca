@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../../xsl/webca.xsl" type="text/xsl" alternate="no"?>
+<caml xmlns:xi="http://www.w3.org/2001/XInclude" webcaPath="../../" title="WebCa Test">
+
+    <virtualPV name="virtual1" init="0; ctrl.lowerControlLimit=-123; ctrl.upperControlLimit=1234;"/>
+    <virtualPV name="virtual2" init="1234"/>
+
+	<wheelSwitch controlPV="virtual1" displayFormat="##00.0E000" size="small"/> 		
+	<textEntry controlPV="virtual1"/> 		
+	<wheelSwitch controlPV="virtual2" size="large"/> 		
+	<wheelSwitch controlPV="virtual1" displayFormat="##00.00" size="medium"/> 		
+</caml>

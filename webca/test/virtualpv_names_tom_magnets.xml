@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="../xsl/webca.xsl" type="text/xsl" ?>
+
+<!-- start html element and define caml namespace -->
+<html xmlns:caml="http://webca.cosylab.com">
+  
+    <head>
+        <title>Magnets Example</title>
+
+        <style>
+        table.data {background-color: #DDD; border-collapse: collapse;}
+        th, td { margin: 5px; border-style: solid; border-width: 1.0px; border-color: black; padding-left: 10px; padding-right: 10px; }
+        th { padding-left: 2em; padding-right: 2em; background-color: #BBB; }
+        td.numeric { text-align: right; color: maroon; padding-left: 2em; }
+        td.plain { margin: 0px; border-style: none; }
+        </style>
+
+        <!-- this is required for CAML, some initializaion has to be done, e.g. to instantiate plugin -->
+        <caml:head webcaPath="../" pendEvents="30" pendEventsPeriodMs="100"/>
+    </head>    
+    <body>
+
+        <caml:virtualPV name="MEBT_Mag:PS_DCH01:I" init="0" eval="pvs.MEBT_Mag:PS_DCH01:I_Set" scan="2000"/>
+        <caml:virtualPV name="MEBT_Mag:PS_DCH04:I" init="0" eval="pvs.MEBT_Mag:PS_DCH04:I_Set" scan="2000"/>
+        <caml:virtualPV name="MEBT_Mag:PS_DCH05:I" init="0" eval="pvs.MEBT_Mag:PS_DCH05:I_Set" scan="2000"/>
+        <caml:virtualPV name="MEBT_Mag:PS_DCH10:I" init="0" eval="pvs.MEBT_Mag:PS_DCH10:I_Set" scan="2000"/>
+        <caml:virtualPV name="MEBT_Mag:PS_DCH11:I" init="0" eval="pvs.MEBT_Mag:PS_DCH11:I_Set" scan="2000"/>
+        <caml:virtualPV name="MEBT_Mag:PS_DCH14:I" init="0" eval="pvs.MEBT_Mag:PS_DCH14:I_Set" scan="2000"/>
+
+        <caml:virtualPV name="MEBT_Mag:PS_DCH01:I_Set" init="0" eval="pvs.MEBT_Mag:PS_DCH14:I_Set + 1" scan="2000"/>
+        <caml:virtualPV name="MEBT_Mag:PS_DCH04:I_Set" init="0" eval="pvs.MEBT_Mag:PS_DCH14:I_Set + 1" scan="2000"/>
+        <caml:virtualPV name="MEBT_Mag:PS_DCH05:I_Set" init="0" eval="pvs.MEBT_Mag:PS_DCH14:I_Set + 1" scan="2000"/>
+        <caml:virtualPV name="MEBT_Mag:PS_DCH10:I_Set" init="0" eval="pvs.MEBT_Mag:PS_DCH14:I_Set + 1" scan="2000"/>
+        <caml:virtualPV name="MEBT_Mag:PS_DCH11:I_Set" init="0" eval="pvs.MEBT_Mag:PS_DCH14:I_Set + 1" scan="2000"/>
+        <caml:virtualPV name="MEBT_Mag:PS_DCH14:I_Set" init="0" eval="pvs.MEBT_Mag:PS_DCH14:I_Set + 1" scan="2000"/>
+
+        <table>
+            <tr>
+                <td class="plain">
+                    <caml:relatedDisplay type="button">
+                        <caml:display src="scope.xml" name="Channel 1">
+                            <caml:macroValuePair macroName="$(CHANNEL)" macroValue="ch1" />
+                        </caml:display>
+                    </caml:relatedDisplay>
+                </td>
+                <td class="plain">
+                    <caml:relatedDisplay type="button">
+                        <caml:display src="scope.xml" name="Channel 2">
+                            <caml:macroValuePair macroName="$(CHANNEL)" macroValue="ch2" />
+                        </caml:display>
+                    </caml:relatedDisplay>
+                </td>
+                <td class="plain">
+                    <caml:relatedDisplay type="button">
+                        <caml:display src="scope.xml" name="Channel 3">
+                            <caml:macroValuePair macroName="$(CHANNEL)" macroValue="ch3" />
+                        </caml:display>
+                    </caml:relatedDisplay>
+                </td>
+            </tr>
+        </table>
+
+        <table class="data">
+            <caption>MEBT Correctors</caption>
+            <tr>
+                <td>DCH 01</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH01:I" /></td> 
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH01:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+            <tr>
+                <td>DCH 04</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH04:I" /></td> 
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH04:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+            <tr>
+                <td>DCH 05</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH05:I" /></td>
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH05:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+            <tr>
+                <td>DCH 10</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH10:I" /></td>
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH10:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+            <tr>
+                <td>DCH 11</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH11:I" /></td>
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH11:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+            <tr>
+                <td>DCH 14</td>
+                <td><caml:textUpdate readbackPV="MEBT_Mag:PS_DCH14:I" /></td>
+                <td><caml:wheelSwitch alarmSensitive="false" controlPV="MEBT_Mag:PS_DCH14:I_Set" displayFormat="+000.000" size="small" /></td>
+            </tr>
+        </table>
+        
+        <caml:virtualPV name="magnet_sum" init="0" eval="pvs.MEBT_Mag:PS_DCH01:I + pvs.MEBT_Mag:PS_DCH04:I" scan="passive"/>
+        <caml:textUpdate readbackPV="magnet_sum" />
+
+        <caml:horizontalPanel caption="advanced xyChart">
+                <caml:column width="50%">
+                    <caml:xyChart flavor="not_advanced" xAxisLabel="Axis X label " yAxisLabel="Axis Y label " xAxisStyle="time">
+                        <caml:xySeries Y-PVname="MEBT_Mag:PS_DCH01:I" name="magnet1"/>
+                        <caml:xySeries Y-PVname="MEBT_Mag:PS_DCH04:I" name="magnet2"/>
+                        <caml:xySeries Y-PVname="magnet_sum" name="sum"/>
+                    </caml:xyChart>	 
+                </caml:column>			
+                <caml:column width="50%">
+                    <caml:xyChart flavor="advanced" xAxisLabel="Axis X label " yAxisLabel="Axis Y label " xAxisStyle="time">
+                        <caml:xySeries Y-PVname="MEBT_Mag:PS_DCH01:I" name="magnet1"/>
+                        <caml:xySeries Y-PVname="MEBT_Mag:PS_DCH04:I" name="magnet2"/>
+                        <caml:xySeries Y-PVname="magnet_sum" name="sum"/>
+                    </caml:xyChart>	 
+                </caml:column>			
+        </caml:horizontalPanel>
+    </body>
+</html>

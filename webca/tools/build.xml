@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build" name="edltocaml">
+    <target name="init">
+        <property environment="env"/>
+        <property name="javahome" value="${env.JAVA_HOME}"/>
+        <property name="buildroot" value="build"/>
+
+        <property name="javac_command" value="javac"/>
+        <property name="java_command" value="java"/>
+        <!--
+    	<property name="javac_command" value="/usr/java/jdk1.5.0/bin/javac"/>
+        <property name="java_command" value="/usr/java/jdk1.5.0/bin/java"/>
+        -->
+    	
+    	<mkdir dir="${buildroot}"/>
+    </target>
+
+
+    <target name="compile" depends="init" >
+        <mkdir dir="${buildroot}/compile"/>
+        <javac fork="true" executable="${javac_command}" debug="true" deprecation="true" destdir="${buildroot}/compile" srcdir="src" ></javac>
+    </target>
+    
+
+    <target name="jar" depends="init, compile">
+        <mkdir dir="${buildroot}/jar"/>
+        <jar compress="true" jarfile="${buildroot}/jar/edltocaml.jar" index="true">
+	    <manifest>
+	      <attribute name="Manifest-Version" value="1.0"/>
+          <attribute name="Main-Class" value="com.cosylab.webca.EdmCamlConverter"/>
+	    </manifest>
+
+        <fileset dir="${buildroot}/compile">
+	    </fileset>
+        <fileset dir=".">
+			<include name="**/*.css"/>
+			<include name="**/*.gif"/>
+			<include name="**/*.html"/>
+			<include name="**/*.jpeg"/>
+			<include name="**/*.png"/>
+			<include name="**/*.pdf"/>
+			<include name="**/*.properties"/>
+			<include name="**/*.xml"/>
+        </fileset>
+       </jar>
+    </target>
+
+
+    <target name="build" depends="jar" >
+    </target>
+
+    <target name="test" depends="jar">
+        <property name="webcaPath" value=".."/>
+
+       	<java classname="com.cosylab.webca.EdmCamlConverter" fork="true" dir="test/" jvm="${java_command}">
+   	         <arg value="../${webcaPath}"/>
+   	         <arg value="test.edl"/>
+  	         <classpath><pathelement location="${buildroot}/jar/edltocaml.jar"/><pathelement path="${java.class.path}"/></classpath>
+      	</java>    	
+    	
+    	<java classname="com.cosylab.webca.EdmCamlConverter" fork="true" dir="test/" jvm="${java_command}">
+	         <arg value="../${webcaPath}"/>
+	         <arg value="test.edl"/>
+   	         <classpath><pathelement location="${buildroot}/jar/edltocaml.jar"/><pathelement path="${java.class.path}"/></classpath>
+    	</java>    	
+    	<java classname="com.cosylab.webca.EdmCamlConverter" fork="true" dir="test/" jvm="${java_command}">
+	         <arg value="../${webcaPath}"/>
+	         <arg value="subdisplay.edl"/>
+   	         <classpath><pathelement location="${buildroot}/jar/edltocaml.jar"/><pathelement path="${java.class.path}"/></classpath>
+    	</java>    	
+    	<java classname="com.cosylab.webca.EdmCamlConverter" fork="true" dir="test/" jvm="${java_command}">
+	         <arg value="../${webcaPath}"/>
+	         <arg value="subsubdisplay.edl"/>
+   	         <classpath><pathelement location="${buildroot}/jar/edltocaml.jar"/><pathelement path="${java.class.path}"/></classpath>
+    	</java>    	
+
+    	<!-- converts all files in test/pelaia_examples/edl_list.txt -->
+    	<java classname="com.cosylab.webca.EdmCamlConverter" fork="true" dir="test/pelaia_examples" jvm="${java_command}">
+	         <arg value="../../${webcaPath}"/>
+   	         <classpath><pathelement location="${buildroot}/jar/edltocaml.jar"/><pathelement path="${java.class.path}"/></classpath>
+    	</java>
+    </target>
+
+</project>

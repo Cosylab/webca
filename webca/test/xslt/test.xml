@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="test.xsl" type="text/xsl" alternate="no"?>
+
+<root xmlns:caml="http://webca.cosylab.com">
+    <a/>
+    <caml:b/>
+    <caml:d/>
+    <a/>
+    <d/>
+    <caml:c/>
+</root>

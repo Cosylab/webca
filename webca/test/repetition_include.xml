@@ -1,0 +1,25 @@
+<html xmlns:caml="http://webca.cosylab.com">
+      
+<head>
+    <title></title>
+    <caml:head webcaPath="../"/>
+</head>
+<body>
+
+	<caml:tabView style="color: green;">
+        <caml:repetition name="RepTabs">
+            <caml:list>
+                <caml:item><caml:macroValuePair macroName="$(INC)" macroValue="INC1" /></caml:item>
+                <caml:item><caml:macroValuePair macroName="$(INC)" macroValue="INC2" /></caml:item>
+                <caml:item><caml:macroValuePair macroName="$(INC)" macroValue="INC4" /></caml:item>
+            </caml:list>
+            <caml:template>
+    		    <caml:tab name="tab $(INC)">	
+        		    <caml:include href="repetition.xml"/>	
+    		    </caml:tab>		
+            </caml:template>
+        </caml:repetition>
+    </caml:tabView>
+
+</body>
+</html>

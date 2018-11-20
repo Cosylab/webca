@@ -1,0 +1,427 @@
+# File: /ade/epics/iocTop/R3.14.7/diagnostics/pcbased/Development/opi/BCMR_Raw2.edl
+# MEDM filename = "/home/sns/prod/boot/apps/mebt/adl/BCM.adl"
+# MEDM version = 020502
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1672
+y 91
+w 1184
+h 694
+font "helvetica-bold-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 9
+bgColor index 55
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 0
+ctlBgColor1 index 1
+ctlBgColor2 index 0
+topShadowColor index 1
+botShadowColor index 11
+disableScroll
+endScreenProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+# Geometry
+x 31
+y 523
+w 1111
+h 124
+# Appearance
+border
+graphTitle "$(S)_$(SS):BCM$(N) Full Trace"
+xLabel "Points"
+yLabel "Current (A)"
+fgColor index 10
+bgColor index 1
+gridColor index 10
+font "courier-bold-r-12.0"
+# Operating Modes
+nPts 1
+# X axis properties
+xAxisStyle "time"
+xAxisSrc "AutoScale"
+xMax 1
+# Y axis properties
+yAxisSrc "AutoScale"
+yMin 0
+yMax 0.1
+yAxisFormat "g"
+yAxisPrecision 1
+# Y2 axis properties
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(S)_$(SS):BCM$(N):fastArrayAll"
+}
+lineThickness {
+  0 3
+}
+opMode {
+  0 "plot"
+}
+plotColor {
+  0 index 160
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y -1
+w 350
+h 52
+lineColor index 57
+fill
+fillColor index 57
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x -3
+y 54
+w 467
+h 2
+lineColor index 14
+fillColor index 14
+numPoints 2
+xPoints {
+  0 -3
+  1 461
+}
+yPoints {
+  0 54
+  1 54
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 26
+w 294
+h 21
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 10
+useDisplayBg
+value {
+  "$(S)_$(SS):BCM$(N)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 4
+w 294
+h 21
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 10
+useDisplayBg
+value {
+  "Diagnostics"
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+# Geometry
+x 5
+y 66
+w 1153
+h 446
+# Appearance
+border
+graphTitle "$(S)_$(SS):BCM$(N):fastArray"
+xLabel "Points"
+yLabel "Current (A)"
+fgColor index 10
+bgColor index 1
+gridColor index 10
+font "courier-bold-r-12.0"
+# Operating Modes
+nPts 1
+# X axis properties
+showXAxis
+xAxisStyle "time"
+xAxisSrc "AutoScale"
+xMax 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMin -0.002
+yMax 0.1
+yShowLabelGrid
+# Y2 axis properties
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(S)_$(SS):BCM$(N):fastArray"
+}
+lineThickness {
+  0 3
+}
+opMode {
+  0 "plot"
+}
+xSigned {
+  0 15663512
+}
+ySigned {
+  0 15663520
+}
+plotColor {
+  0 index 160
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 598
+y 16
+w 60
+h 22
+fgColor index 25
+onColor index 4
+offColor index 4
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(S)_$(SS):BCM$(N):nFastArray"
+pressValue "1200"
+onLabel "On"
+offLabel "On"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 724
+y 17
+w 60
+h 22
+fgColor index 25
+onColor index 4
+offColor index 4
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(S)_$(SS):BCM$(N):nFastArray"
+pressValue "0"
+onLabel "Off"
+offLabel "Off"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 557
+y 663
+w 128
+h 22
+controlPv "$(S)_$(SS):BCM$(N):tDelayFastArray_Rb"
+displayMode "decimal"
+precision 3
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1141
+y 43
+w 16
+h 18
+font "helvetica-bold-r-16.0"
+fgColor index 6
+bgColor index 10
+useDisplayBg
+value {
+  "dt"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 665
+y 17
+w 50
+h 21
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 9
+visPv "$(S)_$(SS):BCM$(N):nFastArray_Rb"
+visMin "1"
+visMax "999999"
+value {
+  "On"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 665
+y 16
+w 50
+h 21
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 9
+visPv "$(S)_$(SS):BCM$(N):nFastArray_Rb"
+visMin "0"
+visMax "1"
+value {
+  "Off"
+}
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 7
+y 619
+w 1153
+h 41
+fgColor index 55
+bgColor index 55
+2ndBgColor index 0
+topShadowColor index 1
+botShadowColor index 11
+increment 1e-06
+controlPv "$(S)_$(SS):BCM$(N):tDelayFastArray"
+controlLabelType "pvName"
+font "helvetica-medium-r-18.0"
+precision 2
+scaleMin 0
+scaleMax 1
+showValue
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1043
+y 42
+w 89
+h 22
+controlPv "$(S)_$(SS):BCM$(N):tFastArrayPeriod"
+displayMode "exp"
+precision 2
+fgColor index 15
+bgColor index 9
+fill
+font "courier-bold-r-16.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 690
+y 665
+w 38
+h 18
+font "helvetica-bold-r-16.0"
+fgColor index 6
+bgColor index 10
+useDisplayBg
+value {
+  "usec"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 478
+y 666
+w 67
+h 18
+font "helvetica-bold-r-16.0"
+fgColor index 6
+bgColor index 10
+useDisplayBg
+value {
+  "offset at"
+}
+autoSize
+endObjectProperties
+

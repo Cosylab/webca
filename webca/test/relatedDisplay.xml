@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xsl/webca.xsl" type="text/xsl" ?>
+<caml
+	title="WebCa Test"
+	extStyle="asp"
+	pendEvents="100"
+	pendEventsPeriodMs="100"
+	>
+			<mux>
+				<sequence name="record1" selected="true">
+					<macroValuePair macroName="$(NAME33)" macroValue="record1"/>
+					<macroValuePair macroName="$(DESC33)" macroValue="in-memory PV"/>
+				</sequence>
+			    <sequence name="record2">
+					<macroValuePair macroName="$(NAME44)" macroValue="record2"/>			
+					<macroValuePair macroName="$(DESC44)" macroValue="counter PV"/>			
+			    </sequence>
+			    <sequence name="enum">
+					<macroValuePair macroName="$(NAME55)" macroValue="enum"/>
+					<macroValuePair macroName="$(DESC55)" macroValue="enumerated PV"/>
+			    </sequence>
+			</mux>
+	
+	
+		<relatedDisplay type="image" src="logo_cosylab.gif" alt="alt" width="500px" height="200px" >
+			<display src="slider.xml"  name="beamline1">
+				<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+				<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+				<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+			</display>		
+		</relatedDisplay>
+	
+		<relatedDisplay type="image" src="logo_cosylab.gif">
+			<display src="slider.xml"  name="beamline1" macroPropagation="true"/>
+		</relatedDisplay>	
+	
+		<relatedDisplay type="image" src="logo_cosylab.gif">
+			<display src="slider.xml" name="beamline1" macroPropagation="true" openMode="replace">
+				<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+				<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+				<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+			</display>		
+		</relatedDisplay>		
+	
+		<relatedDisplay type="button" >
+			<display src="slider.xml"  name="slider replace" openMode="replace">
+				<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+				<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+				<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+			</display>			
+		</relatedDisplay>
+		
+		<relatedDisplay type="button" >
+			<display src="slider.xml" name="slider popup" macroPropagation="true">
+				<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+				<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+				<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+			</display>			
+		</relatedDisplay>
+	
+		<relatedDisplay type="button" >
+			<display src="example.xml" name="example" macroPropagation="true">
+				<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+				<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+				<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+			</display>			
+		</relatedDisplay>	
+	
+	
+	
+		<!-- not implemented -->
+		<!--relatedDisplay type="list" >
+			<display src="slider.xml" macroPropagation="false" name="beamline1">
+				<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+				<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+				<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+			</display>
+			<display src="slider.xml" macroPropagation="false" name="beamline2">
+				<macroValuePair macroName="$(NAME)" macroValue="ai001"/>
+				<macroValuePair macroName="$(NAME1)" macroValue="record2"/>
+				<macroValuePair macroName="$(DESC)" macroValue="in-memory PV"/>
+			</display>				
+		</relatedDisplay-->		
+	
+</caml>

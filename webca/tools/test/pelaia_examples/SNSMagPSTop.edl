@@ -1,0 +1,4612 @@
+# File: /ade/epics/iocTop/R3.14.7/ringPS/current/opi/SNSMagPSTop.edl
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1641
+y 1237
+w 1116
+h 527
+font "helvetica-bold-r-16.0"
+fontAlign "center"
+ctlFont "helvetica-bold-r-16.0"
+ctlFontAlign "right"
+btnFont "helvetica-bold-r-16.0"
+btnFontAlign "center"
+fgColor index 14
+bgColor index 3
+textColor index 15
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 5
+ctlBgColor2 index 10
+topShadowColor index 5
+botShadowColor index 10
+title "SNS Magnet Control Systems Overview"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 110
+w 930
+h 80
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 200
+w 140
+h 30
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 29
+bgColor index 4
+value {
+  "Machine Status"
+}
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 250
+y 200
+w 140
+h 30
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 29
+bgColor index 4
+value {
+  "Control Status"
+}
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 0
+y 0
+w 640
+h 60
+font "helvetica-bold-r-28.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 6
+value {
+  "SNS Magnet Power Supply Controls "
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 0
+y 60
+w 1098
+h 0
+lineColor index 14
+fillColor index 5
+lineWidth 2
+numPoints 2
+xPoints {
+  0 0
+  1 1098
+}
+yPoints {
+  0 60
+  1 60
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1020
+y 10
+w 80
+h 30
+fgColor index 45
+bgColor index 5
+topShadowColor index 1
+botShadowColor index 11
+label "EXIT"
+font "helvetica-bold-r-12.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "MEBT"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "MEBT_PS_Quad_Main.edl"
+  1 "MEBT_PS_Steerer_Main.edl"
+}
+menuLabel {
+  0 "MEBT_PS_Quad Detail"
+  1 "MEBT_PS_Steerer Detail"
+}
+symbols {
+  0 "S=MEBT,SS=Mag,DVC1=PS_QH,DVC2=PS_QV,N1=01,N2=02,N3=03,N4=04,N5=05a10,N6=06a09,N7=07a08,N8=11,N9=12,N10=13,N11=14,N5a=05,N5b=10,N6a=06,N6b=09,N7a=07,N7b=08"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 500
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "CCL1"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "ccl-ps-ioc1_PowerMain.edl"
+  1 "ccl-ps-ioc1_PowerMain.edl"
+}
+menuLabel {
+  1 "CCL PS / Magnets Overview"
+}
+symbols {
+  0 "S=CCL,SS=Mag,TITLE=CCL_Module1"
+  1 "S=CCL,SS=Mag,TITLE=CCL_Module_1_PS_Magnets"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 550
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "CCL2"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "ccl-ps-ioc2_PowerMain.edl"
+  1 "ccl-ps-ioc2_PowerMain.edl"
+}
+menuLabel {
+  1 "CCL PS / Magnets Overview"
+}
+symbols {
+  0 "S=CCL,SS=Mag,TITLE=CCL_Module_2_PS_Magnets"
+  1 "S=CCL,SS=Mag,TITLE=CCL_Module_2_PS__Magnets"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 700
+y 150
+w 120
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "All SCL PS"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "scl-ps-all-quads.edl"
+  1 "scl-ps-all-steerers.edl"
+}
+menuLabel {
+  0 "All SCL Quad PS "
+  1 "All SCL Steerer PS"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 760
+y 120
+w 60
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL-HB"
+numPvs 4
+numDsps 9
+displayFileName {
+  0 "scl-ps-ioc1_PowerMain.edl"
+  1 "scl-ps-all-quads.edl"
+  2 "scl-ps-all-steerers.edl"
+  3 "scl-ps-ioc4_PowerMain.edl"
+  4 "scl-ps-ioc5_PowerMain.edl"
+  5 "scl-ps-ioc6_PowerMain.edl"
+  6 "scl-ps-ioc7_PowerMain.edl"
+  7 "scl-ps-ioc8_PowerMain.edl"
+  8 "scl-ps-ioc9_PowerMain.edl"
+}
+menuLabel {
+  1 "All SCL Quadrupoles"
+  2 "All SCL Steerers"
+  3 "SCL_Mag:PS_IOC4:Operation"
+  4 "SCL_Mag:PS_IOC5:Operation"
+  5 "SCL_Mag:PS_IOC6:Operation"
+  6 "SCL_Mag:PS_IOC7:Operation"
+  7 "SCL_Mag:PS_IOC8:Operation"
+  8 "SCL_Mag:PS_IOC9:Operation"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 30
+y 130
+w 78
+h 0
+lineColor index 40
+fill
+fillColor index 40
+lineWidth 4
+arrows "to"
+numPoints 2
+xPoints {
+  0 30
+  1 108
+}
+yPoints {
+  0 130
+  1 130
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 130
+w 70
+h 30
+font "courier-bold-i-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 53
+useDisplayBg
+value {
+  "Beam"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 260
+y 240
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "M1"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStatus (IOC Health)"
+  1 "Utility Module(V108S)"
+}
+symbols {
+  0 "P=MEBT_PS:IOC1"
+  1 "S=MEBT,SS=PS,N=1,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 260
+y 270
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "D1"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=DTL_PS:IOC1"
+  1 "S=DTL,SS=PS,N=1,DI=''"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 30
+y 160
+w 0
+h 0
+lineColor index 112
+fill
+fillColor index 112
+arrows "to"
+numPoints 1
+xPoints {
+  0 30
+}
+yPoints {
+  0 160
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 120
+y 180
+w 0
+h 0
+lineColor index 112
+fillColor index 112
+lineWidth 2
+numPoints 1
+xPoints {
+  0 120
+}
+yPoints {
+  0 180
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 800
+y 30
+w 100
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "SNS MAP (Eng)"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "SNS-map.edl"
+}
+menuLabel {
+  0 "..."
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "DTL1"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "dtl-ps-ioc1_PowerMain.edl"
+  1 "dtl-ps-ioc1_PowerMain.edl"
+  2 "dtl-ps-ioc1_tank1_PowerMain.edl"
+}
+menuLabel {
+  1 "DTL Steerer Overview"
+  2 "DTL TANK 1 Steerer"
+}
+symbols {
+  0 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  1 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  2 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Tank1_Steerer_Magnets,MY_IOC_N=1,HIS_IOC_N=1,HIS_TANK_N=1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 250
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "DTL2"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "dtl-ps-ioc1_PowerMain.edl"
+  1 "dtl-ps-ioc1_PowerMain.edl"
+  2 "dtl-ps-ioc1_tank2_PowerMain.edl"
+}
+menuLabel {
+  1 "DTL Steerer Overview"
+  2 "DTL TANK 2 Steerer"
+}
+symbols {
+  0 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  1 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  2 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Tank2_Steerer_Magnets,MY_IOC_N=1,HIS_IOC_N=1,HIS_TANK_N=2"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 300
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "DTL3"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "dtl-ps-ioc1_PowerMain.edl"
+  1 "dtl-ps-ioc1_PowerMain.edl"
+  2 "dtl-ps-ioc1_tank3_PowerMain.edl"
+}
+menuLabel {
+  1 "DTL Steerer Overview"
+  2 "DTL TANK 3 Steerer"
+}
+symbols {
+  0 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  1 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  2 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Tank3_Steerer_Magnets,MY_IOC_N=1,HIS_IOC_N=1,HIS_TANK_N=3"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 350
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "DTL4"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "dtl-ps-ioc1_PowerMain.edl"
+  1 "dtl-ps-ioc1_PowerMain.edl"
+  2 "dtl-ps-ioc1_tank4_PowerMain.edl"
+}
+menuLabel {
+  1 "DTL Steerer Overview"
+  2 "DTL TANK 4 Steerer"
+}
+symbols {
+  0 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  1 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  2 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Tank4_Steerer_Magnets,MY_IOC_N=1,HIS_IOC_N=1,HIS_TANK_N=4"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 400
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "DTL5"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "dtl-ps-ioc1_PowerMain.edl"
+  1 "dtl-ps-ioc1_PowerMain.edl"
+  2 "dtl-ps-ioc1_tank5_PowerMain.edl"
+}
+menuLabel {
+  1 "DTL Steerer Overview"
+  2 "DTL TANK 5 Steerer"
+}
+symbols {
+  0 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  1 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  2 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Tank5_Magnets,MY_IOC_N=1,HIS_IOC_N=1,HIS_TANK_N=5"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 450
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "DTL6"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "dtl-ps-ioc1_PowerMain.edl"
+  1 "dtl-ps-ioc1_PowerMain.edl"
+  2 "dtl-ps-ioc1_tank6_PowerMain.edl"
+}
+menuLabel {
+  1 "DTL Steerer Overview"
+  2 "DTL TANK 6 Steerer"
+}
+symbols {
+  0 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  1 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+  2 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Tank6_Steerer_Magnets,MY_IOC_N=1,HIS_IOC_N=1,HIS_TANK_N=6"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 600
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "CCL3"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "ccl-ps-ioc3_PowerMain.edl"
+  1 "ccl-ps-ioc3_PowerMain.edl"
+}
+menuLabel {
+  1 "CCL PS / Magnets Overview"
+}
+symbols {
+  0 "S=CCL,SS=Mag,TITLE=CCL_Module_3_PS_Magnets"
+  1 "S=CCL,SS=Mag,TITLE=CCL_Module_3_PS__Magnets"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 650
+y 120
+w 50
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "CCL4"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "ccl-ps-ioc4_PowerMain.edl"
+  1 "ccl-ps-ioc4_PowerMain.edl"
+}
+menuLabel {
+  1 "CCL PS / Magnets Overview"
+}
+symbols {
+  0 "S=CCL,SS=Mag,TITLE=CCL_Module_4_PS_Magnets"
+  1 "S=CCL,SS=Mag,TITLE=CCL_Module_4_PS__Magnets"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 800
+y 10
+w 100
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "SNS MAP (OP) "
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "navwogif.edl"
+}
+menuLabel {
+  0 "..."
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 820
+y 120
+w 230
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-14.0"
+buttonLabel "HEBT/Ring/RTBT "
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ringPS-Top.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 150
+w 300
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "All DTL Steerer Controls"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "dtl-ps-ioc1_PowerMain.edl"
+}
+symbols {
+  0 "S=DTL,SS=Mag,DVC=PS,TITLE=DTL_Steerer_Magnets"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 260
+y 300
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "C1"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=CCL_PS:IOC1"
+  1 "S=CCL,SS=PS,N=1,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 260
+y 330
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "C2"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=CCL_PS:IOC2"
+  1 "S=CCL,SS=PS,N=2,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 260
+y 360
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "C3"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=CCL_PS:IOC3"
+  1 "S=CCL,SS=PS,N=3,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 260
+y 390
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "C4"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=CCL_PS:IOC4"
+  1 "S=CCL,SS=PS,N=4,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 240
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "S1"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=SCL_PS:IOC1"
+  1 "S=SCL,SS=PS,N=1,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 270
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "S2"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=SCL_PS:IOC2"
+  1 "S=SCL,SS=PS,N=2,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 300
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "S3"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=SCL_PS:IOC3"
+  1 "S=SCL,SS=PS,N=3,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 330
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "S4"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=SCL_PS:IOC4"
+  1 "S=SCL,SS=PS,N=4,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 360
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "S5"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=SCL_PS:IOC5"
+  1 "S=SCL,SS=PS,N=5,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 390
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "S6"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=SCL_PS:IOC6"
+  1 "S=SCL,SS=PS,N=6,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 420
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "S7"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=SCL_PS:IOC7"
+  1 "S=SCL,SS=PS,N=7,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 450
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "S8"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=SCL_PS:IOC8"
+  1 "S=SCL,SS=PS,N=8,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 480
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "S9"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=SCL_PS:IOC9"
+  1 "S=SCL,SS=PS,N=9,DI=''"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 770
+y 240
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "H1"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=HEBT_PS:IOC1"
+  1 "S=HEBT,SS=PS,N=1,DI=''"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 230
+w 140
+h 110
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 910
+y 10
+w 90
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "Ring PS Test"
+numPvs 4
+numDsps 19
+displayFileName {
+  0 "ring-ps-ioc2_PowerMain-Inj.edl"
+  1 "test-ring-ps-ioc1Main.edl"
+  2 "ring-ps-ioc2_PowerMain-Inj.edl"
+  3 "injKickerControl.edl"
+  4 "test-ring-ps-ioc2Main.edl"
+  5 "ring-ps-ioc3_PowerMain-Ext.edl"
+  6 "ExtractionScopes.edl"
+  7 "test-ring-ps-ioc3Main.edl"
+  8 "test-ring-ps-ioc4Main.edl"
+  9 "test-ring-ps-ioc5Main.edl"
+  10 "test-ring-ps-ioc6Main.edl"
+  11 "test-ring-ps-ioc7Main.edl"
+  12 "=============================="
+  13 "ring-ps-all-dipolecorrs.edl"
+  14 "ring-ps-all-oct-sxc-ssxc.edl"
+  15 "ring-ps-all-qsc.edl"
+  16 "ring-ps-all-skewDipoles.edl"
+  17 "ring-ps-all-dh-quad-sx-sptm.edl"
+  18 "test-rtbt-ps-iocMain.edl"
+}
+menuLabel {
+  1 "Ring_PS:IOC1 Test"
+  2 "Injection Test"
+  3 "Inj Kicker Control"
+  4 "Ring_PS:IOC2 Test"
+  5 "Extraction Test"
+  6 "Ext Kicker Monitor"
+  7 "Ring_PS:IOC3 Test"
+  8 "Ring_PS:IOC4 Test"
+  9 "Ring_PS:IOC5 Test"
+  10 "Ring_PS:IOC6 Test"
+  11 "Ring_PS:IOC7 Test"
+  12 "============================"
+  13 "All Dipole Corr"
+  14 "All SXC/SSXC/Octuple"
+  15 "All QSC"
+  16 "skew Dipole"
+  17 "DH,Quad,Sextupole,Septum"
+  18 "RTBT_PS:IOC1 Test"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 650
+y 10
+w 70
+h 20
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-12.0"
+buttonLabel "Misc Tools"
+numCmds 19
+commandLabel {
+  0 "Strip Tool"
+  1 "eLogbook (Firefox)"
+  2 "QtCATool (Qt Channel Access Tool)"
+  3 "Histogram Tool"
+  4 "Display Manager"
+  5 "KSnapShot"
+  6 "Score"
+  7 "Channel 13 (Firefox)"
+  8 "Probe"
+  9 "Ktimer"
+  10 "The Gimp"
+  11 "OpenOffice Writer"
+  12 "OpenOffice Calc"
+  13 "OpenOffice Draw"
+  14 "OpenOffice Impress"
+  15 "OpenOffice Math"
+  16 "Alarm Annunciator"
+  17 "Scientific Calculator"
+  18 "SNS-OPM (Firefox)"
+}
+command {
+  0 "StripTool snsOPNS_StripTool.stp  &"
+  1 "firefox  https://snsapp1.sns.ornl.gov:8888/Logbook/WebObjects/Logbook.woa &"
+  2 "QtCATool &"
+  3 "histTool &"
+  4 "dp &"
+  5 "ksnapshot &"
+  6 "rsh -l physics physics \"score1 <env:HOSTNAME>\""
+  7 "firefox http://172.31.72.115/status.html"
+  8 "probe &"
+  9 "ktimer &"
+  10 "gimp &"
+  11 "oowriter &"
+  12 "oocalc &"
+  13 "oodraw &"
+  14 "ooimpress&"
+  15 "oomath &"
+  16 "vncviewer 172.31.75.19:0"
+  17 "kcalc &"
+  18 "firefox  https://www-internal.sns.gov/operations/SNS-OPM_Folder_Tree/ &"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 720
+y 10
+w 70
+h 20
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-12.0"
+buttonLabel "IOC Status"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IOCS_snapshot.edl"
+}
+menuLabel {
+  0 "IOC Snapshot"
+}
+setPosition {
+  0 "button"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 650
+y 30
+w 140
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "Related Subsystems"
+numPvs 4
+numDsps 6
+displayFileName {
+  0 "rccsStatus.edl"
+  1 "SNSVacOverview.edl"
+  2 "CFOverview.edl"
+  3 "MPS_System_Top1.edl"
+  4 "timingMaster.edl"
+  5 "ringPPSOverview.edl"
+}
+menuLabel {
+  0 "RCCS"
+  1 "Vacuum"
+  2 "CF"
+  3 "MPS"
+  4 "Timing Master"
+  5 "PPS"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 700
+y 120
+w 60
+h 30
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "SCL-MB"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "scl-ps-ioc1_PowerMain.edl"
+  1 "scl-ps-ioc2_PowerMain.edl"
+  2 "scl-ps-ioc3_PowerMain.edl"
+}
+menuLabel {
+  0 "PS : SCL Zone 00 - Zone 04"
+  1 "PS : SCL Zone 05 - Zone 08"
+  2 "PS : SCL Zone 09 - Zone 11"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 820
+y 150
+w 110
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-12.0"
+buttonLabel "LDmp Laser Strip"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "LDmpDiagLW.edl"
+}
+menuLabel {
+  0 "LDRD H- Laser Stripping"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 250
+y 60
+w 140
+h 20
+font "courier-bold-i-18.0"
+fontAlign "center"
+fgColor index 107
+bgColor index 122
+value {
+  "Ver0308"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 240
+w 40
+h 20
+controlPv "MEBT_PS:IOC1:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 240
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 240
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(MEBT_PS:IOC1:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 242
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(MEBT_PS:IOC1:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 290
+y 240
+w 100
+h 20
+controlPv "MEBT_PS:IOC1:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 270
+w 40
+h 20
+controlPv "DTL_PS:IOC1:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 290
+y 270
+w 100
+h 20
+controlPv "DTL_PS:IOC1:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 270
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 270
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(DTL_PS:IOC1:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 272
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(DTL_PS:IOC1:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 300
+w 40
+h 20
+controlPv "CCL_PS:IOC1:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 300
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 300
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(CCL_PS:IOC1:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 302
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(CCL_PS:IOC1:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 290
+y 300
+w 100
+h 20
+controlPv "CCL_PS:IOC1:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 330
+w 40
+h 20
+controlPv "CCL_PS:IOC2:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 330
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 330
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(CCL_PS:IOC2:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 332
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(CCL_PS:IOC2:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 290
+y 330
+w 100
+h 20
+controlPv "CCL_PS:IOC2:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 360
+w 40
+h 20
+controlPv "CCL_PS:IOC3:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 290
+y 360
+w 100
+h 20
+controlPv "CCL_PS:IOC3:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 360
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 360
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(CCL_PS:IOC3:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 362
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(CCL_PS:IOC3:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 420
+y 390
+w 40
+h 20
+controlPv "CCL_PS:IOC4:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 390
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 390
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(CCL_PS:IOC4:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 390
+y 392
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(CCL_PS:IOC4:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 290
+y 390
+w 100
+h 20
+controlPv "CCL_PS:IOC4:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 650
+y 330
+w 40
+h 20
+controlPv "SCL_PS:IOC4:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 330
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 330
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC4:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 332
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC4:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 520
+y 330
+w 100
+h 20
+controlPv "SCL_PS:IOC4:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 650
+y 300
+w 40
+h 20
+controlPv "SCL_PS:IOC3:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 300
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 300
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC3:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 302
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC3:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 520
+y 300
+w 100
+h 20
+controlPv "SCL_PS:IOC3:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 230
+w 100
+h 30
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+value {
+  "Machine Mode"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 320
+w 100
+h 15
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 115
+bgColor index 9
+useDisplayBg
+visPv "ICS_Tim:Gate_BeamOn:Switch"
+visInvert
+visMin "-1"
+visMax "1"
+value {
+  "Beam Enabled"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 250
+w 113
+h 30
+
+beginGroup
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 250
+w 107
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_MM:CCL_BSEcho"
+visMin "1"
+visMax "99"
+value {
+  "CCL Beamstop"
+}
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 250
+w 107
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_MM:LinDmpEcho"
+visMin "1"
+visMax "99"
+value {
+  "Linac Dump"
+}
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 250
+w 107
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_MM:InjDmpEcho"
+visMin "1"
+visMax "99"
+value {
+  "Injection Dump"
+}
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 250
+w 107
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_MM:RingEcho"
+visMin "1"
+visMax "99"
+value {
+  "Ring"
+}
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 250
+w 107
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_MM:ExtDmpEcho"
+visMin "1"
+visMax "99"
+value {
+  "Extraction Dump"
+}
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 250
+w 107
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_MM:TgtEcho"
+visMin "1"
+visMax "99"
+value {
+  "Target"
+}
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 250
+w 107
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_MM:MEBT_BSEcho"
+visMin "1"
+visMax "99"
+value {
+  "MEBT Beamstop"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 270
+w 95
+h 30
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 112
+bgColor index 5
+useDisplayBg
+value {
+  "Beam Mode"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 132
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 127
+h 25
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 127
+h 25
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 127
+h 25
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 127
+h 25
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 127
+h 25
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 127
+h 25
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 38
+y 290
+w 119
+h 25
+
+beginGroup
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 38
+y 290
+w 119
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_BM:100uSecEcho"
+visMin "1"
+visMax "99"
+value {
+  "100 usec"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 119
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_BM:StandByEcho"
+visMin "1"
+visMax "99"
+value {
+  "Stand By"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 290
+w 119
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_BM:OffEcho"
+visMin "1"
+visMax "99"
+value {
+  "Beam Off"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 119
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_BM:FullPwrEcho"
+visMin "1"
+visMax "99"
+value {
+  "Full Beam Power"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 119
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_BM:50uSecEcho"
+visMin "1"
+visMax "99"
+value {
+  "50 usec"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 119
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_BM:1mSecEcho"
+visMin "1"
+visMax "99"
+value {
+  "1060 Turns"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 119
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_BM:10uSecEcho"
+visMin "1"
+visMax "99"
+value {
+  "10 usec"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 30
+y 290
+w 117
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 10
+visPv "ICS_MPS:Lmp_BM:MPSTestEcho"
+visMin "1"
+visMax "99"
+value {
+  "MPS Test"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 650
+y 360
+w 40
+h 20
+controlPv "SCL_PS:IOC5:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 360
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 360
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC5:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 362
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC5:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 520
+y 360
+w 100
+h 20
+controlPv "SCL_PS:IOC5:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 650
+y 390
+w 40
+h 20
+controlPv "SCL_PS:IOC6:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 390
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 390
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC6:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 392
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC6:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 520
+y 390
+w 100
+h 20
+controlPv "SCL_PS:IOC6:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 650
+y 420
+w 40
+h 20
+controlPv "SCL_PS:IOC7:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 420
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 420
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC7:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 422
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC7:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 520
+y 420
+w 100
+h 20
+controlPv "SCL_PS:IOC7:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 650
+y 450
+w 40
+h 20
+controlPv "SCL_PS:IOC8:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 450
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 450
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC8:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 452
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC8:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 520
+y 450
+w 100
+h 20
+controlPv "SCL_PS:IOC8:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 650
+y 480
+w 40
+h 20
+controlPv "SCL_PS:IOC9:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 480
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 480
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC9:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 482
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC9:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 520
+y 480
+w 100
+h 20
+controlPv "SCL_PS:IOC9:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 650
+y 270
+w 40
+h 20
+controlPv "SCL_PS:IOC2:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 270
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 270
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC2:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 272
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC2:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 520
+y 270
+w 100
+h 20
+controlPv "SCL_PS:IOC2:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 650
+y 240
+w 40
+h 20
+controlPv "SCL_PS:IOC1:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 240
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 240
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC1:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 242
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(SCL_PS:IOC1:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 520
+y 240
+w 100
+h 20
+controlPv "SCL_PS:IOC1:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 240
+w 40
+h 20
+controlPv "HEBT_PS:IOC1:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 240
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 240
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(HEBT_PS:IOC1:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 242
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(HEBT_PS:IOC1:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 800
+y 240
+w 90
+h 20
+controlPv "HEBT_PS:IOC1:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 770
+y 270
+w 20
+h 20
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-14.0"
+buttonLabel "r1"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+  2 "IOCTimes.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+  2 "IOC Times"
+}
+symbols {
+  0 "P=Ring_PS:IOC1"
+  1 "S=Ring,SS=PS,N=1,DI=''"
+  2 "P=Ring_PS:IOC1"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 270
+w 40
+h 20
+controlPv "Ring_PS:IOC1:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 270
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 270
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC1:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 272
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC1:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 800
+y 270
+w 100
+h 20
+controlPv "Ring_PS:IOC1:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 300
+w 40
+h 20
+controlPv "Ring_PS:IOC2:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 300
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 300
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC2:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 302
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC2:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 800
+y 300
+w 100
+h 20
+controlPv "Ring_PS:IOC2:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 770
+y 300
+w 20
+h 20
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-14.0"
+buttonLabel "r2"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+  2 "IOCTimes.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+  2 "IOC Times"
+}
+symbols {
+  0 "P=Ring_PS:IOC2"
+  1 "S=Ring,SS=PS,N=1,DI=''"
+  2 "P=Ring_PS:IOC1"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 330
+w 40
+h 20
+controlPv "Ring_PS:IOC3:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 330
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 330
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC3:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 332
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC3:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 800
+y 330
+w 100
+h 20
+controlPv "Ring_PS:IOC3:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 770
+y 330
+w 20
+h 20
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-14.0"
+buttonLabel "r3"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+  2 "IOCTimes.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+  2 "IOC Times"
+}
+symbols {
+  0 "P=Ring_PS:IOC3"
+  1 "S=Ring,SS=PS,N=1,DI=''"
+  2 "P=Ring_PS:IOC1"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 360
+w 40
+h 20
+controlPv "Ring_PS:IOC4:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 360
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 360
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC4:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 362
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC4:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 800
+y 360
+w 100
+h 20
+controlPv "Ring_PS:IOC4:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 770
+y 360
+w 20
+h 20
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-14.0"
+buttonLabel "r4"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+  2 "IOCTimes.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+  2 "IOC Times"
+}
+symbols {
+  0 "P=Ring_PS:IOC4"
+  1 "S=Ring,SS=PS,N=1,DI=''"
+  2 "P=Ring_PS:IOC1"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 390
+w 40
+h 20
+controlPv "Ring_PS:IOC5:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 390
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 390
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC5:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 392
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC5:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 800
+y 390
+w 100
+h 20
+controlPv "Ring_PS:IOC5:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 770
+y 390
+w 20
+h 20
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-14.0"
+buttonLabel "r5"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+  2 "IOCTimes.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+  2 "IOC Times"
+}
+symbols {
+  0 "P=Ring_PS:IOC5"
+  1 "S=Ring,SS=PS,N=1,DI=''"
+  2 "P=Ring_PS:IOC1"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 420
+w 40
+h 20
+controlPv "Ring_PS:IOC6:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 420
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 420
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC6:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 422
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC6:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 800
+y 420
+w 100
+h 20
+controlPv "Ring_PS:IOC6:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 770
+y 420
+w 20
+h 20
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-14.0"
+buttonLabel "r6"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+  2 "IOCTimes.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+  2 "IOC Times"
+}
+symbols {
+  0 "P=Ring_PS:IOC6"
+  1 "S=Ring,SS=PS,N=1,DI=''"
+  2 "P=Ring_PS:IOC1"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 450
+w 40
+h 20
+controlPv "Ring_PS:IOC7:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 450
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 450
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC7:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 452
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(Ring_PS:IOC7:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 800
+y 450
+w 100
+h 20
+controlPv "Ring_PS:IOC7:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 770
+y 450
+w 20
+h 20
+fgColor index 133
+bgColor index 44
+topShadowColor index 5
+botShadowColor index 10
+font "helvetica-medium-r-14.0"
+buttonLabel "r7"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+  2 "IOCTimes.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+  2 "IOC Times"
+}
+symbols {
+  0 "P=Ring_PS:IOC7"
+  1 "S=Ring,SS=PS,N=1,DI=''"
+  2 "P=Ring_PS:IOC1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 770
+y 480
+w 20
+h 20
+fgColor index 1
+bgColor index 44
+topShadowColor index 133
+botShadowColor index 112
+font "helvetica-medium-r-10.0"
+buttonLabel "RT1"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 "IOC_Status.edl"
+  1 "utilStatus.edl"
+}
+menuLabel {
+  0 "vxStats (IOC Health)"
+  1 "Utility Module (V108S)"
+}
+symbols {
+  0 "P=RTBT_PS:IOC1"
+  1 "S=HEBT,SS=PS,N=1,DI=''"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 930
+y 480
+w 40
+h 20
+controlPv "RTBT_PS:IOC1:Load"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 480
+w 20
+h 20
+
+beginGroup
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 480
+w 15
+h 15
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(RTBT_PS:IOC1:HBtMod)"
+visMin "0"
+visMax "1"
+fillMode "pie"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 900
+y 482
+w 15
+h 11
+lineColor index 15
+fill
+fillColor index 112
+visPv "CALC\\\{A%2\}(RTBT_PS:IOC1:HBtMod)"
+visMin "1"
+visMax "2"
+startAngle 180
+fillMode "pie"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 800
+y 480
+w 90
+h 20
+controlPv "RTBT_PS:IOC1:vxUpTime"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-10.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 250
+y 230
+w 750
+h 280
+lineColor index 112
+fillColor index 5
+lineWidth 2
+endObjectProperties
+
