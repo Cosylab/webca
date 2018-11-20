@@ -1,4 +1,8 @@
 # WebCA
+
+The following introduction is an excerpt from the
+[documentation](webca/documentation/webca.doc).
+
 WebCA is a framework which allows users easy and fast creation of Channel
 Access (CA) Clients using web browsers.  Users create CA clients by composing
 WebCA components in XML ([3]) syntax and adding them to a HTML document or a
