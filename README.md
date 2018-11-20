@@ -20,3 +20,9 @@ WebCA was tested on the following web browsers:
 | Windows XP SP2 | Firefox | 2.0.0.10 | |
 |     | Safari | 3.0.4 | WebKit r28899 was used due to SVG render problems. |
 | Linux  (SL 4) | Firefox | 2.0.0.9 | |
+
+[1]: NPCA plugin api documentation, Cosylab, 2007 (http://webca.cosylab.com/)
+[2]: WebCA design document, Cosylab, 2007
+[3]: Extensible Markup Language (XML) http://www.w3.org/XML/
+[4]: XML Schema http://www.w3.org/XML/Schema
+[5]: XSL Transformations, http://www.w3.org/TR/xslt
